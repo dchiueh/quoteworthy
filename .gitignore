@@ -2,6 +2,10 @@
 node_modules/
 .DS_*
 
+# Python stuff
+__pycache__/
+
+
 # Django stuff:
 *.log
 local_settings.py
