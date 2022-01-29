@@ -4,7 +4,7 @@ We accomplish this by converting each row in the CSV into its corresponding a JS
 
 We give an example of our JSON schema below. Note that:
 - some fields (`title`, `author`, `abstract`, `slug`, and `section`) may be missing and some lists may be empty
-- the indices in the `quotes` array represent its respective token's index in `tokenized_text`
+- the indices in the `quotes` array represent their respective token's index in `tokenized_text`
 ```javascript
 data = {
     "articles": [{
