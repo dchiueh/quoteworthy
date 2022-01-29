@@ -44,6 +44,6 @@ data = {
             "end_quote_index": 489,
             "attribution_index": 467
         }]
-    }, /* many other article objects */ ]
+    }, /* ... many other article objects ... */ ]
 }
 ```
