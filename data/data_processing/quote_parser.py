@@ -10,7 +10,7 @@ class QuoteParser:
 	# public methods
 	def __init__(self):
 		print("Creating QuoteParser... this may take a bit.")
-		print("You can ignore any message about weight initialization below")
+		print("You can ignore any messages about weight initialization below")
 		self.coref_predictor = Predictor.from_path(COREF_MODEL_URL)
 		self.named_entity_model = spacy.load('en_core_web_sm')
 		print("Created -- ready to parse!\n")
@@ -24,7 +24,8 @@ class QuoteParser:
 		tokenized_document = coreferences["document"]
 		index_to_entity = self.map_index_to_entity(entity_doc, coreferences)
 		quotes_and_attributions = self.assign_quotes_to_attributions(tokenized_document, index_to_entity)
-		return tokenized_document, quotes_and_attributions
+		attribution_quote_map = self.organize_quotes_by_attribution(quotes_and_attributions)
+		return tokenized_document, attribution_quote_map
 
 	def map_index_to_entity(self, entity_doc, coreferences):
 		index_to_entity = {}
@@ -58,6 +59,7 @@ class QuoteParser:
 		return index_to_entity
 
 	def assign_quotes_to_attributions(self, tokenized_document, index_to_entity):
+		entity_memo = {}
 		quotes_and_attributions = []
 		start_quote_indices = [idx for idx, token in enumerate(tokenized_document) if token == "“"]
 		end_quote_indices = [idx for idx, token in enumerate(tokenized_document) if token == "”"]
@@ -66,9 +68,10 @@ class QuoteParser:
 		for start_idx, end_idx in zip(start_quote_indices, end_quote_indices):
 			attribution, attr_index = self.find_nearest_attribution(index_to_entity, start_idx, end_idx, QUOTE_WINDOW_SIZE)
 			if attribution is not None:
+				named_entity = self.get_likely_entity(entity_memo, attribution)
 				attr_obj = {
 					"quote": " ".join(tokenized_document[start_idx+1:end_idx]),
-					"named_attribution": list(attribution),
+					"named_attribution": named_entity,
 					"start_quote_index": start_idx,
 					"end_quote_index": end_idx,
 					"attribution_index": attr_index,
@@ -86,5 +89,20 @@ class QuoteParser:
 				elif pre_quote_idx in index_to_entity:
 					return index_to_entity[pre_quote_idx], pre_quote_idx
 		return None, None
-
-
+    
+	def get_likely_entity(self, entity_memo, attribution_set):
+		possible_attributions = frozenset(attribution_set)
+		if possible_attributions not in entity_memo:
+			longest_name = max(possible_attributions, key=lambda x: len(x))
+			entity_memo[possible_attributions] = longest_name
+		return entity_memo[possible_attributions]
+    
+	def organize_quotes_by_attribution(self, quotes_and_attributions):
+		attribution_quote_map = {}
+		for quote_obj in quotes_and_attributions:
+			named_attribution = quote_obj.pop("named_attribution")
+			if named_attribution in attribution_quote_map:
+				attribution_quote_map[named_attribution].append(quote_obj)
+			else:
+				attribution_quote_map[named_attribution] = [quote_obj]
+		return attribution_quote_map

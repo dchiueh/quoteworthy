@@ -17,18 +17,17 @@ def parse_data_into_html_encoding():
 def parse_data_into_json(dataframe):
 	articles = []
 	for idx, row in dataframe.iterrows():
-		if idx == 1:
-			break
 		print(f"Parsing article {idx+1} / {len(dataframe)}...")
 		try:
-			tokenized_document, quotes_and_attributions = qp.parse_text(row["paragraphs"])
-			row_obj = create_object(row, tokenized_document, quotes_and_attributions)
+			tokenized_document, attribution_quote_map = qp.parse_text(row["paragraphs"])
+			row_obj = create_object(row, tokenized_document, attribution_quote_map)
 			articles.append(row_obj)
 		except AssertionError as err:
 			print(f"Skipping article {idx+1} due to message: \"{err}\"")
 	return { "articles": articles }
 
-def create_object(df_row, tokenized_document, quotes_and_attributions):
+def create_object(df_row, tokenized_document, attribution_quote_map):
+	attributions = list(attribution_quote_map.keys())
 	row_obj = {
 		"title": safe_get_from_row(df_row["title"]),
 		"publish_date": reformat_date_string(df_row["publish_date"]),
@@ -39,9 +38,10 @@ def create_object(df_row, tokenized_document, quotes_and_attributions):
 		"section": safe_get_from_row(df_row["section_display"]),
 		"people": parse_double_pipe_delimited_string(df_row["people"]),
 		"keywords": parse_double_pipe_delimited_string(df_row["keywords"]),
+		"attributions": attributions,
 		"original_text": df_row["paragraphs"],
 		"tokenized_text": tokenized_document,
-		"quotes": quotes_and_attributions,
+		"quotes_by_attribution": [ { "attribution": attr, "quotes": quotes } for attr, quotes in attribution_quote_map.items()],
 	}
 	return row_obj
 
