@@ -9,7 +9,7 @@ QUOTE_WINDOW_SIZE = 3
 class QuoteParser:
 	# public methods
 	def __init__(self):
-		print("Creating QuoteParser... this may take a bit.")
+		print("\nCreating QuoteParser... this may take a bit.")
 		print("You can ignore any messages about weight initialization below")
 		self.coref_predictor = Predictor.from_path(COREF_MODEL_URL)
 		self.named_entity_model = spacy.load('en_core_web_sm')

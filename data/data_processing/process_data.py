@@ -1,3 +1,4 @@
+import re
 import html
 import json
 import pandas as pd
@@ -38,6 +39,7 @@ def create_object(df_row, tokenized_document, attribution_quote_map):
 		"section": safe_get_from_row(df_row["section_display"]),
 		"people": parse_double_pipe_delimited_string(df_row["people"]),
 		"keywords": parse_double_pipe_delimited_string(df_row["keywords"]),
+		"location": parse_article_for_location(df_row["paragraphs"]),
 		"attributions": attributions,
 		"original_text": df_row["paragraphs"],
 		"tokenized_text": tokenized_document,
@@ -57,6 +59,14 @@ def parse_double_pipe_delimited_string(delimited_str):
 		return []
 	else:
 		return delimited_str.split(" || ")
+
+def parse_article_for_location(article_str):
+	location_pattern = r' \b[A-Z]+(?:\s+[A-Z]+)*\b —'
+	match = re.search(location_pattern, article_str)
+	if match:
+		return match.group(0)[1:-2]
+	else:
+		return None
 
 
 if __name__ == "__main__":
