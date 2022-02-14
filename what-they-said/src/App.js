@@ -15,9 +15,12 @@ import {
   CardActions,
   Collapse,
   IconButton,
+  Paper,
   TextField,
   Typography
 } from '@mui/material';
+
+import SearchBox from './components/SearchBox/SearchBox.jsx';
 
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
@@ -50,28 +53,24 @@ function App() {
     <div className="App">
       <header><h1>What They Said</h1></header>
       
-      <h1 className="header">WIP rough draft</h1>
-      {/* <Button variant="contained">Hello World</Button> */}
+      <h1 className="header">Quoteworthy</h1>
+      
+      <SearchBox />
 
-      <TextField id="search=phrase" type="search" placeholder="enter a search phrase"
-        InputProps={{ sx: { backgroundColor: "lightgrey"}}}
-        sx={{ backgroundColor: "white"}}
-        fullWidth
-      />
-    <Card sx={{ maxWidth: 800 }}>
+    <Card sx={{ border: "solid grey 1px"}}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ backgroundColor: "skyblue" }} aria-label="article-count">
-            17
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="Santa Clara County Office"
-        subheader="2015-2020"
+        // avatar={
+        //   <Avatar sx={{ backgroundColor: "skyblue" }} aria-label="article-count">
+        //     3
+        //   </Avatar>
+        // }
+        title={
+          <Typography style={{fontSize: 24}}>
+             Santa Clara Office
+          </Typography>
+          }
+        // subheader="2015-2020"
+        style={{ padding: 8, display: 'inline' }}
       />
       {/* <CardMedia
         component="img"
@@ -80,15 +79,23 @@ function App() {
         alt="Paella dish"
       /> */}
       <CardContent>
-        <Typography variant="h5" color="black">
-          Example article title
-        </Typography>
-        <Typography variant="h6" color="black">
-          "This is an example quote"
-        </Typography>
+        {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
+        <div style={{border: "solid grey 0.5px", borderRadius: "15px"}}>
+          <Typography variant="h5" color="black">
+            Example article title
+          </Typography>
+
+          <Typography style={{fontSize: 16}}>
+            "This is an example quote"
+          </Typography>
+     
+        </div>
       </CardContent>
 
       <CardActions disableSpacing>
+          <Avatar sx={{ backgroundColor: "skyblue" }} aria-label="article-count">
+            3
+          </Avatar>
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />
         </IconButton>
@@ -98,15 +105,36 @@ function App() {
           aria-expanded={expanded}
           aria-label="show more"
         >
+          <Typography style={{fontSize: 20}}>See more </Typography>
           <ExpandMoreIcon />
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>More quotes:</Typography>
-          <Typography paragraph>
-            Add here, organize by json
-          </Typography>
+          {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
+          <div style={{border: "solid grey 0.5px", borderRadius: "15px"}}>
+            <Typography variant="h5" color="black">
+              Example article title
+            </Typography>
+
+            <Typography style={{fontSize: 16}}>
+              "This is an example quote"
+            </Typography>
+      
+          </div>
+        </CardContent>
+        <CardContent>
+          {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
+          <div style={{border: "solid grey 0.5px", borderRadius: "15px"}}>
+            <Typography variant="h5" color="black">
+              Example article title
+            </Typography>
+
+            <Typography style={{fontSize: 16}}>
+              "This is an example quote"
+            </Typography>
+      
+          </div>
         </CardContent>
       </Collapse>
     </Card>
