@@ -20,19 +20,21 @@ import {
 } from '@mui/material';
 
 import EntityCard from '../EntityCard/EntityCard';
+import demo7JSON from '../../test_data/demo7.json';
 
 class SearchListGroupedByEntity extends React.Component {
 	constructor(props) {
 		super(props);
+      console.log(demo7JSON);
 		this.state = {
-         articles: [],
+         articles: demo7JSON,
 			filteredArticles: [],
 			searchPhrase: '',
 		}
 	}
 
 	componentDidMount() {
-   ////todo: fetch from backend
+   ////todo: fetch from backend, whether a json or an API
 		// var temp = this.state.routes;
 		// firebase.database().ref('paths/').on('value', function (snapshot) {
 		// 	snapshot.forEach(doc => {
@@ -52,7 +54,9 @@ class SearchListGroupedByEntity extends React.Component {
 		return (
          <div>
             <Typography>WIP RIGHT HERE</Typography>
+            <EntityCard />      
             <EntityCard />           
+            <EntityCard />                
          </div>
 		)
 	};

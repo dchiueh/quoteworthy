@@ -1,0 +1,49 @@
+{
+   "Donald Trump": {
+      "articles": [
+         {
+            "time": "January 20, 2020",
+            "location": "n/a",
+            "category": "Media",
+            "title": "With Impeachment in the News, Ads Are Staying Away From Politics",
+            "link": "https://www.nytimes.com/2020/01/20/business/media/politics-trump-advertising-2020.html",
+            "quotes": [
+               "Nike is getting absolutely killed with anger and boycotts."
+            ],
+            "keywords": [
+               "impeachment"
+            ]
+         },
+         {
+            "time": "October 31, 2019",
+            "location": "Washington",
+            "category": "Politics",
+            "title": "A Divided House Endorses Impeachment Inquiry Into Trump",
+            "link": "https://www.nytimes.com/2019/10/31/us/politics/house-impeachment-vote.html",
+            "quotes": [
+               "at a hotel or greeted her inappropriately.",
+               "false, legally insufficient and made in a transparent politically motivated attack."            
+            ],
+            "keywords": [
+               "impeachment"
+            ]
+         },
+         {
+            "time": "April 3, 2017",
+            "location": "Washington",
+            "category": "Politics",
+            "title": "Trump’s Precedent for Claiming Immunity? Clinton v. Jones",
+            "link": "https://www.nytimes.com/2020/01/20/business/media/politics-trump-advertising-2020.html",
+            "quotes": [
+               "Nike is getting absolutely killed with anger and boycotts."
+            ],
+            "keywords": [
+               "impeachment"
+            ]
+         }
+      ]
+   },
+   "Tedros Adhanom Ghebreyesus": {
+
+   }
+}
