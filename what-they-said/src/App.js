@@ -21,6 +21,7 @@ import {
 } from '@mui/material';
 
 import SearchBox from './components/SearchBox/SearchBox.jsx';
+import SearchListGroupedByEntity from './components/SearchListGroupedByEntity/SearchListGroupedByEntity';
 
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
@@ -56,6 +57,7 @@ function App() {
       <h1 className="header">Quoteworthy</h1>
       
       <SearchBox />
+      <SearchListGroupedByEntity />
 
     <Card sx={{ border: "solid grey 1px"}}>
       <CardHeader
@@ -65,7 +67,7 @@ function App() {
         //   </Avatar>
         // }
         title={
-          <Typography style={{fontSize: 24}}>
+          <Typography style={{fontSize: 24, fontWeight: "bold"}}>
              Santa Clara Office
           </Typography>
           }
@@ -81,7 +83,7 @@ function App() {
       <CardContent>
         {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
         <div style={{border: "solid grey 0.5px", borderRadius: "15px"}}>
-          <Typography variant="h5" color="black">
+          <Typography variant="h6" color="black">
             Example article title
           </Typography>
 
@@ -105,15 +107,17 @@ function App() {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <Typography style={{fontSize: 20}}>See more </Typography>
+          <Typography style={{fontSize: 16}}>See more </Typography>
           <ExpandMoreIcon />
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
+        
+        
         <CardContent>
           {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
           <div style={{border: "solid grey 0.5px", borderRadius: "15px"}}>
-            <Typography variant="h5" color="black">
+            <Typography variant="h6" color="black">
               Example article title
             </Typography>
 
@@ -126,7 +130,7 @@ function App() {
         <CardContent>
           {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
           <div style={{border: "solid grey 0.5px", borderRadius: "15px"}}>
-            <Typography variant="h5" color="black">
+            <Typography variant="h6" color="black">
               Example article title
             </Typography>
 
@@ -136,6 +140,8 @@ function App() {
       
           </div>
         </CardContent>
+      
+      
       </Collapse>
     </Card>
 
