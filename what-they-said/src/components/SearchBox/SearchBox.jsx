@@ -14,9 +14,13 @@ import {
   Collapse,
   FormControlLabel,
   IconButton,
+  Menu,
+  MenuItem,
+  PopupState,
   TextField,
   Typography
 } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import SearchListGroupedByEntity from '../SearchListGroupedByEntity/SearchListGroupedByEntity';
 
@@ -32,6 +36,7 @@ class SearchBox extends React.Component {
 		}
 
       this._handleSearch = this._handleSearch.bind(this);
+      this._handleKeyDown = this._handleKeyDown.bind(this);
       this._handleSearchButton = this._handleSearchButton.bind(this);
 	}
 
@@ -75,10 +80,18 @@ class SearchBox extends React.Component {
 		}
 	}
 
+   _handleKeyDown = (event) => {
+      if (event.key === 'Enter') {
+         const lowerSearch = this.state.searchWIP.toLowerCase();
+         this.setState({searchPhrase: lowerSearch});
+      }
+    }
+
    _handleSearchButton(event) {
       if(event) {
+         const lowerSearch = this.state.searchWIP.toLowerCase();
          //this.setState({searchButtonPressed: true});
-         this.setState({searchPhrase: this.state.searchWIP});
+         this.setState({searchPhrase: lowerSearch});
       }
    }
 
@@ -100,12 +113,19 @@ class SearchBox extends React.Component {
                </CardContent>
                <TextField id="search-phrase" type="search" placeholder="enter a search phrase"
                   value={this.state.searchWIP}
-                  InputProps={{ sx: { backgroundColor: "#f2f2f2"}}}
+                  InputProps={{ sx: { backgroundColor: "#f2f2f2", fontSize: "22"}}}
                   sx={{ backgroundColor: "white"}}
                   fullWidth
                   onChange={this._handleSearch}
+                  onKeyDown={this._handleKeyDown}
                /> 
-               <Button variant="contained" onClick={this._handleSearchButton}>Search</Button>
+               {/* <Button variant="contained" onClick={this._handleSearchButton}>Search</Button> */}
+               <div style={{flexDirection: "row", textAlign: "left"}}>
+                  <Button style={{textTransform: "none", fontSize: 14, marginRight: "20px"}}> Date Range <ExpandMoreIcon/> </Button>
+                  <Button style={{textTransform: "none", fontSize: 14, marginRight: "20px"}}> Section <ExpandMoreIcon/> </Button>
+                  <Button style={{textTransform: "none", fontSize: 14}}> Location <ExpandMoreIcon/> </Button>
+
+               </div>
             </Card> 
             
             <SearchListGroupedByEntity searchPhrase={this.state.searchPhrase} /> 

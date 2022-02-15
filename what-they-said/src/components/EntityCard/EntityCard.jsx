@@ -43,47 +43,53 @@ const EntityCard = ({ entityInfo }) => {
    };
 
    return (
-      <Card sx={{ border: "solid grey 1px" }}>
-         <CardHeader
+      <Card sx={{ border: "solid grey 1px", paddingBottom: "12px" }}>
+         {/* <CardHeader
             title={
                <Typography style={{ fontSize: 24, fontWeight: "bold" }}>
                   {entityInfo.name}
                </Typography>
             }
-            subtitle={
-               <Typography style={{ fontSize: 18, color: "grey"}}>
-                  Former contexts: {entityInfo.profession}
-               </Typography>
-            }
+            // subtitle={
+            //    <Typography style={{ fontSize: 18, color: "grey"}}>
+            //       Former contexts: {entityInfo.profession}
+            //    </Typography>
+            // }
             style={{ padding: 8, display: 'inline' }}
-         />
+         /> */}
          {/* <CardMedia
          component="img"
          height="194"
          image="/static/images/cards/paella.jpg"
          alt="Paella dish"
       /> */}
-         <a href={entityInfo.articles[0].link} style={{textDecoration: "none"}} target = "_blank">            
-         <CardContent>
-            {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
-            {/* <EntitySingleArticleCard articleInfo={{}}/> */}
+         <Typography style={{ fontSize: 24, fontWeight: "bold", paddingTop: "12px" }}>
+            {entityInfo.name}
+         </Typography>
+         <Typography style={{ fontSize: 18, color: "grey" }}>
+            Prior contexts: {entityInfo.profession}
+         </Typography>
+         <a href={entityInfo.articles[0].link} style={{ textDecoration: "none" }} target="_blank">
+            <CardContent>
+               {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
+               {/* <EntitySingleArticleCard articleInfo={{}}/> */}
 
-            <div style={{ border: "solid grey 0.5px", borderRadius: "15px" }}>
-               <div style={{ textAlign: "right", marginRight: "10px" }}>
-                  <Typography style={{ fontSize: 13, color: "grey" }}>
-                     {entityInfo.articles[0].time}
+               <div style={{ border: "solid grey 0.5px", borderRadius: "15px" }}>
+                  <div style={{ textAlign: "right", marginRight: "10px" }}>
+                     <Typography style={{ fontSize: 13, color: "grey" }}>
+                        {entityInfo.articles[0].time}
+                     </Typography>
+                  </div>
+                  <Typography variant="h6" color="black">
+                     {entityInfo.articles[0].title}
                   </Typography>
+
+                  <Typography style={{ fontSize: 16 }}>
+                     "{entityInfo.articles[0].quotes[0]}"
+                  </Typography>
+
                </div>
-               <Typography variant="h6" color="black">
-                  {entityInfo.articles[0].title}
-               </Typography>
-
-               <Typography style={{ fontSize: 16 }}>
-                  "{entityInfo.articles[0].quotes[0]}"
-               </Typography>
-
-            </div>
-         </CardContent>
+            </CardContent>
          </a>
          <CardActions disableSpacing>
             <Avatar sx={{ backgroundColor: "skyblue" }} aria-label="article-count">
