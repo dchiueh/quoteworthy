@@ -67,7 +67,7 @@ const EntityCard = ({ entityInfo }) => {
             {entityInfo.name}
          </Typography>
          <Typography style={{ fontSize: 18, color: "grey" }}>
-            Prior contexts: {entityInfo.profession}
+            Prior contexts: "{entityInfo.profession}"
          </Typography>
          <a href={entityInfo.articles[0].link} style={{ textDecoration: "none" }} target="_blank">
             <CardContent>
@@ -78,6 +78,9 @@ const EntityCard = ({ entityInfo }) => {
                   <div style={{ textAlign: "right", marginRight: "10px" }}>
                      <Typography style={{ fontSize: 13, color: "grey" }}>
                         {entityInfo.articles[0].time}
+                     </Typography>
+                     <Typography style={{ fontSize: 13, color: "grey" }}>
+                        {entityInfo.articles[0].section}
                      </Typography>
                   </div>
                   <Typography variant="h6" color="black">
@@ -117,6 +120,9 @@ const EntityCard = ({ entityInfo }) => {
                         <Typography style={{ fontSize: 13, color: "grey" }}>
                            {entityInfo.articles[1].time}
                         </Typography>
+                        <Typography style={{ fontSize: 13, color: "grey" }}>
+                           {entityInfo.articles[1].section}
+                     </Typography>
                      </div>
                      <Typography variant="h6" color="black">
                         {entityInfo.articles[1].title}
@@ -137,6 +143,9 @@ const EntityCard = ({ entityInfo }) => {
                         <Typography style={{ fontSize: 13, color: "grey" }}>
                            {entityInfo.articles[2].time}
                         </Typography>
+                        <Typography style={{ fontSize: 13, color: "grey" }}>
+                        {entityInfo.articles[2].section}
+                     </Typography>
                      </div>
                      <Typography variant="h6" color="black">
                         {entityInfo.articles[2].title}

@@ -6,7 +6,7 @@
             {
                "time": "January 20, 2020",
                "location": "n/a",
-               "category": "Media",
+               "section": "Media",
                "title": "With Impeachment in the News, Ads Are Staying Away From Politics",
                "link": "https://www.nytimes.com/2020/01/20/business/media/politics-trump-advertising-2020.html",
                "quotes": [
@@ -19,7 +19,7 @@
             {
                "time": "October 31, 2019",
                "location": "Washington",
-               "category": "Politics",
+               "section": "Politics",
                "title": "A Divided House Endorses Impeachment Inquiry Into Trump",
                "link": "https://www.nytimes.com/2019/10/31/us/politics/house-impeachment-vote.html",
                "quotes": [
@@ -33,7 +33,7 @@
             {
                "time": "April 3, 2017",
                "location": "Washington",
-               "category": "Politics",
+               "section": "Politics",
                "title": "Trump’s Precedent for Claiming Immunity? Clinton v. Jones",
                "link": "https://www.nytimes.com/2020/01/20/business/media/politics-trump-advertising-2020.html",
                "quotes": [
@@ -52,7 +52,7 @@
             {
                "time": "February 2, 2022",
                "location": "n/a",
-               "category": "Politics",
+               "section": "Politics",
                "title": "Republicans Who Voted to Impeach Trump Out-Raised Primary Rivals",
                "link": "https://www.nytimes.com/2022/02/02/us/politics/republicans-impeach-trump-primary-fund-raising.html?searchResultPosition=1",
                "quotes": [
