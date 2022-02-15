@@ -2,7 +2,7 @@ import React from 'react';
 
 import { styled } from '@mui/material/styles';
 
-import { 
+import {
    Avatar,
    Button,
    Card,
@@ -27,104 +27,124 @@ import EntitySingleArticleCard from '../EntitySingleArticleCard/EntitySingleArti
 const ExpandMore = styled((props) => {
    const { expand, ...other } = props;
    return <IconButton {...other} />;
- })(({ theme, expand }) => ({
+})(({ theme, expand }) => ({
    transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
    marginLeft: 'auto',
    transition: theme.transitions.create('transform', {
-     duration: theme.transitions.duration.shortest,
+      duration: theme.transitions.duration.shortest,
    }),
- }));
+}));
 
-const EntityCard = (articleInfo) => {
+const EntityCard = ({ entityInfo }) => {
    const [expanded, setExpanded] = React.useState(false);
 
    const handleExpandClick = () => {
-     setExpanded(!expanded);
+      setExpanded(!expanded);
    };
 
    return (
-      <Card sx={{ border: "solid grey 1px"}}>
-      <
-         CardHeader
-         title={
-            <Typography style={{fontSize: 24, fontWeight: "bold"}}>
-               Joe Biden
-            </Typography>
+      <Card sx={{ border: "solid grey 1px" }}>
+         <CardHeader
+            title={
+               <Typography style={{ fontSize: 24, fontWeight: "bold" }}>
+                  {entityInfo.name}
+               </Typography>
             }
-         // subheader="2015-2020"
-         style={{ padding: 8, display: 'inline' }}
-      />
-      {/* <CardMedia
+            subtitle={
+               <Typography style={{ fontSize: 18, color: "grey"}}>
+                  Former contexts: {entityInfo.profession}
+               </Typography>
+            }
+            style={{ padding: 8, display: 'inline' }}
+         />
+         {/* <CardMedia
          component="img"
          height="194"
          image="/static/images/cards/paella.jpg"
          alt="Paella dish"
       /> */}
-      <CardContent>
-         {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
-         {/* <EntitySingleArticleCard articleInfo={{}}/> */}
-         
-         <div style={{border: "solid grey 0.5px", borderRadius: "15px"}}>
-            <Typography variant="h6" color="black">
-            Example article title
-            </Typography>
+         <a href={entityInfo.articles[0].link} style={{textDecoration: "none"}} target = "_blank">            
+         <CardContent>
+            {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
+            {/* <EntitySingleArticleCard articleInfo={{}}/> */}
 
-            <Typography style={{fontSize: 16}}>
-            "This is an example quote"
-            </Typography>
-      
-         </div>
-      </CardContent>
+            <div style={{ border: "solid grey 0.5px", borderRadius: "15px" }}>
+               <div style={{ textAlign: "right", marginRight: "10px" }}>
+                  <Typography style={{ fontSize: 13, color: "grey" }}>
+                     {entityInfo.articles[0].time}
+                  </Typography>
+               </div>
+               <Typography variant="h6" color="black">
+                  {entityInfo.articles[0].title}
+               </Typography>
 
-      <CardActions disableSpacing>
+               <Typography style={{ fontSize: 16 }}>
+                  "{entityInfo.articles[0].quotes[0]}"
+               </Typography>
+
+            </div>
+         </CardContent>
+         </a>
+         <CardActions disableSpacing>
             <Avatar sx={{ backgroundColor: "skyblue" }} aria-label="article-count">
-            3
+               {entityInfo.articles.length}
             </Avatar>
-         <IconButton aria-label="add to favorites">
-            <FavoriteIcon />
-         </IconButton>
-         <ExpandMore
-            expand={expanded}
-            onClick={handleExpandClick}
-            aria-expanded={expanded}
-            aria-label="show more"
-         >
-            <Typography style={{fontSize: 16}}>See more </Typography>
-            <ExpandMoreIcon />
-         </ExpandMore>
-      </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-         
-         
-         <CardContent>
-            {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
-            <div style={{border: "solid grey 0.5px", borderRadius: "15px"}}>
-            <Typography variant="h6" color="black">
-               Example article title
-            </Typography>
+            <IconButton aria-label="add to favorites">
+               <FavoriteIcon />
+            </IconButton>
+            <ExpandMore
+               expand={expanded}
+               onClick={handleExpandClick}
+               aria-expanded={expanded}
+               aria-label="show more"
+            >
+               <Typography style={{ fontSize: 16 }}>See more </Typography>
+               <ExpandMoreIcon />
+            </ExpandMore>
+         </CardActions>
+         <Collapse in={expanded} timeout="auto" unmountOnExit>
+            {entityInfo.articles[1] &&
+               <CardContent>
+                  {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
+                  <div style={{ border: "solid grey 0.5px", borderRadius: "15px" }}>
+                     <div style={{ textAlign: "right", marginRight: "10px" }}>
+                        <Typography style={{ fontSize: 13, color: "grey" }}>
+                           {entityInfo.articles[1].time}
+                        </Typography>
+                     </div>
+                     <Typography variant="h6" color="black">
+                        {entityInfo.articles[1].title}
+                     </Typography>
 
-            <Typography style={{fontSize: 16}}>
-               "This is an example quote"
-            </Typography>
-      
-            </div>
-         </CardContent>
-         <CardContent>
-            {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
-            <div style={{border: "solid grey 0.5px", borderRadius: "15px"}}>
-            <Typography variant="h6" color="black">
-               Example article title
-            </Typography>
+                     <Typography style={{ fontSize: 16 }}>
+                        "{entityInfo.articles[1].quotes[0]}"
+                     </Typography>
 
-            <Typography style={{fontSize: 16}}>
-               "This is an example quote"
-            </Typography>
-      
-            </div>
-         </CardContent>
-      
-      
-      </Collapse>
+                  </div>
+               </CardContent>
+            }
+            {entityInfo.articles[2] &&
+               <CardContent>
+                  {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
+                  <div style={{ border: "solid grey 0.5px", borderRadius: "15px" }}>
+                     <div style={{ textAlign: "right", marginRight: "10px" }}>
+                        <Typography style={{ fontSize: 13, color: "grey" }}>
+                           {entityInfo.articles[2].time}
+                        </Typography>
+                     </div>
+                     <Typography variant="h6" color="black">
+                        {entityInfo.articles[2].title}
+                     </Typography>
+
+                     <Typography style={{ fontSize: 16 }}>
+                        "{entityInfo.articles[2].quotes[0]}"
+                     </Typography>
+
+                  </div>
+               </CardContent>
+            }
+
+         </Collapse>
       </Card>
    )
 }

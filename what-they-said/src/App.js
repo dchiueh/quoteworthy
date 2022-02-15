@@ -56,7 +56,8 @@ function App() {
       <header style={{textAlign: "center"}}><h1>What They Said: Quoteworthy </h1></header>
             
       <SearchBox />
-      <SearchListGroupedByEntity />
+      {/*TODO: fix code so we handle state a hell of a lot better */}
+      {/* <SearchListGroupedByEntity /> */}
 
     </Box>
   );

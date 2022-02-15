@@ -18,16 +18,21 @@ import {
   Typography
 } from '@mui/material';
 
+import SearchListGroupedByEntity from '../SearchListGroupedByEntity/SearchListGroupedByEntity';
+
 class SearchBox extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
          articles: [],
 			filteredArticles: [],
+         searchWIP: '',
 			searchPhrase: '',
+         searchButtonPressed: false,
 		}
 
       this._handleSearch = this._handleSearch.bind(this);
+      this._handleSearchButton = this._handleSearchButton.bind(this);
 	}
 
 	componentDidMount() {
@@ -51,57 +56,61 @@ class SearchBox extends React.Component {
 	_handleSearch(event) {
 		if (event) {
          let text = event.target.value;
-			this.setState({searchPhrase: text});
+			this.setState({searchWIP: text});
          
          const lowerSearch = text.toLowerCase();
 
-			let filteredArticles = this.state.articles.filter(
-				(article) =>
-					article.name.includes(lowerSearch)
-			);
+			// let filteredArticles = this.state.articles.filter(
+			// 	(article) =>
+			// 		article.name.includes(lowerSearch)
+			// );
 
-			this.setState({ 
-				filteredArticles: filteredArticles,
-			});
+			// this.setState({ 
+			// 	filteredArticles: filteredArticles,
+			// });
 		} else {
 			this.setState({ 
-				searchPhrase: "",
+				searchWIP: "",
 			});
 		}
 	}
 
+   _handleSearchButton(event) {
+      if(event) {
+         //this.setState({searchButtonPressed: true});
+         this.setState({searchPhrase: this.state.searchWIP});
+      }
+   }
+
 	render() {
 		return (
-         <Card>
-            {/*TODO: decompose the tags / filtering to a new component */}
-            <CardContent>
-            {/* <FormControlLabel
-               label="Parent"
-               control={
-                  <Checkbox
-                     checked={checked[0] && checked[1]}
-                     onChange={handleChange1}
-                  />
-               }
-               /> */}
-               {/* <Typography variant="h5" color="black">
-                  Example article title
-               </Typography>
-               <Typography variant="h6" color="black">
-                  "This is an example quote"
-               </Typography> */}
-            </CardContent>
-            <TextField id="search=phrase" type="search" placeholder="enter a search phrase"
-               value={this.state.searchPhrase}
-               InputProps={{ sx: { backgroundColor: "#f2f2f2"}}}
-               sx={{ backgroundColor: "white"}}
-               fullWidth
-               onChange={this._handleSearch}
-            /> 
-            <Button variant="contained">Search</Button>
-
-         </Card>
-
+         <React.Fragment>
+            <Card>
+               {/*TODO: decompose the tags / filtering to a new component */}
+               <CardContent>
+               {/* <FormControlLabel
+                  label="Parent"
+                  control={
+                     <Checkbox
+                        checked={checked[0] && checked[1]}
+                        onChange={handleChange1}
+                     />
+                  }
+                  /> */}
+               </CardContent>
+               <TextField id="search-phrase" type="search" placeholder="enter a search phrase"
+                  value={this.state.searchWIP}
+                  InputProps={{ sx: { backgroundColor: "#f2f2f2"}}}
+                  sx={{ backgroundColor: "white"}}
+                  fullWidth
+                  onChange={this._handleSearch}
+               /> 
+               <Button variant="contained" onClick={this._handleSearchButton}>Search</Button>
+            </Card> 
+            
+            <SearchListGroupedByEntity searchPhrase={this.state.searchPhrase} /> 
+                     
+         </React.Fragment>
 		)
 	};
 }
