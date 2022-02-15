@@ -74,5 +74,5 @@ if __name__ == "__main__":
 	df = pd.read_csv(PARSED_FILEPATH)
 	data_object = parse_data_into_json(df)
 	with open(JSON_FILEPATH, "w") as f:
-		json.dump(data_object, f, ensure_ascii=False)
+		json.dump(data_object, f, ensure_ascii=False, indent=2)
 	
