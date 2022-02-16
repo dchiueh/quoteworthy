@@ -29,7 +29,15 @@ data = {
             "quote": "He allegedly sought to use the very security assistance dollars appropriated by Congress to create stability in the world , to help root out corruption and to protect our national security interests , for his own personal gain ,",
             "start_quote_index": 292,
             "end_quote_index": 332,
-            "attribution_index": 334
+            "attribution_index": 334,
+            "attribution_method": "proximity"
+          },
+          {
+            "quote": "These allegations are stunning , both in the national security threat they pose and the potential corruption they represent .",
+            "start_quote_index": 340,
+            "end_quote_index": 361,
+            "attribution_index": 334,
+            "attribution_method": "pattern_4"
           }
         ]
       },
@@ -37,22 +45,18 @@ data = {
         "attribution": "Jason Crow",
         "quotes": [
           {
-            "quote": "These allegations are stunning , both in the national security threat they pose and the potential corruption they represent .",
-            "start_quote_index": 340,
-            "end_quote_index": 361,
-            "attribution_index": 363
-          },
-          {
             "quote": "If Congress does n’t stand up to these abuses , then our system of checks and balances will have failed ,",
             "start_quote_index": 438,
             "end_quote_index": 460,
-            "attribution_index": 461
+            "attribution_index": 461,
+            "attribution_method": "pattern_1"
           },
           {
             "quote": "It ’s clear that we must respond with the full weight of Congress .",
             "start_quote_index": 474,
             "end_quote_index": 489,
-            "attribution_index": 467
+            "attribution_index": 462,
+            "attribution_method": "pattern_3"
           }
         ]
       }
