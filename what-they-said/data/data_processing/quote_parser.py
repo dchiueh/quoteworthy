@@ -4,7 +4,7 @@ import spacy
 import re
 
 COREF_MODEL_URL = "https://storage.googleapis.com/allennlp-public-models/coref-spanbert-large-2021.03.10.tar.gz"
-ACTION_VERBS = ["added", "said", "asked", "called", "denounced", "told"]
+ACTION_VERBS = ["added", "said", "asked", "called", "denounced", "told", "objected"]
 LOOK_AROUND_SIZE = 30
 
 coref_predictor = Predictor.from_path(COREF_MODEL_URL)
@@ -22,13 +22,37 @@ class QuoteParser:
     def parse_text(self, text):
         assert isinstance(text, str), f"Error: can't process -- the input text is not a string"
         entity_doc = self.named_entity_model(text)
-        tokenized_document = [token.text for token in entity_doc]
+        tokenized_document = self.get_tokenized_document(entity_doc)
         quote_indices = self.identify_valid_quotes(tokenized_document)
         coreferences = self.coref_predictor.predict(text)
         index_to_entity = self.map_index_to_entity(entity_doc, coreferences)
         quotes_and_attributions = self.assign_quotes_to_attributions(tokenized_document, index_to_entity, quote_indices)
         attribution_quote_map = self.organize_quotes_by_attribution(quotes_and_attributions)
         return tokenized_document, attribution_quote_map
+
+    # private methods
+    def get_tokenized_document(self, entity_document):
+        tokenized_document = []
+        for token in entity_document:
+            token = token.text
+            if re.match(r'PHOTO', token):
+                break
+            tokenized_document.append(token)
+        return tokenized_document
+    
+    def identify_valid_quotes(self, tokenized_document):
+        quote_indices = []
+        start_quote_indices = [idx for idx, token in enumerate(tokenized_document) if token == "“"]
+        end_quote_indices = [idx for idx, token in enumerate(tokenized_document) if token == "”"]
+        # check that every quotation mark has a matching pair
+        assert len(start_quote_indices) == len(end_quote_indices), f"Warning: the number of start and end quotation marks don't match! ({len(start_quote_indices)} to {len(end_quote_indices)})"
+        for start_idx, end_idx in zip(start_quote_indices, end_quote_indices):
+            assert start_idx < end_idx, f"Warning: mismatched start and end quotation marks (start index {start_idx} + end index {end_idx})"
+            token_sentence = tokenized_document[start_idx+1:end_idx]
+            num_valid_tokens = sum(1 for token in token_sentence if not re.fullmatch(r'[^\w]', token))
+            if num_valid_tokens >= 3:
+                quote_indices.append((start_idx, end_idx))
+        return quote_indices
 
     def map_index_to_entity(self, entity_doc, coreferences):
         index_to_entity = {}
@@ -40,9 +64,8 @@ class QuoteParser:
                 else:
                     single_reference_span = [[entity.start, entity.end-1]]
                     index_to_entity = self.add_entity_to_span(index_to_entity, single_reference_span, entity.text)
-        return index_to_entity
-
-    # private methods
+        return index_to_entity    
+    
     def get_coreference_overlap(self, coreferences, ent_start_idx, ent_end_idx):
         for reference_cluster in coreferences["clusters"]:
             for span in reference_cluster:
@@ -60,26 +83,12 @@ class QuoteParser:
                 else:
                     index_to_entity[idx] = { entity }
         return index_to_entity
-    
-    def identify_valid_quotes(self, tokenized_document):
-        quote_indices = []
-        start_quote_indices = [idx for idx, token in enumerate(tokenized_document) if token == "“"]
-        end_quote_indices = [idx for idx, token in enumerate(tokenized_document) if token == "”"]
-        # check that every quotation mark has a matching pair
-        assert len(start_quote_indices) == len(end_quote_indices), f"Warning: the number of start and end quotation marks don't match! ({len(start_quote_indices)} to {len(end_quote_indices)})"
-        for start_idx, end_idx in zip(start_quote_indices, end_quote_indices):
-            assert start_idx < end_idx, f"Warning: mismatched start and end quotation marks (start index {start_idx} + end index {end_idx})"
-            token_sentence = tokenized_document[start_idx+1:end_idx]
-            num_valid_tokens = sum(1 for token in token_sentence if not re.fullmatch(r'[^\w]', token))
-            if num_valid_tokens >= 3:
-                quote_indices.append((start_idx, end_idx))
-        return quote_indices
 
     def assign_quotes_to_attributions(self, tokenized_document, index_to_entity, quote_indices):
         entity_memo = {}
         quotes_and_attributions = []
         for start_idx, end_idx in quote_indices:
-            attribution, attr_index = self.assign_attribution(tokenized_document, index_to_entity, start_idx, end_idx)
+            attribution, attr_index, pattern_type = self.assign_attribution(tokenized_document, index_to_entity, start_idx, end_idx)
             if attribution is not None:
                 named_entity = self.get_likely_entity(entity_memo, attribution)
                 attr_obj = {
@@ -88,21 +97,28 @@ class QuoteParser:
                         "start_quote_index": start_idx,
                         "end_quote_index": end_idx,
                         "attribution_index": attr_index,
+                        "attribution_method": pattern_type,
                 }
                 quotes_and_attributions.append(attr_obj)
         return quotes_and_attributions
 
     def assign_attribution(self, tokenized_document, index_to_entity, quote_start_idx, quote_end_idx):
-        # pattern 1 - if entity is immediately after the quote
-        if (tokenized_document[quote_end_idx-1] == "," or (tokenized_document[quote_end_idx-1] =="?")) and quote_end_idx+1 in index_to_entity:
+        # pattern 1 - if entity->verb is immediately after the quote (ex: "[...]," he said)
+        if tokenized_document[quote_end_idx-1] in [",", "?"] and quote_end_idx+1 in index_to_entity:
             scan_idx = quote_end_idx + 2
             while scan_idx in index_to_entity:
                 scan_idx += 1
                 if tokenized_document[scan_idx] in ACTION_VERBS:
                     attr_idx = quote_end_idx + 1
                     entity = index_to_entity[attr_idx]
-                    return entity, attr_idx
-        # pattern 2 - if entity is before the quote
+                    return entity, attr_idx, 'pattern_1'
+        # pattern 2 - if verb->entity is immediately after the quote (ex: "[...]," said Newsom)
+        if tokenized_document[quote_end_idx-1] in [",", "?"] and tokenized_document[quote_end_idx+1] in ACTION_VERBS:
+            scan_idx = quote_end_idx + 2
+            while scan_idx not in index_to_entity:
+                scan_idx += 1
+            return index_to_entity[scan_idx], scan_idx, 'pattern_2'
+        # pattern 3 - if entity->verb is before the quote (ex: He said to reporters "[...]")
         encountered_action_verb = False
         num_unclosed_quotes = 0
         for idx in reversed(range(quote_start_idx-LOOK_AROUND_SIZE, quote_start_idx)):
@@ -114,16 +130,24 @@ class QuoteParser:
                 if tokenized_document[idx] in ACTION_VERBS:
                     encountered_action_verb = True
                 elif encountered_action_verb and idx in index_to_entity:
-                    return index_to_entity[idx], idx  
+                    return index_to_entity[idx], idx, 'pattern_3'
+        # pattern 4 - if verb->entity is before the quote (ex: "lorem ipsum," said Newsom to reporters. "[...]")
+        if tokenized_document[quote_start_idx-1] == ".":
+            entity_idx = None
+            for idx in reversed(range(quote_start_idx-LOOK_AROUND_SIZE, quote_start_idx)):
+                if idx in index_to_entity:
+                    entity_idx = idx
+                elif entity_idx is not None and tokenized_document[idx] == "”" and tokenized_document[idx-1] == ",":
+                    return index_to_entity[entity_idx], entity_idx, 'pattern_4'
         # default - proximity assignment
         for diff in range(LOOK_AROUND_SIZE):
             pre_quote_idx = quote_start_idx - diff - 1
             post_quote_idx = quote_end_idx + diff + 2
             if pre_quote_idx in index_to_entity:
-                return index_to_entity[pre_quote_idx], pre_quote_idx
+                return index_to_entity[pre_quote_idx], pre_quote_idx, 'proximity'
             elif post_quote_idx in index_to_entity:
-                return index_to_entity[post_quote_idx], post_quote_idx
-        return None, None
+                return index_to_entity[post_quote_idx], post_quote_idx, 'proximity'
+        return None, None, None
     
     def get_likely_entity(self, entity_memo, attribution_set):
         possible_attributions = frozenset(attribution_set)
