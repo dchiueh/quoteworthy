@@ -1,0 +1,82 @@
+{
+  "articles": [
+    // example input of the first `article` object
+    {
+      // original url from nyt_2020_mini.json
+      "url": "https://www.nytimes.com/2020/01/15/us/politics/jason-crow.html",
+      // `quotes` is a list of quote objects from the article
+      "quotes": [
+        {
+          // `attribution` is full name without any titles
+          "attribution": "Jason Crow",
+          // quotes must be at least 3 words long
+          // `quote` includes everything within the pair of quotation marks -- including end punctuation
+          "quote": "He allegedly sought to use the very security assistance dollars appropriated by Congress to create stability in the world, to help root out corruption and to protect our national security interests, for his own personal gain,",
+        },
+        {
+          "attribution": "Jason Crow",
+          "quote": "These allegations are stunning, both in the national security threat they pose and the potential corruption they represent.",
+        }
+        {
+          "attribution": "Jason Crow",
+          "quote": "If Congress doesn’t stand up to these abuses, then our system of checks and balances will have failed,",
+        }
+        {
+          "attribution": "Jason Crow",
+          "quote": "It’s clear that we must respond with the full weight of Congress.",
+        }
+      ]
+    },
+    // example input of the second `article` object 
+    {
+      "url": "https://www.nytimes.com/2020/01/07/business/economy/us-france-digital-tax.html",
+      "quotes": [
+        {
+          "attribution": "Bruno Le Maire",
+          "quote": "I made it clear to Steven Mnuchin that as long as we are discussing, as long as we are negotiating, there could not be any American sanctions,",
+        },
+        {
+          "attribution": "Mary Taylor",
+          "quote": "How can you just gut my family business?",
+        },
+        {
+          "attribution": "Mary Taylor",
+          "quote": "I’ve read about farmer subsidies. Will my family be subsidized?",
+        },
+        {
+          "attribution": "Mary Taylor",
+          "quote": "Never could I imagine my business would be threatened like this from the federal government,",
+        },
+        {
+          "attribution": "Mary Taylor",
+          "quote": "What do digital services have to do with European wine? Nothing.",
+        },
+        {
+          "attribution": "Trump",
+          "quote": "worse than China",
+        },
+        {
+          "attribution": "Bruno Le Maire",
+          "quote": "If the Americans start to hit France with sanctions because it has introduced national digital taxes, it will have to go tomorrow to also hit Italy, Austria, Great Britain,",
+        },
+        {
+          "attribution": "Bruno Le Maire",
+          "quote": "We will enter a commercial conflict between the United States and Europe.",
+        },
+        {
+          "attribution": "Faye Gooding",
+          "quote": "an existential threat",
+        },
+        {
+          "attribution": "Benjamin Aneff",
+          "quote": "greatest threat to the industry since Prohibition.",
+        },
+        {
+          "attribution": "Nate Herman",
+          "quote": "We just don’t agree with the U.S. government’s proposal to accomplish that goal — imposing taxes on handbags.",
+        },
+      ]
+    },
+    // continue adding `article` objects to the list below
+  ]
+}
