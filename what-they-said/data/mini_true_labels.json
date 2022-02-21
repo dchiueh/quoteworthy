@@ -7,7 +7,7 @@
       // `quotes` is a list of quote objects from the article
       "quotes": [
         {
-          // `attribution` is full name without any titles
+          
           "attribution": "Jason Crow",
           // quotes must be at least 3 words long
           // `quote` includes everything within the pair of quotation marks -- including end punctuation
@@ -16,15 +16,15 @@
         {
           "attribution": "Jason Crow",
           "quote": "These allegations are stunning, both in the national security threat they pose and the potential corruption they represent.",
-        }
+        },
         {
           "attribution": "Jason Crow",
           "quote": "If Congress doesn’t stand up to these abuses, then our system of checks and balances will have failed,",
-        }
+        },
         {
           "attribution": "Jason Crow",
           "quote": "It’s clear that we must respond with the full weight of Congress.",
-        }
+        },
       ]
     },
     // example input of the second `article` object 
@@ -78,5 +78,142 @@
       ]
     },
     // continue adding `article` objects to the list below
+    {
+      // Article #2 on mini json
+      "url": "https://www.nytimes.com/2020/01/10/world/europe/northern-ireland-stormont-stalemate.html",
+      "quotes": [
+        {
+          "attribution": "Mary Lou McDonald",
+          "quote": "We now have the basis to restore power sharing, and we’re up for that,",
+        },
+        {
+          "attribution": "Mary Lou McDonald",
+          "quote": "There’s no doubt there are serious challenges ahead: the impact of Brexit, austerity and other pressing issues. But the biggest and most significant challenge will be ensuring we have genuine power sharing built on equality, respect and integrity,"
+        },
+        {
+          "attribution": "Arlene Foster",
+          "quote": "fair and balanced way",
+        },
+        {
+          "attribution": "Daniel Keohane",
+          "quote": "I was impressed that a consensus of sorts was reached on cultural issues, but let’s see how well Stormont functions now,",
+        },
+        {
+          "attribution": "Daniel Keohane",
+          "quote": "There are a lot of issues to be addressed, like health care and investment, and the impasse of the last few years shows how difficult local politics can be.",
+        },
+        {
+          "attribution": "Angela McGowan",
+          "quote": "the need for a strong voice from Northern Ireland has never been more important,",
+        },
+        {
+          "attribution": "Angela McGowan",
+          "quote": "After three years of underinvestment and political stalemate,",
+        },
+        {
+          "attribution": "Angela McGowan",
+          "quote": "this bold and ambitious deal is what Northern Ireland needs to get back onto its feet.",
+        },
+      ]
+    },
+    {
+      // Article #4 on mini json
+      "url": "https://www.nytimes.com/2020/01/22/health/china-virus.html",
+      "quotes": [
+        {
+          "attribution": "World Health Organization",
+          "quote": "public health emergency of international concern,",
+        },
+        {
+          "attribution": "World Health Organization",
+          "quote": "potentially require a coordinated international response."
+        },
+        {
+          "attribution": "Dr. Tedros Adhanom Ghebreyesus",
+          "quote": "The decision about whether or not to declare a public health emergency of international concern is one I take extremely seriously, and one I am only prepared to make with appropriate consideration of all the evidence,",
+        },
+        {
+          "attribution": "Jennifer B. Nuzzo",
+          "quote": "I want to see from the emergency committee all the information on the table and an assessment of what the risk really is",
+        },
+        {
+          "attribution": "Jennifer B. Nuzzo",
+          "quote": "To me, that’s far more important than their declaration.",
+   
+        {
+          "attribution": "Jennifer B. Nuzzo",
+          "quote": "There’s already a high level of global attention,",
+        },
+        {
+          "attribution": "Jennifer B. Nuzzo",
+          "quote": "Data shows that entry screening requires a tremendous amount of resources and is not tremendously effective,",
+        },
+        {
+          "attribution": "Tarik Jasarevic",
+          "quote": "We don’t know how many people are infected,",
+        },
+        {
+          "attribution": "Dr. Mark R. Denison",
+          "quote": "sort of a first cousin of SARS,",
+ 
+        },
+         {
+          "attribution": "Dr. Ian W. Lipkin",
+          "quote": "Now that you have a cluster of 14 health care workers infected, it suggests that the potential for spread is much greater,",
+        },
+        {
+          "attribution": "Dr. Ian W. Lipkin",
+          "quote": "I saw film footage of a hospital lobby in Wuhan, and they are wearing full personal protective equipment from head to toe,",
+        },
+        {
+          "attribution": "Dr. Ian W. Lipkin",
+          "quote": "They are taking it very seriously. I still don’t think this is as bad as SARS, but it’s worse than they originally portrayed it.",
+        },
+        {
+          "attribution": "Dr. Mark R. Denison",
+          "quote": "That’s a wild card we don’t know, the capacity to have multiple transmissions from one person,",
+ 
+        },
+        {
+          "attribution": "Dr. Mark R. Denison",
+          "quote": "That’s a wild card we don’t know, the capacity to have multiple transmissions from one person,",
+ 
+        },
+        {
+          "attribution": "Dr. Mark R. Denison",
+          "quote": "There was no evidence they had dramatically different virus.",
+ 
+        },
+        {
+          "attribution": "Dr. Mark R. Denison",
+          "quote": "Coronaviruses have repeatedly shown an ability to probe across species and cause new animal and human diseases,",
+ 
+        },
+        {
+          "attribution": "Dr. Mark R. Denison",
+          "quote": "The process it has to go through is more like high hurdles with a thousand hurdles along the way,",
+ 
+        },
+        {
+          "attribution": "Dr. Mark R. Denison",
+          "quote": "This was a matter of not if, but when.",
+ 
+        },
+      ]
+    },
+    {
+      // article #5 from mini json
+      "url": "https://www.nytimes.com/2020/01/13/business/budget-deficit-1-trillion-trump.html",
+      // `quotes` is a list of quote objects from the article
+      "quotes": [
+        {
+          // `attribution` is full name without any titles
+          "attribution": "Trump",
+          // quotes must be at least 3 words long
+          // `quote` includes everything within the pair of quotation marks -- including end punctuation
+          "quote": "pay for themselves",
+        },
+      ]
+    },
   ]
 }
