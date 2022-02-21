@@ -88,7 +88,7 @@
         },
         {
           "attribution": "Mary Lou McDonald",
-          "quote": "There’s no doubt there are serious challenges ahead: the impact of Brexit, austerity and other pressing issues. But the biggest and most significant challenge will be ensuring we have genuine power sharing built on equality, respect and integrity,"
+          "quote": "There’s no doubt there are serious challenges ahead: the impact of Brexit, austerity and other pressing issues. But the biggest and most significant challenge will be ensuring we have genuine power sharing built on equality, respect and integrity,",
         },
         {
           "attribution": "Arlene Foster",
@@ -134,7 +134,7 @@
         },
         {
           "attribution": "Jennifer B. Nuzzo",
-          "quote": "I want to see from the emergency committee all the information on the table and an assessment of what the risk really is",
+          "quote": "I want to see from the emergency committee all the information on the table and an assessment of what the risk really is,",
         },
         {
           "attribution": "Jennifer B. Nuzzo",
@@ -204,15 +204,92 @@
     {
       // article #5 from mini json
       "url": "https://www.nytimes.com/2020/01/13/business/budget-deficit-1-trillion-trump.html",
-      // `quotes` is a list of quote objects from the article
       "quotes": [
         {
-          // `attribution` is full name without any titles
           "attribution": "Trump",
-          // quotes must be at least 3 words long
-          // `quote` includes everything within the pair of quotation marks -- including end punctuation
           "quote": "pay for themselves",
         },
+      ]
+    },
+    {
+      // article #6 from mini json
+      "url": "https://www.nytimes.com/2020/01/29/world/mexico-butterfly-dead.html",
+      "quotes": [
+        {
+          "attribution": "the UNESCO Website",
+          
+          "quote": "The overwintering concentration of butterflies in the property is a superlative natural phenomenon,",
+        },
+        {
+          "attribution": "the UNESCO Website",
+          
+          "quote": "The millions of monarch butterflies that return to the property every year bend tree branches by their weight, fill the sky when they take flight, and make a sound like light rain with the beating of their wings. Witnessing this unique phenomenon is an exceptional experience of nature.",
+        },
+        {
+          "attribution": "The Purépecha",
+          
+          "quote": "the soul of the dead,",
+        },
+      ]
+    },
+    {
+      // article #7 from mini json
+      // ASK ALEX ABOUT HOW TO HANDLE LIVE ARTICLES-- MAYBE ONLY CAPTURE THE FIRST ENTRY?? OT DELETE ALTOGETHER
+      "url": "https://www.nytimes.com/live/2020/impeachment-trial-live-01-29#republicans-are-growing-confident-they-will-block-witnesses-and-win-a-speedy-acquittal",
+      "quotes": [
+      ]
+    },
+    {
+      // article #8 from mini json
+      "url": "https://www.nytimes.com/2020/01/22/business/energy-environment/pge-bankruptcy-newsom.html",
+      "quotes": [
+        {
+          "attribution": "Gov. Gavin Newsom",
+          
+          "quote": "safe, reliable and affordable power for Californians",
+        },
+        {
+          "attribution": "Bill Johnson",
+          
+          "quote": "Reaching a resolution with the bondholder group is a positive development to move forward with our plan of reorganization,",
+        {
+          "attribution": "Bill Johnson",
+          
+          "quote": "This agreement helps achieve our goals of fairly compensating wildfire victims, protecting customers’ bills and emerging from Chapter 11.",
+        },
+        {
+          "attribution": "Gov. Gavin Newsom",
+          
+          "quote": "with insufficient financial flexibility to make billions of dollars in critically needed safety investments.",
+        },
+        {
+          "attribution": "PG&E",
+          
+          "quote": "While PG&E has made substantial progress in resolving victim claims and restructuring our finances, additional changes to the plan are forthcoming. We will continue to engage with the governor’s office to address his concerns,",
+        {
+          "attribution": "Helen Sedwick",
+          
+          "quote": "nvestor groups have hijacked the bankruptcy process to ensure that they reap billions more in profits while individual fire victims receive cents on the dollar, are paid in installments, and have their recoveries funded in large part by stock in the restructured PG&E,",
+        },
+        {
+          "attribution": "Helen Sedwick",
+          
+          "quote": "Fire victims do not want to own any part of the company that burned their homes and killed their neighbors.",
+        },
+      ]
+    },
+    {
+      // article #9 from mini json
+      // ASK ALEX ABOUT HOW TO HANDLE LIVE ARTICLES-- MAYBE ONLY CAPTURE THE FIRST ENTRY?? OT DELETE ALTOGETHER
+      "url": "https://www.nytimes.com/live/2020/impeachment-trial-live-01-23/an-abbreviated-weekend-trial-schedule-is-possible",
+      "quotes": [
+      ]
+    },
+    {
+      // article #10 from mini json
+      "url": "https://www.nytimes.com/2020/01/28/us/politics/bolton-trump.html",
+      "quotes": [
+       
       ]
     },
   ]
