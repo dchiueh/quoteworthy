@@ -4,8 +4,8 @@ import json
 import pandas as pd
 from quote_parser import QuoteParser
 
-DATA_FILEPATH = "nyt_2020_mini.csv"
-PARSED_FILEPATH = "nyt_2020_mini_html_parsed.csv"
+DATA_FILEPATH = "./nyt_2020_mini.csv"
+PARSED_FILEPATH = "./nyt_2020_mini_html_parsed.csv"
 JSON_FILEPATH = "../nyt_2020_mini.json"
 
 qp = QuoteParser()
@@ -29,6 +29,7 @@ def parse_data_into_json(dataframe):
 
 def create_object(df_row, tokenized_document, attribution_quote_map):
 	attributions = list(attribution_quote_map.keys())
+	# assert "“" in tokenized_document and "”" in tokenized_document, "Warning: this article contains no quotes"
 	row_obj = {
 		"title": safe_get_from_row(df_row["title"]),
 		"publish_date": reformat_date_string(df_row["publish_date"]),

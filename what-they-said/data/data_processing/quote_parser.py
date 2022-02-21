@@ -4,7 +4,7 @@ import spacy
 import re
 
 COREF_MODEL_URL = "https://storage.googleapis.com/allennlp-public-models/coref-spanbert-large-2021.03.10.tar.gz"
-ACTION_VERBS = ["added", "said", "asked", "called", "denounced", "told", "objected"]
+ACTION_VERBS = ["added", "said", "asked", "called", "denounced", "told", "objected", "wrote"]
 LOOK_AROUND_SIZE = 30
 
 coref_predictor = Predictor.from_path(COREF_MODEL_URL)
@@ -28,28 +28,27 @@ class QuoteParser:
         index_to_entity = self.map_index_to_entity(entity_doc, coreferences)
         quotes_and_attributions = self.assign_quotes_to_attributions(tokenized_document, index_to_entity, quote_indices)
         attribution_quote_map = self.organize_quotes_by_attribution(quotes_and_attributions)
-        return tokenized_document, attribution_quote_map
+        return [token.text for token in tokenized_document], attribution_quote_map
 
     # private methods
     def get_tokenized_document(self, entity_document):
         tokenized_document = []
         for token in entity_document:
-            token = token.text
-            if re.match(r'PHOTO', token):
+            if re.match(r'PHOTO', token.text):
                 break
             tokenized_document.append(token)
         return tokenized_document
     
     def identify_valid_quotes(self, tokenized_document):
         quote_indices = []
-        start_quote_indices = [idx for idx, token in enumerate(tokenized_document) if token == "“"]
-        end_quote_indices = [idx for idx, token in enumerate(tokenized_document) if token == "”"]
+        start_quote_indices = [idx for idx, token in enumerate(tokenized_document) if token.text == "“"]
+        end_quote_indices = [idx for idx, token in enumerate(tokenized_document) if token.text == "”"]
         # check that every quotation mark has a matching pair
         assert len(start_quote_indices) == len(end_quote_indices), f"Warning: the number of start and end quotation marks don't match! ({len(start_quote_indices)} to {len(end_quote_indices)})"
         for start_idx, end_idx in zip(start_quote_indices, end_quote_indices):
             assert start_idx < end_idx, f"Warning: mismatched start and end quotation marks (start index {start_idx} + end index {end_idx})"
             token_sentence = tokenized_document[start_idx+1:end_idx]
-            num_valid_tokens = sum(1 for token in token_sentence if not re.fullmatch(r'[^\w]', token))
+            num_valid_tokens = sum(1 for token in token_sentence if not re.fullmatch(r'[^\w]', token.text))
             if num_valid_tokens >= 3:
                 quote_indices.append((start_idx, end_idx))
         return quote_indices
@@ -91,8 +90,9 @@ class QuoteParser:
             attribution, attr_index, pattern_type = self.assign_attribution(tokenized_document, index_to_entity, start_idx, end_idx)
             if attribution is not None:
                 named_entity = self.get_likely_entity(entity_memo, attribution)
+                original_quote = "".join(token.text_with_ws for token in tokenized_document[start_idx+1:end_idx])
                 attr_obj = {
-                    "quote": " ".join(tokenized_document[start_idx+1:end_idx]),
+                    "quote": original_quote,
                     "named_attribution": named_entity,
                         "start_quote_index": start_idx,
                         "end_quote_index": end_idx,
@@ -104,16 +104,16 @@ class QuoteParser:
 
     def assign_attribution(self, tokenized_document, index_to_entity, quote_start_idx, quote_end_idx):
         # pattern 1 - if entity->verb is immediately after the quote (ex: "[...]," he said)
-        if tokenized_document[quote_end_idx-1] in [",", "?"] and quote_end_idx+1 in index_to_entity:
+        if tokenized_document[quote_end_idx-1].text in [",", "?"] and quote_end_idx+1 in index_to_entity:
             scan_idx = quote_end_idx + 2
             while scan_idx in index_to_entity:
                 scan_idx += 1
-                if tokenized_document[scan_idx] in ACTION_VERBS:
+                if tokenized_document[scan_idx].text in ACTION_VERBS:
                     attr_idx = quote_end_idx + 1
                     entity = index_to_entity[attr_idx]
                     return entity, attr_idx, 'pattern_1'
         # pattern 2 - if verb->entity is immediately after the quote (ex: "[...]," said Newsom)
-        if tokenized_document[quote_end_idx-1] in [",", "?"] and tokenized_document[quote_end_idx+1] in ACTION_VERBS:
+        if tokenized_document[quote_end_idx-1].text in [",", "?"] and tokenized_document[quote_end_idx+1].text in ACTION_VERBS:
             scan_idx = quote_end_idx + 2
             while scan_idx not in index_to_entity:
                 scan_idx += 1
@@ -122,22 +122,22 @@ class QuoteParser:
         encountered_action_verb = False
         num_unclosed_quotes = 0
         for idx in reversed(range(quote_start_idx-LOOK_AROUND_SIZE, quote_start_idx)):
-            if tokenized_document[idx] == "”":
+            if tokenized_document[idx].text == "”":
                 num_unclosed_quotes += 1
-            elif tokenized_document[idx] == "“":
+            elif tokenized_document[idx].text == "“":
                 num_unclosed_quotes -= 1
             if num_unclosed_quotes == 0:
-                if tokenized_document[idx] in ACTION_VERBS:
+                if tokenized_document[idx].text in ACTION_VERBS:
                     encountered_action_verb = True
                 elif encountered_action_verb and idx in index_to_entity:
                     return index_to_entity[idx], idx, 'pattern_3'
         # pattern 4 - if verb->entity is before the quote (ex: "lorem ipsum," said Newsom to reporters. "[...]")
-        if tokenized_document[quote_start_idx-1] == ".":
+        if tokenized_document[quote_start_idx-1].text == ".":
             entity_idx = None
             for idx in reversed(range(quote_start_idx-LOOK_AROUND_SIZE, quote_start_idx)):
                 if idx in index_to_entity:
                     entity_idx = idx
-                elif entity_idx is not None and tokenized_document[idx] == "”" and tokenized_document[idx-1] == ",":
+                elif entity_idx is not None and tokenized_document[idx].text == "”" and tokenized_document[idx-1].text == ",":
                     return index_to_entity[entity_idx], entity_idx, 'pattern_4'
         # default - proximity assignment
         for diff in range(LOOK_AROUND_SIZE):
