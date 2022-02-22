@@ -197,7 +197,6 @@
         {
           "attribution": "Dr. Mark R. Denison",
           "quote": "This was a matter of not if, but when.",
- 
         },
       ]
     },
@@ -289,7 +288,193 @@
       // article #10 from mini json
       "url": "https://www.nytimes.com/2020/01/28/us/politics/bolton-trump.html",
       "quotes": [
-       
+         {
+          "attribution": "Senator Chris Van Hollen",
+          
+          "quote": "It’s a totally upside-down world,",
+        },
+        {
+          "attribution": "Senator Chris Van Hollen",
+          
+          "quote": "history of warmongering",
+        },
+        {
+          "attribution": "Senator Chris Van Hollen",
+          
+          "quote": "But what we should all agree on is we want to get to the truth of the matter about the impeachment charges and we should accept his testimony under penalty of perjury.",
+        },
+        {
+          "attribution": "John F. Kelly",
+          
+          "quote": "If John Bolton says that in the book, I believe John Bolton,",
+        },
+        {
+          "attribution": "John F. Kelly",
+          
+          "quote": "always gave the president the unvarnished truth,",
+        },
+        {
+          "attribution": "John F. Kelly",
+          
+          "quote": "John’s an honest guy. He’s a man of integrity and great character, so we’ll see what happens.",
+        },
+        {
+          "attribution": "Peter D. Feaver",
+          
+          "quote": "Ambassador Bolton was known for being frank and candid — in fact, some complained that his frankness and candor got in the way of a more indirect, diplomatic approach,",
+        },
+        {
+          "attribution": "Peter D. Feaver",
+          
+          "quote": "I do not recall ever hearing people complain that he made up stuff.",
+        },
+        {
+          "attribution": "Senator Thomas R. Carper",
+          
+          "quote": "I think Bolton has a lot of credibility,",
+        },
+        {
+          "attribution": "Senator Thomas R. Carper",
+          
+          "quote": "Not just among the Republicans but our side as well.",
+        },
+        {
+          "attribution": "Senator Rand Paul",
+          
+          "quote": "I would say that he’s a witness very interested in making a lot of money right now,",
+        },
+        {
+          "attribution": "Senator Rand Paul",
+          
+          "quote": "A month ago, he was against testifying. Now that his book is complete and available for $29.95, he’s all for testifying. So I think we need to take with a grain of salt his testimony if he comes in.",
+        },
+        {
+          "attribution": "Senator James M. Inhofe",
+          
+          "quote": "one of my closest friends",
+        },
+        {
+          "attribution": "Senator James M. Inhofe",
+          
+          "quote": "He was fired by the president,",
+        },
+        {
+          "attribution": "Senator James M. Inhofe",
+          
+          "quote": "That can have an effect on a person.",
+        },
+        {
+          "attribution": "Fred Fleitz",
+          
+          "quote": "Presidents have to be able to consult and confide in their national security adviser without worrying about those discussions being published,",
+        },
+        {
+          "attribution": "Fred Fleitz",
+          
+          "quote": "a straight shooter, he’s an honest man, he’s an honorable man.",
+        },
+        {
+          "attribution": "Fred Fleitz",
+          
+          "quote": "I think the Democrats should be careful in what they wish for if they do get him as a witness,",
+        },
+        {
+          "attribution": "Fred Fleitz",
+          
+          "quote": "I don’t know that he would say what they hope he would say.",
+        },
+      ]
+    },
+    {
+      // article #11 from mini json
+      "url": "https://www.nytimes.com/2020/01/22/us/jack-van-impe-dead.html",
+      "quotes": [
+        {
+          "attribution": "Dr. Randall Balmer",
+          
+          "quote": "He was something of a pioneer televangelist, someone who was utterly confident about his esoteric interpretations of biblical prophecies,",
+        },
+         {
+          "attribution": "Jack Van Impe,
+          
+          "quote": "The Coming War with Russia, According to the Bible. Where? When? Why?",
+        },
+        {
+          "attribution": "Jack Van Impe",
+          
+          "quote": "the bloodiest war in the world,"
+        },
+        {
+          "attribution": "Franklin Graham",
+          
+          "quote": "The Walking Bible,",
+        },
+      ]
+    },
+    {
+      // article #12 from mini json
+      "url": "https://www.nytimes.com/2020/01/06/science/antarctica-architecture.html",
+      "quotes": [
+        {
+          "attribution": "Emerson Vidigal",
+          
+          "quote": "Brazil is a tropical country, so we were not used to these conditions,",
+        },
+         {
+          "attribution": "Emerson Vidigal",
+          
+          "quote": "As architects, we are concerned with human comfort, so we set out to create a kind of atmosphere that would promote well-being,",
+        },
+        {
+          "attribution": "Ernest Shackleton",
+          
+          "quote": "so draughty and cold in comparison with the ship,"
+        },
+        {
+          "attribution": "Ernest Shackleton",
+          
+          "quote": "that it was, during the first year, never used for living quarters."
+        },
+        {
+          "attribution": "Hugh Broughton",
+          
+          "quote": "Before, these projects were all just about keeping the weather out,",
+        },
+        {
+          "attribution": "Hugh Broughton",
+          
+          "quote": "Engineers would be told, ‘This is the weather, this is the wind speed, these are the restrictions.’ But now these projects are about using architecture as a means of improving both well-being and operational efficiency.",
+        },
+        {
+          "attribution": "Hugh Broughton",
+          
+          "quote": "Engineers would be told, ‘This is the weather, this is the wind speed, these are the restrictions.’ But now these projects are about using architecture as a means of improving both well-being and operational efficiency.",
+        },
+        {
+          "attribution": "Bert Buecking",
+          
+          "quote": "It’s not one of those things that you wake up say, ‘I want to build a research station in Antarctica,’ but architects provide important contributions to these projects,",
+        },
+        {
+          "attribution": "Ben Roth",
+          
+          "quote": "Just to prepare for field work, scientists receive training in one building, collect field equipment in another building, pick up a snowmobile in a separate building and fuel it in another location,",
+        },
+        {
+          "attribution": "Alexandra Isern",
+          
+          "quote": "The more we spend to keep the buildings going, the fewer resources we have to get researchers out in the field,",
+        },
+        {
+          "attribution": "Hugh Broughton",
+          
+          "quote": "how the approach to these projects has changed so dramatically in such a short period of time.",
+        },
+        {
+          "attribution": "Bert Buecking",
+          
+          "quote": "when the U.K. built Halley VI, many nations realized the importance of doing something special, and not just doing something.",
+        },
       ]
     },
   ]
