@@ -89,15 +89,18 @@ class QuoteParser:
         for start_idx, end_idx in quote_indices:
             attribution, attr_index, pattern_type = self.assign_attribution(tokenized_document, index_to_entity, start_idx, end_idx)
             if attribution is not None:
+                quote_tokens = tokenized_document[start_idx+1:end_idx]
                 named_entity = self.get_likely_entity(entity_memo, attribution)
-                original_quote = "".join(token.text_with_ws for token in tokenized_document[start_idx+1:end_idx])
+                original_quote = "".join(token.text_with_ws for token in quote_tokens)
+                quote_context = self.get_quote_context(quote_tokens, original_quote)
                 attr_obj = {
                     "quote": original_quote,
+                    "context": quote_context,
                     "named_attribution": named_entity,
-                        "start_quote_index": start_idx,
-                        "end_quote_index": end_idx,
-                        "attribution_index": attr_index,
-                        "attribution_method": pattern_type,
+                    "start_quote_index": start_idx,
+                    "end_quote_index": end_idx,
+                    "attribution_index": attr_index,
+                    "attribution_method": pattern_type,
                 }
                 quotes_and_attributions.append(attr_obj)
         return quotes_and_attributions
@@ -155,6 +158,11 @@ class QuoteParser:
             longest_name = max(possible_attributions, key=lambda x: len(x))
             entity_memo[possible_attributions] = longest_name
         return entity_memo[possible_attributions]
+    
+    def get_quote_context(self, quote_tokens, original_quote):
+        if original_quote[0].isupper() and original_quote[-1] in [",", ".", "?"]:
+            return None
+        return quote_tokens[0].sent.text
     
     def organize_quotes_by_attribution(self, quotes_and_attributions):
         attribution_quote_map = {}
