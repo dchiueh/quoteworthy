@@ -160,7 +160,7 @@ class QuoteParser:
         return entity_memo[possible_attributions]
     
     def get_quote_context(self, quote_tokens, original_quote):
-        if original_quote[0].isupper() and original_quote[-1] in [",", ".", "?"]:
+        if original_quote[0].isupper() and original_quote[-1] in [",", ".", "?", "'"]:
             return None
         return quote_tokens[0].sent.text
     
