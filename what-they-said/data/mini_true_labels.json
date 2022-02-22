@@ -395,14 +395,14 @@
           "quote": "He was something of a pioneer televangelist, someone who was utterly confident about his esoteric interpretations of biblical prophecies,",
         },
          {
-          "attribution": "Jack Van Impe,
+          "attribution": "Jack Van Impe",
           
           "quote": "The Coming War with Russia, According to the Bible. Where? When? Why?",
         },
         {
           "attribution": "Jack Van Impe",
           
-          "quote": "the bloodiest war in the world,"
+          "quote": "the bloodiest war in the world,",
         },
         {
           "attribution": "Franklin Graham",
@@ -477,5 +477,226 @@
         },
       ]
     },
+    {
+      // article #13 from mini json
+      "url": "https://www.nytimes.com/2020/01/21/sports/soccer/icc-stephen-ross-summer-tour.html",
+      "quotes": []
+    },
+    {
+      // article #14 from mini json
+      "url": "https://www.nytimes.com/2020/01/01/us/scandies-rose-fishing-boat-alaska.html",
+      "quotes": [
+        {
+          "attribution": "statement",
+          
+          "quote": "after exhausting all leads and careful consideration of survival probability,",
+        },
+         {
+          "attribution": "Rear Adm. Matthew Bell",
+          
+          "quote": "The decision to suspend an active search and rescue case is never easy, and it’s only made after careful consideration of a myriad of factors,",
+        },
+        {
+          "attribution": "Rear Adm. Matthew Bell",
+          
+          "quote": "Our deepest condolences to the friends and families impacted by this tragedy.",
+        },
+        {
+          "attribution": "Deanna Cobban",
+          
+          "quote": "hard-working crab fisher",
+        },
+        {
+          "attribution": "Deanna Cobban",
+          
+          "quote": "He loved fishing,",
+        },
+        {
+          "attribution": "Deanna Cobban",
+          
+          "quote": "He’s a crabber.",
+        },
+        {
+          "attribution": "Deanna Cobban",
+          
+          "quote": "All we know is Gary knew he couldn’t save the boat, he put out a mayday that we’re going to have to abandon,",
+        },
+      ]
+    },
+    {
+      // article #15 from mini json
+      // ASK ALEX ABOUT HOW TO HANDLE LIVE ARTICLES-- MAYBE ONLY CAPTURE THE FIRST ENTRY?? OT DELETE ALTOGETHER
+      "url": "https://www.nytimes.com/live/2020/packers-49ers#rodgers-finds-graham-to-set-up-packers-second-score",
+      "quotes": [
+      ]
+    },
+    {
+      // article #16 from mini json
+      "url": "https://www.nytimes.com/2020/01/01/us/100-years-ago-the-booziest-january-suddenly-dried-up.html",
+      "quotes": [
+        {
+          "attribution": "The Eighteenth Amendment",
+          
+          "quote": "manufacture, sale or transportation of intoxicating liquors",
+        },
+         {
+          "attribution": "David Wondrich",
+          
+          "quote": "Nobody believed it would happen",
+        },
+        {
+          "attribution": "David Wondrich",
+          
+          "quote": "Prohibition was a small-town, rural movement, and people in the cities resented it. They really thought until the very end that there was going to be a way out of it, and then, suddenly, it became clear there wasn’t.",
+        },
+        {
+          "attribution": "The San Francisco Chronicle",
+          
+          "quote": "Fair ladies sat in limousines behind alluring barricades of cases; business men in runabouts had cases on their knees,",
+        },
+        {
+          "attribution": "The San Francisco Chronicle",
+          
+          "quote": "On every face was stamped that extraordinary and inexplicable expression of triumph mingled with apprehension which the possession of an irreplaceable treasure in a predicament of extraordinary peril is wont to imbue.",
+        },
+        {
+          "attribution": "Daniel Okrent",
+          
+          "quote": "Mary Pickford’s mom bought the contents of an entire liquor store.",
+        },
+        {
+          "attribution": "David Wondrich",
+          
+          "quote": "Every big cafe in New York City was having a party,” Mr. Wondrich, the historian, said of the night of Jan. 16.",
+        },
+        {
+          "attribution": "David Wondrich",
+          
+          "quote": "There were so many corks popping, it sounded like artillery fire.",
+        },
+        {
+          "attribution": "The New York Herald",
+          
+          "quote": "the Fifth Horseman of the Apocalypse,",
+        },
+        {
+          "attribution": "The New York Herald",
+          
+          "quote": "But, oh, how New York City’s Great Glittering Way did drink and feast before he came! And even after he had arrived and kicked the sides of his nag and made his way over the city, there was mirth enough and song enough and mockery enough to make him tremble in his dull, black boots.",
+        },
+        {
+          "attribution": "The San Francisco Chronicle",
+          
+          "quote": "The last day has come and gone — the inevitable hour,",
+        },
+        {
+          "attribution": "The San Francisco Chronicle",
+          
+          "quote": "At midnight all that was lawful about the spirit that cheereth and the red, red wine passed out of existence.",
+        },
+        {
+          "attribution": "The New York Times",
+          
+          "quote": "John Barleycorn Died Peacefully at the Toll of 12.",
+        },
+        {
+          "attribution": "David Wondrich",
+          
+          "quote": "just made you sad,",
+        },
+        {
+          "attribution": "Julia Bainbridge,",
+          
+          "quote": "Just trying to mimic spirits and classic cocktails is a recipe for failure,",
+        },
+        {
+          "attribution": "Julia Bainbridge,",
+          
+          "quote": "consider what a negroni feels like,",
+        },
+        {
+          "attribution": "Julia Bainbridge,",
+          
+          "quote": "It’s that tension between salty and sour and sweet and bitter that pleases the human palate,",
+        },
+        {
+          "attribution": "Julia Bainbridge,",
+          
+          "quote": "And that experience can be delivered without alcohol, with the same level of complexity, but you have to put a lot of labor into it. Basically, if you want to get something that’s not just a tiki-derivative sugar bomb, you’re going to have to cook.",
+        },
+        {
+          "attribution": "David Wondrich",
+          
+          "quote": "There were breweries on the West Side of Manhattan making 200,000 gallons of beer a week,",
+        },
+        {
+          "attribution": "David Wondrich",
+          
+          "quote": "The scale of industry was so insane that the law became a joke.",
+        },
+        {
+          "attribution": "Daniel Okrent",
+          
+          "quote": "It’s that notion of doing something that’s against the law but not evil,",
+        },
+        {
+          "attribution": "Daniel Okrent",
+          
+          "quote": "There’s fun in defying authority.",
+        },
+      ]
+    },
+    {
+      // article #17 from mini json
+      "url": "https://www.nytimes.com/2020/01/17/sports/danny-drinkwater-lionel-messi.html",
+      "quotes": [
+        {
+          "attribution": "Spurs",
+          
+          "quote": "We want you to be our plan B.",
+        },
+        {
+          "attribution": "James Armstrong",
+          
+          "quote": "The top three in the Premier League plus the F.A. Cup winner should go to the Champions League, increasing the value of the trophy,",
+        },
+        {
+          "attribution": "James Armstrong",
+          
+          "quote": "Teams that are effectively out of the running in the league have a possible large payoff; the race in the Premier League becomes for the top three, not the top four, making it a little tighter.",
+        },
+      ]
+    },
+    {
+      // article #18 from mini json
+      // ASK ALEX ABOUT HOW TO HANDLE LIVE ARTICLES-- MAYBE ONLY CAPTURE THE FIRST ENTRY?? OT DELETE ALTOGETHER
+      "url": "https://www.nytimes.com/live/2020/impeachment-trial-live-01-24/1868-precedent-witnesses",
+      "quotes": [
+      ]
+    },
+    {
+      // article #19 from mini json
+      "url": "https://www.nytimes.com/2020/01/04/world/asia/china-hong-kong-wang-zhimin.html",
+      "quotes": [
+        {
+          "attribution": "Chinese Communist Party’s Central Committee",
+          
+          "quote": "safeguard national security",
+        },
+        {
+          "attribution": "Willy Lam",
+          
+          "quote": "The massive defeat of the pro-establishment camp at the district council elections sealed his fate, but I think even before then, they had decided to remove him because he repeatedly failed to predict the mood of the city,",
+        },
+      ]
+    },
+    {
+      // article #20 from mini json
+      // ASK ALEX ABOUT HOW TO HANDLE LIVE ARTICLES-- MAYBE ONLY CAPTURE THE FIRST ENTRY?? OT DELETE ALTOGETHER
+      "url": "https://www.nytimes.com/live/2020/trump-impeachment-01-16/the-impeachment-oath-sworn-by-senators-and-the-chief-justice-dates-to-the-1700s",
+      "quotes": [
+      ]
+    },
+    
   ]
 }
