@@ -21,7 +21,7 @@ import {
   Typography
 } from '@mui/material';
 
-import SearchBox from './components/SearchBox/SearchBox.jsx';
+import HomeScreen from './screens/Home';
 import SearchListGroupedByEntity from './components/SearchListGroupedByEntity/SearchListGroupedByEntity';
 
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -55,10 +55,8 @@ function App() {
     <Box className="Quoteworthy Application" sx={{margin: "auto", textAlign: "center"}}>
       <header style={{textAlign: "center"}}><h1>What They Said: Quoteworthy </h1></header>
             
-      <SearchBox />
+      <HomeScreen />
       {/*TODO: fix code so we handle state a hell of a lot better */}
-      {/* <SearchListGroupedByEntity /> */}
-
     </Box>
   );
 }
