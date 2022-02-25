@@ -79,95 +79,11 @@
     },
     // continue adding `article` objects to the list below
     {
-      // Article #4 on mini json
-      "url": "https://www.nytimes.com/2020/01/22/health/china-virus.html",
-      "quotes": [
-        {
-          "attribution": "World Health Organization",
-          "quote": "public health emergency of international concern,",
-        },
-        {
-          "attribution": "World Health Organization",
-          "quote": "potentially require a coordinated international response."
-        },
-        {
-          "attribution": "Dr. Tedros Adhanom Ghebreyesus",
-          "quote": "The decision about whether or not to declare a public health emergency of international concern is one I take extremely seriously, and one I am only prepared to make with appropriate consideration of all the evidence,",
-        },
-        {
-          "attribution": "Jennifer B. Nuzzo",
-          "quote": "I want to see from the emergency committee all the information on the table and an assessment of what the risk really is,",
-        },
-        {
-          "attribution": "Jennifer B. Nuzzo",
-          "quote": "To me, that’s far more important than their declaration.",
-   
-        {
-          "attribution": "Jennifer B. Nuzzo",
-          "quote": "There’s already a high level of global attention,",
-        },
-        {
-          "attribution": "Jennifer B. Nuzzo",
-          "quote": "Data shows that entry screening requires a tremendous amount of resources and is not tremendously effective,",
-        },
-        {
-          "attribution": "Tarik Jasarevic",
-          "quote": "We don’t know how many people are infected,",
-        },
-        {
-          "attribution": "Dr. Mark R. Denison",
-          "quote": "sort of a first cousin of SARS,",
- 
-        },
-         {
-          "attribution": "Dr. Ian W. Lipkin",
-          "quote": "Now that you have a cluster of 14 health care workers infected, it suggests that the potential for spread is much greater,",
-        },
-        {
-          "attribution": "Dr. Ian W. Lipkin",
-          "quote": "I saw film footage of a hospital lobby in Wuhan, and they are wearing full personal protective equipment from head to toe,",
-        },
-        {
-          "attribution": "Dr. Ian W. Lipkin",
-          "quote": "They are taking it very seriously. I still don’t think this is as bad as SARS, but it’s worse than they originally portrayed it.",
-        },
-        {
-          "attribution": "Dr. Mark R. Denison",
-          "quote": "That’s a wild card we don’t know, the capacity to have multiple transmissions from one person,",
- 
-        },
-        {
-          "attribution": "Dr. Mark R. Denison",
-          "quote": "That’s a wild card we don’t know, the capacity to have multiple transmissions from one person,",
- 
-        },
-        {
-          "attribution": "Dr. Mark R. Denison",
-          "quote": "There was no evidence they had dramatically different virus.",
- 
-        },
-        {
-          "attribution": "Dr. Mark R. Denison",
-          "quote": "Coronaviruses have repeatedly shown an ability to probe across species and cause new animal and human diseases,",
- 
-        },
-        {
-          "attribution": "Dr. Mark R. Denison",
-          "quote": "The process it has to go through is more like high hurdles with a thousand hurdles along the way,",
- 
-        },
-        {
-          "attribution": "Dr. Mark R. Denison",
-          "quote": "This was a matter of not if, but when.",
-        },
-      ]
-    },
-    {
       // article #5 from mini json
       "url": "https://www.nytimes.com/2020/01/13/business/budget-deficit-1-trillion-trump.html",
       "quotes": [
         {
-          "attribution": "Trump",
+          "attribution": "President Trump",
           "quote": "pay for themselves",
         },
       ]
@@ -177,12 +93,12 @@
       "url": "https://www.nytimes.com/2020/01/29/world/mexico-butterfly-dead.html",
       "quotes": [
         {
-          "attribution": "the UNESCO Website",
+          "attribution": "UNESCO",
           
           "quote": "The overwintering concentration of butterflies in the property is a superlative natural phenomenon,",
         },
         {
-          "attribution": "the UNESCO Website",
+          "attribution": "UNESCO",
           
           "quote": "The millions of monarch butterflies that return to the property every year bend tree branches by their weight, fill the sky when they take flight, and make a sound like light rain with the beating of their wings. Witnessing this unique phenomenon is an exceptional experience of nature.",
         },
