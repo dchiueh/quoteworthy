@@ -79,44 +79,6 @@
     },
     // continue adding `article` objects to the list below
     {
-      // Article #2 on mini json
-      "url": "https://www.nytimes.com/2020/01/10/world/europe/northern-ireland-stormont-stalemate.html",
-      "quotes": [
-        {
-          "attribution": "Mary Lou McDonald",
-          "quote": "We now have the basis to restore power sharing, and we’re up for that,",
-        },
-        {
-          "attribution": "Mary Lou McDonald",
-          "quote": "There’s no doubt there are serious challenges ahead: the impact of Brexit, austerity and other pressing issues. But the biggest and most significant challenge will be ensuring we have genuine power sharing built on equality, respect and integrity,",
-        },
-        {
-          "attribution": "Arlene Foster",
-          "quote": "fair and balanced way",
-        },
-        {
-          "attribution": "Daniel Keohane",
-          "quote": "I was impressed that a consensus of sorts was reached on cultural issues, but let’s see how well Stormont functions now,",
-        },
-        {
-          "attribution": "Daniel Keohane",
-          "quote": "There are a lot of issues to be addressed, like health care and investment, and the impasse of the last few years shows how difficult local politics can be.",
-        },
-        {
-          "attribution": "Angela McGowan",
-          "quote": "the need for a strong voice from Northern Ireland has never been more important,",
-        },
-        {
-          "attribution": "Angela McGowan",
-          "quote": "After three years of underinvestment and political stalemate,",
-        },
-        {
-          "attribution": "Angela McGowan",
-          "quote": "this bold and ambitious deal is what Northern Ireland needs to get back onto its feet.",
-        },
-      ]
-    },
-    {
       // Article #4 on mini json
       "url": "https://www.nytimes.com/2020/01/22/health/china-virus.html",
       "quotes": [
