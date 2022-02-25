@@ -697,7 +697,61 @@
       "quotes": [
       ]
     },
-    
-    
+
+       // Article # 21 on mini json
+    {
+      "url": "https://www.nytimes.com/2020/01/15/us/politics/sanders-warren-debate-handshake.html",
+      "quotes": [
+        {
+          
+          "attribution": "Elizabeth Warren",
+          "quote": "I think you called me a liar on national TV,",
+        },
+        {
+          "attribution": "Bernie Sanders",
+          "quote": “You know, let’s not do it right now,”,
+        },
+        {
+          "attribution": "Bernie Sanders",
+          "quote": “If you want to have that discussion, we’ll have that discussion.”,
+        },
+        {
+          "attribution": "Bernie Sanders",
+          "quote": “You called me a liar,”,
+        },
+        {
+          "attribution": "Bernie Sanders",
+          "quote": “You called me a liar,”,
+        },
+        {
+          "attribution": "Bernie Sanders",
+          "quote": “You told me — all right, let’s not do it now.”,
+        },
+        {
+          "attribution": "Tom Steyer",
+          "quote": “I don’t want to get in the middle,” Mr. Steyer said. “I just want to say, ‘Hi, Bernie.’”,
+        },
+        {
+          "attribution": "Larry Cohen",
+          "quote": “I am hoping that volunteers and grass-roots groups can help bridge the gap that has opened between Warren and Sanders around their 2018 conversation,”,
+        },
+        {
+          "attribution": "Larry Cohen",
+          "quote": “We remain focused on racial and gender justice, health care, climate crisis, good jobs, student debt and free college, the spiraling military budget and more. I don’t see a path forward on those issues in the Senate or at the Democratic National Convention in Milwaukee without cooperation when the time comes.”
+,
+        },
+        {
+          "attribution": "Elizabeth Warren",
+          "quote": “I thought a woman could win; he disagreed,” ,
+        },
+        {
+          "attribution": "Bernie Sanders",
+          "quote": “I didn’t say it,”,
+        },
+        {
+          "attribution": "Tom Steyer",
+          "quote": “I was just saying good night to the two of them,” he told reporters during a brief exchange in the debate spin room at Drake University. “I didn’t hear anything.”,
+      ]
+    },
   ]
 }
