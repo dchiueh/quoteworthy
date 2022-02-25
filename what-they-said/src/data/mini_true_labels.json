@@ -737,8 +737,7 @@
         },
         {
           "attribution": "Larry Cohen",
-          "quote": "We remain focused on racial and gender justice, health care, climate crisis, good jobs, student debt and free college, the spiraling military budget and more. I don’t see a path forward on those issues in the Senate or at the Democratic National Convention in Milwaukee without cooperation when the time comes."
-,
+          "quote": "We remain focused on racial and gender justice, health care, climate crisis, good jobs, student debt and free college, the spiraling military budget and more. I don’t see a path forward on those issues in the Senate or at the Democratic National Convention in Milwaukee without cooperation when the time comes.",
         },
         {
           "attribution": "Elizabeth Warren",
@@ -866,7 +865,7 @@
       "quotes": [
       ]
     },
-{
+    {
       // article #19 from mini json
       "url": "https://www.nytimes.com/2020/01/04/world/asia/china-hong-kong-wang-zhimin.html",
       "quotes": [
