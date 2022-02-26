@@ -114,6 +114,36 @@
       // ASK ALEX ABOUT HOW TO HANDLE LIVE ARTICLES-- MAYBE ONLY CAPTURE THE FIRST ENTRY?? OT DELETE ALTOGETHER
       "url": "https://www.nytimes.com/live/2020/impeachment-trial-live-01-29#republicans-are-growing-confident-they-will-block-witnesses-and-win-a-speedy-acquittal",
       "quotes": [
+        {
+          "attribution": "Senator John Barrasso",
+          
+          "quote": "Yes, that’s the plan",
+        },
+        {
+          "attribution": "Senator John Barrasso",
+          
+          "quote": "I’ve heard enough",
+        },
+        {
+          "attribution": "Senator John Barrasso",
+          
+          "quote": "I’m ready to vote on final judgment. This has been fully partisan, fully political.",
+        },
+        {
+          "attribution": "Senator Patrick J. Toomey",
+          
+          "quote": "I remain very very skeptical that there is any witness",
+        },
+        {
+          "attribution": "Senator Mitt Romney",
+          
+          "quote": "I’m sure there’ll be others,",
+        },
+        {
+          "attribution": "Senator Mitt Romney",
+          
+          "quote": "How many there will be on my side of the aisle, I just don’t know.",
+        },
       ]
     },
     {
@@ -160,6 +190,16 @@
       // ASK ALEX ABOUT HOW TO HANDLE LIVE ARTICLES-- MAYBE ONLY CAPTURE THE FIRST ENTRY?? OT DELETE ALTOGETHER
       "url": "https://www.nytimes.com/live/2020/impeachment-trial-live-01-23/an-abbreviated-weekend-trial-schedule-is-possible",
       "quotes": [
+        {
+          "attribution": "Jay Sekulow",
+          
+          "quote": "I suspect we’ll start on Saturday, and then we’ll go, probably another day or two, but who knows,",
+        },
+        {
+          "attribution": "Jay Sekulow",
+          
+          "quote": "I mean we’ve got to make that determination, with our team.",
+        },
       ]
     },
     {
@@ -272,11 +312,6 @@
           
           "quote": "He was something of a pioneer televangelist, someone who was utterly confident about his esoteric interpretations of biblical prophecies,",
         },
-         {
-          "attribution": "Jack Van Impe",
-          
-          "quote": "The Coming War with Russia, According to the Bible. Where? When? Why?",
-        },
         {
           "attribution": "Jack Van Impe",
           
@@ -358,14 +393,14 @@
     {
       // article #13 from mini json
       "url": "https://www.nytimes.com/2020/01/21/sports/soccer/icc-stephen-ross-summer-tour.html",
-      "quotes": []
+      "quotes": [] // no quotes so we good
     },
     {
       // article #14 from mini json
       "url": "https://www.nytimes.com/2020/01/01/us/scandies-rose-fishing-boat-alaska.html",
       "quotes": [
         {
-          "attribution": "statement",
+          "attribution": "the Coast Guard",
           
           "quote": "after exhausting all leads and careful consideration of survival probability,",
         },
@@ -405,18 +440,12 @@
       // article #15 from mini json
       // ASK ALEX ABOUT HOW TO HANDLE LIVE ARTICLES-- MAYBE ONLY CAPTURE THE FIRST ENTRY?? OT DELETE ALTOGETHER
       "url": "https://www.nytimes.com/live/2020/packers-49ers#rodgers-finds-graham-to-set-up-packers-second-score",
-      "quotes": [
-      ]
+      "quotes": [] // no quotes so we good
     },
     {
       // article #16 from mini json
       "url": "https://www.nytimes.com/2020/01/01/us/100-years-ago-the-booziest-january-suddenly-dried-up.html",
       "quotes": [
-        {
-          "attribution": "The Eighteenth Amendment",
-          
-          "quote": "manufacture, sale or transportation of intoxicating liquors",
-        },
          {
           "attribution": "David Wondrich",
           
@@ -529,7 +558,7 @@
       "url": "https://www.nytimes.com/2020/01/17/sports/danny-drinkwater-lionel-messi.html",
       "quotes": [
         {
-          "attribution": "Spurs",
+          "attribution": "Tottenham Hotspur",
           
           "quote": "We want you to be our plan B.",
         },
@@ -549,8 +578,7 @@
       // article #18 from mini json
       // ASK ALEX ABOUT HOW TO HANDLE LIVE ARTICLES-- MAYBE ONLY CAPTURE THE FIRST ENTRY?? OT DELETE ALTOGETHER
       "url": "https://www.nytimes.com/live/2020/impeachment-trial-live-01-24/1868-precedent-witnesses",
-      "quotes": [
-      ]
+      "quotes": [] // no quotes so we're good
     },
     {
       // article #19 from mini json
@@ -572,8 +600,8 @@
       // article #20 from mini json
       // ASK ALEX ABOUT HOW TO HANDLE LIVE ARTICLES-- MAYBE ONLY CAPTURE THE FIRST ENTRY?? OT DELETE ALTOGETHER
       "url": "https://www.nytimes.com/live/2020/trump-impeachment-01-16/the-impeachment-oath-sworn-by-senators-and-the-chief-justice-dates-to-the-1700s",
-      "quotes": [
-      ]
+     // @ALEX I PULLED NO QUOTES FOR THIS ONE SINCE ITS A QUOTE FROM AN OATH FROM AND NOT REALLY ATTRIBUTED TO AN ENTITY FEEL FREE TO CHANGE THO
+      "quotes": []
     },
 
        // Article # 21 on mini json
