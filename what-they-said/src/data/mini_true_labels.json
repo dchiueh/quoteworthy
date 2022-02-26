@@ -784,6 +784,428 @@
           "quote": "The massive defeat of the pro-establishment camp at the district council elections sealed his fate, but I think even before then, they had decided to remove him because he repeatedly failed to predict the mood of the city,",
         },
       ]
-    },    
+    },
+        {
+      // article #26 from mini json
+      "url": "https://www.nytimes.com/2020/01/04/world/australia/fires-scott-morrison.html",
+      "quotes": [
+      ]
+    },  
+    {
+      // article #27 from mini json
+      "url": "https://www.nytimes.com/2020/01/04/world/australia/fires-scott-morrison.html",
+      "quotes": [
+        {
+          "attribution": "Steven Dillingham",
+          
+          "quote": “Counting those who are in hard-to-reach villages has been a challenge for the Census Bureau every decade since 1870,”,
+        },
+        {
+          "attribution": "Steven Dillingham",
+          
+          "quote": “Here in Alaska, we have these very special challenges. The geography is so vast.”,
+        },
+        {
+          "attribution": "Donna Bach",
+          
+          "quote": “We tell everyone there are 3.2 billion reasons why the census matters,”,
+        },
+        {
+          "attribution": "Steven Dillingham",
+          
+          "quote": “We’re trying to count everyone, and here we are in remote Alaska,”,
+        },
+        {
+          "attribution": "Nicole Borromeo",
+          
+          "quote": “I was shocked,”,
+        },
+        {
+          "attribution": "Nicole Borromeo",
+          
+          "quote": “Better late than never,”,
+        },
+        {
+          "attribution": "James Tucker",
+          
+          "quote": “We received feedback from many communities that the census numbers from 2010 were much lower than the number of people living in those communities,”,
+        },
+        {
+          "attribution": "James Tucker",
+          
+          "quote": “The challenge is estimating the number of people who were missed.”,
+        },
+        {
+          "attribution": "Kevin Allis",
+          
+          "quote": “We’re filling in the gaps here because if we don’t do it, then our folks don’t get counted,”,
+        },
+        {
+          "attribution": "Robert Pitka",
+          
+          "quote": “This is to benefit for the next 10 years for our children, our grandchildren’s future,”,
+        },
+      ]
+    },  
+    {
+      // article #28 from mini json
+      "url": "https://www.nytimes.com/2020/01/14/world/asia/pakistan-kashmir-avalanches.html",
+      "quotes": [
+        {
+          "attribution": "Abdul Rahman Sheikh",
+          
+          "quote": “I have eight dead bodies lying in the open. If I send her to the hospital, who will look after her there? And if I go along with her, who will bury the eight bodies?”,
+        },
+        {
+          "attribution": "Asif Iqbal",
+          
+          "quote": “People were screaming and calling for help,’’ Mr. Iqbal said. “A schoolgirl from my school was buried alive under one avalanche, and we could only hear her calling for us to save her.”,
+        },
+        {
+          "attribution": "Asif Iqbal",
+          
+          "quote": “We had no tools to rescue her and were waiting for a miracle,” he continued. “Someone brought a shovel, and we dug a hole in the broken roof of her home and rescued her after three hours. It’s nothing but a miracle.”,
+        },
+        {
+          "attribution": "Asif Iqbal",
+          
+          "quote": “We’re trying to count everyone, and here we are in remote Alaska,”,
+        },
+        {
+          "attribution": "Abdul Rahman",
+          
+          "quote": “Suddenly a strong wind blew, and we heard the familiar roar of the avalanche,”,
+        },
+        {
+          "attribution": "Abdul Rahman",
+          
+          "quote": “But we could not see anything as it was dark, and the village was covered with fog.",
+        },
+    {
+      // article #29 from mini json
+      "url": "https://www.nytimes.com/2020/01/25/us/politics/iowa-caucus-midwest-states.html",
+      "quotes": [
+        {
+          "attribution": "Dan Radigan",
+          
+          "quote": “I tried to run toward our home but could hardly walk; I was sinking in about eight feet of snow. At some distance I heard women and children crying and calling for help. When we reached our village, we saw piles of snow and mud where we had left our families — 18 people in all.”,
+        },
+        {
+          "attribution": "Julián Castro",
+          
+          "quote": “not reflective of the United States” and “not reflective of the Democratic Party.”,
+        },
+        {
+          "attribution": "Susan Almjeld",
+          
+          "quote": “There’s this flyover mentality that we’re not important. We’re ignored as a people and a voice, and Iowa’s got this outsized attention,”,
+        },
+        {
+          "attribution": "Susan Almjeld”,
+          
+          "quote": “Sometimes I think, oh my God, they’re only a half-mile away,” she said, “but then again I’m comfortable on my couch, and I’m not part of the caucuses anyway.”,
+        },
+        {
+          "attribution": "Michelle Randall",
+          
+          "quote": “By the time the primary comes to us the race is practically decided,”,
+        },
+        {
+          "attribution": "Michelle Randall",
+          
+          "quote": “They say we’re the forgotten ones, and we kind of are.”,
+        },
+        {
+          "attribution": "Michelle Randall",
+          
+          "quote": “I drove in a snowstorm to see him in Sioux City,” she said. “It was right after he declared. That was in a bar. I was literally standing there having a beer with Bill de Blasio. He was very politician-y, all Mr. Common Man and everything. Didn’t have a whole lot to say, just a little small talk. It was almost a little uncomfortable.”,
+        },
+        {
+          "attribution": "Jane Kleeb",
+          
+          "quote": “The field is so crowded and voters have been so fluid that we could be that magic deciding factor,”,
+        },
+        {
+          "attribution": "Gladys Harrison",
+          
+          "quote": “The Democratic Party has got to continue to send the message out that we’ve got the best candidates that can beat Trump,”,
+        },
+        {
+          "attribution": "Gladys Harrison",
+          
+          "quote": “And everybody needs to hear that message.”,
+        },
+    {
+      // article #30 from mini json
+      "url": "https://www.nytimes.com/live/2020/trump-impeachment-trial-01-30/republicans-are-getting-where-we-need-to-be-on-the-witness-vote-senator-says",
+      "quotes": [
+        {
+          "attribution": "Alan M. Dershowitz",
+          
+          "quote": “quid pro quo.”,
+        },
+    {
+      // article #32 from mini json
+      "url": “https://www.nytimes.com/2020/01/30/business/economy/sb50-california-housing.html”: [
+        {
+          "attribution": "Scott Wiener",
+          
+          "quote": “This is about Californians who are hurting right now, and we have an obligation to represent them,”,
+        },
+        {
+          "attribution": "Andreas Borgeas",
+          
+          "quote": “The only thing that folks agree on is that we need housing,”,
+        },
+        {
+          "attribution": "Andreas Borgeas",
+          
+          "quote": “How we get there, everyone has a different theory.”,
+        },
+        {
+          "attribution": "Gavin Newsom",
+          
+          "quote": “Marshall Plan for Housing,”,
+        },
+        {
+          "attribution": "Isaiah Madison",
+          
+          "quote": “Nothing in this bill is giving us more say; it’s taking away what little say we have now,”,
+        },
+        {
+          "attribution": "Isaiah Madison",
+          
+          "quote": “I’m not against development. I am just for communities navigating that development with a developer. We have community plans in South Los Angeles that we’ve been working on for 30 years that included a lot of input from a community that has historically been underrepresented in urban planning, and I think that’s important to protect.”,
+        },
+        {
+          "attribution": "Isaiah Madison",
+          
+          "quote": “Nothing in this bill is giving us more say; it’s taking away what little say we have now,”,
+        },
+        {
+          "attribution": "Toni Atkins",
+          
+          "quote": “The status quo cannot stand,”,
+        },
+        {
+          "attribution": "Toni Atkins",
+          
+          "quote": “A housing production bill will succeed this year.”,
+        },
+    {
+      // article #33 from mini json
+      "url": “https://www.nytimes.com/2020/01/29/business/media/warren-buffett-newspapers.html”: [
+        {
+          "attribution": "Warren E. Buffett",
+          
+          "quote": “We had zero interest in selling the group to anyone else for one simple reason: We believe that Lee is best positioned to manage through the industry’s challenges,”,
+        },
+    {
+      // article #34 from mini json
+      "url": “https://www.nytimes.com/2020/01/09/sports/football/titans-ravens-henry-tannehill.html”: [
+        {
+          "attribution": "Mike Vrabel",
+          
+          "quote": “When you can run it when the other team knows you’re going to run it, that says a lot about your running game,”,
+        },        
+        {
+          "attribution": "Mike Vrabel",
+          
+          "quote": “It just felt like now was the time.”,
+        },  
+    {
+      // article #35 from mini json
+      "url": “https://www.nytimes.com/2020/01/22/sports/baseball/derek-jeter-hall-of-fame-vote-unanimous.html”: [
+        {
+          "attribution": "Derek Jeter",
+          
+          "quote": “I focus on the ones who did,”,
+        },        
+        {
+          "attribution": "Derek Jeter",
+          
+          "quote": “It takes a lot of people to all agree to get you to this point. So, I’m not thinking about that.”,
+        }, 
+        {
+          "attribution": "Derek Jeter",
+          
+          "quote": “It takes a lot of people to all agree to get you to this point. So, I’m not thinking about that.”,
+        }, 
+        {
+          "attribution": "Derek Jeter",
+          
+          "quote": “They turned that down and said they preferred that the individual decide whether he or she wishes to make the ballot public,”,
+        },         
+	   {
+          "attribution": "Derek Jeter",
+          
+          "quote": “It takes a lot of people to all agree to get you to this point. So, I’m not thinking about that.”,
+        },         
+	   {
+          "attribution": "Jack O’Connell",
+          
+          "quote": “They turned that down and said they preferred that the individual decide whether he or she wishes to make the ballot public,”,
+        },         
+	   {
+          "attribution": "Jack O’Connell",
+          
+          "quote": “That’s the option each voter has.”,
+        },
+    {
+      // article #36 from mini json
+      "url": “https://www.nytimes.com/2020/01/31/us/politics/dnc-democratic-debate-rules.html”: [
+        {
+          "attribution": "Kevin Sheekey",
+          
+          "quote": “We are thrilled that voters could soon have the chance to see Mike Bloomberg on the debate stage, hear his vision for the country, and see why he is the strongest candidate to defeat Donald Trump and bring our country together,”,
+        },        
+        {
+          "attribution": "Kevin Sheekey",
+          
+          "quote": “Mike has run for office three times and never taken a dime from special interests, allowing him to act independently, on the merits, without having to do what donors expect. He is proud to be doing the same with this campaign.”,
+        }, 
+        {
+          "attribution": "Jeff Weaver",
+          
+          "quote": “To now change the rules in the middle of the game to accommodate Mike Bloomberg, who is trying to buy his way into the Democratic nomination, is wrong,”,
+        }, 
+        {
+          "attribution": "Jeff Weaver",
+          
+          "quote": “That’s the definition of a rigged system.”,
+        },         
+	   {
+          "attribution": "Elizabeth Warren",
+          
+          "quote": “The DNC didn’t change the rules to ensure good, diverse candidates could remain on the debate stage. They shouldn’t change the rules to let a billionaire on,”,
+        },         
+	   {
+          "attribution": "Elizabeth Warren”,
+          
+          "quote": “Billionaires shouldn’t be allowed to play by different rules — on the debate stage, in our democracy, or in our government.”,
+        },         
+	   {
+          "attribution": "Pete Buttigieg",
+          
+          "quote": “When the initial rules came out with a focus on grass-roots fund-raising, of course our campaign was focused on the same thing,”,
+        },
+	   {
+          "attribution": "Pete Buttigieg",
+          
+          "quote": “Now it sounds like there is a different focus and I do believe that we will qualify.”,
+        },	   
+	   {
+          "attribution": "Tom Perez",
+          
+          "quote": “Our logic for having a grass-roots fund-raising threshold was, it provides opportunity for people who don’t have the national name I.D. to get on the debate stage. If you want to win the presidency, you’ve got to connect with grass-roots America.”,
+        },	   
+	   {
+          "attribution": “Xochitl Hinojosa”,
+          
+          "quote": “Now that we will have the results of two elections and grass-roots support is actually captured in voting, that will replace the donor threshold,”,
+        },
+	   {
+          "attribution": “Xochitl Hinojosa”,
+          
+          "quote": “Now that we will have the results of two elections and grass-roots support is actually captured in voting, that will replace the donor threshold,”,
+        },	   
+	   {
+          "attribution": “S.Y. Lee”,
+          
+          "quote": “It’s a mistake for @TheDemocrats to change the rules for debates in the middle of this race to yield to a billionaire,”,
+        },	   
+	   {
+          "attribution": “S.Y. Lee”,
+          
+          "quote": “We need to respect the grass roots movement leading this party forward.”,
+        },
+	   {
+          "attribution": “Tom Steyer”,
+          
+          "quote": “Changing the rules now to accommodate Mike Bloomberg and not changing them in the past to ensure a more diverse debate stage is just plain wrong,”,
+        },
+	   {
+          "attribution": “Tom Steyer”,
+          
+          "quote": “They are changing the rules for a candidate who is ignoring early states’ voters and grass roots donors.”,
+        },
+      // article #37 from mini json
+      "url": "https://www.nytimes.com/2020/01/17/world/canada/iran-plane-crash-canada-victims.html",
+      "quotes": [
+        {
+          "attribution": "Justin Trudeau",
+          
+          "quote": “I want to be clear: we expect Iran to compensate these families,”,
+        },
+        {
+          "attribution": "Justin Trudeau",
+          
+          "quote": “But I have met them, they can’t wait weeks. They need support now.”,
+        },
+    {
+      // article #38 from mini json
+      "url": "https://www.nytimes.com/2020/01/20/world/asia/afghanistan-war-marriage-blindness.html",
+      "quotes": [
+        {
+          "attribution": "Zaheer Ahmad Zindani",
+          
+          "quote": “Make it so no matter which of the four directions I comb, it looks good,”,
+        },
+        {
+          "attribution": "Bibi Sediqa",
+          
+          "quote": “This was my first real happiness in life,”,
+        },
+        {
+          "attribution": "Bibi Sediqa",
+          
+          "quote": “They said the nerve-endings in the eyes are finished,”,
+        },
+        {
+          "attribution": "Zaheer Ahmad Zindani",
+          
+          "quote": “They would all say, ‘We would happily agree if he hadn’t been blind,”,
+        },
+        {
+          "attribution": “Zaheer Ahmad Zindani”,
+          
+          "quote": “My mother would say, ‘His eyes will be fixed.’ They would say, ‘Come back when they are fixed.’”,
+        },
+        {
+          "attribution": “Zaheer Ahmad Zindani”,
+          
+          "quote": “They wanted to make sure I would be nice to their daughter, that I would respect her rights, that I wouldn’t be abusive,”,
+        },
+        {
+          "attribution": “Zaheer Ahmad Zindani”,
+          
+          "quote": “Both my mother and I told them since I am disabled and they are being generous with me, I will treat her as my crown.”,
+        },
+        {
+          "attribution": “Zaheer Ahmad Zindani”,
+          
+          "quote": “Love with open eyes — when you have fallen in love with someone you have seen — is different with that of closed eyes,”,
+        },
+        {
+          "attribution": “Zaheer Ahmad Zindani”,
+          
+          "quote": “When you can’t see the person, the thirst is not fulfilled the same.”,
+        },
+        {
+          "attribution": “Zaheer Ahmad Zindani”,
+          
+          "quote": “I wish I could see it,”,
+        },
+        {
+          "attribution": “Zaheer Ahmad Zindani”,
+          
+          "quote": “But my heart is happy.”,
+        },
+    {
+      // article #40 from mini json
+      "url": "https://www.nytimes.com/2020/01/20/world/australia/weather-hail-sydney-canberra.html",
+      "quotes": [
+      ]
+    },  
   ]
 }
