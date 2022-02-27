@@ -1544,6 +1544,41 @@
         },
       ], 
     },
+		 {
+      // article #47 from mini json
+      "url": "https://www.nytimes.com/2020/01/13/world/canada/prince-harry-meghan.html",
+	    "decline":1,
+      "quotes": [
+        {
+          "attribution": "Philippe Lagassé",
+          "quote": "People who care about the monarchy and celebrity will view this in a good light,",
+        },
+	{
+          "attribution": "Philippe Lagassé",
+          "quote": "Now the question will be who is going to pay the tab for the security bill.",
+        },
+	{
+          "attribution": "Bill Morneau",
+          "quote": "No, we haven’t spent any time thinking about this issue,",
+        },
+	{
+          "attribution": "Bill Morneau",
+          "quote": "We obviously are always looking to make sure, as a member of the Commonwealth, we play a role. We have not had any discussions on that subject at this time.",
+        },
+	{
+          "attribution": "Philippe Lagassé",
+          "quote": "If you were to remake Canada now it wouldn’t be a monarchy,",
+        },
+	{
+          "attribution": "Philippe Lagassé",
+          "quote": "At the moment, the royal family don’t live here or cost us anything. But if they did, then attitudes toward them could change.",
+        },
+	{
+          "attribution": "Prime Minister Justin Trudeau",
+          "quote": "You’re among friends, and always welcome here,",
+        },
+      ]
+    },
 		 
   ]
 }
