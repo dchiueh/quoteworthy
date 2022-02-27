@@ -20,22 +20,21 @@ import {
 } from '@mui/material';
 
 import EntityCard from '../EntityCard/EntityCard';
-import demo7JSON from '../../test_data/demo7.json';
+// import demo7JSON from '../../test_data/demo7.json';
 
 class SearchListGroupedByEntity extends React.Component {
    constructor(props) {
       super(props);
-      console.log(demo7JSON);
       this.state = {
-         entities: demo7JSON,
+         entities: [],
          filteredArticles: [],
          searchPhrase: props.searchPhrase,
       }
    }
 
    componentDidMount() {
-      console.log("dummy data", demo7JSON);
-      console.log(demo7JSON["Donald J. Trump"].articles[0]);
+      // console.log("dummy data", demo7JSON);
+      // console.log(demo7JSON["Donald J. Trump"].articles[0]);
       ////todo: fetch from backend, whether a json or an API
       // var temp = this.state.routes;
       // firebase.database().ref('paths/').on('value', function (snapshot) {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment, useMemo} from 'react';
 
 import { styled } from '@mui/material/styles';
 
@@ -22,6 +22,7 @@ import {
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+import NYT_MINI from '../../data/nyt_2020_mini.json';
 import SearchListGroupedByEntity from '../../components/SearchListGroupedByEntity/SearchListGroupedByEntity';
 
 class HomeScreen extends React.Component {
@@ -41,21 +42,13 @@ class HomeScreen extends React.Component {
 	}
 
 	componentDidMount() {
-   //TODO: fetch from backend; or just use hard-coded json
-		// var temp = this.state.routes;
-		// firebase.database().ref('paths/').on('value', function (snapshot) {
-		// 	snapshot.forEach(doc => {
-		// 		temp.push(doc.val());
-		// 	})
-		// 	this.setState({ routes: temp });
-		// }.bind(this), function (error) {
-		// 	console.log('Error' + error.code);
-		// });
-		// this.setState({ 
-		// 	routes: temp,
-		// 	filteredRoutes: temp,
-		// });
+      //TODO: fetch from backend; or just use hard-coded json
+      this.setState({articles: NYT_MINI["articles"]});
 	}
+
+   componentDidUpdate() {
+      console.log("JSON article data", this.state.articles);
+   }
 
    //use this to trigger article listing change
 	_handleSearch(event) {
@@ -63,8 +56,6 @@ class HomeScreen extends React.Component {
          let text = event.target.value;
 			this.setState({searchWIP: text});
          
-         const lowerSearch = text.toLowerCase();
-
 			// let filteredArticles = this.state.articles.filter(
 			// 	(article) =>
 			// 		article.name.includes(lowerSearch)
@@ -84,6 +75,17 @@ class HomeScreen extends React.Component {
       if (event.key === 'Enter') {
          const lowerSearch = this.state.searchWIP.toLowerCase();
          this.setState({searchPhrase: lowerSearch});
+
+         const filteredArticles = useMemo(() => {
+            return this.state.articles.filter(
+               (article) => {
+                  console.log("This is an article", article);
+                  //unit.title.toLowerCase().includes(lowerSearch) ||
+                  //unit.images.some((image) => image.metadata.name.toLowerCase().includes(lowerSearch)),
+
+               }
+            );
+         }, [lowerSearch, this.state.articles]);
       }
     }
 
@@ -92,6 +94,14 @@ class HomeScreen extends React.Component {
          const lowerSearch = this.state.searchWIP.toLowerCase();
          //this.setState({searchButtonPressed: true});
          this.setState({searchPhrase: lowerSearch});
+      
+         // const filteredUsers = useMemo(() => {
+         //    const lowerSearch = searchTerm.toLowerCase();
+         //    return copy(kUsers.slice(1)).filter(
+         //       //Hard-coded user is in kUsers slot 0
+         //       (user) => user.name.toLowerCase().includes(lowerSearch),
+         //    );
+         // }, [searchTerm]);
       }
    }
 
