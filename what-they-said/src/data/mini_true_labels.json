@@ -1395,6 +1395,58 @@
         },      
       ], 
     }, 
+	{
+      // article #44 from mini json
+      "url": "https://www.nytimes.com/2020/01/10/us/politics/marianne-williamson-drops-out.html",
+	    "decline": 0,
+      "quotes": [
+      {
+          "attribution": "Marianne Williamson",
+          
+          "quote": "I stayed in the race to take advantage of every possible opportunity to share our message,",
+        },
+	      {
+          "attribution": "Marianne Williamson",
+          
+          "quote": "With caucuses and primaries now about to begin, however, we will not be able to garner enough votes in the election to elevate our conversation any more than it is now.",
+        }, 
+	      {
+          "attribution": "Marianne Williamson",
+          
+          "quote": "get in the way of a progressive candidate winning",
+        },
+	 {
+          "attribution": "Marianne Williamson",
+          
+          "quote": "Mr. President, if you’re listening, I want you to hear me, please: You have harnessed fear for political purposes, and only love can cast that out,",
+        },
+	 {
+          "attribution": "Marianne Williamson",
+          
+          "quote": "I’m going to harness love for political purposes. I will meet you on that field, and sir, love will win.",
+        },
+	{
+          "attribution": "Marianne Williamson",
+          
+          "quote": "payment of a debt that is owed,",
+        },
+	{
+          "attribution": "Marianne Williamson",
+          
+          "quote": "I will be there with all my energy and in full support.",
+        },
+	{
+          "attribution": "Marianne Williamson",
+          
+          "quote": "Things are changing swiftly and dramatically in this country, and I have faith that something is awakening among us,",
+        },
+	{
+          "attribution": "Marianne Williamson",
+          
+          "quote": "A politics of conscience is still yet possible. And yes … love will prevail.",
+        },
+      ], 
+    }, 
 		 
   ]
 }
