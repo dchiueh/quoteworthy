@@ -766,35 +766,18 @@
     },
     // Article # 25 on mini json
     {
-      "url": "https://www.nytimes.com/2020/01/15/us/politics/sanders-warren-debate-handshake.html",
-      "quotes": [
-      ]
-    },
-    {
-      // article #19 from mini json
-      "url": "https://www.nytimes.com/2020/01/04/world/asia/china-hong-kong-wang-zhimin.html",
-      "quotes": [
-        {
-          "attribution": "Chinese Communist Party’s Central Committee",
-          
-          "quote": "safeguard national security",
-        },
-        {
-          "attribution": "Willy Lam",
-          
-          "quote": "The massive defeat of the pro-establishment camp at the district council elections sealed his fate, but I think even before then, they had decided to remove him because he repeatedly failed to predict the mood of the city,",
-        },
-      ]
+      "url": "https://www.nytimes.com/2020/01/11/us/Marine-arrested-trump.html",
+      "quotes": [] // no quotes so we good
     },
         {
       // article #26 from mini json
       "url": "https://www.nytimes.com/2020/01/04/world/australia/fires-scott-morrison.html",
-      "quotes": [
-      ]
+		//@MISATO WHERE ARE THE QUOTES FOR THIS ONE?
+      "quotes": []
     },  
     {
       // article #27 from mini json
-      "url": "https://www.nytimes.com/2020/01/04/world/australia/fires-scott-morrison.html",
+      "url": "https://www.nytimes.com/2020/01/21/us/census-alaska-native.html",
       "quotes": [
         {
           "attribution": "Steven Dillingham",
@@ -865,6 +848,7 @@
         },
         {
           "attribution": "Asif Iqbal",
+		//@MISATO THESE NEED TO BE SEPARATE QUOTES
           
           "quote": "We had no tools to rescue her and were waiting for a miracle,” he continued. “Someone brought a shovel, and we dug a hole in the broken roof of her home and rescued her after three hours. It’s nothing but a miracle.",
         },
@@ -925,7 +909,7 @@
         },
         {
           "attribution": "Michelle Randall",
-          
+          //@MISATO THESE NEED TO BE SEPARATE QUOTES
           "quote": “I drove in a snowstorm to see him in Sioux City,” she said. “It was right after he declared. That was in a bar. I was literally standing there having a beer with Bill de Blasio. He was very politician-y, all Mr. Common Man and everything. Didn’t have a whole lot to say, just a little small talk. It was almost a little uncomfortable.”,
         },
         {
@@ -951,11 +935,20 @@
           "attribution": "Alan M. Dershowitz",
           
           "quote": "quid pro quo.",
-        },
+        }, 
+      ]
+    },   
+	      {
+      // article #31 from mini json
+      "url": "https://www.nytimes.com/2020/01/09/us/politics/trump-border-wall.html",
+		      //@ MISATO i think we need quotes for this article too, yeah?
+      "quotes": []
+    },    
     {
       // article #32 from mini json
-      "url": "https://www.nytimes.com/2020/01/30/business/economy/sb50-california-housing.html": [
-        {
+      "url": "https://www.nytimes.com/2020/01/30/business/economy/sb50-california-housing.html", 
+	 "quotes": [
+		 {
           "attribution": "Scott Wiener",
           
           "quote": "This is about Californians who are hurting right now, and we have an obligation to represent them,",
@@ -999,18 +992,27 @@
           "attribution": "Toni Atkins",
           
           "quote": "A housing production bill will succeed this year.",
+	
         },
     {
       // article #33 from mini json
-      "url": "https://www.nytimes.com/2020/01/29/business/media/warren-buffett-newspapers.html": [
+      "url": "https://www.nytimes.com/2020/01/29/business/media/warren-buffett-newspapers.html",
+	    "quotes":[
         {
           "attribution": "Warren E. Buffett",
           
           "quote": "We had zero interest in selling the group to anyone else for one simple reason: We believe that Lee is best positioned to manage through the industry’s challenges,",
         },
+	    ]
+    },
     {
       // article #34 from mini json
-      "url": "https://www.nytimes.com/2020/01/09/sports/football/titans-ravens-henry-tannehill.html": [
+	    //@MISATO I think you have formatted all of these ones wrong. look at the formatting above. like "url" there needs to be a "quotes" tag
+	    //you also end all the html with a : but it needs to be a comma
+	    // I'm going to go in to fix all of them now but if you have to make any edits please please look at how you copy everything
+	    // you also did not add the end }, 
+      "url": "https://www.nytimes.com/2020/01/09/sports/football/titans-ravens-henry-tannehill.html",
+	    "quotes":[
         {
           "attribution": "Mike Vrabel",
           
@@ -1020,10 +1022,13 @@
           "attribution": "Mike Vrabel",
           
           "quote": "It just felt like now was the time.",
-        },  
+        },
+		    ]
+    },
     {
       // article #35 from mini json
-      "url": "https://www.nytimes.com/2020/01/22/sports/baseball/derek-jeter-hall-of-fame-vote-unanimous.html": [
+      "url": "https://www.nytimes.com/2020/01/22/sports/baseball/derek-jeter-hall-of-fame-vote-unanimous.html", 
+	    "quotes": [
         {
           "attribution": "Derek Jeter",
           
@@ -1054,9 +1059,12 @@
           
           "quote": "That’s the option each voter has.",
         },
+		    ]
+    },
     {
       // article #36 from mini json
-      "url": "https://www.nytimes.com/2020/01/31/us/politics/dnc-democratic-debate-rules.html": [
+      "url": "https://www.nytimes.com/2020/01/31/us/politics/dnc-democratic-debate-rules.html",
+	    "quotes": [
         {
           "attribution": "Kevin Sheekey",
           
@@ -1127,6 +1135,9 @@
           
           "quote": "They are changing the rules for a candidate who is ignoring early states’ voters and grass roots donors.",
         },
+		    ]
+    },
+		 
       // article #37 from mini json
       "url": "https://www.nytimes.com/2020/01/17/world/canada/iran-plane-crash-canada-victims.html",
       "quotes": [
@@ -1142,6 +1153,7 @@
         },
     {
       // article #38 from mini json
+	    //@misato this one didn't have the end of the list tag-- im adding that now
       "url": "https://www.nytimes.com/2020/01/20/world/asia/afghanistan-war-marriage-blindness.html",
       "quotes": [
         {
@@ -1199,6 +1211,8 @@
           
           "quote": "But my heart is happy.",
         },
+	      ]
+    },
     {
       // article #40 from mini json
       "url": "https://www.nytimes.com/2020/01/20/world/australia/weather-hail-sydney-canberra.html",
