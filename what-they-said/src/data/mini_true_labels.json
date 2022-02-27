@@ -1257,15 +1257,10 @@
 	      ]
     },
 		  {
-      // article #5 from mini json
-      "url": "https://www.nytimes.com/2020/01/13/business/budget-deficit-1-trillion-trump.html",
+      // article #39 from mini json
+      "url": "https://www.nytimes.com/live/2020/impeachment-trial-01-21#senators-will-not-be-able-to-speak-during-the-trial",
 	    "decline":0,
-      "quotes": [
-        {
-          "attribution": "President Trump",
-          "quote": "pay for themselves",
-        },
-      ]
+      "quotes": []
     },
     {
       // article #40 from mini json
