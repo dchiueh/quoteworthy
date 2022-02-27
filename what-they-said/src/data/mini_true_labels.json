@@ -1327,6 +1327,73 @@
       "url": "https://www.nytimes.com/live/2020/trump-impeachment-trial-01-31#catch-up-on-the-key-moments-from-thursday",
 	    "decline": 0,
       "quotes": [], //no quotes so we are good
+    },
+	{
+      // article #44 from mini json
+      "url": "https://www.nytimes.com/2020/01/13/business/EU-trade-commissioner-Phil-hogan.html",
+	    "decline": 1,
+      "quotes": [
+	      {
+          "attribution": "Peter Chase",
+          
+          "quote": "The current state of E.U.-U.S. relations isn’t good, and I don’t think it’s likely to get better anytime soon,",
+        },
+	       {
+          "attribution": "Luisa Santos",
+          
+          "quote": "He is more direct,",
+        },
+	       {
+          "attribution": "Luisa Santos",
+          
+          "quote": "He is probably the right person for this moment,",
+        },
+	{
+          "attribution": "Ciaran Conlon",
+          
+          "quote": "Phil knew every candidate, he knew every constituency,",
+        },
+	{
+          "attribution": "Ciaran Conlon",
+          
+          "quote": "Politics is about personal relationships, and Phil understands that,",
+        },
+	{
+          "attribution": "Sorin Moisa",
+          
+          "quote": "He’s a very, very good negotiator,",
+        },
+	{
+          "attribution": "Phil Hogan",
+          
+          "quote": "Well, then, there isn’t any point in having agreements.",
+        },
+	{
+          "attribution": "Phil Hogan",
+          
+          "quote": "We have asked the U.S. to engage with us, and they have refused to do so,",
+        },
+	{
+          "attribution": "Clete Williams",
+          
+          "quote": "When sides take unilateral actions that harm the other side, that are inconsistent with international norms, the other side has a right to be angry,",
+        },
+	{
+          "attribution": "Clete Williams",
+          
+          "quote": "That’s where we are with the E.U. now.",
+        },
+	{
+          "attribution": "Susan Danger,",
+          
+          "quote": "I don’t think either side wants this to go back into a deep hole again and spiral into negativity,",
+        },
+	{
+          "attribution": "Susan Danger,",
+          
+          "quote": "Both sides want to kick off in a positive way.",
+        },      
+      ], 
     }, 
 		 
   ]
