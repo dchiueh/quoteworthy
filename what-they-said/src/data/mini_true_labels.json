@@ -929,11 +929,14 @@
           
           "quote": "There’s this flyover mentality that we’re not important. We’re ignored as a people and a voice, and Iowa’s got this outsized attention,",
         },
-        //@ MISATO NEEDS TO BE A SEPARATE QUOTE
-	      {
+	{
           "attribution": "Susan Almjeld”,
           
-          "quote": "Sometimes I think, oh my God, they’re only a half-mile away,” she said, “but then again I’m comfortable on my couch, and I’m not part of the caucuses anyway.”,
+          "quote": "Sometimes I think, oh my God, they’re only a half-mile away,”
+	{
+          "attribution": "Susan Almjeld”,
+          
+          "quote": “but then again I’m comfortable on my couch, and I’m not part of the caucuses anyway.”,
         },
         {
           "attribution": "Michelle Randall",
@@ -947,8 +950,11 @@
         },
         {
           "attribution": "Michelle Randall",
-          //@MISATO THESE NEED TO BE SEPARATE QUOTES
-          "quote": “I drove in a snowstorm to see him in Sioux City,” she said. “It was right after he declared. That was in a bar. I was literally standing there having a beer with Bill de Blasio. He was very politician-y, all Mr. Common Man and everything. Didn’t have a whole lot to say, just a little small talk. It was almost a little uncomfortable.”,
+          "quote": “I drove in a snowstorm to see him in Sioux City,”,
+        },
+	{
+          "attribution": "Michelle Randall",
+          "quote": “It was right after he declared. That was in a bar. I was literally standing there having a beer with Bill de Blasio. He was very politician-y, all Mr. Common Man and everything. Didn’t have a whole lot to say, just a little small talk. It was almost a little uncomfortable.”,
         },
         {
           "attribution": "Jane Kleeb",
@@ -979,7 +985,7 @@
         }, 
       ]
     },   
-	      {
+    {
       // article #31 from mini json
       "url": "https://www.nytimes.com/2020/01/09/us/politics/trump-border-wall.html",
 		      "decline": 0,
