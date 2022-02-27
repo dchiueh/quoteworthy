@@ -4,6 +4,7 @@
     {
       // original url from nyt_2020_mini.json
       "url": "https://www.nytimes.com/2020/01/15/us/politics/jason-crow.html",
+	    "decline": 0,
       // `quotes` is a list of quote objects from the article
       "quotes": [
         {
@@ -30,6 +31,7 @@
     // example input of the second `article` object 
     {
       "url": "https://www.nytimes.com/2020/01/07/business/economy/us-france-digital-tax.html",
+	    "decline":1, 
       "quotes": [
         {
           "attribution": "Bruno Le Maire",
@@ -81,6 +83,7 @@
     {
       // article #5 from mini json
       "url": "https://www.nytimes.com/2020/01/13/business/budget-deficit-1-trillion-trump.html",
+	    "decline":0,
       "quotes": [
         {
           "attribution": "President Trump",
@@ -91,6 +94,7 @@
     {
       // article #6 from mini json
       "url": "https://www.nytimes.com/2020/01/29/world/mexico-butterfly-dead.html",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "UNESCO",
@@ -113,6 +117,7 @@
       // article #7 from mini json
       
       "url": "https://www.nytimes.com/live/2020/impeachment-trial-live-01-29#republicans-are-growing-confident-they-will-block-witnesses-and-win-a-speedy-acquittal",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Senator John Barrasso",
@@ -149,6 +154,7 @@
     {
       // article #8 from mini json
       "url": "https://www.nytimes.com/2020/01/22/business/energy-environment/pge-bankruptcy-newsom.html",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Gov. Gavin Newsom",
@@ -189,6 +195,7 @@
       // article #9 from mini json
       
       "url": "https://www.nytimes.com/live/2020/impeachment-trial-live-01-23/an-abbreviated-weekend-trial-schedule-is-possible",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Jay Sekulow",
@@ -205,6 +212,7 @@
     {
       // article #10 from mini json
       "url": "https://www.nytimes.com/2020/01/28/us/politics/bolton-trump.html",
+	    "decline": 0,
       "quotes": [
          {
           "attribution": "Senator Chris Van Hollen",
@@ -306,6 +314,7 @@
     {
       // article #11 from mini json
       "url": "https://www.nytimes.com/2020/01/22/us/jack-van-impe-dead.html",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Dr. Randall Balmer",
@@ -327,6 +336,7 @@
     {
       // article #12 from mini json
       "url": "https://www.nytimes.com/2020/01/06/science/antarctica-architecture.html",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Emerson Vidigal",
@@ -393,11 +403,13 @@
     {
       // article #13 from mini json
       "url": "https://www.nytimes.com/2020/01/21/sports/soccer/icc-stephen-ross-summer-tour.html",
+	    "decline": 2,
       "quotes": [] // no quotes so we good
     },
     {
       // article #14 from mini json
       "url": "https://www.nytimes.com/2020/01/01/us/scandies-rose-fishing-boat-alaska.html",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "the Coast Guard",
@@ -440,11 +452,13 @@
       // article #15 from mini json
       
       "url": "https://www.nytimes.com/live/2020/packers-49ers#rodgers-finds-graham-to-set-up-packers-second-score",
+	    "decline": 0,
       "quotes": [] // no quotes so we good
     },
     {
       // article #16 from mini json
       "url": "https://www.nytimes.com/2020/01/01/us/100-years-ago-the-booziest-january-suddenly-dried-up.html",
+	    "decline": 0,
       "quotes": [
          {
           "attribution": "David Wondrich",
@@ -556,6 +570,7 @@
     {
       // article #17 from mini json
       "url": "https://www.nytimes.com/2020/01/17/sports/danny-drinkwater-lionel-messi.html",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Tottenham Hotspur",
@@ -577,11 +592,13 @@
     {
       // article #18 from mini json
       "url": "https://www.nytimes.com/live/2020/impeachment-trial-live-01-24/1868-precedent-witnesses",
+	    "decline": 0,
       "quotes": [] // no quotes so we're good
     },
     {
       // article #19 from mini json
       "url": "https://www.nytimes.com/2020/01/04/world/asia/china-hong-kong-wang-zhimin.html",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Chinese Communist Party’s Central Committee",
@@ -598,6 +615,7 @@
     {
       // article #20 from mini json
       "url": "https://www.nytimes.com/live/2020/trump-impeachment-01-16/the-impeachment-oath-sworn-by-senators-and-the-chief-justice-dates-to-the-1700s",
+	    "decline": 0,
      // @ALEX I PULLED NO QUOTES FOR THIS ONE SINCE ITS A QUOTE FROM AN OATH FROM AND NOT REALLY ATTRIBUTED TO AN ENTITY FEEL FREE TO CHANGE THO
       "quotes": []
     },
@@ -605,6 +623,8 @@
        // Article # 21 on mini json
     {
       "url": "https://www.nytimes.com/2020/01/15/us/politics/sanders-warren-debate-handshake.html",
+	    //ALEX PLEASE CHECK THIS
+	    "decline": 1 or 2 
       "quotes": [
         {
           
@@ -660,6 +680,7 @@
     // Article # 22 on mini json
     {
       "url": "https://www.nytimes.com/2020/01/14/us/politics/nsa-microsoft-vulnerability.html",
+	    "decline": 0,
       "quotes": [
         {
           
@@ -674,7 +695,9 @@
     },
     // Article # 23 on mini json
     {
-      "url": "https://www.nytimes.com/2020/01/13/us/st-louis-circuit-attorney-kim-gardner.html": [
+      "url": "https://www.nytimes.com/2020/01/13/us/st-louis-circuit-attorney-kim-gardner.html": 
+	    "decline": 0,
+	    "quotes":[
         {
           
           "attribution": "Kimberly Gardner",
@@ -725,6 +748,7 @@
     // Article # 24 on mini json
     {
       "url": "https://www.nytimes.com/2020/01/22/world/europe/haryz-nadzim-mensa.html",
+	    "decline": 0,
       "quotes": [
         { 
           "attribution": "Nur Anira Asyikin",
@@ -767,17 +791,20 @@
     // Article # 25 on mini json
     {
       "url": "https://www.nytimes.com/2020/01/11/us/Marine-arrested-trump.html",
+	    "decline": 0,
       "quotes": [] // no quotes so we good
     },
         {
       // article #26 from mini json
       "url": "https://www.nytimes.com/2020/01/04/world/australia/fires-scott-morrison.html",
+		"decline": 0,
 		//@MISATO WHERE ARE THE QUOTES FOR THIS ONE?
       "quotes": []
     },  
     {
       // article #27 from mini json
       "url": "https://www.nytimes.com/2020/01/21/us/census-alaska-native.html",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Steven Dillingham",
@@ -834,6 +861,7 @@
     {
       // article #28 from mini json
       "url": "https://www.nytimes.com/2020/01/14/world/asia/pakistan-kashmir-avalanches.html",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Abdul Rahman Sheikh",
@@ -872,6 +900,7 @@
     {
       // article #29 from mini json
       "url": "https://www.nytimes.com/2020/01/25/us/politics/iowa-caucus-midwest-states.html",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Dan Radigan",
@@ -934,6 +963,7 @@
     {
       // article #30 from mini json
       "url": "https://www.nytimes.com/live/2020/trump-impeachment-trial-01-30/republicans-are-getting-where-we-need-to-be-on-the-witness-vote-senator-says",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Alan M. Dershowitz",
@@ -945,12 +975,14 @@
 	      {
       // article #31 from mini json
       "url": "https://www.nytimes.com/2020/01/09/us/politics/trump-border-wall.html",
+		      "decline": 0,
 		      //@ MISATO i think we need quotes for this article too, yeah?
       "quotes": []
     },    
     {
       // article #32 from mini json
       "url": "https://www.nytimes.com/2020/01/30/business/economy/sb50-california-housing.html", 
+	    "decline": 0,
 	 "quotes": [
 		 {
           "attribution": "Scott Wiener",
@@ -1001,6 +1033,7 @@
     {
       // article #33 from mini json
       "url": "https://www.nytimes.com/2020/01/29/business/media/warren-buffett-newspapers.html",
+	    "decline": 0,
 	    "quotes":[
         {
           "attribution": "Warren E. Buffett",
@@ -1016,6 +1049,7 @@
 	    // I'm going to go in to fix all of them now but if you have to make any edits please please look at how you copy everything
 	    // you also did not add the end }, 
       "url": "https://www.nytimes.com/2020/01/09/sports/football/titans-ravens-henry-tannehill.html",
+	    "decline": 0,
 	    "quotes":[
         {
           "attribution": "Mike Vrabel",
@@ -1032,6 +1066,7 @@
     {
       // article #35 from mini json
       "url": "https://www.nytimes.com/2020/01/22/sports/baseball/derek-jeter-hall-of-fame-vote-unanimous.html", 
+	    "decline": 0,
 	    "quotes": [
         {
           "attribution": "Derek Jeter",
@@ -1068,6 +1103,7 @@
     {
       // article #36 from mini json
       "url": "https://www.nytimes.com/2020/01/31/us/politics/dnc-democratic-debate-rules.html",
+	    "decline": 0,
 	    "quotes": [
         {
           "attribution": "Kevin Sheekey",
@@ -1143,6 +1179,7 @@
     },
 		 {// article #37 from mini json
       "url": "https://www.nytimes.com/2020/01/17/world/canada/iran-plane-crash-canada-victims.html",
+			 "decline": 0,
       "quotes": [
         {
           "attribution": "Justin Trudeau",
@@ -1160,6 +1197,7 @@
       // article #38 from mini json
 	    //@misato this one didn't have the end of the list tag-- im adding that now
       "url": "https://www.nytimes.com/2020/01/20/world/asia/afghanistan-war-marriage-blindness.html",
+	    "decline": 0,
       "quotes": [
         {
           "attribution": "Zaheer Ahmad Zindani",
@@ -1218,9 +1256,21 @@
         },
 	      ]
     },
+		  {
+      // article #5 from mini json
+      "url": "https://www.nytimes.com/2020/01/13/business/budget-deficit-1-trillion-trump.html",
+	    "decline":0,
+      "quotes": [
+        {
+          "attribution": "President Trump",
+          "quote": "pay for themselves",
+        },
+      ]
+    },
     {
       // article #40 from mini json
       "url": "https://www.nytimes.com/2020/01/20/world/australia/weather-hail-sydney-canberra.html",
+	    "decline": 0,
       "quotes": [
       ]
     },  
