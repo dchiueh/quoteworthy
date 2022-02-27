@@ -1579,6 +1579,12 @@
         },
       ]
     },
+	{
+      // article #48 from mini json
+      "url": "https://www.nytimes.com/2020/01/01/science/space-astronomy-2020.html",
+	    "decline": 0,
+      "quotes": [] // no quotes so we're good
+    },
 		 
   ]
 }
