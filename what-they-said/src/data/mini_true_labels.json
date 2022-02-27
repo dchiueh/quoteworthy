@@ -1260,14 +1260,74 @@
       // article #39 from mini json
       "url": "https://www.nytimes.com/live/2020/impeachment-trial-01-21#senators-will-not-be-able-to-speak-during-the-trial",
 	    "decline":0,
-      "quotes": []
+      "quotes": [], //no quotes so we are good
     },
     {
       // article #40 from mini json
       "url": "https://www.nytimes.com/2020/01/20/world/australia/weather-hail-sydney-canberra.html",
 	    "decline": 0,
+      "quotes": [], //no quotes so we are good
+    }, 
+		 {
+      // article #41 from mini json
+      "url": "https://www.nytimes.com/2020/01/16/us/politics/sexual-assault-va-hospitals.html",
+	    "decline": 0,
       "quotes": [
-      ]
-    },  
+	      {
+          "attribution": "Andrea Goldstein",
+          
+          "quote": "you look like you could use a good time",
+        },
+	      {
+          "attribution": "Andrea Goldstein",
+          
+          "quote": "He pressed his entire body against mine",
+        },
+	      {
+          "attribution": "Robert Wilkie",
+          
+          "quote": "We believe that V.A. is a safe place for all veterans to enter and receive care and services, but the unsubstantiated claims raised by you and your staff could deter our veterans from seeking the care they need and deserve,",
+        },
+	{
+          "attribution": "Michael J. Missal",
+          
+          "quote": "Neither I nor my staff told you or anyone else at the department that the allegations were unsubstantiated,",
+        },
+	{
+          "attribution": "Michael J. Missal",
+          
+          "quote": "Reaching a decision to close the investigation with no criminal charges does not mean that the underlying allegation is unsubstantiated.",
+        },
+	{
+          "attribution": "Representative Mark Takano",
+          
+          "quote": "shockingly tone-deaf",
+        },
+	      {
+          "attribution": "Representative Mark Takano",
+          
+          "quote": "When my staffer bravely came forward in September, she did so in the spirit of wanting other women veterans to feel safe,",
+        },
+	{
+          "attribution": "Representative Mark Takano",
+          
+          "quote": "But the secretary’s flippant letter is only further evidence to my staffer and others that coming forward is punished, speaking out retaliated against, and that a hostile culture at V.A. is tolerated.",
+        },
+	      
+      ], 
+    }, 
+	 {
+      // article #42 from mini json
+      "url": "https://www.nytimes.com/2020/01/10/podcasts/daily-newsletter-harvey-weinstein.html",
+	    "decline": 0,
+      "quotes": [], //no quotes so we are good
+    }, 
+		 {
+      // article #43 from mini json
+      "url": "https://www.nytimes.com/live/2020/trump-impeachment-trial-01-31#catch-up-on-the-key-moments-from-thursday",
+	    "decline": 0,
+      "quotes": [], //no quotes so we are good
+    }, 
+		 
   ]
 }
