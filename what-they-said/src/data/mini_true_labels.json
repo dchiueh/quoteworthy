@@ -798,8 +798,7 @@
       // article #26 from mini json
       "url": "https://www.nytimes.com/2020/01/04/world/australia/fires-scott-morrison.html",
 		"decline": 0,
-		//@MISATO WHERE ARE THE QUOTES FOR THIS ONE?
-      "quotes": []
+      "quotes": [] // no quotes so we good
     },  
     {
       // article #27 from mini json
@@ -870,15 +869,23 @@
         },
         {
           "attribution": "Asif Iqbal",
-	//@MISATO THESE NEED TO BE SEPARATE QUOTES
           
-          "quote": "People were screaming and calling for help,’’ Mr. Iqbal said. “A schoolgirl from my school was buried alive under one avalanche, and we could only hear her calling for us to save her.",
+          "quote": "People were screaming and calling for help,",
+        },
+	{
+          "attribution": "Asif Iqbal",
+          
+          "quote": “A schoolgirl from my school was buried alive under one avalanche, and we could only hear her calling for us to save her.",
         },
         {
           "attribution": "Asif Iqbal",
-		//@MISATO THESE NEED TO BE SEPARATE QUOTES
           
-          "quote": "We had no tools to rescue her and were waiting for a miracle,” he continued. “Someone brought a shovel, and we dug a hole in the broken roof of her home and rescued her after three hours. It’s nothing but a miracle.",
+          "quote": "We had no tools to rescue her and were waiting for a miracle,”,
+        },
+	{
+          "attribution": "Asif Iqbal",
+          
+          "quote": “Someone brought a shovel, and we dug a hole in the broken roof of her home and rescued her after three hours. It’s nothing but a miracle.",
         },
         {
           "attribution": "Asif Iqbal",
