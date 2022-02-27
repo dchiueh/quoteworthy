@@ -1632,6 +1632,7 @@
       // article #49 from mini json
       "url": "https://www.nytimes.com/2020/01/01/science/space-astronomy-2020.html",
 	    "decline": 0,
+		"quotes":[
 	{
           "attribution": "Daisuke Hayakawa",
           "quote": "Skateboarding became one of the sports at the Olympics, but the image of skateboarding in Japan is that it’s an activity for unruly kids,",
@@ -1652,10 +1653,14 @@
           "attribution": "Shimon Iwazawa",
           "quote": "If you skate in the street, it means you’re from a bad place. It’s a bad image.",
         },
+			]
+},
 	{
       // article #50 from mini json
       "url": "https://www.nytimes.com/2020/01/31/world/europe/brexit-divisions.html",
 	    "decline": 0,
+		"quotes": [
+			
 	{
           "attribution": "Andrew Fielden",
           "quote": "It’s just been day after day of dysfunction, division and economic uncertainty. I’m not sure how we are supposed to bounce back from this,",
@@ -1720,10 +1725,15 @@
           "attribution": "Oscar Redgrave",
           "quote": "If we get a voting system that allows us to really vote for who we want then I can see a scenario where we are back in Europe in five to 10 years. It’s possible.",
         },
+		]
+},
+		 
 		 	{
       // article #51 from mini json
       "url": "https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html",
 	    "decline": 0,
+				"quotes": [
+					
 	{
           "attribution": "Ty Votaw",
           "quote": "The very first question asked was, ‘Will Tiger Woods play?’",
@@ -1768,5 +1778,8 @@
           "attribution": "Tiger Woods",
           "quote": "things will take care of itself.",
         },
+	]
+	},
+		 
   ]
 }
