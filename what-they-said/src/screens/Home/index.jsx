@@ -1,4 +1,5 @@
-import React, {Fragment, useMemo} from 'react';
+import React, {Fragment} from 'react';
+import _memoize from 'lodash.memoize';
 
 import { styled } from '@mui/material/styles';
 
@@ -23,6 +24,7 @@ import {
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import NYT_MINI from '../../data/nyt_2020_mini.json';
+// import SearchBox from '../../components/SearchBox/SearchBox';
 import SearchListGroupedByEntity from '../../components/SearchListGroupedByEntity/SearchListGroupedByEntity';
 
 class HomeScreen extends React.Component {
@@ -34,11 +36,12 @@ class HomeScreen extends React.Component {
          searchWIP: '',
 			searchPhrase: '',
          searchButtonPressed: false,
+         dateFilter: ["2010/1/1", "2020/12/31"],
+         locationFilter: [""],
 		}
 
       this._handleSearch = this._handleSearch.bind(this);
       this._handleKeyDown = this._handleKeyDown.bind(this);
-      this._handleSearchButton = this._handleSearchButton.bind(this);
 	}
 
 	componentDidMount() {
@@ -47,7 +50,7 @@ class HomeScreen extends React.Component {
 	}
 
    componentDidUpdate() {
-      console.log("JSON article data", this.state.articles);
+      //console.log("JSON article data", this.state.articles);
    }
 
    //use this to trigger article listing change
@@ -71,39 +74,66 @@ class HomeScreen extends React.Component {
 		}
 	}
 
-   _handleKeyDown = (event) => {
+   _handleKeyDown(event) {
       if (event.key === 'Enter') {
          const lowerSearch = this.state.searchWIP.toLowerCase();
          this.setState({searchPhrase: lowerSearch});
 
-         const filteredArticles = useMemo(() => {
-            return this.state.articles.filter(
-               (article) => {
-                  console.log("This is an article", article);
-                  //unit.title.toLowerCase().includes(lowerSearch) ||
-                  //unit.images.some((image) => image.metadata.name.toLowerCase().includes(lowerSearch)),
+         console.log("hello");
+         const filteredArticles = this.state.articles.filter((article) => {
+            //Broken up into this ugly callback with if/else curly braces 
+            //as our categories are still in flux (also need to test with large dataset)
+            const dateFrom = new Date(this.state.dateFilter[0]);
+            const dateTo = new Date(this.state.dateFilter[1]);
+            const dateCheck = new Date(article.publish_date);
+            
+            const articlePeopleMatches = article.people.filter(name => name.toLowerCase().includes(lowerSearch)) > 0;
+            const articleKeywordsMatches = article.keywords.filter(name => name.toLowerCase().includes(lowerSearch)) > 0;
+            const articleAttributionseMatches = article.attributions.filter(name => name.toLowerCase().includes(lowerSearch)) > 0;
 
-               }
-            );
-         }, [lowerSearch, this.state.articles]);
-      }
-    }
+            if((article.author.toLowerCase().includes(lowerSearch)
+               || articlePeopleMatches
+               || articleKeywordsMatches
+               || articleAttributionseMatches
+               || article.title.toLowerCase().includes(lowerSearch)
+               || article.abstract.toLowerCase().includes(lowerSearch)
+               )
+               //&& this.state.locationFilter.includes(article.location)
+               && (dateCheck >= dateFrom && dateCheck <= dateTo)
+            ) return true;
 
-   _handleSearchButton(event) {
-      if(event) {
-         const lowerSearch = this.state.searchWIP.toLowerCase();
-         //this.setState({searchButtonPressed: true});
-         this.setState({searchPhrase: lowerSearch});
-      
-         // const filteredUsers = useMemo(() => {
-         //    const lowerSearch = searchTerm.toLowerCase();
-         //    return copy(kUsers.slice(1)).filter(
-         //       //Hard-coded user is in kUsers slot 0
-         //       (user) => user.name.toLowerCase().includes(lowerSearch),
-         //    );
-         // }, [searchTerm]);
+            return false;
+         });
+
+         //console.log(filteredArticles);
+         this.setState({filteredArticles: filteredArticles});
       }
    }
+   // "title": "Jason Crow: Impeachment Manager Who Pressed to Launch Inquiry",
+   // "publish_date": "2020-01-15",
+   // "url": "https://www.nytimes.com/2020/01/15/us/politics/jason-crow.html",
+   // "author": "By Catie Edmondson",
+   // "abstract": "The former Army Ranger was to take a high-profile role prosecuting House Democrats’ case against President Trump in the Senate trial.",
+   // "slug": "National",
+   // "section": "U.S.",
+   // "people": [
+   //   "Crow, Jason",
+   //   "Pelosi, Nancy",
+   //   "Trump, Donald J"
+   // ],
+   // "keywords": [
+   //   "Trump-Ukraine Whistle-Blower Complaint and Impeachment Inquiry",
+   //   "United States Army Rangers",
+   //   "Crow, Jason",
+   //   "Pelosi, Nancy",
+   //   "Trump, Donald J"
+   // ],
+   // "location": "WASHINGTON",
+   // "attributions": [
+   //   "Crow",
+   //   "Jason Crow"
+   // ],
+
 
 	render() {
 		return (
@@ -132,11 +162,11 @@ class HomeScreen extends React.Component {
                {/* <Button variant="contained" onClick={this._handleSearchButton}>Search</Button> */}
                <div style={{flexDirection: "row", textAlign: "left"}}>
                   <Button style={{textTransform: "none", fontSize: 14, marginRight: "20px"}}> Date Range <ExpandMoreIcon/> </Button>
-                  <Button style={{textTransform: "none", fontSize: 14, marginRight: "20px"}}> Section <ExpandMoreIcon/> </Button>
                   <Button style={{textTransform: "none", fontSize: 14}}> Location <ExpandMoreIcon/> </Button>
 
                </div>
             </Card> 
+            {/* <SearchBox searchWIP={this.state.searchWIP} onChange={this._handleSearch} onKeyDown={this._handleKeyDown} timeFilter={this.state.timeFilter} locationFilter={this.state.locationFilter} /> */}
             
             <SearchListGroupedByEntity searchPhrase={this.state.searchPhrase} /> 
                      
