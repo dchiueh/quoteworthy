@@ -1396,7 +1396,7 @@
       ], 
     }, 
 	{
-      // article #44 from mini json
+      // article #45 from mini json
       "url": "https://www.nytimes.com/2020/01/10/us/politics/marianne-williamson-drops-out.html",
 	    "decline": 0,
       "quotes": [
@@ -1447,6 +1447,103 @@
         },
       ], 
     }, 
+	{
+      // article #46 from mini json
+      "url": "https://www.nytimes.com/2020/01/20/business/media/politics-trump-advertising-2020.html",
+	    "decline": 0,
+      "quotes": [
+	  { //@ALEX PLEASE CHECK THIS
+          "attribution": "Legal Sea Foods",
+          
+          "quote": "If we build a wall on the border, who will eat our delicious fish tacos?",
+        },
+	{
+          "attribution": "Ellis Verdi",
+          
+          "quote": "more scary than exciting,",
+        },
+	{
+          "attribution": "Ellis Verdi",
+          
+          "quote": "There’s fear, as opposed to the entertainment that was associated with the horse race a couple of years ago,",
+        },
+	{
+          "attribution": "Ellis Verdi",
+          
+          "quote": "Even free expression is a challenge right now. People are holding their hands over their eyes and ears a little bit. This is not the moment for advertisers to take risks.",
+        },
+	{
+          "attribution": "Ellis Verdi",
+          
+          "quote": "There’s fear, as opposed to the entertainment that was associated with the horse race a couple of years ago,",
+        },
+	{
+          "attribution": "Gaston Legorburu",
+          
+          "quote": "It’s like McCarthyism — people are too frickin’ scared to say anything,",
+        },
+	{
+          "attribution": "Gaston Legorburu",
+          
+          "quote": "I’ve seen briefs where on Page 1 they’re telling you to, by all means, stay away from anything that is political.",
+        },
+	{
+          "attribution": "Raja Rajamannar",
+          
+          "quote": "It’s a divided world that we live in,",
+        },
+	{
+          "attribution": "Raja Rajamannar",
+          
+          "quote": "Can you afford to exclude half of your audience?",
+        },
+	{
+          "attribution": "Zachary Roif",
+          
+          "quote": "Trump has been in America’s 24-hour news cycle for the past four years: countless hours of ‘Saturday Night Live’ skits, tweets, memes, #resistance microsites, etc.,",
+        },
+	{
+          "attribution": "Zachary Roif",
+          
+          "quote": "People have simply had enough — enough outrage, enough disdain, enough shock value to the point where making a statement feels a little tired.",
+        },
+	{
+          "attribution": "Eamonn Store",
+          
+          "quote": "This notion that you pick on a president and then he tweets about you and is mean to your company is a new thing,",
+        },
+	{
+          "attribution": "Eamonn Store",
+          
+          "quote": "If you happen to be a large technology brand like Microsoft, and the government is your biggest client, then the last thing you need is to be in conflict with the White House.,",
+        },
+	{
+          "attribution": "Eamonn Store",
+          
+          "quote": "being the pro-impeachment enterprise is not going to be good for business.",
+        },
+	{
+          "attribution": "Donald J. Trump",
+          
+          "quote": "Nike is getting absolutely killed with anger and boycotts.”",
+        },
+	{
+          "attribution": "Burger King",
+          
+          "quote": "Another Whopper on the side of a bus. Must be an election.",
+        },
+	{
+          "attribution": "Tesco",
+          
+          "quote": "Time for a cabinet reshuffle.",
+	},
+	{
+          "attribution": "Ellis Verdi",
+          
+          "quote": "It just feels wrong right now,",
+        },
+      ], 
+    },
 		 
   ]
 }
