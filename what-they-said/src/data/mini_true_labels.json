@@ -867,6 +867,8 @@
           
           "quote": "But we could not see anything as it was dark, and the village was covered with fog.",
         },
+	      ]
+    },
     {
       // article #29 from mini json
       "url": "https://www.nytimes.com/2020/01/25/us/politics/iowa-caucus-midwest-states.html",
@@ -927,6 +929,8 @@
           
           "quote": "And everybody needs to hear that message.",
         },
+	      ]
+    },
     {
       // article #30 from mini json
       "url": "https://www.nytimes.com/live/2020/trump-impeachment-trial-01-30/republicans-are-getting-where-we-need-to-be-on-the-witness-vote-senator-says",
@@ -1137,8 +1141,7 @@
         },
 		    ]
     },
-		 
-      // article #37 from mini json
+		 {// article #37 from mini json
       "url": "https://www.nytimes.com/2020/01/17/world/canada/iran-plane-crash-canada-victims.html",
       "quotes": [
         {
@@ -1150,7 +1153,9 @@
           "attribution": "Justin Trudeau",
           
           "quote": "But I have met them, they can’t wait weeks. They need support now.",
-        },
+	},
+      ]
+		 },
     {
       // article #38 from mini json
 	    //@misato this one didn't have the end of the list tag-- im adding that now
