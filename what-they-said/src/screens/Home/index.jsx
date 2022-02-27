@@ -79,17 +79,18 @@ class HomeScreen extends React.Component {
          const lowerSearch = this.state.searchWIP.toLowerCase();
          this.setState({searchPhrase: lowerSearch});
 
-         console.log("hello");
          const filteredArticles = this.state.articles.filter((article) => {
             //Broken up into this ugly callback with if/else curly braces 
             //as our categories are still in flux (also need to test with large dataset)
             const dateFrom = new Date(this.state.dateFilter[0]);
             const dateTo = new Date(this.state.dateFilter[1]);
             const dateCheck = new Date(article.publish_date);
+
+            const articleLocationMatches = article.locations && article.locations.filter(name => this.state.locationFilter.includes(name.toLowerCase()));
             
-            const articlePeopleMatches = article.people.filter(name => name.toLowerCase().includes(lowerSearch)) > 0;
-            const articleKeywordsMatches = article.keywords.filter(name => name.toLowerCase().includes(lowerSearch)) > 0;
-            const articleAttributionseMatches = article.attributions.filter(name => name.toLowerCase().includes(lowerSearch)) > 0;
+            const articlePeopleMatches = article.people && article.people.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
+            const articleKeywordsMatches = article.keywords && article.keywords.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
+            const articleAttributionseMatches = article.attributions && article.attributions.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
 
             if((article.author.toLowerCase().includes(lowerSearch)
                || articlePeopleMatches
@@ -98,7 +99,7 @@ class HomeScreen extends React.Component {
                || article.title.toLowerCase().includes(lowerSearch)
                || article.abstract.toLowerCase().includes(lowerSearch)
                )
-               //&& this.state.locationFilter.includes(article.location)
+               //&& articleLocationMatches
                && (dateCheck >= dateFrom && dateCheck <= dateTo)
             ) return true;
 
@@ -109,31 +110,6 @@ class HomeScreen extends React.Component {
          this.setState({filteredArticles: filteredArticles});
       }
    }
-   // "title": "Jason Crow: Impeachment Manager Who Pressed to Launch Inquiry",
-   // "publish_date": "2020-01-15",
-   // "url": "https://www.nytimes.com/2020/01/15/us/politics/jason-crow.html",
-   // "author": "By Catie Edmondson",
-   // "abstract": "The former Army Ranger was to take a high-profile role prosecuting House Democrats’ case against President Trump in the Senate trial.",
-   // "slug": "National",
-   // "section": "U.S.",
-   // "people": [
-   //   "Crow, Jason",
-   //   "Pelosi, Nancy",
-   //   "Trump, Donald J"
-   // ],
-   // "keywords": [
-   //   "Trump-Ukraine Whistle-Blower Complaint and Impeachment Inquiry",
-   //   "United States Army Rangers",
-   //   "Crow, Jason",
-   //   "Pelosi, Nancy",
-   //   "Trump, Donald J"
-   // ],
-   // "location": "WASHINGTON",
-   // "attributions": [
-   //   "Crow",
-   //   "Jason Crow"
-   // ],
-
 
 	render() {
 		return (
