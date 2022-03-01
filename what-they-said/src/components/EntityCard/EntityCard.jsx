@@ -35,68 +35,61 @@ const ExpandMore = styled((props) => {
    }),
 }));
 
-const EntityCard = ({ entityInfo }) => {
+const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
+   return (
+   <a href={SingleEntityMapElem.url} style={{ textDecoration: "none" }} target="_blank">
+      <CardContent>
+         <div style={{ border: "solid grey 0.5px", borderRadius: "15px" }}>
+            <div style={{ textAlign: "right", marginRight: "10px" }}>
+               <Typography style={{ fontSize: 13, color: "grey" }}>
+                  {SingleEntityMapElem.publish_date}
+               </Typography>
+               <Typography style={{ fontSize: 13, color: "grey" }}>
+                  {SingleEntityMapElem.slug}
+               </Typography>
+            </div>
+            <Typography variant="h6" color="black">
+               {SingleEntityMapElem.title}
+            </Typography>
+
+            {SingleEntityMapElem.quotes.map((quoteMap, index) => {
+               return <div>
+                  <Typography style={{ fontSize: 16, color: "black" }}>
+                     {quoteMap.context}
+                  </Typography>
+                  {/* <Typography style={{ fontSize: 16 }}>
+                     "{quoteMap.quote}"
+                  </Typography> */}
+               </div>
+            })}
+         </div>
+      </CardContent>
+   </a>
+   )
+}
+
+
+const EntityCard = ({ SingleEntityMap }) => {
    const [expanded, setExpanded] = React.useState(false);
 
    const handleExpandClick = () => {
       setExpanded(!expanded);
    };
 
+   console.log("single entity map", SingleEntityMap);
+
+   //todo: return a mapping of all the single article card links to the external site
+   //guaranteed at least 1 article card if there's an entity
    return (
       <Card sx={{ border: "solid grey 1px", paddingBottom: "12px" }}>
-         {/* <CardHeader
-            title={
-               <Typography style={{ fontSize: 24, fontWeight: "bold" }}>
-                  {entityInfo.name}
-               </Typography>
-            }
-            // subtitle={
-            //    <Typography style={{ fontSize: 18, color: "grey"}}>
-            //       Former contexts: {entityInfo.profession}
-            //    </Typography>
-            // }
-            style={{ padding: 8, display: 'inline' }}
-         /> */}
-         {/* <CardMedia
-         component="img"
-         height="194"
-         image="/static/images/cards/paella.jpg"
-         alt="Paella dish"
-      /> */}
-         <Typography style={{ fontSize: 24, fontWeight: "bold", paddingTop: "12px" }}>
-            {entityInfo.name}
+         <Typography style={{ fontSize: 20, fontWeight: "bold", paddingTop: "12px" }}>
+            {SingleEntityMap[0].entity}
          </Typography>
-         <Typography style={{ fontSize: 18, color: "grey" }}>
-            Prior contexts: "{entityInfo.profession}"
-         </Typography>
-         <a href={entityInfo.articles[0].link} style={{ textDecoration: "none" }} target="_blank">
-            <CardContent>
-               {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
-               {/* <EntitySingleArticleCard articleInfo={{}}/> */}
+         {displayEntitySingleArticleCard(SingleEntityMap[0])}
 
-               <div style={{ border: "solid grey 0.5px", borderRadius: "15px" }}>
-                  <div style={{ textAlign: "right", marginRight: "10px" }}>
-                     <Typography style={{ fontSize: 13, color: "grey" }}>
-                        {entityInfo.articles[0].time}
-                     </Typography>
-                     <Typography style={{ fontSize: 13, color: "grey" }}>
-                        {entityInfo.articles[0].section}
-                     </Typography>
-                  </div>
-                  <Typography variant="h6" color="black">
-                     {entityInfo.articles[0].title}
-                  </Typography>
-
-                  <Typography style={{ fontSize: 16 }}>
-                     "{entityInfo.articles[0].quotes[0]}"
-                  </Typography>
-
-               </div>
-            </CardContent>
-         </a>
          <CardActions disableSpacing>
             <Avatar sx={{ backgroundColor: "skyblue" }} aria-label="article-count">
-               {entityInfo.articles.length}
+               {SingleEntityMap.length}
             </Avatar>
             <IconButton aria-label="add to favorites">
                <FavoriteIcon />
@@ -112,53 +105,11 @@ const EntityCard = ({ entityInfo }) => {
             </ExpandMore>
          </CardActions>
          <Collapse in={expanded} timeout="auto" unmountOnExit>
-            {entityInfo.articles[1] &&
-               <CardContent>
-                  {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
-                  <div style={{ border: "solid grey 0.5px", borderRadius: "15px" }}>
-                     <div style={{ textAlign: "right", marginRight: "10px" }}>
-                        <Typography style={{ fontSize: 13, color: "grey" }}>
-                           {entityInfo.articles[1].time}
-                        </Typography>
-                        <Typography style={{ fontSize: 13, color: "grey" }}>
-                           {entityInfo.articles[1].section}
-                     </Typography>
-                     </div>
-                     <Typography variant="h6" color="black">
-                        {entityInfo.articles[1].title}
-                     </Typography>
-
-                     <Typography style={{ fontSize: 16 }}>
-                        "{entityInfo.articles[1].quotes[0]}"
-                     </Typography>
-
-                  </div>
-               </CardContent>
-            }
-            {entityInfo.articles[2] &&
-               <CardContent>
-                  {/**TODO: decompose hardcoded "first card preview" and nested cards as own article bundles of quotes components */}
-                  <div style={{ border: "solid grey 0.5px", borderRadius: "15px" }}>
-                     <div style={{ textAlign: "right", marginRight: "10px" }}>
-                        <Typography style={{ fontSize: 13, color: "grey" }}>
-                           {entityInfo.articles[2].time}
-                        </Typography>
-                        <Typography style={{ fontSize: 13, color: "grey" }}>
-                        {entityInfo.articles[2].section}
-                     </Typography>
-                     </div>
-                     <Typography variant="h6" color="black">
-                        {entityInfo.articles[2].title}
-                     </Typography>
-
-                     <Typography style={{ fontSize: 16 }}>
-                        "{entityInfo.articles[2].quotes[0]}"
-                     </Typography>
-
-                  </div>
-               </CardContent>
-            }
-
+            {SingleEntityMap[1] &&
+               SingleEntityMap.slice(1).map((SingleEntityMapElem => {
+                  return displayEntitySingleArticleCard(SingleEntityMapElem);
+               }))
+            } 
          </Collapse>
       </Card>
    )

@@ -115,7 +115,13 @@ class HomeScreen extends React.Component {
          filteredArticles.forEach((article) => {
             article.quotes_by_attribution.map((quoteByAttr) => {
                const quotesByArticleAttr = {
+                  entity: quoteByAttr.attribution,
                   title: article.title,
+                  url: article.url,
+                  slug: article.slug,
+                  publish_date: article.publish_date,
+                  location: article.location,
+                  keywords: article.keywords,
                   quotes: quoteByAttr.quotes
                }
                
@@ -142,18 +148,6 @@ class HomeScreen extends React.Component {
 		return (
          <React.Fragment>
             <Card>
-               {/*TODO: decompose the tags / filtering to a new component */}
-               <CardContent>
-               {/* <FormControlLabel
-                  label="Parent"
-                  control={
-                     <Checkbox
-                        checked={checked[0] && checked[1]}
-                        onChange={handleChange1}
-                     />
-                  }
-                  /> */}
-               </CardContent>
                <TextField id="search-phrase" type="search" placeholder="enter a search phrase"
                   value={this.state.searchWIP}
                   InputProps={{ sx: { backgroundColor: "#f2f2f2", fontSize: "22"}}}
@@ -171,8 +165,10 @@ class HomeScreen extends React.Component {
             </Card> 
             {/* <SearchBox searchWIP={this.state.searchWIP} onChange={this._handleSearch} onKeyDown={this._handleKeyDown} timeFilter={this.state.timeFilter} locationFilter={this.state.locationFilter} /> */}
             
-            <SearchListGroupedByEntity filteredArticles={this.state.filteredArticles} searchPhrase={this.state.searchPhrase} /> 
-                     
+            <div style={{width: "50%"}}>
+               <SearchListGroupedByEntity entityArticleGroupings={this.state.entityArticleGroupings} searchPhrase={this.state.searchPhrase} /> 
+            </div>
+            {/*ArticleIFrame */}       
          </React.Fragment>
 		)
 	};
