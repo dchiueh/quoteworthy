@@ -33,6 +33,7 @@ class HomeScreen extends React.Component {
 		this.state = {
          articles: [],
 			filteredArticles: [],
+         entityArticleGroupings: {},
          searchWIP: '',
 			searchPhrase: '',
          searchButtonPressed: false,
@@ -106,8 +107,34 @@ class HomeScreen extends React.Component {
             return false;
          });
 
-         //console.log(filteredArticles);
-         this.setState({filteredArticles: filteredArticles});
+         console.log("filtered articles list", filteredArticles);
+
+         //create a dictionary of mappings 
+         const entityArticleGroupings = {};
+         
+         filteredArticles.forEach((article) => {
+            article.quotes_by_attribution.map((quoteByAttr) => {
+               const quotesByArticleAttr = {
+                  title: article.title,
+                  quotes: quoteByAttr.quotes
+               }
+               
+               if(entityArticleGroupings[quoteByAttr.attribution]) {
+                  entityArticleGroupings[quoteByAttr.attribution].push(quotesByArticleAttr);
+               } else {
+                  entityArticleGroupings[quoteByAttr.attribution] = [quotesByArticleAttr];
+               }
+            });
+         
+            console.log("quotes by attribution", article.quotes_by_attribution);
+            console.log("unique entities", entityArticleGroupings);
+
+            }
+         )
+         this.setState({
+            filteredArticles: filteredArticles,
+            entityArticleGroupings: entityArticleGroupings,
+         });
       }
    }
 
@@ -144,7 +171,7 @@ class HomeScreen extends React.Component {
             </Card> 
             {/* <SearchBox searchWIP={this.state.searchWIP} onChange={this._handleSearch} onKeyDown={this._handleKeyDown} timeFilter={this.state.timeFilter} locationFilter={this.state.locationFilter} /> */}
             
-            <SearchListGroupedByEntity searchPhrase={this.state.searchPhrase} /> 
+            <SearchListGroupedByEntity filteredArticles={this.state.filteredArticles} searchPhrase={this.state.searchPhrase} /> 
                      
          </React.Fragment>
 		)

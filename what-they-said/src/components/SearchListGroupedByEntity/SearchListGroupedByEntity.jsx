@@ -27,12 +27,14 @@ class SearchListGroupedByEntity extends React.Component {
       super(props);
       this.state = {
          entities: [],
-         filteredArticles: [],
+         filteredArticles: props.filteredArticles,
          searchPhrase: props.searchPhrase,
       }
    }
 
    componentDidMount() {
+
+
       // console.log("dummy data", demo7JSON);
       // console.log(demo7JSON["Donald J. Trump"].articles[0]);
       ////todo: fetch from backend, whether a json or an API
@@ -70,15 +72,10 @@ class SearchListGroupedByEntity extends React.Component {
    render() {
       return (
          <div>
-            {
-               this.state.searchPhrase === "impeachment" &&
-               (
-                  <div>
-                     <EntityCard entityInfo={this.state.entities["Donald J. Trump"]}/>
-                     <EntityCard entityInfo={this.state.entities["Alex Conant"]}/>
-                  </div>
-               )
-            }
+            <div>
+               {/* <EntityCard entityInfo={this.state.entities["Donald J. Trump"]}/>
+               <EntityCard entityInfo={this.state.entities["Alex Conant"]}/> */}
+            </div>
          </div>
       )
    };
