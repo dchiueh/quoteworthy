@@ -1,15 +1,16 @@
 import json
 
-COMPUTED_DATA_FILEPATH = "./nyt_2020_mini.json"
-LABEL_DATA_FILEPATH = "./nyt_2020_mini_labels_no_orgs.json"
-METRIC_SAVE_FILEPATH = "./nyt_2020_mini_metrics.json"
+COMPUTED_DATA_FILEPATH = "./benchmark_predictions.json"
+LABEL_DATA_FILEPATH = "./benchmark_labels_no_orgs.json"
+METRIC_SAVE_FILEPATH = "./benchmark_metrics.json"
+
+
 
 with open(COMPUTED_DATA_FILEPATH, "r") as f:
     PREDICTED_DATA = json.load(f)
 
 with open(LABEL_DATA_FILEPATH, "r") as f:
     TRUE_LABELS = json.load(f)
-
 
 def report_quote_metrics():
     true_quotes = get_all_quotes(TRUE_LABELS)
@@ -84,8 +85,6 @@ if __name__ == "__main__":
     quote_data = report_quote_metrics()
     entity_data = report_entity_metrics()
     attr_data = report_attribution_metrics()
-
-    metric_data = {'quote_metrics': quote_data, 'entity_metrics': entity_data, 'attribution_metrics': attr_data}
-
     with open(METRIC_SAVE_FILEPATH, "w") as f:
+        metric_data = {'quote_metrics': quote_data, 'entity_metrics': entity_data, 'attribution_metrics': attr_data}
         json.dump(metric_data, f, ensure_ascii=False, indent=2)
