@@ -13,3 +13,23 @@
 ### F1 Score:
 - The weighted average of precision and recall
 - Our proxy for accuracy (_if we consider false positives and false negatives to be equally bad_)
+
+```
+{
+  "quote_metrics": {
+    "f1_score": 0.9473684210526316,
+    "precision": 0.9183673469387755,
+    "recall": 0.9782608695652174
+  },
+  "entity_metrics": {
+    "f1_score": 0.795774647887324,
+    "precision": 0.773972602739726,
+    "recall": 0.8188405797101449
+  },
+  "attribution_metrics": {
+    "f1_score": 0.7578947368421053,
+    "precision": 0.7346938775510204,
+    "recall": 0.782608695652174
+  }
+}
+```
