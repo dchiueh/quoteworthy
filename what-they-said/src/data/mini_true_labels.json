@@ -116,14 +116,6 @@
               "quote": "The millions of monarch butterflies that return to the property every year bend tree branches by their weight, fill the sky when they take flight, and make a sound like light rain with the beating of their wings. Witnessing this unique phenomenon is an exceptional experience of nature."
             }
           ]
-        },
-        {
-          "attribution": "The Purépecha",
-          "quotes": [
-            {
-              "quote": "the soul of the dead,"
-            }
-          ]
         }
       ]
     },
@@ -134,10 +126,10 @@
           "attribution": "John Barrasso",
           "quotes": [
             {
-              "quote": "Yes, that’s the plan"
+              "quote": "Yes, that’s the plan,"
             },
             {
-              "quote": "I’ve heard enough"
+              "quote": "I’ve heard enough,"
             },
             {
               "quote": "I’m ready to vote on final judgment. This has been fully partisan, fully political."
@@ -482,13 +474,13 @@
           "attribution": "David Wondrich",
           "quotes": [
             {
-              "quote": "Nobody believed it would happen"
+              "quote": "Nobody believed it would happen,"
             },
             {
               "quote": "Prohibition was a small-town, rural movement, and people in the cities resented it. They really thought until the very end that there was going to be a way out of it, and then, suddenly, it became clear there wasn’t."
             },
             {
-              "quote": "Every big cafe in New York City was having a party,” Mr. Wondrich, the historian, said of the night of Jan. 16."
+              "quote": "Every big cafe in New York City was having a party,"
             },
             {
               "quote": "There were so many corks popping, it sounded like artillery fire."
@@ -667,10 +659,16 @@
           "attribution": "Tom Steyer",
           "quotes": [
             {
-              "quote": "I don’t want to get in the middle,” Mr. Steyer said. “I just want to say, ‘Hi, Bernie.’"
+              "quote": "I don’t want to get in the middle,"
             },
             {
-              "quote": "I was just saying good night to the two of them,” he told reporters during a brief exchange in the debate spin room at Drake University. “I didn’t hear anything."
+              "quote": "I just want to say, ‘Hi, Bernie.’"
+            },
+            {
+              "quote": "I was just saying good night to the two of them,"
+            },
+            {
+              "quote": "I didn’t hear anything."
             }
           ]
         },
@@ -726,9 +724,6 @@
           "attribution": "Kimberly Gardner",
           "quotes": [
             {
-              "quote": "I think you called me a liar on national TV,"
-            },
-            {
               "quote": "racially motivated conspiracy"
             },
             {
@@ -741,7 +736,10 @@
               "quote": "the last act of a desperate woman"
             },
             {
-              "quote": "We’re not going to let fear and injustice stop the reforms that are needed,” she said. “This is also about the continuing attacks on progressive prosecutors, not just in St. Louis, but around this country."
+              "quote": "We’re not going to let fear and injustice stop the reforms that are needed,"
+            },
+            {
+              "quote": "This is also about the continuing attacks on progressive prosecutors, not just in St. Louis, but around this country."
             }
           ]
         },
@@ -1067,9 +1065,6 @@
           "quotes": [
             {
               "quote": "I think Senator Thune was here once,"
-            },
-            {
-              "quote": "I tried to run toward our home but could hardly walk; I was sinking in about eight feet of snow. At some distance I heard women and children crying and calling for help. When we reached our village, we saw piles of snow and mud where we had left our families — 18 people in all."
             }
           ]
         },
@@ -1502,7 +1497,7 @@
               "quote": "Make it so no matter which of the four directions I comb, it looks good,"
             },
             {
-              "quote": "They would all say, ‘We would happily agree if he hadn’t been blind,"
+              "quote": "They would all say, ‘We would happily agree if he hadn’t been blind,’"
             },
             {
               "quote": "My mother would say, ‘His eyes will be fixed.’ They would say, ‘Come back when they are fixed.’"
@@ -1555,10 +1550,10 @@
           "attribution": "Andrea Goldstein",
           "quotes": [
             {
-              "quote": "you look like you could use a good time"
+              "quote": "you look like you could use a good time,"
             },
             {
-              "quote": "He pressed his entire body against mine"
+              "quote": "He pressed his entire body against mine,"
             }
           ]
         },
@@ -1809,7 +1804,7 @@
               "quote": "This notion that you pick on a president and then he tweets about you and is mean to your company is a new thing,"
             },
             {
-              "quote": "If you happen to be a large technology brand like Microsoft, and the government is your biggest client, then the last thing you need is to be in conflict with the White House.,"
+              "quote": "If you happen to be a large technology brand like Microsoft, and the government is your biggest client, then the last thing you need is to be in conflict with the White House."
             },
             {
               "quote": "being the pro-impeachment enterprise is not going to be good for business."
@@ -1820,7 +1815,7 @@
           "attribution": "Donald J. Trump",
           "quotes": [
             {
-              "quote": "Nike is getting absolutely killed with anger and boycotts.”"
+              "quote": "Nike is getting absolutely killed with anger and boycotts."
             }
           ]
         },
@@ -1923,9 +1918,6 @@
             },
             {
               "quote": "We welcome different nationalities and cultures in England, but the number we have absorbed is out of control. There aren’t enough jobs, houses and services to accommodate these people."
-            },
-            {
-              "quote": "We do the work they do not want to do, we live 10 people to one house, we earn our way of life and we do not burden anybody,"
             },
             {
               "quote": "behind closed doors."
