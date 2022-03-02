@@ -2,6 +2,8 @@ import React from 'react';
 
 import { styled } from '@mui/material/styles';
 
+import './EntityCard.css';
+
 import {
    Avatar,
    Button,
@@ -53,13 +55,18 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
             </Typography>
 
             {SingleEntityMapElem.quotes.map((quoteMap, index) => {
-               return <div>
-                  <Typography style={{ fontSize: 16, color: "black" }}>
-                     {quoteMap.context}
+               let display;
+               if (!quoteMap.context) {
+                 display = quoteMap.quote;
+               } else {
+                 display = quoteMap.context;
+               }
+               return <div class="cardContent">
+                  <Typography class ="quote" style={{textAlign: "left"}}>
+                     "{display}"
+                     {/* Kinda unsure about this because we only want to put quotes where it's a quote?
+                     How to do it with conditional rendering?*/}
                   </Typography>
-                  {/* <Typography style={{ fontSize: 16 }}>
-                     "{quoteMap.quote}"
-                  </Typography> */}
                </div>
             })}
          </div>

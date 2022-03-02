@@ -1,0 +1,15 @@
+.cardContent:nth-child(odd){
+    background-color: wheat;
+}
+
+.cardContent:nth-child(even){
+    background-color:white;
+}
+
+.quote{
+    fontSize: 16; 
+    color: black;
+    textAlign: left; 
+    paddingLeft: 10px;
+    margin:0;
+}
