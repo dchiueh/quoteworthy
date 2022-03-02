@@ -34,6 +34,8 @@ class HomeScreen extends React.Component {
          articles: [],
 			filteredArticles: [],
          entityArticleGroupings: {},
+         numTotalQuotes: 0,
+         numTotalEntities: 0,
          searchWIP: '',
 			searchPhrase: '',
          searchButtonPressed: false,
@@ -110,7 +112,9 @@ class HomeScreen extends React.Component {
          console.log("filtered articles list", filteredArticles);
 
          //create a dictionary of mappings 
-         const entityArticleGroupings = {};
+         let entityArticleGroupings = {};
+         let numTotalEntities = 0;
+         let numTotalQuotes = 0;
          
          filteredArticles.forEach((article) => {
             article.quotes_by_attribution.map((quoteByAttr) => {
@@ -124,11 +128,13 @@ class HomeScreen extends React.Component {
                   keywords: article.keywords,
                   quotes: quoteByAttr.quotes
                }
+               numTotalQuotes += quoteByAttr.quotes.length;
                
                if(entityArticleGroupings[quoteByAttr.attribution]) {
                   entityArticleGroupings[quoteByAttr.attribution].push(quotesByArticleAttr);
                } else {
                   entityArticleGroupings[quoteByAttr.attribution] = [quotesByArticleAttr];
+                  numTotalEntities += 1;
                }
             });
          
@@ -140,11 +146,14 @@ class HomeScreen extends React.Component {
          this.setState({
             filteredArticles: filteredArticles,
             entityArticleGroupings: entityArticleGroupings,
+            numTotalEntities: numTotalEntities,
+            numTotalQuotes: numTotalQuotes,
          });
       }
    }
 
 	render() {
+      console.log("num total quotes", this.state.numTotalEntities);
 		return (
          <React.Fragment>
             <Card>
@@ -164,7 +173,11 @@ class HomeScreen extends React.Component {
                </div>
             </Card> 
             {/* <SearchBox searchWIP={this.state.searchWIP} onChange={this._handleSearch} onKeyDown={this._handleKeyDown} timeFilter={this.state.timeFilter} locationFilter={this.state.locationFilter} /> */}
-            
+            <div style={{height: "20px"}}>
+               {this.state.numTotalEntities > 0 && <Typography color="black" sx={{ fontSize: "16px", textDecoration: "none" }}>
+                  {`Quoteworthy found ${this.state.numTotalEntities} entities, with ${this.state.numTotalQuotes} quote${this.state.numTotalQuotes > 1 ? "s" : ""}`}
+               </Typography>}
+            </div>
             <div style={{width: "50%"}}>
                <SearchListGroupedByEntity entityArticleGroupings={this.state.entityArticleGroupings} searchPhrase={this.state.searchPhrase} /> 
             </div>
