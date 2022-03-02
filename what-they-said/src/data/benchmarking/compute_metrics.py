@@ -1,8 +1,8 @@
 import json
 
-COMPUTED_DATA_FILEPATH = "./benchmark_predictions.json"
-LABEL_DATA_FILEPATH = "./benchmark_labels_no_orgs.json"
-METRIC_SAVE_FILEPATH = "./benchmark_metrics.json"
+COMPUTED_DATA_FILEPATH = "./mini_predictions.json"
+LABEL_DATA_FILEPATH = "./mini_labels.json"
+METRIC_SAVE_FILEPATH = "./metrics.json"
 
 
 
@@ -31,7 +31,7 @@ def compute_metrics(true_labels, detected_labels):
     precision = compute_precision(true_labels, detected_labels)
     recall = compute_recall(true_labels, detected_labels)
     f1_score = compute_f1_score(precision, recall)
-    return { "f1_score": f1_score, "precision": precision, "recall": recall }
+    return { "precision": precision, "recall": recall, "f1_score": f1_score }
 
 def compute_precision(true_labels, detected_labels):
     num_true_detected = get_num_true_detected(true_labels, detected_labels)
@@ -71,12 +71,15 @@ def get_all_entities(data):
             all_entities.append(entity)
     return all_entities
 
-def get_all_attributions(data):
+def get_all_attributions(data, heuristic_filter=None):
     all_attributions = []
     for article_obj in data['articles']:
         for attr_obj in article_obj['quotes_by_attribution']:
             entity = attr_obj['attribution']
-            attributions = [ (entity, obj['quote']) for obj in attr_obj['quotes'] ]
+            if heuristic_filter:
+                attributions = [ (entity, obj['quote']) for obj in attr_obj['quotes'] if obj['attribution_method'] == heuristic_filter ]
+            else:
+                attributions = [ (entity, obj['quote']) for obj in attr_obj['quotes'] ]
             all_attributions.extend(attributions)
     return all_attributions
 
