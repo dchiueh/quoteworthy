@@ -61,8 +61,8 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
                } else {
                  display = quoteMap.context;
                }
-               return <div class="cardContent">
-                  <Typography class ="quote" style={{textAlign: "left"}}>
+               return <div className="cardContent">
+                  <Typography className="quote" style={{textAlign: "left"}}>
                      "{display}"
                      {/* Kinda unsure about this because we only want to put quotes where it's a quote?
                      How to do it with conditional rendering?*/}
@@ -95,13 +95,12 @@ const EntityCard = ({ SingleEntityMap }) => {
          {displayEntitySingleArticleCard(SingleEntityMap[0])}
 
          <CardActions disableSpacing>
-            <Avatar sx={{ backgroundColor: "skyblue" }} aria-label="article-count">
+            {/* <Avatar sx={{ backgroundColor: "skyblue" }} aria-label="article-count">
                {SingleEntityMap.length}
-            </Avatar>
-            <IconButton aria-label="add to favorites">
-               <FavoriteIcon />
-            </IconButton>
-            <ExpandMore
+            </Avatar> */}
+            <Typography style={{ fontSize: 16 }}>Appears in {SingleEntityMap.length} article{SingleEntityMap.length > 1 ? "s" : ""}</Typography>
+
+            {SingleEntityMap[1] && <ExpandMore
                expand={expanded}
                onClick={handleExpandClick}
                aria-expanded={expanded}
@@ -109,7 +108,7 @@ const EntityCard = ({ SingleEntityMap }) => {
             >
                <Typography style={{ fontSize: 16 }}>See more </Typography>
                <ExpandMoreIcon />
-            </ExpandMore>
+            </ExpandMore>}
          </CardActions>
          <Collapse in={expanded} timeout="auto" unmountOnExit>
             {SingleEntityMap[1] &&
