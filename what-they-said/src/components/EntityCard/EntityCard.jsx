@@ -24,8 +24,6 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-import EntitySingleArticleCard from '../EntitySingleArticleCard/EntitySingleArticleCard';
-
 const ExpandMore = styled((props) => {
    const { expand, ...other } = props;
    return <IconButton {...other} />;
@@ -53,21 +51,19 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
             <Typography variant="h6" color="black">
                {SingleEntityMapElem.title}
             </Typography>
-
+            <Typography color="grey" sx={{fontSize: "16px", textDecoration: "none"}}>
+               {`${SingleEntityMapElem.quotes.length} quote${SingleEntityMapElem.quotes.length > 1 ? "s" : ""}`}
+            </Typography>
             {SingleEntityMapElem.quotes.map((quoteMap, index) => {
-               let display;
                if (!quoteMap.context) {
-                 display = quoteMap.quote;
-               } else {
-                 display = quoteMap.context;
-               }
-               return <div className="cardContent">
-                  <Typography className="quote" style={{textAlign: "left"}}>
-                     "{display}"
-                     {/* Kinda unsure about this because we only want to put quotes where it's a quote?
-                     How to do it with conditional rendering?*/}
+                  return <Typography className="quote" style={{textAlign: "left", paddingBottom: "24px"}}>
+                     "{quoteMap.quote}"
                   </Typography>
-               </div>
+               } else {
+                  return <Typography className="quote" style={{textAlign: "left", paddingBottom: "24px"}}>
+                     {quoteMap.context}
+                  </Typography>
+               }
             })}
          </div>
       </CardContent>
