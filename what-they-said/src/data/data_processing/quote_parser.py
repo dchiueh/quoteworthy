@@ -25,7 +25,7 @@ class QuoteParser:
         tokenized_document = self.get_tokenized_document(entity_doc)
         quote_indices = self.identify_valid_quotes(tokenized_document)
         coreferences = self.coref_predictor.predict(text)
-        index_to_entity = self.map_index_to_entity(entity_doc, coreferences)
+        index_to_entity = self.map_index_to_entity(entity_doc, coreferences, quote_indices, tokenized_document)
         quotes_and_attributions = self.assign_quotes_to_attributions(tokenized_document, index_to_entity, quote_indices)
         attribution_quote_map = self.organize_quotes_by_attribution(quotes_and_attributions)
         return [token.text for token in tokenized_document], attribution_quote_map
@@ -53,17 +53,27 @@ class QuoteParser:
                 quote_indices.append((start_idx, end_idx))
         return quote_indices
 
-    def map_index_to_entity(self, entity_doc, coreferences):
+    def map_index_to_entity(self, entity_doc, coreferences, quote_indices, tokenized_document):
         index_to_entity = {}
         for entity in entity_doc.ents:
             if entity.label_ == "PERSON":
+                if entity.start >= len(tokenized_document):
+                    continue
+                if self.entity_between_quotes(quote_indices, entity):
+                    continue
                 coreference_overlap = self.get_coreference_overlap(coreferences, entity.start, entity.end)
                 if coreference_overlap is not None:
                     index_to_entity = self.add_entity_to_span(index_to_entity, coreference_overlap, entity.text)
                 else:
                     single_reference_span = [[entity.start, entity.end-1]]
                     index_to_entity = self.add_entity_to_span(index_to_entity, single_reference_span, entity.text)
-        return index_to_entity    
+        return index_to_entity
+
+    def entity_between_quotes(self, quote_indices, entity):
+        for start_quote, end_quote in quote_indices:
+            if entity.start > start_quote and entity.end < end_quote:
+                return True
+        return False
     
     def get_coreference_overlap(self, coreferences, ent_start_idx, ent_end_idx):
         for reference_cluster in coreferences["clusters"]:
@@ -75,6 +85,8 @@ class QuoteParser:
         return None
 
     def add_entity_to_span(self, index_to_entity, coref_spans, entity):
+        if entity[-2:] == "’s":
+            entity = entity[:-2]
         for span in coref_spans:
             for idx in range(span[0], span[1]+1):
                 if idx in index_to_entity:

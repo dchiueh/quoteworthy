@@ -36,7 +36,7 @@ def report_heuristic_metrics():
     for heuristic, metrics in heuristic_metrics.items():
         num_of_examples = metrics.pop('num_of_examples')
         share_of_total = round(float(num_of_examples / total_quotes_detected), NUM_SIG_FIGS)
-        metrics['share_of_total'] = round(share_of_total * 100, NUM_SIG_FIGS)
+        metrics['percent_share'] = round(share_of_total * 100, NUM_SIG_FIGS)
     return heuristic_metrics
 
 def compute_metrics(true_labels, detected_labels):

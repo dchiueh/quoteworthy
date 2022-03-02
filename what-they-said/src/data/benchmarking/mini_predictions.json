@@ -22,7 +22,6 @@
       ],
       "location": "WASHINGTON",
       "attributions": [
-        "Crow",
         "Jason Crow"
       ],
       "original_text": "The former Army Ranger was to take a high-profile role prosecuting House Democrats’ case against President Trump in the Senate trial. WASHINGTON — As a former Army Ranger who served in Iraq and Afghanistan, Representative Jason Crow, who flipped a Republican-held seat in 2018, has quickly emerged in the Democratic caucus as a leading voice on national security. Drawing on those credentials and his experience as a litigator, Speaker Nancy Pelosi named the Colorado Democrat as an impeachment manager on Wednesday, selecting him as part of the team of lawmakers who will play a high-profile role prosecuting House Democrats’ case against President Trump in the Senate trial. Mr. Crow is a first-term lawmaker — one of only two among a seven-person manager team — and he does not serve on any of the committees that have been leading the impeachment inquiry. So his selection to play a high-profile role in the impeachment trial underscores the crucial role national security-minded freshmen have played in the House investigation. Mr. Crow was among a group of seven freshmen from conservative-leaning districts — all veterans or former intelligence analysts — who wrote an op-ed urging Congress to impeach Mr. Trump if the allegations were true that he withheld military aid to Ukraine as part of an attempt to get the country to investigate his political rivals. The piece was seen by many as a crucial development that encouraged Democratic lawmakers by indicating they had enough backing — including among their politically vulnerable colleagues — to press ahead and open an inquiry into the president. “He allegedly sought to use the very security assistance dollars appropriated by Congress to create stability in the world, to help root out corruption and to protect our national security interests, for his own personal gain,” Mr. Crow and his colleagues wrote. “These allegations are stunning, both in the national security threat they pose and the potential corruption they represent.” While Mr. Crow is best known for his advocacy on gun safety measures and his service in the Army, where he was honored with the Bronze Star, he worked as a litigator after his tours in Iraq and Afghanistan, specializing in white-collar defense and government investigations. He has since emerged as one of the most outspoken freshmen from a swing district urging the House to take on Mr. Trump. “If Congress doesn’t stand up to these abuses, then our system of checks and balances will have failed,” Mr. Crow said shortly after announcing he would support the impeachment inquiry. “It’s clear that we must respond with the full weight of Congress.” PHOTO",
@@ -520,7 +519,7 @@
       ],
       "quotes_by_attribution": [
         {
-          "attribution": "Crow",
+          "attribution": "Jason Crow",
           "quotes": [
             {
               "quote": "He allegedly sought to use the very security assistance dollars appropriated by Congress to create stability in the world, to help root out corruption and to protect our national security interests, for his own personal gain,",
@@ -528,13 +527,9 @@
               "start_quote_index": 292,
               "end_quote_index": 332,
               "attribution_index": 334,
-              "attribution_method": "proximity"
-            }
-          ]
-        },
-        {
-          "attribution": "Jason Crow",
-          "quotes": [
+              "attribution_method": "proximity",
+              "original_attribution": "Crow"
+            },
             {
               "quote": "These allegations are stunning, both in the national security threat they pose and the potential corruption they represent.",
               "context": null,
@@ -588,7 +583,7 @@
       "attributions": [
         "Bruno Le Maire",
         "Mary Taylor",
-        "Trump",
+        "Donald J. Trump",
         "Faye Gooding",
         "Benjamin Aneff",
         "Nate Herman"
@@ -2084,7 +2079,7 @@
           ]
         },
         {
-          "attribution": "Trump",
+          "attribution": "Donald J. Trump",
           "quotes": [
             {
               "quote": "worse than China",
@@ -2092,7 +2087,8 @@
               "start_quote_index": 483,
               "end_quote_index": 487,
               "attribution_index": 496,
-              "attribution_method": "proximity"
+              "attribution_method": "proximity",
+              "original_attribution": "Trump"
             }
           ]
         },
@@ -2162,7 +2158,7 @@
       ],
       "location": "WASHINGTON",
       "attributions": [
-        "Trump"
+        "Donald J. Trump"
       ],
       "original_text": "The budget gap widened despite a growing economy, hitting its highest level since 2012. WASHINGTON — The federal budget deficit surpassed $1 trillion in 2019, the Treasury Department reported on Monday, as tax cuts and spending increases continued to force heavy government borrowing amid a record-long economic expansion. The deficit grew by 17 percent from 2018 to 2019, the Treasury data shows. That was a slowdown from the 28 percent growth in 2018, the first year President Trump’s signature tax cuts were in full effect. Last year’s deficit would have been even larger if not for a series of interest-rate cuts undertaken in 2019 by the Federal Reserve, which helped to push the cost of new government debt down. It was the first calendar year since 2012 that the deficit topped $1 trillion. Deficits swelled after the 2008 financial crisis, as lawmakers cut taxes and increased spending in an effort to revive growth. The gap had narrowed through 2015 under a budget agreement between President Barack Obama and Republicans in Congress, which reined in federal spending. The widening deficit under Mr. Trump shows the degree to which economic growth on his watch has been helped by fiscal stimulus — increased borrowing by the government that injects more money into the consumer economy. That combination is unusual for a growing economy with low unemployment. In recent periods in the United States, sustained economic expansions have brought deficits down. A wave of retirements by baby boomers has begun to put pressure on the deficit by helping to drive up annual spending on Social Security and Medicare. But Mr. Trump has increased that pressure by signing both a $1.5 trillion tax-cut package in late 2017, which reduced federal tax revenue, and a series of bipartisan congressional agreements to increase spending on the military and on nondefense domestic programs like education. Total federal receipts rose by 5 percent in 2019, after falling slightly in 2018 after the tax cuts. It was the fastest rate of growth for tax receipts since 2015, but still well below several years of receipts growth recorded under Mr. Obama. Spending grew by 7.5 percent in 2019, the fastest rate since 2009. Mr. Trump promised to balance the budget and constrain federal spending as a candidate in the 2016 presidential election, and at one point he said he could pay off the entire federal debt in eight years. He and other Republicans have long criticized Democrats, particularly Mr. Obama, for spending too much and running up the deficit. In pushing for the tax cuts, Mr. Trump and his allies promised they would generate enough growth to “pay for themselves” through economic growth that generated additional tax revenues. The Treasury Department data released on Monday shows how far Mr. Trump has fallen short of each of those promises. Tax revenues remain hundreds of billions of dollars below where the Congressional Budget Office predicted they would be before the tax-cut package was signed, while spending is accelerating at roughly the same pace as those 2017 projections. In the three years Mr. Trump has been president, federal revenues have increased by an average of 2.6 percent per year. Spending has increased by 5.7 percent per year, and the deficit has grown by 20.8 percent per year. Under Mr. Obama, receipts grew significantly faster, at an average of 3.9 percent per year. Spending grew at less than half the average annual rate than it has under Mr. Trump. The deficit has grown nearly four times as fast, on average, under Mr. Trump than it did under Mr. Obama. Mr. Trump has already added more to the national debt than Mr. Obama did in his entire second term — $2.6 trillion, compared with Mr. Obama’s $2.1 trillion. PHOTO: President Trump after signing the tax-cut bill in 2017. The deficit has grown by 20.8 percent each year of his presidency. (PHOTOGRAPH BY DOUG MILLS THE NEW YORK TIMES)",
       "tokenized_text": [
@@ -2862,7 +2858,7 @@
       ],
       "quotes_by_attribution": [
         {
-          "attribution": "Trump",
+          "attribution": "Donald J. Trump",
           "quotes": [
             {
               "quote": "pay for themselves",
@@ -2870,7 +2866,8 @@
               "start_quote_index": 483,
               "end_quote_index": 487,
               "attribution_index": 474,
-              "attribution_method": "proximity"
+              "attribution_method": "proximity",
+              "original_attribution": "Trump"
             }
           ]
         }
@@ -7626,8 +7623,8 @@
       ],
       "location": null,
       "attributions": [
-        "Jack Van Impe Presents",
-        "Jack Leo Van Impe"
+        "Jack Leo Van Impe",
+        "Randall Balmer"
       ],
       "original_text": "Known for his prodigious memorization of the Bible, he mingled scripture with commentary on public affairs. Jack Van Impe, a televangelist who reached a wide audience interpreting current events through apocalyptic passages of the Bible and prophesying the end of the world, died on Saturday at a hospital in Royal Oak, Mich. He was 88. His death was announced by his organization, Jack Van Impe Ministries International, which did not specify a cause. He had been hospitalized after a fall this month, his longtime consultant E. Dale Berkey said. Mr. Van Impe (pronounced IMP-ee) often pronounced the imminent return of Jesus Christ and mingled discussion of Bible passages with the news of the day on his weekly television program, “Jack Van Impe Presents.” The program aired on the Trinity Broadcasting Network, through cable and satellite, for more than two decades and was said to have reached about 25,000 cities. “He was something of a pioneer televangelist, someone who was utterly confident about his esoteric interpretations of biblical prophecies,” Dr. Randall Balmer, professor of religion at Dartmouth College, said by phone. Mr. Van Impe promoted a view of the end of the world known in evangelical circles as dispensational premillennialism, which teaches that Christians will be raptured, or taken up to heaven, before a period of tribulation, a final battle called Armageddon and the return and rule of Jesus on earth. His sermons had titles like “The Coming War with Russia, According to the Bible. Where? When? Why?” (In that sermon he warned of a coming world dictator and a Russian invasion of Israel.) In his final broadcast, on Jan. 10, he discussed relations between the United States and Iran and predicted “the bloodiest war in the world,” saying it would result mostly in the deaths of “Muslim terrorists.” Robert Jeffress, the pastor of First Baptist Dallas, said in an interview that Mr. Van Impe’s premillennial view of the end times paved the way for his own ministry and that of other popular preachers like John Hagee and David Jeremiah. The evangelist Franklin Graham remembered him on Twitter as “The Walking Bible,” citing Mr. Van Impe’s extensive memorization of Bible passages. He was said to have committed about two-thirds of the Bible to memory. Jack Leo Van Impe was born on Feb. 9, 1931, in Freeport, Mich., two years after his parents, Oscar and Marie Louise (Piot) Van Impe, had immigrated to the state from Belgium during the Great Depression. His parents worked as farm laborers in sugar beet and vegetable fields after arriving in Michigan. His father later worked in a Plymouth car factory in Detroit. Jack was their only child. He had a conversion experience, becoming an evangelical Christian, when he was about 12, after his father’s similar conversion had left a strong impression on him. Jack grew up in the Detroit area and graduated from Edwin Denby High School in 1948. Three years later he received a diploma from the Detroit Bible Institute, a program that offered a Christian Worker’s Certificate, and was ordained as a minister in an independent Baptist church. A lifelong accordion player, he married Rexella Mae Shelton, a musician who also studied the Bible, in Pontiac, Mich., in 1952 after they had met at a Youth for Christ rally. Together they held crusades in cities and churches across the country and started a radio broadcast program. They started Mr. Impe’s television broadcast in 1980. The couple had no children, and his wife is his only immediate survivor. In the 1990s, Mr. Van Impe predicted that Jesus would return to earth between 2001 and 2012, according to the evangelical magazine Christianity Today. He left the Trinity Broadcasting Network in 2011, believing it had censored him after he accused the popular preachers Rick Warren and Robert H. Schuller of promoting what he called “Chrislam,” a mixture of Christian and Islam. The program was then picked up by other Christian networks. The broadcast stopped after Mr. Van Impe was hospitalized, Mr. Berkey said. The ministry said it planned to air special episodes later this year. Jack Begg contributed research. PHOTOS: Mr. Van Impe in 2011. He predicted in the 1990s that the world would come to an end between 2001 and 2012. (PHOTOGRAPH BY CHARLES SCOTT); The televangelist Jack Van Impe taping a broadcast in December. His weekly program was said to have aired in 25,000 cities. (PHOTOGRAPH BY JVIM)",
       "tokenized_text": [
@@ -8426,29 +8423,16 @@
       ],
       "quotes_by_attribution": [
         {
-          "attribution": "Jack Van Impe Presents",
+          "attribution": "Jack Leo Van Impe",
           "quotes": [
             {
               "quote": "Jack Van Impe Presents.",
               "context": null,
               "start_quote_index": 135,
               "end_quote_index": 141,
-              "attribution_index": 134,
+              "attribution_index": 130,
               "attribution_method": "proximity"
             },
-            {
-              "quote": "He was something of a pioneer televangelist, someone who was utterly confident about his esoteric interpretations of biblical prophecies,",
-              "context": null,
-              "start_quote_index": 171,
-              "end_quote_index": 193,
-              "attribution_index": 143,
-              "attribution_method": "pattern_3"
-            }
-          ]
-        },
-        {
-          "attribution": "Jack Leo Van Impe",
-          "quotes": [
             {
               "quote": "The Coming War with Russia, According to the Bible. Where? When? Why?",
               "context": null,
@@ -8471,6 +8455,19 @@
               "start_quote_index": 404,
               "end_quote_index": 409,
               "attribution_index": 411,
+              "attribution_method": "proximity"
+            }
+          ]
+        },
+        {
+          "attribution": "Randall Balmer",
+          "quotes": [
+            {
+              "quote": "He was something of a pioneer televangelist, someone who was utterly confident about his esoteric interpretations of biblical prophecies,",
+              "context": null,
+              "start_quote_index": 171,
+              "end_quote_index": 193,
+              "attribution_index": 195,
               "attribution_method": "proximity"
             }
           ]
@@ -11797,7 +11794,6 @@
       "attributions": [
         "David Wondrich",
         "Daniel Okrent",
-        "John Barleycorn Died Peacefully",
         "Julia Bainbridge"
       ],
       "original_text": "In 1920, Prohibition went into effect, but America partied on. As the sun rose this morning on a new year, bleary-eyed people across the United States poured out their half-drunk champagne bottles, gathered up their empty beer cans and turned to Twitter to share their resolution with the world. Dry January has begun. For those experimenting with temporary sobriety, there is pride in abstention. These droughts are self-imposed and finite — and come with social media bragging rights. But the last time we entered a decade known as the ’20s, Americans were staring down the barrel of a government-mandated dry spell, with no end in sight. For those who partook of the hard stuff, this first dry January was greeted not with determination and #goals but with denial and despair. Prohibition is most closely associated with the 1920s, but its seeds were planted a century earlier, when the national temperance movement began decrying alcohol as the root cause of societal evils including laziness, promiscuity and poverty. Eliminate the drink, they said, and Americans will be a happier, healthier and more prosperous people. The movement gained traction around the turn of the century, in large part thanks to women’s groups who saw temperance as a way to combat domestic violence. On Jan. 16, 1919 — more than a year before women could vote nationwide — the teetotalers achieved their ultimate goal: The Eighteenth Amendment, prohibiting the “manufacture, sale or transportation of intoxicating liquors” anywhere within the United States, was ratified. The country had one year to prepare. “Nobody believed it would happen,” David Wondrich, the cocktail historian, said. “Prohibition was a small-town, rural movement, and people in the cities resented it. They really thought until the very end that there was going to be a way out of it, and then, suddenly, it became clear there wasn’t.” In October 1919, over President Woodrow Wilson’s veto, Congress passed the National Prohibition Act — more commonly known as the Volstead Act, for its mustachioed champion, Representative Andrew Volstead of Minnesota — to provide for the enforcement of the Eighteenth Amendment. The law was set to take effect at 12:01 a.m. on Jan. 17, 1920. While the amendment specifically forbid purchasing or transporting alcohol, it said nothing about drinking alcohol you already had in your home. Boozehounds quickly seized upon this loophole. As businesses hustled to offload their soon-to-be illegal inventory, there was a mad dash for hooch. “Fair ladies sat in limousines behind alluring barricades of cases; business men in runabouts had cases on their knees,” The San Francisco Chronicle reported. “On every face was stamped that extraordinary and inexplicable expression of triumph mingled with apprehension which the possession of an irreplaceable treasure in a predicament of extraordinary peril is wont to imbue.” It was impossible to buy enough liquor to last a lifetime, but people tried, said Daniel Okrent, the author of “Last Call: The Rise and Fall of Prohibition.” In Hollywood, he said, “Mary Pickford’s mom bought the contents of an entire liquor store.” What businesses couldn’t sell off in bulk, they splashed out at parties, beginning with a particularly raucous New Year’s Eve and continuing right up until the last midnight, 16 days later. “Every big cafe in New York City was having a party,” Mr. Wondrich, the historian, said of the night of Jan. 16. “There were so many corks popping, it sounded like artillery fire.” Some of the restaurants even held mock funerals marking the death of alcohol. Prohibition approached like “the Fifth Horseman of the Apocalypse,” The New York Herald reported. “But, oh, how New York City’s Great Glittering Way did drink and feast before he came! And even after he had arrived and kicked the sides of his nag and made his way over the city, there was mirth enough and song enough and mockery enough to make him tremble in his dull, black boots.” Eventually the mirth ebbed, the champagne ran dry and Americans were left to stagger home into a new age. “The last day has come and gone — the inevitable hour,” The Chronicle wrote in its eulogy for booze. “At midnight all that was lawful about the spirit that cheereth and the red, red wine passed out of existence.” The New York Times took a cheekier approach with its front page headline: “John Barleycorn Died Peacefully at the Toll of 12.” The nation was officially bone dry. But unofficially, wet spots were everywhere, if you knew how to look. Bootlegging operations popped up almost immediately, leading government enforcers in a yearslong game of Whack-a-Mole. And flower shops, parking garages and basement apartments were repurposed into illicit watering holes, better known as speakeasies. Like most things, though, one’s ability to drink came down to means, according to Mr. Wondrich. If you could afford to go to fancy places, you could get the same beverages as before — only instead of 15 cents, they would now set you back a dollar. Drinking culture flourished, in spite of its being verboten. Classic cocktails like the sidecar, the bee’s knees and the French 75 all made their debut during Prohibition, Mr. Wondrich said. There were those who tried to adapt to the dry age. Many breweries found other ways to make use of their equipment: Pabst went into cheese, Yuengling and Anheuser-Busch into ice cream and Coors, in clay-rich Colorado, invested in ceramics. As for the saloons, some experimented with juices and nonalcoholic mixed drinks. There were a few successes — one boozeless cocktail created during Prohibition is known today in its spiked form as the Bloody Mary — but for the most part, the concoctions were disappointing facsimiles that “just made you sad,” Mr. Wondrich said. “Just trying to mimic spirits and classic cocktails is a recipe for failure,” explained Julia Bainbridge, the author of the forthcoming nonalcoholic cocktail recipe book, “Good Drinks.” Instead of trying to replicate the specific flavor of a negroni, you should “consider what a negroni feels like,” she added. “It’s that tension between salty and sour and sweet and bitter that pleases the human palate,” she said. “And that experience can be delivered without alcohol, with the same level of complexity, but you have to put a lot of labor into it. Basically, if you want to get something that’s not just a tiki-derivative sugar bomb, you’re going to have to cook.” Prohibition officially ended with the ratification of the Twenty-First Amendment in 1933. By then, however, the legal change was mostly a formality. “There were breweries on the West Side of Manhattan making 200,000 gallons of beer a week,” Mr. Wondrich said. “The scale of industry was so insane that the law became a joke.” Nowadays, there are bars in every big city that style themselves as Prohibition-era speakeasies, and the age’s spirit has proved enduring. “It’s that notion of doing something that’s against the law but not evil,” Mr. Okrent, the author, said. “There’s fun in defying authority.” In the past 15 years, there has also been a revival of the cocktail boom that characterized Prohibition — this time with increasingly complex and delicious options for non-drinkers, too. After all, life is too short for bad drinks. That goes whether you’re partaking of booze or abstaining from it — for a month, for life or even just for the night. PHOTOS: Deputies and federal agents raiding a concealed moonshine still just outside of Jacksonville, Fla., around February 1922. (A16); Above, federal agents smashing kegs of beer near Philadelphia in October 1922. Right, contraband seized from a rum-running boat off Watch Hill, R.I., in 1930. (PHOTOGRAPHS BY P & A PHOTOS; BETTMANN ARCHIVE/GETTY IMAGES); Far left, officials destroying beer cases in 1923. Above left, a brewery tank used as a shelter in 1930 in St. Louis. Left, New York state troopers searching cars in 1923 near the Canadian border, where “a Niagara of alcohol” flowed, The Times said. (PHOTOGRAPH BY P & A PHOTOS); Even as tanks were being used to crush moonshining stills, like in Newport, Ky., in 1922, above, people still found creative ways to conceal their illegal alcohol. A decoy book of “Spring Poems” found in 1923, left, contained a hidden spring that released four miniature bottles of hooch, and a “humble watermelon,” right, held “a quart of contraband liquor,” The Times reported in 1921. (PHOTOGRAPHS BY INTERNATIONAL; UNDERWOOD AND UNDERWOOD) (A16-A17); Above, a woman modeling a “bootlegger’s life preserver” in 1924. Below, a warehouse of counterfeit moonshine in 1923 where all but two bottles were poisonous to drink. (PHOTOGRAPH BY P & A PHOTOS) (A17) https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-3/merlin_166089402_6f437302-9e6f-4ffa-8712-dc9b0fb7e2de-articleLarge.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-3/merlin_166089402_6f437302-9e6f-4ffa-8712-dc9b0fb7e2de-jumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-3/merlin_166089402_6f437302-9e6f-4ffa-8712-dc9b0fb7e2de-superJumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-3/01driest-ast-3-thumbStandard.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-3/01driest-ast-3-filmstrip.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-3/01driest-ast-3-sfSpan.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-3/01driest-ast-3-thumbWide.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-3/merlin_166089402_6f437302-9e6f-4ffa-8712-dc9b0fb7e2de-articleInline.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-3/01driest-ast-3-facebookJumbo.jpg Tanks being used to destroy stills and other moonshining equipment in Newport, Ky. The military equipment was “used to crush the contraband articles into fragments.” Circa March 1922. International https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-2/merlin_166089351_82b0591c-5243-4969-a386-0172b13ffa54-articleLarge.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-2/merlin_166089351_82b0591c-5243-4969-a386-0172b13ffa54-jumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-2/merlin_166089351_82b0591c-5243-4969-a386-0172b13ffa54-superJumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-2/01driest-ast-2-thumbStandard.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-2/01driest-ast-2-filmstrip.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-2/01driest-ast-2-sfSpan.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-2/01driest-ast-2-thumbWide.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-2/merlin_166089351_82b0591c-5243-4969-a386-0172b13ffa54-articleInline.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-2/01driest-ast-2-facebookJumbo.jpg New York state troopers searching the occupants of a car suspected of smuggling booze near the Canadian border, “across which, before the holidays, flowed a Niagara of alcohol,” The New York Times reported. Dec. 27, 1923. P & A Photos https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-9/01driest-ast-9-articleLarge.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-9/01driest-ast-9-jumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-9/01driest-ast-9-superJumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-9/01driest-ast-9-thumbStandard.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-9/01driest-ast-9-filmstrip.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-9/01driest-ast-9-thumbWide.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-9/01driest-ast-9-articleInline.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-9/01driest-ast-9-facebookJumbo.jpg Authorities had to be on the lookout for counterfeit liquor, much of which was actually poisonous. Of the thousands of quarts of moonshine surrounding J. W. Quillen, the chief chemist at the Prohibition Enforcement Service, only two were safe for human consumption. Nov. 28, 1923. P &amp; A Photos https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-5/01driest-ast-5-articleLarge.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-5/01driest-ast-5-jumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-5/01driest-ast-5-superJumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-5/01driest-ast-5-thumbStandard.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-5/01driest-ast-5-filmstrip.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-5/01driest-ast-5-thumbWide.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-5/01driest-ast-5-articleInline.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-5/01driest-ast-5-facebookJumbo.jpg Jennie MacGregor modeling the &ldquo;bootlegger&rsquo;s life preserver.&rdquo; She was arrested by the Minneapolis police, The Times reported, while using the device to dispense illicit hooch. April 10, 1924. The New York Times https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-6/merlin_166089345_876f8245-b2f9-49af-a7e3-cc5fc7713586-articleLarge.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-6/merlin_166089345_876f8245-b2f9-49af-a7e3-cc5fc7713586-jumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-6/merlin_166089345_876f8245-b2f9-49af-a7e3-cc5fc7713586-superJumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-6/01driest-ast-6-thumbStandard.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-6/01driest-ast-6-filmstrip.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-6/01driest-ast-6-sfSpan.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-6/01driest-ast-6-thumbWide.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-6/merlin_166089345_876f8245-b2f9-49af-a7e3-cc5fc7713586-articleInline.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-6/01driest-ast-6-facebookJumbo.jpg The Coast Guard seizing around 1,000 cases of illegal alcohol from a speedboat off the coast of Watch Hill, R.I., after a crew of rum-runners led them on a guns-blazing chase from Montauk Point. November 1930. Bettmann Archive/Getty Images https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-7/merlin_166089378_2733c7ed-d6b2-421a-bb56-37af27e0a201-articleLarge.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-7/merlin_166089378_2733c7ed-d6b2-421a-bb56-37af27e0a201-jumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-7/merlin_166089378_2733c7ed-d6b2-421a-bb56-37af27e0a201-superJumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-7/01driest-ast-7-thumbStandard.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-7/01driest-ast-7-filmstrip.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-7/01driest-ast-7-sfSpan.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-7/01driest-ast-7-thumbWide.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-7/merlin_166089378_2733c7ed-d6b2-421a-bb56-37af27e0a201-articleInline.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-7/01driest-ast-7-facebookJumbo.jpg Local deputies and federal agents raiding a concealed still 15 miles outside of Jacksonville, Fla. Circa February 1922. The New York Times https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-4/01driest-ast-4-articleLarge.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-4/01driest-ast-4-jumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-4/01driest-ast-4-superJumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-4/01driest-ast-4-thumbStandard.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-4/01driest-ast-4-filmstrip.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-4/01driest-ast-4-thumbWide.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-4/01driest-ast-4-articleInline.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-4/01driest-ast-4-facebookJumbo.jpg The quest for banned booze pushed human innovation to its creative limits. This &ldquo;humble watermelon,&rdquo; The Times reported, contained &ldquo;a quart of contraband liquor.&rdquo; A secret cork in its side was painted to match the rind. Nov. 3, 1921. Underwood and Underwood https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-10/01driest-ast-10-articleLarge.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-10/01driest-ast-10-jumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-10/01driest-ast-10-superJumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-10/01driest-ast-10-thumbStandard.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-10/01driest-ast-10-filmstrip.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-10/01driest-ast-10-thumbWide.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-10/01driest-ast-10-articleInline.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-10/01driest-ast-10-facebookJumbo.jpg For the artsy tippler, a pocket-size book of &ldquo;Spring Poems&rdquo; offered a sophisticated method of concealment. Within its leather bindings, &ldquo;The Four Swallows&rdquo; contained a hidden spring that, when activated, released four small bottles of the good stuff. Jan. 9, 1923. International Newsreel https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-8/merlin_166089369_612eb686-3a20-4930-8990-ff4eb4170bd2-articleLarge.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-8/merlin_166089369_612eb686-3a20-4930-8990-ff4eb4170bd2-jumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-8/merlin_166089369_612eb686-3a20-4930-8990-ff4eb4170bd2-superJumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-8/01driest-ast-8-thumbStandard.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-8/01driest-ast-8-filmstrip.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-8/01driest-ast-8-sfSpan.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-8/01driest-ast-8-thumbWide.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-8/merlin_166089369_612eb686-3a20-4930-8990-ff4eb4170bd2-articleInline.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-8/01driest-ast-8-facebookJumbo.jpg Federal agents in Philadelphia disposing of three truckloads of illegal beer. “The kegs were smashed with axes and hammers,” The Times reported, “and the contents poured into the gutters and sewers.” October 1922. P & A Photos https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-11/merlin_166089501_179fb337-88f6-430e-b7ec-32b9f7f54557-articleLarge.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-11/merlin_166089501_179fb337-88f6-430e-b7ec-32b9f7f54557-jumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-11/merlin_166089501_179fb337-88f6-430e-b7ec-32b9f7f54557-superJumbo.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-11/01driest-ast-11-thumbStandard.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-11/01driest-ast-11-filmstrip.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-11/01driest-ast-11-sfSpan.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-11/01driest-ast-11-thumbWide.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-11/merlin_166089501_179fb337-88f6-430e-b7ec-32b9f7f54557-articleInline.jpg https://static01.nyt.com/images/2020/01/01/lens/01driest-ast-11/01driest-ast-11-facebookJumbo.jpg A graveyard of abandoned brewery tanks in St. Louis was repurposed by some of the city’s unemployed — who were swiftly increasing in number as the Great Depression took hold — into temporary shelters. Frank, the “mayor” of the settlement, dubbed “Tanktown,” welcomed the neighborhood’s newest feline resident. Nov. 29, 1930. The New York Times",
@@ -13410,19 +13406,6 @@
           ]
         },
         {
-          "attribution": "John Barleycorn Died Peacefully",
-          "quotes": [
-            {
-              "quote": "At midnight all that was lawful about the spirit that cheereth and the red, red wine passed out of existence.",
-              "context": null,
-              "start_quote_index": 825,
-              "end_quote_index": 848,
-              "attribution_index": 864,
-              "attribution_method": "proximity"
-            }
-          ]
-        },
-        {
           "attribution": "Julia Bainbridge",
           "quotes": [
             {
@@ -13475,7 +13458,7 @@
       ],
       "location": null,
       "attributions": [
-        "Harry Kane’s",
+        "Harry Kane",
         "James Armstrong"
       ],
       "original_text": "The fall of a Premier League champion shows just how precarious a soccer career can be, and the damage that can be inflicted by one bad choice. Enjoying this newsletter every week? Forward it to a friend and tell them to sign up at nytimes.com/rory. A few hours after Danny Drinkwater joined Aston Villa in the first week of January, a friend asked if he wanted to go watch his new club in action. Aston Villa was playing at Leicester City in the semifinals of the Carabao Cup, English soccer’s midweek afterthought, the night after Drinkwater’s move was confirmed. There was a space for him in an executive box at the King Power Stadium: Drinkwater could come along, pretty much incognito, and cast an eye over the Villa players who were, now, his teammates. Politely, he declined the invitation. It is not especially hard to discern why. Leicester was, of course, where Drinkwater spent the happiest, most productive years of his career: a central cog in the team that first won promotion to the Premier League in 2014 and then, as is still occasionally pointed out whenever Leicester is mentioned, won the English title two years later. It was at Leicester where Drinkwater grew into one of the most highly regarded midfielders in England. He won the Premier League. He made it to the quarterfinals of the Champions League. He played for England. He was good enough that Chelsea, the team that had succeeded Leicester as champion, paid $45 million to acquire him in 2017. A few days after that deal went through, Chelsea, in one of those quirks that soccer throws up so frequently that you wonder if the whole thing is scripted, visited Leicester. Ngolo Kanté, a player who had left Leicester for Chelsea a year earlier, was given a rousing reception by his former fans. Drinkwater, named as a substitute, a little less so. The BBC described his welcome as “mixed.” It is a fairly transparent euphemism. Perhaps that memory gave Drinkwater pause as he contemplated the idea of walking into the King Power, a few months short of three years on, to watch a game. Or, perhaps, it is something a little deeper. Perhaps he sensed that returning to Leicester, where his career topped out, would simply serve to remind him that he had fallen. Since leaving Leicester, Drinkwater has made only 14 appearances in the Premier League. A dozen of those came in his first season at Chelsea, working under Antonio Conte. The following year, Conte’s successor, Maurizio Sarri, ignored Drinkwater entirely after the Community Shield, England’s traditional — and not entirely competitive — curtain-raiser. He started this season on loan at Burnley, and — hampered by injury — he played once in the Carabao Cup and once in the Premier League. In January, frustrated by his lack of minutes, he canceled that loan and joined Villa instead. His first game was last weekend, a baptism of fire against Manchester City. Villa lost, 6-1. Drinkwater, clearly struggling to keep up, was held culpable for at least two of the goals. When he was substituted, it felt like an act of mercy. Elite sports is a brutal environment, even among those who do no more than watch it. Drinkwater’s display made him something of a figure of fun: the fact he had been exposed so surgically by Kevin De Bruyne; and the fact his last three games in the Premier League have all been defeats to Manchester City, in the shirts of three different clubs. But his story is better understood, really, as less a three-year punch line and more a cautionary tale, highlighting just how precarious a soccer career can be, the fragility of success and the damage that can be inflicted by one bad choice. In Drinkwater’s case, it all turned on leaving Leicester. Chelsea as a club wanted to sign him; Conte, it has to be said, was a little more lukewarm. When his new midfielder was presented in 2017, Conte would only say that he had “specific characteristics” that he had been looking for. When Conte left the next year, even that gossamer protection was removed. Drinkwater lost all hope under Sarri. Those who know him say his love for the game dwindled and died. He had the sense that whatever he tried would not be enough and so, after a while, he stopped trying. He felt isolated, angry, besieged. The rejoinder here, of course, is the same as it always is: money. Drinkwater went to Chelsea for more money, and he has spent much of the last two years being paid a six-figure sum every week not to do very much. Sympathy, in those circumstances, tends to be in short supply, even if the explanation for it — he had the sort of childhood that contains so little money that you understand its importance all the more — should carry some weight. But that money has not helped Drinkwater be happy. He has exhibited, in the last year or so, a self-destructive streak that has included a conviction for drunken-driving and a fight outside a Manchester nightclub that left him with damaged ankle ligaments. It is not the behavior, particularly, of a man perfectly content to pick up his paycheck and go home. Six months ago, he changed his agent, proof that he knows he has, at the very least, been poorly advised. He cannot change, now, the choices he made. But you wonder if — over the next couple of weeks of the transfer window — a few players might do well to reflect on what happened to Drinkwater — not just how far he fell, but how fast, and all because of one wrong step. Drinkwater will be 30 in March. He has lost his peak years. He is undertaking extra fitness training, and more gym sessions, to make up for the time he has lost. He is trying to rediscover, as clichéd as it sounds, his appetite for his work, his affection for the game. He knows that one choice, three years ago, has brought him here, to his last-chance saloon. End of an Era? Maybe. Probably Not. But Maybe. Barcelona, it was revealed this week, is now the richest soccer club in the world, in terms of revenue: according to the financial analysts Deloitte, it raked in $936 million last season, putting the Spanish champion ahead of Real Madrid and Manchester United for the first time. That news emerged at roughly the same time as it was becoming clear that Barcelona is most definitely not the best-run club in the world. Its dismissal of its unloved coach, Ernesto Valverde, this week proved that rather neatly. The world knew Valverde had been fired about eight hours before Barcelona confirmed it. The club owed him better. Amid all the self-immolation, one detail stood out: Lionel Messi has a clause in his contract that allows him to leave this summer. The clause, similar to one enjoyed by Xavi Hernández and Andres Iniesta previously, was included at the player’s behest, and in theory exists so Messi, 32, can assess his physical condition. In reality, it is a happiness clause: If Messi is unhappy, then he can walk. It is unlikely that he would do so, of course: he has always said his loyalty to Barcelona outstrips any contract. But it is curious to wonder not only where he would go — How many clubs can afford him? Would he want to uproot his family? What sort of offer would appeal? — but whether, perhaps, he ought to. Messi wants to win another Champions League title. That is his priority as he enters his twilight years. His presence alone means that could be with Barcelona; he can, after all, turn any game at all in his team’s favor, almost by himself. But as the chaotic firing of Valverde proves, he is not at a club with a cogent vision for its future. Might there not be some small temptation, for all his loyalty, to move somewhere he would not have to cover up everyone else’s mistakes? A Tough Sell It sounds, on the surface, like an easy task. Tottenham Hotspur needs to sign a striker to act as backup to Harry Kane: someone to relieve the burden from the club’s totem, a little, and to stand in for him when he is injured, as he is now, until April at the earliest. There are plenty of candidates: Krzysztof Piatek of A.C. Milan, a team that desperately needs to raise funds to invest elsewhere; Edinson Cavani, out in the cold at Paris St.-Germain since the arrival of Mauro Icardi; Arkadiusz Milik, never quite settled at Napoli. There are plenty of strikers good enough to be Kane’s backup. That is not the problem, though. The problem is that all of those players will know exactly how the pecking order works at Tottenham: If Kane is fit, he plays. Even if Kane is not fully fit, as the Champions League final last year proved, there is a pretty good chance that he plays. Spurs effectively have to persuade a player to come to north London with the pitch: “We want you to be our plan B.” Naturally, that limits a club’s options. Some problems in soccer can be solved by money, of course, but not all of them. If a player wants regular game time, or has international aspirations, or just plain has too much ego to accept a backup role, they will not find that prospect compelling. It is easy to say Tottenham needs to sign a supporting cast for Kane. It is much, much more difficult to find someone to take on the job. Correspondence James Armstrong has a suggestion for reviving the F.A. Cup. “The top three in the Premier League plus the F.A. Cup winner should go to the Champions League, increasing the value of the trophy,” he wrote. “Teams that are effectively out of the running in the league have a possible large payoff; the race in the Premier League becomes for the top three, not the top four, making it a little tighter.” My objection to this idea has always been that it in some way discredits the Champions League: What if a team in the top three wins the F.A. Cup, and then some no-marks get a spot in Europe’s most exclusive competition as runners-up? James has a solution: In that instance, the team that finishes fourth in the league gets the final spot. There is merit in this, but I think it is unlikely ever to come to fruition. We may have to make do with cosmetic changes — the end of replays, for example, and changing when the tournament is played — first. That’s all for this week. Thanks for all the correspondence, as ever. I’m on Twitter for two hours per day, according to my phone: it’s a problem, and I freely admit that. Emails are always welcome to askrory@nytimes.com. And you can tell everyone you know about how nice it is to get an email every Friday here. Have a great weekend. Chief soccer correspondent Rory Smith takes you from the biggest matches to the smallest leagues, covering the tactics, history and personalities of the world’s most popular sport. Sign up to receive his newsletter at nytimes.com/rory. PHOTOS: Danny Drinkwater started this season with Burnley, the second of three clubs he has played for since winning a title with Leicester City in 2016. Lionel Messi, below, has a clause in his contract that would allow him to leave Barcelona. (PHOTOGRAPHS BY LEE SMITH/ACTION IMAGES VIA REUTERS; HASSAN AMMAR/ASSOCIATED PRESS) https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny2/merlin_165377457_ed6bdbe6-c30a-48b2-9c58-12d3449e5d1b-articleLarge.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny2/merlin_165377457_ed6bdbe6-c30a-48b2-9c58-12d3449e5d1b-jumbo.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny2/merlin_165377457_ed6bdbe6-c30a-48b2-9c58-12d3449e5d1b-superJumbo.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny2/merlin_165377457_ed6bdbe6-c30a-48b2-9c58-12d3449e5d1b-thumbStandard.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny2/merlin_165377457_ed6bdbe6-c30a-48b2-9c58-12d3449e5d1b-filmstrip.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny2/merlin_165377457_ed6bdbe6-c30a-48b2-9c58-12d3449e5d1b-sfSpan.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny2/merlin_165377457_ed6bdbe6-c30a-48b2-9c58-12d3449e5d1b-thumbWide.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny2/merlin_165377457_ed6bdbe6-c30a-48b2-9c58-12d3449e5d1b-articleInline.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny2/17rorynewsletter-danny2-facebookJumbo.jpg A rare recent image of Drinkwater, left, in live action. Andrew Yates/Reuters https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny/17rorynewsletter-danny-articleLarge.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny/17rorynewsletter-danny-jumbo.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny/17rorynewsletter-danny-superJumbo.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny/17rorynewsletter-danny-thumbStandard.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny/17rorynewsletter-danny-filmstrip.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny/17rorynewsletter-danny-sfSpan.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny/17rorynewsletter-danny-thumbWide.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny/17rorynewsletter-danny-articleInline.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-danny/17rorynewsletter-danny-facebookJumbo.jpg Danny Drinkwater won the league with Leicester but struggled to get on the field with first Chelsea and then Burnley. Hannah Mckay/Reuters https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-messi/merlin_166146156_684ebceb-2fc6-4e35-9418-c66a2abd0aad-articleLarge.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-messi/merlin_166146156_684ebceb-2fc6-4e35-9418-c66a2abd0aad-jumbo.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-messi/merlin_166146156_684ebceb-2fc6-4e35-9418-c66a2abd0aad-superJumbo.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-messi/17rorynewsletter-messi-thumbStandard.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-messi/17rorynewsletter-messi-filmstrip.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-messi/merlin_166146156_684ebceb-2fc6-4e35-9418-c66a2abd0aad-sfSpan.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-messi/merlin_166146156_684ebceb-2fc6-4e35-9418-c66a2abd0aad-thumbWide.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-messi/merlin_166146156_684ebceb-2fc6-4e35-9418-c66a2abd0aad-articleInline.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-messi/17rorynewsletter-messi-facebookJumbo.jpg Lionel Messi has spent his entire career at Barcelona. Bernat Armangue/Associated Press https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-kane/merlin_166884975_c25b069e-f224-49d5-a52f-a561f8238b04-articleLarge.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-kane/merlin_166884975_c25b069e-f224-49d5-a52f-a561f8238b04-jumbo.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-kane/merlin_166884975_c25b069e-f224-49d5-a52f-a561f8238b04-superJumbo.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-kane/17rorynewsletter-kane-thumbStandard.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-kane/17rorynewsletter-kane-filmstrip.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-kane/merlin_166884975_c25b069e-f224-49d5-a52f-a561f8238b04-sfSpan.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-kane/merlin_166884975_c25b069e-f224-49d5-a52f-a561f8238b04-thumbWide.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-kane/merlin_166884975_c25b069e-f224-49d5-a52f-a561f8238b04-articleInline.jpg https://static01.nyt.com/images/2020/01/17/sports/17rorynewsletter-kane/merlin_166884975_c25b069e-f224-49d5-a52f-a561f8238b04-facebookJumbo.jpg Harry Kane’s leg injury is a problem for Tottenham. Finding a replacement won’t be easy. Ian Walton/Reuters",
@@ -15696,7 +15679,7 @@
       ],
       "quotes_by_attribution": [
         {
-          "attribution": "Harry Kane’s",
+          "attribution": "Harry Kane",
           "quotes": [
             {
               "quote": "We want you to be our plan B.",
@@ -23307,7 +23290,7 @@
       ],
       "location": null,
       "attributions": [
-        "Scott Morrison’s",
+        "Scott Morrison",
         "Bill Hare",
         "Daniel Flitton",
         "Joseph Camilleri",
@@ -25132,7 +25115,7 @@
       ],
       "quotes_by_attribution": [
         {
-          "attribution": "Scott Morrison’s",
+          "attribution": "Scott Morrison",
           "quotes": [
             {
               "quote": "Your country is on fire.",
@@ -27130,7 +27113,7 @@
         "John Thune",
         "Julián Castro",
         "Susan Almjeld",
-        "https://static01.nyt.com/images/2020/01/26/us/politics/26iowa-border5/merlin_167606055_341b378d-5a3c-4dcc-9696-5bd1480e8cec-facebookJumbo.jpg Michelle Randall",
+        "Michelle Randall",
         "Bill de Blasio",
         "Jane Kleeb",
         "Gladys Harrison"
@@ -28856,7 +28839,7 @@
           ]
         },
         {
-          "attribution": "https://static01.nyt.com/images/2020/01/26/us/politics/26iowa-border5/merlin_167606055_341b378d-5a3c-4dcc-9696-5bd1480e8cec-facebookJumbo.jpg Michelle Randall",
+          "attribution": "Michelle Randall",
           "quotes": [
             {
               "quote": "By the time the primary comes to us the race is practically decided,",
@@ -29460,7 +29443,7 @@
       ],
       "location": "WASHINGTON",
       "attributions": [
-        "Trump",
+        "Donald J. Trump",
         "Chad Wolf",
         "Jeffrey Glassberg",
         "Brian Kolfage"
@@ -30189,7 +30172,7 @@
       ],
       "quotes_by_attribution": [
         {
-          "attribution": "Trump",
+          "attribution": "Donald J. Trump",
           "quotes": [
             {
               "quote": "a victory for the rule of law",
@@ -30197,7 +30180,8 @@
               "start_quote_index": 272,
               "end_quote_index": 280,
               "attribution_index": 258,
-              "attribution_method": "proximity"
+              "attribution_method": "proximity",
+              "original_attribution": "Trump"
             }
           ]
         },
@@ -30289,7 +30273,7 @@
       "attributions": [
         "Scott Wiener",
         "Andreas Borgeas",
-        "Newsom",
+        "Gavin Newsom",
         "Isaiah Madison",
         "Toni Atkins"
       ],
@@ -31819,7 +31803,7 @@
           ]
         },
         {
-          "attribution": "Newsom",
+          "attribution": "Gavin Newsom",
           "quotes": [
             {
               "quote": "Marshall Plan for Housing,",
@@ -31827,7 +31811,8 @@
               "start_quote_index": 466,
               "end_quote_index": 472,
               "attribution_index": 474,
-              "attribution_method": "pattern_2"
+              "attribution_method": "pattern_2",
+              "original_attribution": "Newsom"
             }
           ]
         },
@@ -31896,7 +31881,7 @@
       ],
       "location": null,
       "attributions": [
-        "Warren Buffett"
+        "Buffett"
       ],
       "original_text": "With a deal to sell Berkshire Hathaway’s newspapers to Lee Enterprises, the billionaire is giving up on the news business. Berkshire Hathaway, the conglomerate run by Warren E. Buffett, announced on Wednesday that it had agreed to sell its 31 newspapers for $140 million in cash. The buyer is Lee Enterprises, the publisher that has been managing the newspaper group’s operations for the past 18 months. Among the organizations being sold are The Buffalo News and a collection of local papers that include The Richmond Times-Dispatch in Virginia. The deal ends Mr. Buffett’s dalliance with being a news mogul. Berkshire had owned The Buffalo News since 1977 and within the past decade rapidly bought up other papers, consolidating them in a division called BH Media Group. In a letter to his newspaper publishers in 2012, Mr. Buffett described himself as a newspaper “addict” with designs on buying more papers. But he grew pessimistic about the business more recently because of drops in advertising revenue. In an interview last year, he said most newspapers were “toast.” Lee also owns newspapers in St. Louis; Tucson, Ariz.; and other markets. “We had zero interest in selling the group to anyone else for one simple reason: We believe that Lee is best positioned to manage through the industry’s challenges,” Mr. Buffett said in a statement. Mr. Buffett will also retain ties to Lee, in a fashion that stays true to his reputation as a master of making money. Berkshire will lend it $576 million, some of which will pay for the newspaper deal, at a 9 percent annual interest rate. PHOTO: Warren Buffett, center, at Berkshire Hathaway’s annual shareholders meeting in Omaha last year. (PHOTOGRAPH BY Scott Morgan/Reuters FOR THE NEW YORK TIMES)",
       "tokenized_text": [
@@ -32211,7 +32196,7 @@
       ],
       "quotes_by_attribution": [
         {
-          "attribution": "Warren Buffett",
+          "attribution": "Buffett",
           "quotes": [
             {
               "quote": "We had zero interest in selling the group to anyone else for one simple reason: We believe that Lee is best positioned to manage through the industry’s challenges,",
@@ -33691,9 +33676,9 @@
       "location": null,
       "attributions": [
         "Derek Jeter",
-        "Jack",
+        "Jack Leo Van Impe",
         "Rivera",
-        "Larry Walker’s"
+        "Larry Walker"
       ],
       "original_text": "Jeter fell one anonymous vote short of being unanimously elected into the Hall of Fame, but he said he would “focus on the ones who did” name him. Derek Jeter could hardly contain his glee over being elected into the Baseball Hall of Fame. At a news conference in Midtown Manhattan on Wednesday, a day after being elected, Jeter flashed his famous smile almost nonstop and made perhaps as many jokes in a public setting as he has over the last decade combined. Jeter, often guarded in public, poked fun at his former teammate Mariano Rivera, at his father for claiming to be a better shortstop, at Larry Walker’s SpongeBob SquarePants shirt (Walker was wearing it on Tuesday, when he found out that he, too was elected to the Hall of Fame). But there was one shot Jeter would not take, and that was at the lone voter who declined to put Jeter on the Hall of Fame ballot. “I focus on the ones who did,” Jeter said, referring to the 99.7 percent of voters who felt he deserved induction into the Hall of Fame. “It takes a lot of people to all agree to get you to this point. So, I’m not thinking about that.” Jeter received 396 of a possible 397 votes, easily clearing the 75 percent threshold for induction but barely missing out on becoming the second player, after Rivera last year, to be unanimously elected into the Hall of Fame. That one unknown ballot has ignited a firestorm of sorts over who submitted it, and whether the rules should be changed to end anonymous voting. While hundreds of voters opt to make their ballots public every year, it is not required, and many choose to keep their ballots anonymous. One such voter declined to include Jeter. When the subject came up on Wednesday, it created a brief, awkward moment that underscored the hand-wringing over this year’s results. At one point a spokesman for the Hall of Fame said the matter was in the hands of the Baseball Writers Association of America, which is commissioned by the Hall to conduct the vote. But that was not correct, and it prompted Jack O’Connell, the secretary-treasure of the BBWAA, to correct the record. As Jeter and Walker looked on somewhat bewildered, O’Connell clarified that the BBWAA had made a request several years ago to make all the ballots public. But the Hall of Fame denied the request, reasoning that if voters were required to make their votes public, they could be susceptible to outside pressure, preventing them from voting according to their conscience. (The New York Times’s reporters do not vote in the Hall of Fame election.) “They turned that down and said they preferred that the individual decide whether he or she wishes to make the ballot public,” O’Connell said of the Hall. “That’s the option each voter has.” The BBWAA also votes on the yearly player awards, like the Most Valuable Player and Cy Young Awards, and all of those ballots are public. The Hall of Fame debated the merits and pitfalls of the BBWAA’s proposal, but Jane Forbes Clark, the chairwoman of the Hall of Fame, said that they had concluded that anonymous ballots were essential to preserving a free election. And the fervor with which many people have vilified the unknown dissenting voice has not made the Hall of Fame any more inclined to change the process. Clark, who sat on the stage next to Jeter, was asked if the board of directors was comfortable with the current format. “Yes, we are,” she said. But Jeter and Walker were uninterested in the logistics of how they were elected, only that they got in. Jeter learned on Wednesday that his plaque will go next to Rivera’s at the Hall in Cooperstown, N.Y., which is fitting. The two players went through the Yankees minor league system together, made their major league debuts during the same month in 1995, were sent back to the minors on the same day that same year, and played virtually their entire careers alongside one another, except for the lone season, in 2014, that Jeter played after Rivera had retired. “It’s an honor just to be in the Hall of Fame,” Jeter quipped. “I don’t care where they put me. They can put me in the rest room.” Both Jeter and Walker discussed the hardships and trials they faced early in their professional careers after signing as teenagers — Jeter joining the Yankees in 1992 and Walker joining the Montreal Expos in 1984. Walker spent six years with the Expos, parts of 10 seasons with the Colorado Rockies and one and a half with the St. Louis Cardinals. He announced that he would go into the Hall of Fame as a member of the Rockies, in part because of the 258 home runs and 1.044 on-base plus slugging percentage he accumulated with that team. “I spent 10 years in Colorado,” he said, “where the majority of my damage was done.” For Jeter, all his damage was done with the Yankees, over 20 years in which he fulfilled a childhood dream to wear their pinstripes, won five championships, and ultimately compelled 396 writers to send him to Cooperstown. “I’m most proud that I was a Yankee,” he said. “It was the only thing I ever wanted to do as long as I could remember, to play shortstop for the New York Yankees. When it’s all said and done, that’s what I’m most proud of.” PHOTO: Larry Walker, left, and Derek Jeter were all laughs Wednesday as they met the media one day after being elected to the baseball Hall of Fame. (PHOTOGRAPH BY MIKE STOBE/GETTY IMAGES) https://static01.nyt.com/images/2020/01/22/sports/22hof-jeter2/merlin_167597289_3f4110dd-4503-424b-ab5e-4c08454878ed-articleLarge.jpg https://static01.nyt.com/images/2020/01/22/sports/22hof-jeter2/merlin_167597289_3f4110dd-4503-424b-ab5e-4c08454878ed-jumbo.jpg https://static01.nyt.com/images/2020/01/22/sports/22hof-jeter2/merlin_167597289_3f4110dd-4503-424b-ab5e-4c08454878ed-superJumbo.jpg https://static01.nyt.com/images/2020/01/22/sports/22hof-jeter2/merlin_167597289_3f4110dd-4503-424b-ab5e-4c08454878ed-thumbStandard.jpg https://static01.nyt.com/images/2020/01/22/sports/22hof-jeter2/merlin_167597289_3f4110dd-4503-424b-ab5e-4c08454878ed-filmstrip.jpg https://static01.nyt.com/images/2020/01/22/sports/22hof-jeter2/merlin_167597289_3f4110dd-4503-424b-ab5e-4c08454878ed-sfSpan.jpg https://static01.nyt.com/images/2020/01/22/sports/22hof-jeter2/merlin_167597289_3f4110dd-4503-424b-ab5e-4c08454878ed-thumbWide.jpg https://static01.nyt.com/images/2020/01/22/sports/22hof-jeter2/merlin_167597289_3f4110dd-4503-424b-ab5e-4c08454878ed-articleInline.jpg https://static01.nyt.com/images/2020/01/22/sports/22hof-jeter2/merlin_167597289_3f4110dd-4503-424b-ab5e-4c08454878ed-facebookJumbo.jpg Jeter with Jane Forbes Clark, the chairwoman of the Hall of Fame, on Wednesday. Mike Stobe/Getty Images",
       "tokenized_text": [
@@ -34827,7 +34812,7 @@
           ]
         },
         {
-          "attribution": "Jack",
+          "attribution": "Jack Leo Van Impe",
           "quotes": [
             {
               "quote": "That’s the option each voter has.",
@@ -34835,7 +34820,8 @@
               "start_quote_index": 544,
               "end_quote_index": 553,
               "attribution_index": 538,
-              "attribution_method": "pattern_3"
+              "attribution_method": "pattern_3",
+              "original_attribution": "Jack"
             }
           ]
         },
@@ -34853,7 +34839,7 @@
           ]
         },
         {
-          "attribution": "Larry Walker’s",
+          "attribution": "Larry Walker",
           "quotes": [
             {
               "quote": "I spent 10 years in Colorado,",
@@ -34904,7 +34890,7 @@
         "Buttigieg",
         "Tom Perez",
         "S.Y. Lee",
-        "Steyer"
+        "Tom Steyer"
       ],
       "original_text": "In a major shift, the Democratic National Committee will eliminate the requirement that candidates to show evidence of grass-roots support. COUNCIL BLUFFS, Iowa — The Democratic National Committee has opened the door to allowing former Mayor Michael R. Bloomberg of New York to participate in the presidential debate it will sponsor in Nevada next month, a change from its practice that demanded candidates demonstrate grass-roots fund-raising support. The D.N.C. announced Friday that in order to participate in the debate, set for Feb. 19 in Las Vegas, a candidate must win at least a single delegate in either the Iowa caucuses or the New Hampshire primary or meet polling requirements. It has eliminated the requirement that candidates must have received donations from hundreds of thousands of individuals. Mr. Bloomberg, a multibillionaire, is running a self-funded campaign and is not soliciting donations. The changes, which represent the most significant tightening of debate requirements this cycle, set off a fresh and pointed round of criticism at a critical moment in the race, as several campaigns braced for the reality check that the Iowa caucuses will provide. And the edict from party officials, which some saw as a concession to Mr. Bloomberg, quickly reignited concerns among those who believe the D.N.C.’s shifting rules for the debates privilege some candidates and campaigns over others. To meet the latest polling threshold, candidates must earn 10 percent in four qualifying national polls or 12 percent in two polls taken in Nevada or South Carolina by a qualifying pollster. Mr. Bloomberg, who is not competing in the first four nominating contests, held in those two states, Iowa and New Hampshire, has notched 10 percent in one national poll, which was released by Fox News on Jan. 26. He has until Feb. 18 to perform similarly well in three other national polls. “We are thrilled that voters could soon have the chance to see Mike Bloomberg on the debate stage, hear his vision for the country, and see why he is the strongest candidate to defeat Donald Trump and bring our country together,” Kevin Sheekey, Mr. Bloomberg’s campaign manager, said in a statement. He added, “Mike has run for office three times and never taken a dime from special interests, allowing him to act independently, on the merits, without having to do what donors expect. He is proud to be doing the same with this campaign.” Only former Vice President Joseph R. Biden Jr., Senator Bernie Sanders of Vermont and Senator Elizabeth Warren of Massachusetts have so far met the polling threshold for the Nevada debate. “To now change the rules in the middle of the game to accommodate Mike Bloomberg, who is trying to buy his way into the Democratic nomination, is wrong,” said Jeff Weaver, a senior adviser to Mr. Sanders. “That’s the definition of a rigged system.” Ms. Warren sounded a similar note on Twitter. “The DNC didn’t change the rules to ensure good, diverse candidates could remain on the debate stage. They shouldn’t change the rules to let a billionaire on,” she wrote. “Billionaires shouldn’t be allowed to play by different rules — on the debate stage, in our democracy, or in our government.” Former Mayor Pete Buttigieg of South Bend, Ind., Senator Amy Klobuchar of Minnesota, the entrepreneur Andrew Yang and the hedge fund billionaire Tom Steyer, each of whom qualified for next week’s debate in New Hampshire, could still make the one that follows in Nevada by reaching the polling threshold or winning a delegate in the Iowa caucuses or the New Hampshire primary. If they don’t, it would suggest their campaigns faced significant obstacles to continuing. Mr. Buttigieg, speaking in Council Bluffs, said he was fine with the new requirements. “When the initial rules came out with a focus on grass-roots fund-raising, of course our campaign was focused on the same thing,” he told reporters. “Now it sounds like there is a different focus and I do believe that we will qualify.” Tom Perez, the chairman of the D.N.C., signaled in December that he would be willing to alter the debate criteria to allow Mr. Bloomberg to participate once primaries and caucuses began. But he also said then: “Our logic for having a grass-roots fund-raising threshold was, it provides opportunity for people who don’t have the national name I.D. to get on the debate stage. If you want to win the presidency, you’ve got to connect with grass-roots America.” Xochitl Hinojosa, a D.N.C. spokeswoman, argued Friday that the first two nominating contests would adequately measure the grass-roots enthusiasm around a particular candidate, and that the donor threshold was therefore unnecessary. “Now that we will have the results of two elections and grass-roots support is actually captured in voting, that will replace the donor threshold,” she said. During the fall and winter, as the D.N.C. began making it harder to qualify for the debates, some candidates who found themselves short of the thresholds began agitating for more inclusive rules. Senator Cory Booker of New Jersey, for example, aired concerns about the diversity of the group that had qualified for the winter debates and led an effort to persuade Mr. Perez to make changes that would expand the roster. Mr. Booker dropped out of the race after failing to qualify for the debates held in December and January. And as it became increasingly likely that he would not qualify for the debate held earlier this month in Iowa, Mr. Yang wrote a letter to Mr. Perez suggesting that the D.N.C. commission more qualifying polls. In a statement posted on Twitter on Friday, S.Y. Lee, a spokesman for Mr. Yang, criticized the rule change, arguing it would help Mr. Bloomberg. “It’s a mistake for @TheDemocrats to change the rules for debates in the middle of this race to yield to a billionaire,” Mr. Lee said. “We need to respect the grass roots movement leading this party forward.” Former members of the Booker campaign underscored just how much of a financial burden the individual donor threshold had placed on campaigns over the summer. Addisu Demissie, who was Mr. Booker’s campaign manager, said on Twitter that one of the most significant days of his campaign was when the donor threshold doubled from 65,000 to 130,000. For a lot of the smaller campaigns, doubling their donor counts was essentially an expense, as buying email lists and running acquisition ads on Facebook replaced other campaign priorities such as digital ads and staffing in early voting states. Jenna Lowenstein, a deputy campaign manager for Mr. Booker, said on Twitter that they had thrown out an entire strategic plan for those states in order to buy email addresses. Mr. Steyer, who argued in December for allowing Mr. Booker and other candidates who missed the polling thresholds onto the debate stage, lamented Friday’s rules change. “Changing the rules now to accommodate Mike Bloomberg and not changing them in the past to ensure a more diverse debate stage is just plain wrong,” he said. “They are changing the rules for a candidate who is ignoring early states’ voters and grass roots donors.” Reid J. Epstein reported from Council Bluffs, and Matt Stevens from New York. Nick Corasaniti contributed reporting. Reid J. Epstein reported from Council Bluffs, and Matt Stevens from New York. Nick Corasaniti contributed reporting. PHOTO: Party officials eliminated the requirement that candidates show evidence of grass-roots support. (PHOTOGRAPH BY TAMIR KALIFA FOR THE NEW YORK TIMES)",
       "tokenized_text": [
@@ -36431,7 +36417,7 @@
           ]
         },
         {
-          "attribution": "Steyer",
+          "attribution": "Tom Steyer",
           "quotes": [
             {
               "quote": "Changing the rules now to accommodate Mike Bloomberg and not changing them in the past to ensure a more diverse debate stage is just plain wrong,",
@@ -36439,7 +36425,8 @@
               "start_quote_index": 1308,
               "end_quote_index": 1336,
               "attribution_index": 1301,
-              "attribution_method": "proximity"
+              "attribution_method": "proximity",
+              "original_attribution": "Steyer"
             },
             {
               "quote": "They are changing the rules for a candidate who is ignoring early states’ voters and grass roots donors.",
@@ -36447,7 +36434,8 @@
               "start_quote_index": 1340,
               "end_quote_index": 1361,
               "attribution_index": 1337,
-              "attribution_method": "pattern_3"
+              "attribution_method": "pattern_3",
+              "original_attribution": "Steyer"
             }
           ]
         }
@@ -36955,8 +36943,7 @@
       "location": null,
       "attributions": [
         "Zaheer Ahmad Zindani",
-        "Bibi Sediqa",
-        "Sima"
+        "Bibi Sediqa"
       ],
       "original_text": "The war in Afghanistan has taken so much from the poet Zaheer Ahmad Zindani. His mother was determined to ensure it wouldn’t take his chance to marry. KANDAHAR, Afghanistan — The young poet sat in the barber’s chair, facing a giant mirror on the wall that he could not see. The poet was Zaheer Ahmad Zindani, and this was the eve of his wedding. The war in Afghanistan had taken many things from him: his eyes, his father, his sister, his first love. But he had a chance at a new beginning, preparing to marry a woman his mother had worked tirelessly to find. “Make it so no matter which of the four directions I comb, it looks good,” Mr. Zindani told the barber. The narrow alleys and matchbox houses in his neighborhood of Kandahar City, in southern Afghanistan, were dark. Electricity had been patchy since the Taliban blew up a cable that fed power to the city. Despite that, he was busy entertaining relatives. Leading the celebrations for the big day last month was his mother, Bibi Sediqa, the anchor of a family devastated at every turn, drawing on all her strength to keep it together and stay hopeful. Late into the evening, she and a group of women took Mr. Zindani to the bride’s for a traditional henna party where the couple painted little full moons in each other’s palms. The next evening, she was in the front seat of the car that brought the bride to her new home. “This was my first real happiness in life,” Ms. Sediqa said after the wedding. In a deeply conservative and patriarchal society in which many women are kept out of the public eye, even Ms. Sediqa, who is the main breadwinner for her family, did not want to be pictured for this article and was reluctant to be interviewed. She said she was married at 14. In the early years of the United States-led invasion, an American airstrike killed her husband in their home district of Gereshk, in Helmand. She was 26 and left with three young daughters and two sons. Zaheer was 7. Relocating to Chaman, a border area with Pakistan, she cooked and cleaned in Pakistani homes to feed her children. Her young boys each worked for small change as mechanic’s apprentices in Afghanistan. Zaheer was in love with a childhood friend, their teenage romance blossoming with gift exchanges and sneaky dates. Then, another tragedy. As Zaheer, 17, and a younger sister were traveling to visit relatives in western Herat Province, their bus hit a Taliban roadside bomb. She burned to death; Zaheer was left blind. Ms. Sediqa rushed him to hospital after hospital — in Kabul, in the Pakistani city of Karachi, and even in India years later when she had saved enough. “They said the nerve-endings in the eyes are finished,” Ms. Sediqa said. Ms. Sediqa moved the family to Kandahar City. For a couple of years, she worked as a polio vaccinator, going door to door to give drops. At night she took classes, resuming an education that had been disrupted when she was in third grade. These days, Ms. Sediqa has a day job as a literacy instructor, traveling to villages to teach adults how to read and write. She continues her own education at night. (Just before the wedding, she completed her 11th-grade exams.) After Mr. Zindani returned home from a grueling and poignant peace march against violence that captured the country’s attention, he and his younger brother sold blocks of ice. Mr. Zindani’s urge to get married, and urgently, was as much out of a hurt. The family of his teenage love rejected him after he was blinded, marrying the girl to someone else. He was determined to prove that blindness was not the end. But convincing any family to marry their daughter to a blind man was tough work, and it fell on Ms. Sediqa. She knocked on as many as 18 doors, Mr. Zindani said. “They would all say, ‘We would happily agree if he hadn’t been blind,’” Mr. Zindani recalled. “My mother would say, ‘His eyes will be fixed.’ They would say, ‘Come back when they are fixed.’” Ms. Sediqa had not given up hope that her son’s eyes would be fixed, going so far as to sell jewelry, borrow money and fly to Kabul to pay for a solution that turned out to be a scam. During her vaccination work, Ms. Sediqa met Sima, a woman in her early 20s who was teaching children Quranic studies at her home. Ms. Sediqa would stop by to give the children polio drops. She grew to like Sima, and started talking to Sima’s family. After more than a dozen visits over a year, Sima’s parents said yes. Mr. Zindani’s disability was not much of an issue, they said, as long as he had good character and proved he could take care of a new family. Mr. Zindani’s assurance: He possessed a disability benefits card, and his family owned a lot of land back in their village in Gereshk. Once the Taliban were gone, they could make use of that land again. Sima’s parents said she had consented. But before a final nod, Sima’s mother and sister came over to Mr. Zindani’s home for one last conversation with the future groom. “They wanted to make sure I would be nice to their daughter, that I would respect her rights, that I wouldn’t be abusive,” Mr. Zindani said. “Both my mother and I told them since I am disabled and they are being generous with me, I will treat her as my crown.” On the wedding day, a small convoy of cars set off from Mr. Zindani’s home to the bride’s, snaking through Kandahar’s streets as an excited 14-year-old drummer provided a soundtrack from the back of a three-wheeler. Mr. Zindani seemed happy and excited, too. He said that what remained of his previous love, and the heartbreak of it, was now largely limited to poetic inspiration. He recited one of his latest verses: I came to this alley to ask about my love I wander in ruins; I hoped she hears my sigh. He said that he was stuck with images of his life before he went blind; since the bombing he is unable to visualize new acquaintances. “Love with open eyes — when you have fallen in love with someone you have seen — is different with that of closed eyes,” Mr. Zindani said. “When you can’t see the person, the thirst is not fulfilled the same.” At Sima’s house, the men were led to the veranda of an open-air mosque and the women into her home. The men sipped orange soda as the sun set while the women’s voices, singing to a simple hand drum called a daf, echoed through the neighborhood. The ceremony ended in about an hour, with a prayer by a local imam who wished the newlyweds eternal love — “the kind between the Prophet Muhammad and his wife Khadija.” As the bride made her way out of her parents’ home and into the car adorned in flowers, Mr. Zindani’s friends danced in celebration in front of it. The young drummer played a simple rhythmic beat in the dim light of the moon. When the convoy returned to Mr. Zindani’s house with the bride, the women, still singing and playing their daf, took her inside to her throne where the party would continue into the night. Mr. Zindani stayed outside, in the dark alley, as his friends continued to dance. One friend spun and spun and spun, until the young drummer’s hands tired and he signaled its end. “I wish I could see it,” Mr. Zindani said. “But my heart is happy.” PHOTOS: Zaheer Ahmad Zindani getting his hair cut for his wedding in Kandahar, Afghanistan; The bride, Sima, covered by a white veil, entering the wedding car at the mosque.; Sima, the bride, covered with a white veil, entering the wedding car outside the mosque.; “Both my mother and I told them since I am disabled and they are being generous with me, I will treat her as my crown,” Mr. Zindani said; Mr. Zindani’s friends dancing outside his house, in the dark alley, as a young drummer played a simple rhythmic beat in the dim light of the moon. (PHOTOGRAPHS BY JIM HUYLEBROEK FOR THE NEW YORK TIMES) https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-2/merlin_166100904_91515e4a-690f-42c3-82f6-359a9bec1a2e-articleLarge.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-2/merlin_166100904_91515e4a-690f-42c3-82f6-359a9bec1a2e-jumbo.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-2/merlin_166100904_91515e4a-690f-42c3-82f6-359a9bec1a2e-superJumbo.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-2/20afghan-wedding-2-thumbStandard.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-2/20afghan-wedding-2-filmstrip.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-2/merlin_166100904_91515e4a-690f-42c3-82f6-359a9bec1a2e-sfSpan.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-2/merlin_166100904_91515e4a-690f-42c3-82f6-359a9bec1a2e-thumbWide.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-2/merlin_166100904_91515e4a-690f-42c3-82f6-359a9bec1a2e-articleInline.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-2/20afghan-wedding-2-facebookJumbo.jpg The night before his wedding, Mr. Zindani told his barber, “Make it so no matter which of the four directions I comb, it looks good.” Jim Huylebroek for The New York Times https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-4/merlin_166101717_04afac98-b6a6-45db-b475-db62c3d7953a-articleLarge.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-4/merlin_166101717_04afac98-b6a6-45db-b475-db62c3d7953a-jumbo.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-4/merlin_166101717_04afac98-b6a6-45db-b475-db62c3d7953a-superJumbo.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-4/20afghan-wedding-4-thumbStandard.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-4/20afghan-wedding-4-filmstrip.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-4/merlin_166101717_04afac98-b6a6-45db-b475-db62c3d7953a-sfSpan.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-4/merlin_166101717_04afac98-b6a6-45db-b475-db62c3d7953a-thumbWide.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-4/merlin_166101717_04afac98-b6a6-45db-b475-db62c3d7953a-articleInline.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-4/20afghan-wedding-4-facebookJumbo.jpg Sima, the bride, covered with a white veil, is guided to the wedding car from the women's side of the celebration. Jim Huylebroek for The New York Times https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-3/merlin_166101501_7456f9bd-17d0-4dda-a354-4e78dfe5ed06-articleLarge.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-3/merlin_166101501_7456f9bd-17d0-4dda-a354-4e78dfe5ed06-jumbo.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-3/merlin_166101501_7456f9bd-17d0-4dda-a354-4e78dfe5ed06-superJumbo.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-3/20afghan-wedding-3-thumbStandard.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-3/20afghan-wedding-3-filmstrip.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-3/merlin_166101501_7456f9bd-17d0-4dda-a354-4e78dfe5ed06-sfSpan.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-3/merlin_166101501_7456f9bd-17d0-4dda-a354-4e78dfe5ed06-thumbWide.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-3/merlin_166101501_7456f9bd-17d0-4dda-a354-4e78dfe5ed06-articleInline.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-3/20afghan-wedding-3-facebookJumbo.jpg Mr. Zindani’s friends dancing after the ceremony. “My heart is happy,” he said. Jim Huylebroek for The New York Times https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-5/merlin_166101441_7bd7f57c-1912-4a59-86f9-e07e876d1e76-articleLarge.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-5/merlin_166101441_7bd7f57c-1912-4a59-86f9-e07e876d1e76-jumbo.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-5/merlin_166101441_7bd7f57c-1912-4a59-86f9-e07e876d1e76-superJumbo.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-5/20afghan-wedding-5-thumbStandard.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-5/20afghan-wedding-5-filmstrip.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-5/merlin_166101441_7bd7f57c-1912-4a59-86f9-e07e876d1e76-sfSpan.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-5/merlin_166101441_7bd7f57c-1912-4a59-86f9-e07e876d1e76-thumbWide.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-5/merlin_166101441_7bd7f57c-1912-4a59-86f9-e07e876d1e76-articleInline.jpg https://static01.nyt.com/images/2020/01/20/world/20afghan-wedding-5/20afghan-wedding-5-facebookJumbo.jpg After receiving new clothes, Mr. Zindani was sprinkled with dried chickpeas and money at a mosque to celebrate his wedding. Jim Huylebroek for The New York Times",
       "tokenized_text": [
@@ -38551,6 +38538,14 @@
               "attribution_method": "pattern_3"
             },
             {
+              "quote": "the kind between the Prophet Muhammad and his wife Khadija.",
+              "context": "The ceremony ended in about an hour, with a prayer by a local imam who wished the newlyweds eternal love — “the kind between the Prophet Muhammad and his wife Khadija.”",
+              "start_quote_index": 1371,
+              "end_quote_index": 1383,
+              "attribution_index": 1404,
+              "attribution_method": "proximity"
+            },
+            {
               "quote": "I wish I could see it,",
               "context": null,
               "start_quote_index": 1508,
@@ -38586,19 +38581,6 @@
               "end_quote_index": 551,
               "attribution_index": 552,
               "attribution_method": "pattern_1"
-            }
-          ]
-        },
-        {
-          "attribution": "Sima",
-          "quotes": [
-            {
-              "quote": "the kind between the Prophet Muhammad and his wife Khadija.",
-              "context": "The ceremony ended in about an hour, with a prayer by a local imam who wished the newlyweds eternal love — “the kind between the Prophet Muhammad and his wife Khadija.”",
-              "start_quote_index": 1371,
-              "end_quote_index": 1383,
-              "attribution_index": 1385,
-              "attribution_method": "proximity"
             }
           ]
         }
@@ -39905,7 +39887,6 @@
       "location": null,
       "attributions": [
         "Qassim Suleimani",
-        "Suleimani",
         "Farnaz Fassihi"
       ],
       "original_text": "An investigation that began in the pages of The Times becomes a criminal case in a courtroom. Certain stories demand our attention, over and over. That’s how we feel about the story of Harvey Weinstein. Today’s episode about his criminal trial in Manhattan, which began this week, marks the eighth time we’ve devoted a show to the subject. From the beginning, the story of Weinstein, the allegations against him of a pattern of sexual misconduct and the system that facilitated it — which became the subject of a Pulitzer Prize-winning line of coverage in The Times by our colleagues Jodi Kantor and Megan Twohey — has sent shockwaves across the United States and the world. It ignited a social movement and forced a social and political reckoning over sex, power and accountability that is still playing out. Our coverage began in the fall of 2017 with Jodi and Megan’s original investigation, which they laid out in detail on the show. The episode introduced Weinstein to listeners — a prominent, wealthy and well-connected Hollywood figure accused of serially abusing women in the entertainment industry. Next, we explored the impact of Megan and Jodi’s investigation, which prompted dozens of new accusers to come forward, including a woman named Katherine Kendall, who told us her harrowing story on the show. Soon after, when the actress Ashley Judd, another Weinstein accuser, filed a lawsuit against Weinstein — not for sexual misconduct, but for the damage he did to her career — we looked at the economic toll of sexual harassment and whether the law sufficiently protects against it. As Megan and Jodi’s reporting deepened, we examined the apparatus of complicity around Weinstein that allegedly allowed him to repeatedly abuse women, year after year, without legal or, seemingly, professional consequence. Then, as Megan and Jodi finished a book about Weinstein that brought new revelations about his conduct, we explored a lesser-told part of the story: the role of the famous feminist mother-and-daughter lawyers Gloria Allred and Lisa Bloom in reinforcing the legal system that many people believe kept Weinstein’s conduct secret for so long. Finally, as Weinstein’s trial began in New York, we turned to Jodi and Megan for two more episodes, which ran yesterday and today, that explained why a case that involved more than 80 accusers had turned into a criminal trial with just two plaintiffs. Now, as the trial gets underway and an investigation that began in the pages of The Times becomes a criminal case in a courtroom, we encourage you to revisit those episodes, especially if you missed them the first time around, for a look at how the Weinstein case unfolded. As for us, we will continue to cover the story as urgently as ever. Talk to Michael on Twitter: @mikiebarb. Welcome back This week, after scattering to the four corners of the earth over the holidays, our producers returned to the office with a surprising unity of mind: On ‘The Daily’ this week Monday: Helene Cooper on the killing of Maj. Gen. Qassim Suleimani: What the administration “will have to answer to the American people,” she tells us, “is whether or not this assassination was worth it.” Tuesday: “What we’ve seen is that the U.S. has effectively turned General Suleimani into a martyr.” Farnaz Fassihi looks at Iran’s reaction to the death of its most powerful military commander. Wednesday: John Bolton, the former national security adviser, said he would be willing to testify in the impeachment trial. Will the Senate let him do it? We asked Julie Hirschfeld Davis. Thursday: Law enforcement pressured Lucia Evans to cooperate in the case they were building against Harvey Weinstein. Then they dropped her from the case. Friday: In Part 2 of our Weinstein story, Jodi Kantor and Megan Twohey explain why, after more than 80 women came forward with allegations of sexual misconduct against the film producer, the criminal charges he’s facing in New York center on just two. That’s it for The Daily newsletter. See you next week. Have thoughts about the show? Tell us what you think at thedaily@nytimes.com. Were you forwarded this newsletter? Subscribe here to get it delivered to your inbox. Love podcasts? Join The New York Times Podcast Club on Facebook. PHOTO: Harvey Weinstein outside New York County Criminal Court, where he is being tried for rape. (PHOTOGRAPH BY HILARY SWIFT FOR THE NEW YORK TIMES) https://static01.nyt.com/images/2020/01/11/world/10daily-newsletter-top-10daily-weinstein5-copy/merlin_166753710_3f7b3837-d3f5-4c5b-9490-0e2310530f6e-articleLarge.jpg https://static01.nyt.com/images/2020/01/11/world/10daily-newsletter-top-10daily-weinstein5-copy/merlin_166753710_3f7b3837-d3f5-4c5b-9490-0e2310530f6e-jumbo.jpg https://static01.nyt.com/images/2020/01/11/world/10daily-newsletter-top-10daily-weinstein5-copy/merlin_166753710_3f7b3837-d3f5-4c5b-9490-0e2310530f6e-superJumbo.jpg https://static01.nyt.com/images/2020/01/11/world/10daily-newsletter-top-10daily-weinstein5-copy/10daily-newsletter-top-10daily-weinstein5-copy-thumbStandard-v3.jpg https://static01.nyt.com/images/2020/01/11/world/10daily-newsletter-top-10daily-weinstein5-copy/10daily-newsletter-top-10daily-weinstein5-copy-filmstrip-v3.jpg https://static01.nyt.com/images/2020/01/11/world/10daily-newsletter-top-10daily-weinstein5-copy/merlin_166753710_3f7b3837-d3f5-4c5b-9490-0e2310530f6e-sfSpan.jpg https://static01.nyt.com/images/2020/01/11/world/10daily-newsletter-top-10daily-weinstein5-copy/merlin_166753710_3f7b3837-d3f5-4c5b-9490-0e2310530f6e-thumbWide.jpg https://static01.nyt.com/images/2020/01/11/world/10daily-newsletter-top-10daily-weinstein5-copy/merlin_166753710_3f7b3837-d3f5-4c5b-9490-0e2310530f6e-articleInline.jpg https://static01.nyt.com/images/2020/01/11/world/10daily-newsletter-top-10daily-weinstein5-copy/10daily-newsletter-top-10daily-weinstein5-copy-facebookJumbo-v3.jpg Harvey Weinstein leaving New York County Criminal Court on the opening day of his trial. Hilary Swift for The New York Times https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER1/10DAILY-NEWSLETTER1-articleLarge.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER1/10DAILY-NEWSLETTER1-jumbo.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER1/10DAILY-NEWSLETTER1-superJumbo.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER1/10DAILY-NEWSLETTER1-thumbStandard.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER1/10DAILY-NEWSLETTER1-filmstrip.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER1/10DAILY-NEWSLETTER1-sfSpan.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER1/10DAILY-NEWSLETTER1-thumbWide.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER1/10DAILY-NEWSLETTER1-articleInline.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER1/10DAILY-NEWSLETTER1-facebookJumbo.jpg Adizah Eghan, Julia Longoria, Annie Brown, Eric Krupke and Daniel Guillemette. Andy Mills/The New York Times https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER2/10DAILY-NEWSLETTER2-articleLarge.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER2/10DAILY-NEWSLETTER2-jumbo.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER2/10DAILY-NEWSLETTER2-superJumbo.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER2/10DAILY-NEWSLETTER2-thumbStandard.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER2/10DAILY-NEWSLETTER2-filmstrip.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER2/10DAILY-NEWSLETTER2-sfSpan.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER2/10DAILY-NEWSLETTER2-thumbWide.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER2/10DAILY-NEWSLETTER2-articleInline.jpg https://static01.nyt.com/images/2020/01/10/podcasts/10DAILY-NEWSLETTER2/10DAILY-NEWSLETTER2-facebookJumbo.jpg Andy Mills/The New York Times",
@@ -40741,18 +40722,13 @@
               "end_quote_index": 595,
               "attribution_index": 580,
               "attribution_method": "proximity"
-            }
-          ]
-        },
-        {
-          "attribution": "Suleimani",
-          "quotes": [
+            },
             {
               "quote": "is whether or not this assassination was worth it.",
               "context": "Gen. Qassim Suleimani: What the administration “will have to answer to the American people,” she tells us, “is whether or not this assassination was worth it.”",
               "start_quote_index": 600,
               "end_quote_index": 611,
-              "attribution_index": 626,
+              "attribution_index": 580,
               "attribution_method": "proximity"
             }
           ]
@@ -42542,7 +42518,7 @@
       ],
       "location": null,
       "attributions": [
-        "Marianne Williamson’s"
+        "Marianne Williamson"
       ],
       "original_text": "Ms. Williamson, a self-help author and spiritual adviser who ran for president, had viral debate moments but drew fire for her comments on science and medicine. Marianne Williamson, the self-help author and spiritual adviser whose long-shot presidential campaign called for reparations and a Department of Peace, announced on Friday that she would drop out of the race. “I stayed in the race to take advantage of every possible opportunity to share our message,” Ms. Williamson said in a message to supporters. “With caucuses and primaries now about to begin, however, we will not be able to garner enough votes in the election to elevate our conversation any more than it is now.” She added that, in a race as tight as this one, she did not want to “get in the way of a progressive candidate winning” any caucus or primary. Ms. Williamson, 67, built her campaign around an eclectic mix of progressive policies and lofty pronouncements. President Trump’s election was a symptom of a spiritually diseased society, she said, and only love, not plans, could defeat him. “Mr. President, if you’re listening, I want you to hear me, please: You have harnessed fear for political purposes, and only love can cast that out,” she declared from the debate stage in June. “I’m going to harness love for political purposes. I will meet you on that field, and sir, love will win.” Ms. Williamson was averaging less than 1 percent in polls and had not qualified for a debate since July. Earlier this month, she laid off her entire staff — a development first reported by New Hampshire’s WMUR television station and confirmed by Ms. Williamson’s campaign manager, Patricia Ewing, who was among those laid off. At that July debate, she gave forceful responses to two questions about race — describing reparations not as “financial assistance” but rather “payment of a debt that is owed,” and saying the water crisis in Flint, Mich., would never have happened in a wealthy, majority-white suburb — and got a brief surge of public attention. But her poll numbers did not budge, and the spotlight also brought renewed scrutiny of her views on science and medicine. Earlier in the year, she had called vaccine mandates “Orwellian,” then backtracked under fire. She also criticized the widespread use of antidepressants, linking them without evidence to celebrity suicides and asserting that doctors recklessly prescribe them to suppress ordinary emotions. In an interview with The New York Times over the summer, she said she had been wrong to call clinical depression a “scam,” but stood by other remarks that mental health experts warned could increase the stigma surrounding mental illness and discourage people from seeking medical help. Ms. Williamson’s presidential campaign was only her second foray into politics, after an unsuccessful congressional bid in California in 2014. But she is famous in the self-help and New Age communities, having written multiple New York Times best-sellers and been a spiritual adviser to Oprah. She opened the Los Angeles and Manhattan Centers for Living in the 1980s to support people with H.I.V. and AIDS at a time when they were often ostracized, and also founded Project Angel Food, which provides free meals to people with serious illnesses. In addition to her call for $200 billion to $500 billion in reparations for slavery, a central component of Ms. Williamson’s platform was her proposed Department of Peace. Essentially, such a department would have expanded and strengthened the State Department’s peace-building agencies. Ms. Williamson said it would work to prevent wars and to reduce violence within the United States, including shootings and domestic terrorism. In her message to supporters, Ms. Williamson said that she would back the eventual Democratic nominee, no matter who it is: “I will be there with all my energy and in full support.” “Things are changing swiftly and dramatically in this country, and I have faith that something is awakening among us,” she wrote. “A politics of conscience is still yet possible. And yes … love will prevail.” PHOTO: Marianne Williamson’s presidential campaign was only her second foray into politics, after an unsuccessful congressional bid in California in 2014. (PHOTOGRAPH BY Eileen Meslar/Telegraph Herald, via Associated Press FOR THE NEW YORK TIMES)",
       "tokenized_text": [
@@ -43342,7 +43318,7 @@
       ],
       "quotes_by_attribution": [
         {
-          "attribution": "Marianne Williamson’s",
+          "attribution": "Marianne Williamson",
           "quotes": [
             {
               "quote": "I stayed in the race to take advantage of every possible opportunity to share our message,",
@@ -49749,8 +49725,10 @@
       ],
       "location": null,
       "attributions": [
-        "Tiger",
-        "Peter Dawson"
+        "To Ty Votaw",
+        "Paul Smart",
+        "Peter Dawson",
+        "Ian Thorpe"
       ],
       "original_text": "Golf was restored to the Games, in part, to forge an association with stars like Woods. But with a few months left to qualify, he is on the outside looking in. In November 2008, two officials from the International Golf Federation traveled to Switzerland to make a case for returning their sport’s athletes to the Olympics after a century-long hiatus. But as the men made their presentation to members of the International Olympic Committee, they quickly realized they were pitching to an audience fixated on a single player. Never mind the sport’s global reach or its charitable impact and cornerstone values of honesty and fair play. To Ty Votaw, who was helping make golf’s case for inclusion, it was clear from the start what the I.O.C. considered golf’s greatest asset. “The very first question asked was, ‘Will Tiger Woods play?’” Votaw said. Twelve years later, the Olympics still covet Woods — now, perhaps, more than ever. The problem is that there may not be a spot for him. In 2008, Woods’s participation seemed foreordained. He stood alongside Usain Bolt and Michael Phelps as one of the world’s most dominant athletes, and was coming off a season that had included his 14th major title. For the 10th time in 11 years, he ended the year ranked No. 1. Woods, with his star power, and the Olympics, with their global stage, looked like a marriage brokered in a corporate boardroom. Yet while Woods’s spirit was willing, a back injury sidelined him for most of 2016, sinking his hopes of qualifying for that summer’s competition in Rio de Janeiro. Golf returned to the Games without him, and the Englishman Justin Rose won the gold medal. Now, four years later, Woods is the closest he has been to the Olympics since he attended an archery event at the 1984 Games in Los Angeles with his father. To qualify, he must be one of the top four American players ranked inside the world top 15 as of June 22. Woods is currently seventh in the world, but he is only the fifth-best American heading into this week’s Farmers Insurance Open at Torrey Pines in San Diego. At the moment, Brooks Koepka, Justin Thomas, Dustin Johnson and Patrick Cantlay hold the four Olympic tournament places reserved for Americans. Woods, 44, spoke last fall of his desire to participate in the Tokyo Games, describing it as a “once-in-a-lifetime experience.” “And especially at the age I’ll be, I don’t know if I have many more chances,” he said. It may comfort Woods that in the post-World War II era, two United States Olympians, the sailors Paul Smart in 1948 and Everard Endt in 1952, have won gold medals in their 50s. So it’s not necessarily now or never for him. But for an Olympic movement ravaged by the cancers of corruption and cheating, and reeling from the retirements of Bolt and Phelps, there would be no time like the present to plug into Woods’s transcendence. “I know TV companies for obvious reasons are excited about it,” said Peter Dawson, the International Golf Federation’s president. So, it would appear, is the host country. In October, roughly 60 miles from the Olympic venue, Japanese fans cheered louder for Woods than they did their native son, Hideki Matsuyama, at the inaugural Zozo Championship, which Woods won wire to wire. Yes, Woods is currently the odd man out among Americans. But that is, as Dawson joked, “nothing that another Masters win wouldn’t cure.” In 2016, the top four men in line to headline the Olympic field — Jason Day, Jordan Spieth, Rory McIlroy and Johnson — chose not to compete for reasons that included the fear of contracting the mosquito-borne Zika virus. This year, it’s possible an American player or two could be sidelined by something else: money. The men’s competition in Tokyo will take place two weeks after the British Open and two weeks before the start of the three-tournament FedEx Cup playoffs, which offer a $60 million total purse, including a $15 million payoff to the eventual winner. The first playoff event is outside Boston, 14 time zones from Tokyo, and so it is not unthinkable that a top player, prioritizing majors over medals or playoff riches over Olympic gold, might decide that it’s not worth making the round-the-world journey to Japan at such a key moment in his season. Could somebody also stay home because of outside pressure to step aside to make room for Woods? “There may be some of that,” Dawson said, though he quickly added, “I’m sure Tiger wouldn’t want to get into the Games that way.” It has happened before, though. At the 2004 Australian swimming trials, the superstar Ian Thorpe, the world-record holder and reigning Olympic champion in the 400-meter freestyle, was disqualified from his heat for a false start after he lost his balance on the blocks and fell into the water. The top two finishers in the final qualified for the Athens Games, and scores of Australians soon were publicly calling on Craig Stevens, the runner-up, to relinquish his spot to Thorpe. There was no danger that Stevens or Thorpe would miss the Games; both had qualified in other events. But a month later, during a televised interview for which he was paid a six-figure sum, Stevens announced that he was ceding his spot in the 400 freestyle to Thorpe, who went on to successfully defend his Olympic title. For the moment, Woods still controls his fate. After his victory last year at the Masters, he described the Olympics as “a big goal,” but he admitted “getting there and making the team is going to be the tough part.” One option, Woods acknowledged, was that he might have to play more than he would like in the first half of 2020 in the pursuit of Olympic qualifying points. A strong finish this week, at an event he has won seven times, would be a great start. “I just know that if I play well in the big events like I did this year,” Woods said last year, “things will take care of itself.” PHOTO (PHOTOGRAPH BY TANNEN MAURY/EPA, VIA SHUTTERSTOCK) https://static01.nyt.com/images/2020/01/20/sports/20tiger-bag/merlin_165820458_5ebf50b9-65b4-4dca-89c3-8ce0a2c87384-articleLarge.jpg https://static01.nyt.com/images/2020/01/20/sports/20tiger-bag/merlin_165820458_5ebf50b9-65b4-4dca-89c3-8ce0a2c87384-jumbo.jpg https://static01.nyt.com/images/2020/01/20/sports/20tiger-bag/merlin_165820458_5ebf50b9-65b4-4dca-89c3-8ce0a2c87384-superJumbo.jpg https://static01.nyt.com/images/2020/01/20/sports/20tiger-bag/20tiger-bag-thumbStandard.jpg https://static01.nyt.com/images/2020/01/20/sports/20tiger-bag/20tiger-bag-filmstrip.jpg https://static01.nyt.com/images/2020/01/20/sports/20tiger-bag/20tiger-bag-sfSpan.jpg https://static01.nyt.com/images/2020/01/20/sports/20tiger-bag/20tiger-bag-thumbWide.jpg https://static01.nyt.com/images/2020/01/20/sports/20tiger-bag/merlin_165820458_5ebf50b9-65b4-4dca-89c3-8ce0a2c87384-articleInline.jpg https://static01.nyt.com/images/2020/01/20/sports/20tiger-bag/20tiger-bag-facebookJumbo.jpg Woods is no stranger to international competition, having played in the Ryder Cup and the Presidents Cup. William West/Agence France-Presse — Getty Images",
       "tokenized_text": [
@@ -50983,71 +50961,28 @@
       ],
       "quotes_by_attribution": [
         {
-          "attribution": "Tiger",
+          "attribution": "To Ty Votaw",
           "quotes": [
             {
               "quote": "The very first question asked was, ‘Will Tiger Woods play?’",
               "context": "“The very first question asked was, ‘Will Tiger Woods play?’”",
               "start_quote_index": 149,
               "end_quote_index": 164,
-              "attribution_index": 176,
+              "attribution_index": 132,
               "attribution_method": "proximity"
-            },
-            {
-              "quote": "once-in-a-lifetime experience.",
-              "context": "Woods, 44, spoke last fall of his desire to participate in the Tokyo Games, describing it as a “once-in-a-lifetime experience.”",
-              "start_quote_index": 469,
-              "end_quote_index": 479,
-              "attribution_index": 486,
-              "attribution_method": "proximity"
-            },
+            }
+          ]
+        },
+        {
+          "attribution": "Paul Smart",
+          "quotes": [
             {
               "quote": "And especially at the age I’ll be, I don’t know if I have many more chances,",
               "context": null,
               "start_quote_index": 480,
               "end_quote_index": 501,
-              "attribution_index": 508,
+              "attribution_index": 519,
               "attribution_method": "proximity"
-            },
-            {
-              "quote": "There may be some of that,",
-              "context": null,
-              "start_quote_index": 896,
-              "end_quote_index": 904,
-              "attribution_index": 894,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "a big goal,",
-              "context": "After his victory last year at the Masters, he described the Olympics as “a big goal,” but he admitted “getting there and making the team is going to be the tough part.”",
-              "start_quote_index": 1114,
-              "end_quote_index": 1119,
-              "attribution_index": 1121,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "getting there and making the team is going to be the tough part.",
-              "context": "After his victory last year at the Masters, he described the Olympics as “a big goal,” but he admitted “getting there and making the team is going to be the tough part.”",
-              "start_quote_index": 1123,
-              "end_quote_index": 1138,
-              "attribution_index": 1121,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "I just know that if I play well in the big events like I did this year,",
-              "context": null,
-              "start_quote_index": 1192,
-              "end_quote_index": 1211,
-              "attribution_index": 1180,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "things will take care of itself.",
-              "context": "“I just know that if I play well in the big events like I did this year,” Woods said last year, “things will take care of itself.”",
-              "start_quote_index": 1217,
-              "end_quote_index": 1225,
-              "attribution_index": 1212,
-              "attribution_method": "pattern_3"
             }
           ]
         },
@@ -51071,12 +51006,33 @@
               "attribution_method": "proximity"
             },
             {
+              "quote": "There may be some of that,",
+              "context": null,
+              "start_quote_index": 896,
+              "end_quote_index": 904,
+              "attribution_index": 909,
+              "attribution_method": "proximity"
+            },
+            {
               "quote": "I’m sure Tiger wouldn’t want to get into the Games that way.",
               "context": null,
               "start_quote_index": 913,
               "end_quote_index": 929,
               "attribution_index": 909,
               "attribution_method": "pattern_3"
+            }
+          ]
+        },
+        {
+          "attribution": "Ian Thorpe",
+          "quotes": [
+            {
+              "quote": "a big goal,",
+              "context": "After his victory last year at the Masters, he described the Olympics as “a big goal,” but he admitted “getting there and making the team is going to be the tough part.”",
+              "start_quote_index": 1114,
+              "end_quote_index": 1119,
+              "attribution_index": 1088,
+              "attribution_method": "proximity"
             }
           ]
         }
