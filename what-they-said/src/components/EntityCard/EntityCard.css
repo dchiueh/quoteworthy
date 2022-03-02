@@ -1,15 +1,22 @@
-.cardContent:nth-child(odd){
-    background-color: wheat;
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #f0efeb;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-.cardContent:nth-child(even){
-    background-color:white;
+.info {
+    flex-shrink: 0;
 }
-
 .quote{
-    fontSize: 16; 
-    color: black;
-    textAlign: left; 
-    paddingLeft: 10px;
+    flex-grow: 1;
+    text-align: left; 
     margin:0;
+
+}
+.quoteWrapper {
+    padding: 12px 10px;
+    border-top: solid lightgrey;
+    display: flex;
 }

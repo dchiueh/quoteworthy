@@ -168,7 +168,7 @@ class HomeScreen extends React.Component {
             <div style={{width: "50%"}}>
                <SearchListGroupedByEntity entityArticleGroupings={this.state.entityArticleGroupings} searchPhrase={this.state.searchPhrase} /> 
             </div>
-            {/*ArticleIFrame */}       
+            {/*ArticleIFrame */} 
          </React.Fragment>
 		)
 	};

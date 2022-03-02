@@ -53,7 +53,10 @@ function App() {
 
   return (
     <Box className="Quoteworthy Application" sx={{margin: "auto", textAlign: "center"}}>
-      <header style={{textAlign: "center"}}><h1>What They Said: Quoteworthy </h1></header>
+      <header style={{textAlign: "center"}}>
+        <h1>What They Said: Quoteworthy </h1>
+        <p>Search our archive of <i>New York Times</i> articles to find relevant quotes sorted by speaker!</p> 
+      </header>
             
       <HomeScreen />
       {/*TODO: fix code so we handle state a hell of a lot better */}

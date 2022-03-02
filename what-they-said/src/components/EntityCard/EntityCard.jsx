@@ -39,30 +39,40 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
    return (
    <a href={SingleEntityMapElem.url} style={{ textDecoration: "none" }} target="_blank">
       <CardContent>
-         <div style={{ border: "solid grey 0.5px", borderRadius: "15px" }}>
-            <div style={{ textAlign: "right", marginRight: "10px" }}>
-               <Typography style={{ fontSize: 13, color: "grey" }}>
-                  {SingleEntityMapElem.publish_date}
+         <div style={{ border: "solid #a5a58d 3px", borderRadius: "15px", backgroundColor:"white"}}>
+            <div className="header">
+               
+               <Typography variant="h6" color="black" style={{flexGrow: 1, fontWeight: "bold", padding: "0px 9px"}}>
+                  {SingleEntityMapElem.title}
                </Typography>
-               <Typography style={{ fontSize: 13, color: "grey" }}>
-                  {SingleEntityMapElem.slug}
-               </Typography>
-            </div>
-            <Typography variant="h6" color="black">
-               {SingleEntityMapElem.title}
-            </Typography>
-            <Typography color="grey" sx={{fontSize: "16px", textDecoration: "none"}}>
+               <div className="info" style={{ textAlign: "right", marginRight: "10px", fontSize: 13, color: "grey" }}>
+                  <Typography>
+                     {SingleEntityMapElem.publish_date}
+                  </Typography>
+                  <Typography>
+                     {SingleEntityMapElem.slug}
+                  </Typography>
+                  <Typography>
                {`${SingleEntityMapElem.quotes.length} quote${SingleEntityMapElem.quotes.length > 1 ? "s" : ""}`}
-            </Typography>
+               </Typography>
+               </div>
+            </div>
+
             {SingleEntityMapElem.quotes.map((quoteMap, index) => {
                if (!quoteMap.context) {
-                  return <Typography className="quote" style={{textAlign: "left", paddingBottom: "24px"}}>
-                     "{quoteMap.quote}"
-                  </Typography>
+                  return <div className="quoteWrapper">
+                     <Typography  className="quote" style={{color: "blue"}}>
+                        "{quoteMap.quote}"
+                     </Typography>
+                     <Typography style={{paddingLeft:5, flexShrink: 0}}> Context ></Typography>
+                  </div>
                } else {
-                  return <Typography className="quote" style={{textAlign: "left", paddingBottom: "24px"}}>
-                     {quoteMap.context}
-                  </Typography>
+                  return <div className="quoteWrapper"> 
+                     <Typography className="quote" style={{color:"black"}}>
+                        {quoteMap.context}
+                     </Typography>
+                     <Typography style={{paddingLeft:5, flexShrink: 0}}> Context ></Typography>
+                   </div>
                }
             })}
          </div>
@@ -85,17 +95,17 @@ const EntityCard = ({ SingleEntityMap }) => {
    //guaranteed at least 1 article card if there's an entity
    return (
       <Card sx={{ border: "solid grey 1px", paddingBottom: "12px" }}>
-         <Typography style={{ fontSize: 20, fontWeight: "bold", paddingTop: "12px" }}>
+         <Typography variant="h5" style={{ fontWeight:"bold", paddingTop: "12px" }}>
             {SingleEntityMap[0].entity}
          </Typography>
+         <Typography style={{ fontSize: 16 }}>{SingleEntityMap.length} matching article{SingleEntityMap.length > 1 ? "s" : ""}</Typography>
+
          {displayEntitySingleArticleCard(SingleEntityMap[0])}
 
          <CardActions disableSpacing>
             {/* <Avatar sx={{ backgroundColor: "skyblue" }} aria-label="article-count">
                {SingleEntityMap.length}
             </Avatar> */}
-            <Typography style={{ fontSize: 16 }}>Appears in {SingleEntityMap.length} article{SingleEntityMap.length > 1 ? "s" : ""}</Typography>
-
             {SingleEntityMap[1] && <ExpandMore
                expand={expanded}
                onClick={handleExpandClick}
