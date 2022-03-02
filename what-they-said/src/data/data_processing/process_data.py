@@ -90,7 +90,6 @@ def parse_article_for_location(article_str):
 
 def merge_matching_entities_all_articles(articles):
     entities_to_merge = get_entities_to_merge_all_articles(articles)
-    entities_to_merge['Trump'] = 'Donald Trump' # TODO: remove
     for article_obj in articles:
         for idx, attr in enumerate(article_obj['attributions']):
             if attr in entities_to_merge:
