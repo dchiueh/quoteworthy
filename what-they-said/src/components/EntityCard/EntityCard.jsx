@@ -42,7 +42,7 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
          <div style={{ border: "solid #a5a58d 3px", borderRadius: "15px", backgroundColor:"white"}}>
             <div className="header">
                
-               <Typography variant="h6" color="black" style={{flexGrow: 1, fontWeight: "bold", padding: "0px 9px"}}>
+               <Typography variant="h5" color="black" style={{textAlign: "left", flexGrow: 1, fontWeight: "bold", padding: "0px 9px", fontFamily:"Cheltenham"}}>
                   {SingleEntityMapElem.title}
                </Typography>
                <div className="info" style={{ textAlign: "right", marginRight: "10px", fontSize: 13, color: "grey" }}>
@@ -61,17 +61,19 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
             {SingleEntityMapElem.quotes.map((quoteMap, index) => {
                if (!quoteMap.context) {
                   return <div className="quoteWrapper">
-                     <Typography  className="quote" style={{color: "blue"}}>
+                     <Typography  className="quote" style={{color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px"}}>
                         "{quoteMap.quote}"
                      </Typography>
-                     <Typography style={{paddingLeft:5, flexShrink: 0}}> Context ></Typography>
+                     <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Full article ></Typography>
                   </div>
                } else {
                   return <div className="quoteWrapper"> 
-                     <Typography className="quote" style={{color:"black"}}>
+                     <Typography className="quote" style={{color:"#7f7f7f", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px"}}>
                         {quoteMap.context}
+                        {/* Context words are a lighter gray; when the quote is found within the context
+                        make the quote black. */}
                      </Typography>
-                     <Typography style={{paddingLeft:5, flexShrink: 0}}> Context ></Typography>
+                     <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Full article ></Typography>
                    </div>
                }
             })}
@@ -94,12 +96,14 @@ const EntityCard = ({ SingleEntityMap }) => {
    //todo: return a mapping of all the single article card links to the external site
    //guaranteed at least 1 article card if there's an entity
    return (
-      <Card sx={{ border: "solid grey 1px", paddingBottom: "12px" }}>
-         <Typography variant="h5" style={{ fontWeight:"bold", paddingTop: "12px" }}>
+      <Card sx={{ border: "solid grey 1px" }}>
+         <div className="nameWrapper">
+         <Avatar src="#" />
+         <Typography variant="h5" style={{ fontWeight:"bold", fontFamily: 'Imperial BT', padding:"0px 7px" }}>
             {SingleEntityMap[0].entity}
          </Typography>
-         <Typography style={{ fontSize: 16 }}>{SingleEntityMap.length} matching article{SingleEntityMap.length > 1 ? "s" : ""}</Typography>
-
+         <Typography style={{ fontSize: 16, fontFamily:'Imperial BT', alignItems:"center" }}>({SingleEntityMap.length} matching article{SingleEntityMap.length > 1 ? "s" : ""})</Typography>
+         </div>
          {displayEntitySingleArticleCard(SingleEntityMap[0])}
 
          <CardActions disableSpacing>
@@ -112,7 +116,7 @@ const EntityCard = ({ SingleEntityMap }) => {
                aria-expanded={expanded}
                aria-label="show more"
             >
-               <Typography style={{ fontSize: 16 }}>See more </Typography>
+               <Typography style={{ fontSize: 16 }}>See more articles </Typography>
                <ExpandMoreIcon />
             </ExpandMore>}
          </CardActions>

@@ -54,8 +54,8 @@ function App() {
   return (
     <Box className="Quoteworthy Application" sx={{margin: "auto", textAlign: "center"}}>
       <header style={{textAlign: "center"}}>
-        <h1>What They Said: Quoteworthy </h1>
-        <p>Search our archive of <i>New York Times</i> articles to find relevant quotes sorted by speaker!</p> 
+        <h1 style={{fontFamily: 'Chomsky', fontSize:"40px", fontWeight:"200", marginBottom:"0", paddingBottom:"0", letterSpacing: "-0.5px"}}>Quoteworthy </h1>
+        <p style={{marginTop:"10px"}}>Search our archive of <i>New York Times</i> articles by keyword to find relevant quotes sorted by speaker.</p> 
       </header>
             
       <HomeScreen />

@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'Cheltenham';
+  src: local('Cheltenham'), url(../fonts/cheltenham.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Chomsky';
+  src: local('Chomsky'), url(../fonts/chomsky.regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Imperial BT';
+  src: local('Imperial BT'), url(../fonts/imperln.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Imperial BT';
+}
+
 .App {
   text-align: center;
 }
