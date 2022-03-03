@@ -27,6 +27,7 @@ class SearchListGroupedByEntity extends React.Component {
       super(props);
       this.state = {
          entityArticleGroupings: props.entityArticleGroupings,
+         sortedEntityArticleGroupingsArray: props.sortedEntityArticleGroupingsArray,
          searchPhrase: props.searchPhrase,
       }
    }
@@ -35,6 +36,7 @@ class SearchListGroupedByEntity extends React.Component {
       this.setState({
          searchPhrase: this.props.searchPhrase,
          entityArticleGroupings: this.props.entityArticleGroupings,
+         sortedEntityArticleGroupingsArray: this.props.sortedEntityArticleGroupingsArray,
       });
    }
 
@@ -44,6 +46,7 @@ class SearchListGroupedByEntity extends React.Component {
          this.setState({
             searchPhrase: this.props.searchPhrase,
             entityArticleGroupings: this.props.entityArticleGroupings,
+            sortedEntityArticleGroupingsArray: this.props.sortedEntityArticleGroupingsArray,
          });
       }
    }
@@ -51,11 +54,18 @@ class SearchListGroupedByEntity extends React.Component {
    render() {
       return (
          <div>
-            {Object.keys(this.state.entityArticleGroupings).map((entityName, index) => {
-               return <EntityCard key={`${entityName}-${index}`} SingleEntityMap={this.state.entityArticleGroupings[entityName]}/>
-               })
-            }
-         </div>
+         {this.state.sortedEntityArticleGroupingsArray.map((entityElem, index) => {
+            return <EntityCard key={`${entityElem.entity}-${index}`} SingleEntityMap={entityElem}/>
+            })
+         }
+      </div>
+         //Object iteration
+         // <div>
+         //    {Object.keys(this.state.entityArticleGroupings).map((entityName, index) => {
+         //       return <EntityCard key={`${entityName}-${index}`} SingleEntityMap={this.state.entityArticleGroupings[entityName]}/>
+         //       })
+         //    }
+         // </div>
       )
    };
 }

@@ -27,12 +27,29 @@ import NYT_MINI from '../../data/nyt_2020_mini.json';
 // import SearchBox from '../../components/SearchBox/SearchBox';
 import SearchListGroupedByEntity from '../../components/SearchListGroupedByEntity/SearchListGroupedByEntity';
 
+function descendingComparator(a, b, orderBy) {
+   if (b[orderBy] < a[orderBy]) {
+      return -1;
+   }
+   if (b[orderBy] > a[orderBy]) {
+      return 1;
+   }
+   return 0;
+}
+
+function getComparator(order, orderBy) {
+   return order === 'desc'
+      ? (a, b) => descendingComparator(a, b, orderBy)
+      : (a, b) => -descendingComparator(a, b, orderBy);
+}
+
 class HomeScreen extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
          articles: [],
 			filteredArticles: [],
+         sortedEntityArticleGroupingsArray: [],
          entityArticleGroupings: {},
          numTotalQuotes: 0,
          numTotalEntities: 0,
@@ -113,6 +130,7 @@ class HomeScreen extends React.Component {
 
          //create a dictionary of mappings 
          let entityArticleGroupings = {};
+         let entityArticleGroupingsSortedArray = [];
          let numTotalEntities = 0;
          let numTotalQuotes = 0;
          
@@ -137,14 +155,25 @@ class HomeScreen extends React.Component {
                   numTotalEntities += 1;
                }
             });
-         
-            console.log("quotes by attribution", article.quotes_by_attribution);
-            console.log("unique entities", entityArticleGroupings);
+         })
 
-            }
-         )
+         //Inefficient but stable hack to sort filtered entities without changing too much code
+         //Kept the key-value object, and now the sorted array, for future work / stability across last-minute additions
+         let sortedEntityArticleGroupingsArray = [];
+         for (let entity in entityArticleGroupings) {
+            sortedEntityArticleGroupingsArray.push(entityArticleGroupings[entity]);
+         }
+   
+         sortedEntityArticleGroupingsArray.sort(function (a, b) {
+            return a.length === b.length ? 0 : (a > b ? -1: 1);
+         });
+      
+         console.log("unique entities", entityArticleGroupings);
+         console.log("sorted entities", sortedEntityArticleGroupingsArray);
+
          this.setState({
-            filteredArticles: filteredArticles,
+            //filteredArticles: filteredArticles,
+            sortedEntityArticleGroupingsArray: sortedEntityArticleGroupingsArray,
             entityArticleGroupings: entityArticleGroupings,
             numTotalEntities: numTotalEntities,
             numTotalQuotes: numTotalQuotes,
@@ -153,7 +182,6 @@ class HomeScreen extends React.Component {
    }
 
 	render() {
-      console.log("num total quotes", this.state.numTotalEntities);
 		return (
          <React.Fragment>
             <Card>
@@ -181,7 +209,7 @@ class HomeScreen extends React.Component {
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
                <div style={{display: "block", flex: "1"}}>
-                  <SearchListGroupedByEntity entityArticleGroupings={this.state.entityArticleGroupings} searchPhrase={this.state.searchPhrase} /> 
+                  <SearchListGroupedByEntity entityArticleGroupings={this.state.entityArticleGroupings} sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray} searchPhrase={this.state.searchPhrase} /> 
                </div>
                <div style={{display: "block", flex: "1"}}>
                   <iframe frameBorder="0" src="https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html" allowFullScreen={true} scrolling="yes" width="100%" height="100%"></iframe>
