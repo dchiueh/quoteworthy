@@ -166,15 +166,16 @@ class HomeScreen extends React.Component {
                   onKeyDown={this._handleKeyDown}
                /> 
                {/* <Button variant="contained" onClick={this._handleSearchButton}>Search</Button> */}
-               <div style={{flexDirection: "row", textAlign: "left"}}>
+               <div style={{display: "flex", flexDirection: "row", textAlign: "left", alignItems:"center"}}>
+                  <div style={{padding:"0px 5px", marginRight:"15px"}}>Filter results by date or location:</div>
                   <Button style={{textTransform: "none", fontSize: 14, marginRight: "20px"}}> Date Range <ExpandMoreIcon/> </Button>
                   <Button style={{textTransform: "none", fontSize: 14}}> Location <ExpandMoreIcon/> </Button>
 
                </div>
             </Card> 
             {/* <SearchBox searchWIP={this.state.searchWIP} onChange={this._handleSearch} onKeyDown={this._handleKeyDown} timeFilter={this.state.timeFilter} locationFilter={this.state.locationFilter} /> */}
-            <div style={{height: "20px"}}>
-               {this.state.numTotalEntities > 0 && <Typography color="black" sx={{ fontSize: "16px", textDecoration: "none" }}>
+            <div style={{height: "20px", padding: "20px"}}>
+               {this.state.numTotalEntities > 0 && <Typography color="black" sx={{ fontSize: "16px", textDecoration: "none", fontFamily:"Imperial BT" }}>
                   {`Quoteworthy found ${this.state.numTotalEntities} entities, with ${this.state.numTotalQuotes} quote${this.state.numTotalQuotes > 1 ? "s" : ""}`}
                </Typography>}
             </div>
