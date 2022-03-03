@@ -64,7 +64,7 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
                      <Typography  className="quote" style={{color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px"}}>
                         "{quoteMap.quote}"
                      </Typography>
-                     <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Full article ></Typography>
+                     <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Full article {'>'}</Typography>
                   </div>
                } else {
                   return <div className="quoteWrapper"> 
@@ -73,7 +73,7 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
                         {/* Context words are a lighter gray; when the quote is found within the context
                         make the quote black. */}
                      </Typography>
-                     <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Full article ></Typography>
+                     <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Full article {'>'}</Typography>
                    </div>
                }
             })}
@@ -91,7 +91,7 @@ const EntityCard = ({ SingleEntityMap }) => {
       setExpanded(!expanded);
    };
 
-   console.log("single entity map", SingleEntityMap);
+   //console.log("single entity map", SingleEntityMap);
 
    //todo: return a mapping of all the single article card links to the external site
    //guaranteed at least 1 article card if there's an entity
