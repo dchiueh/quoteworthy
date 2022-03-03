@@ -44,7 +44,6 @@ def create_object(df_row, tokenized_document, attribution_quote_map):
         "keywords": parse_double_pipe_delimited_string(df_row["keywords"]),
         "location": parse_article_for_location(df_row["paragraphs"]),
         "attributions": attributions,
-        "original_text": df_row["paragraphs"],
         "quotes_by_attribution": [ { "attribution": attr, "quotes": quotes } for attr, quotes in attribution_quote_map.items()],
     }
     return row_obj
