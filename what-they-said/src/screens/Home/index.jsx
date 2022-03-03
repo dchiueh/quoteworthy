@@ -178,8 +178,13 @@ class HomeScreen extends React.Component {
                   {`Quoteworthy found ${this.state.numTotalEntities} entities, with ${this.state.numTotalQuotes} quote${this.state.numTotalQuotes > 1 ? "s" : ""}`}
                </Typography>}
             </div>
-            <div style={{width: "50%"}}>
-               <SearchListGroupedByEntity entityArticleGroupings={this.state.entityArticleGroupings} searchPhrase={this.state.searchPhrase} /> 
+            <div style={{display: "flex", flexDirection: "row"}}>
+               <div style={{display: "block", flex: "1"}}>
+                  <SearchListGroupedByEntity entityArticleGroupings={this.state.entityArticleGroupings} searchPhrase={this.state.searchPhrase} /> 
+               </div>
+               <div style={{display: "block", flex: "1"}}>
+                  <iframe frameBorder="0" src="https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html" allowFullScreen={true} scrolling="yes" width="100%" height="100%"></iframe>
+               </div>
             </div>
             {/*ArticleIFrame */} 
          </React.Fragment>
