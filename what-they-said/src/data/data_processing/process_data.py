@@ -4,9 +4,9 @@ import json
 import pandas as pd
 from quote_parser import QuoteParser
 
-DATA_FILEPATH = "./nyt_politics.csv"
-PARSED_FILEPATH = "./nyt_politics_html_parsed.csv"
-JSON_FILEPATH = "../nyt_politics.json"
+DATA_FILEPATH = "./nyt_2020_mini.csv"
+PARSED_FILEPATH = "./nyt_2020_mini_html_parsed.csv"
+JSON_FILEPATH = "../nyt_2020_mini.json"
 
 qp = QuoteParser()
 
@@ -32,7 +32,7 @@ def parse_data_into_json(dataframe):
 def create_object(df_row, tokenized_document, attribution_quote_map):
     attribution_quote_map = resolve_entities_within_article(attribution_quote_map)
     attributions = list(attribution_quote_map.keys())
-    assert "“" in tokenized_document and "”" in tokenized_document, "Warning: this article contains no quotes"
+    # assert "“" in tokenized_document and "”" in tokenized_document, "Warning: this article contains no quotes"
     row_obj = {
         "title": safe_get_from_row(df_row["title"]),
         "publish_date": reformat_date_string(df_row["publish_date"]),
@@ -80,10 +80,10 @@ def parse_double_pipe_delimited_string(delimited_str):
         return delimited_str.split(" || ")
 
 def parse_article_for_location(article_str):
-    location_pattern = r' \b[A-Z]+(?:\s+[A-Z]+)*\b —'
+    location_pattern = r'\b[A-Z]+(?:\s+[A-Z]+)*\b —'
     match = re.search(location_pattern, article_str)
     if match:
-        return match.group(0)[1:-2]
+        return match.group(0)[0:-2]
     else:
         return None
 
