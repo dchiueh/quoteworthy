@@ -1,6 +1,6 @@
 import json
 
-COMPUTED_DATA_FILEPATH = "./mini_predictions.json"
+COMPUTED_DATA_FILEPATH = "../nyt_2020_mini.json"
 LABEL_DATA_FILEPATH = "./mini_labels.json"
 METRIC_SAVE_FILEPATH = "./metrics.json"
 NUM_SIG_FIGS = 3
