@@ -2,6 +2,7 @@ import re
 import html
 import json
 import pandas as pd
+from tqdm import tqdm
 from quote_parser import QuoteParser
 
 DATA_FILEPATH = "./nyt_politics.csv"
@@ -17,7 +18,7 @@ def parse_data_into_html_encoding(data_to_parse, save_filepath):
 
 def parse_data_into_json(dataframe):
     articles = []
-    for idx, row in dataframe.iterrows():
+    for idx, row in tqdm(dataframe.iterrows()):
         print(f"Parsing article {idx+1} / {len(dataframe)}...")
         try:
             tokenized_document, attribution_quote_map = qp.parse_text(row["paragraphs"])
@@ -25,6 +26,7 @@ def parse_data_into_json(dataframe):
             articles.append(row_obj)
         except AssertionError as err:
             print(f"Skipping article {idx+1} due to message: \"{err}\"")
+    print("Merging named entities...")
     articles = merge_matching_entities_all_articles(articles)
     return { "articles": articles }
 

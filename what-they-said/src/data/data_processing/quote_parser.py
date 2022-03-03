@@ -128,7 +128,7 @@ class QuoteParser:
                     entity = index_to_entity[attr_idx]
                     return entity, attr_idx, 'pattern_1'
         # pattern 2 - if verb->entity is immediately after the quote (ex: "[...]," said Newsom)
-        if tokenized_document[quote_end_idx-1].text in [",", "?"] and tokenized_document[quote_end_idx+1].text in ACTION_VERBS:
+        if tokenized_document[quote_end_idx-1].text in [",", "?"] and quote_end_idx+1 < len(tokenized_document) and tokenized_document[quote_end_idx+1].text in ACTION_VERBS:
             scan_idx = quote_end_idx + 2
             while scan_idx not in index_to_entity:
                 scan_idx += 1
