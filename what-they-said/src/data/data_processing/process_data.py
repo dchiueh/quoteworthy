@@ -10,8 +10,8 @@ JSON_FILEPATH = "../nyt_2020_mini.json"
 
 qp = QuoteParser()
 
-def parse_data_into_html_encoding():
-    with open(DATA_FILEPATH, 'r') as f, open(PARSED_FILEPATH, 'w') as g:
+def parse_data_into_html_encoding(data_to_parse, save_filepath):
+    with open(data_to_parse, 'r') as f, open(save_filepath, 'w') as g:
         content = html.unescape(f.read())
         g.write(content)
 
@@ -31,7 +31,7 @@ def parse_data_into_json(dataframe):
 def create_object(df_row, tokenized_document, attribution_quote_map):
     attribution_quote_map = resolve_entities_within_article(attribution_quote_map)
     attributions = list(attribution_quote_map.keys())
-    # assert "“" in tokenized_document and "”" in tokenized_document, "Warning: this article contains no quotes"
+    assert "“" in tokenized_document and "”" in tokenized_document, "Warning: this article contains no quotes"
     row_obj = {
         "title": safe_get_from_row(df_row["title"]),
         "publish_date": reformat_date_string(df_row["publish_date"]),
@@ -45,7 +45,6 @@ def create_object(df_row, tokenized_document, attribution_quote_map):
         "location": parse_article_for_location(df_row["paragraphs"]),
         "attributions": attributions,
         "original_text": df_row["paragraphs"],
-        "tokenized_text": tokenized_document,
         "quotes_by_attribution": [ { "attribution": attr, "quotes": quotes } for attr, quotes in attribution_quote_map.items()],
     }
     return row_obj
@@ -122,7 +121,7 @@ def find_matching_entity_name(candidates, entity_name):
 
 
 if __name__ == "__main__":
-    parse_data_into_html_encoding()
+    parse_data_into_html_encoding(DATA_FILEPATH, PARSED_FILEPATH)
     df = pd.read_csv(PARSED_FILEPATH)
     data_object = parse_data_into_json(df)
     with open(JSON_FILEPATH, "w") as f:
