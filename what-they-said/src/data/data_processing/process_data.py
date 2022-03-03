@@ -30,7 +30,8 @@ def parse_data_into_json(dataframe):
     return { "articles": articles }
 
 def create_object(df_row, tokenized_document, attribution_quote_map):
-    attribution_quote_map = resolve_entities_within_article(attribution_quote_map)
+    people = parse_double_pipe_delimited_string(df_row["people"])
+    attribution_quote_map = resolve_entities_within_article(attribution_quote_map, people)
     attributions = list(attribution_quote_map.keys())
     # assert "“" in tokenized_document and "”" in tokenized_document, "Warning: this article contains no quotes"
     row_obj = {
@@ -41,7 +42,7 @@ def create_object(df_row, tokenized_document, attribution_quote_map):
         "abstract": safe_get_from_row(df_row["abstract"]),
         "slug": safe_get_from_row(df_row["slug"]),
         "section": safe_get_from_row(df_row["section_display"]),
-        "people": parse_double_pipe_delimited_string(df_row["people"]),
+        "people": people,
         "keywords": parse_double_pipe_delimited_string(df_row["keywords"]),
         "location": parse_article_for_location(df_row["paragraphs"]),
         "attributions": attributions,
@@ -49,8 +50,8 @@ def create_object(df_row, tokenized_document, attribution_quote_map):
     }
     return row_obj
 
-def resolve_entities_within_article(attribution_quote_map):
-    entities_to_merge = get_entities_to_merge_within_article(attribution_quote_map)
+def resolve_entities_within_article(attribution_quote_map, people):
+    entities_to_merge = get_entities_to_merge_within_article(attribution_quote_map, people)
     for entity, match in entities_to_merge.items():
         quotes = attribution_quote_map.pop(entity)
         for quote_obj in quotes:
@@ -59,13 +60,41 @@ def resolve_entities_within_article(attribution_quote_map):
         attribution_quote_map[match].sort(key=lambda obj: obj['start_quote_index'])
     return attribution_quote_map
 
-def get_entities_to_merge_within_article(attribution_quote_map):
+def get_entities_to_merge_within_article(attribution_quote_map, people):
+    entities_to_convert = {}
+    people_as_entities = convert_people_to_entities(people) - attribution_quote_map.keys()
+    for attr in attribution_quote_map.keys():
+        matching_person = find_matching_entity_name(people_as_entities, attr)
+        if matching_person:
+            entities_to_convert[attr] = matching_person
+    for old_entity, new_entity in entities_to_convert.items():
+        attribution_quote_map[new_entity] = attribution_quote_map.pop(old_entity)
     entities_to_merge = {}
     for attr in attribution_quote_map.keys():
         matching_entity = find_matching_entity_name(attribution_quote_map.keys(), attr)
         if matching_entity:
             entities_to_merge[attr] = matching_entity
     return entities_to_merge
+
+def convert_people_to_entities(people):
+    entities = set()
+    for person in people:
+        person = re.sub(r" \([^()]*\)", "", person)
+        comma_split = person.split(", ")
+        if len(comma_split) == 1:
+            entities.add(person)
+        elif comma_split[1][-1] == "-":
+            entities.add(comma_split[1] + comma_split[0])
+        else:
+            tokens = [token + "." if len(token) == 1 and re.match(r"[A-Z]", token) else token for token in comma_split[1].split(" ")]
+            tokens = [token + "." if token == "Jr" or token == "Sr" else token for token in tokens]
+            if tokens[-1] == "Jr." or tokens[-1] == "Sr." or tokens[-1] == "III":
+                name = " ".join(tokens[:-1]) + " " + comma_split[0] + " " + tokens[-1]
+                entities.add(name)
+            else:
+                name = " ".join(tokens) + " " + comma_split[0]
+                entities.add(name)
+    return entities
 
 def safe_get_from_row(df_value):
     return None if pd.isna(df_value) else df_value

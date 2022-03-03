@@ -254,8 +254,7 @@
               "start_quote_index": 483,
               "end_quote_index": 487,
               "attribution_index": 474,
-              "attribution_method": "proximity",
-              "original_attribution": "Trump"
+              "attribution_method": "proximity"
             }
           ]
         }
@@ -2685,26 +2684,12 @@
       ],
       "location": "WASHINGTON",
       "attributions": [
-        "Donald J. Trump",
         "Chad Wolf",
         "Jeffrey Glassberg",
-        "Brian Kolfage"
+        "Brian Kolfage",
+        "Donald J. Trump"
       ],
       "quotes_by_attribution": [
-        {
-          "attribution": "Donald J. Trump",
-          "quotes": [
-            {
-              "quote": "a victory for the rule of law",
-              "context": "In a statement on Thursday, the White House applauded as “a victory for the rule of law” the appeals court ruling in New Orleans that lifted an “illegitimate nationwide injunction.”",
-              "start_quote_index": 272,
-              "end_quote_index": 280,
-              "attribution_index": 258,
-              "attribution_method": "proximity",
-              "original_attribution": "Trump"
-            }
-          ]
-        },
         {
           "attribution": "Chad Wolf",
           "quotes": [
@@ -2759,6 +2744,19 @@
               "attribution_method": "pattern_3"
             }
           ]
+        },
+        {
+          "attribution": "Donald J. Trump",
+          "quotes": [
+            {
+              "quote": "a victory for the rule of law",
+              "context": "In a statement on Thursday, the White House applauded as “a victory for the rule of law” the appeals court ruling in New Orleans that lifted an “illegitimate nationwide injunction.”",
+              "start_quote_index": 272,
+              "end_quote_index": 280,
+              "attribution_index": 258,
+              "attribution_method": "proximity"
+            }
+          ]
         }
       ]
     },
@@ -2793,9 +2791,9 @@
       "attributions": [
         "Scott Wiener",
         "Andreas Borgeas",
-        "Gavin Newsom",
         "Isaiah Madison",
-        "Toni Atkins"
+        "Toni Atkins",
+        "Gavin Newsom"
       ],
       "quotes_by_attribution": [
         {
@@ -2829,20 +2827,6 @@
               "end_quote_index": 449,
               "attribution_index": 423,
               "attribution_method": "pattern_4"
-            }
-          ]
-        },
-        {
-          "attribution": "Gavin Newsom",
-          "quotes": [
-            {
-              "quote": "Marshall Plan for Housing,",
-              "context": null,
-              "start_quote_index": 466,
-              "end_quote_index": 472,
-              "attribution_index": 474,
-              "attribution_method": "pattern_2",
-              "original_attribution": "Newsom"
             }
           ]
         },
@@ -2887,6 +2871,19 @@
               "attribution_method": "pattern_3"
             }
           ]
+        },
+        {
+          "attribution": "Gavin Newsom",
+          "quotes": [
+            {
+              "quote": "Marshall Plan for Housing,",
+              "context": null,
+              "start_quote_index": 466,
+              "end_quote_index": 472,
+              "attribution_index": 474,
+              "attribution_method": "pattern_2"
+            }
+          ]
         }
       ]
     },
@@ -2911,11 +2908,11 @@
       ],
       "location": null,
       "attributions": [
-        "Buffett"
+        "Warren E. Buffett"
       ],
       "quotes_by_attribution": [
         {
-          "attribution": "Buffett",
+          "attribution": "Warren E. Buffett",
           "quotes": [
             {
               "quote": "We had zero interest in selling the group to anyone else for one simple reason: We believe that Lee is best positioned to manage through the industry’s challenges,",
@@ -3555,8 +3552,8 @@
       "attributions": [
         "Andrea Goldstein",
         "Robert Wilkie",
-        "Missal",
-        "Mark Takano"
+        "Mark Takano",
+        "Michael J. Missal"
       ],
       "quotes_by_attribution": [
         {
@@ -3594,27 +3591,6 @@
           ]
         },
         {
-          "attribution": "Missal",
-          "quotes": [
-            {
-              "quote": "Neither I nor my staff told you or anyone else at the department that the allegations were unsubstantiated,",
-              "context": null,
-              "start_quote_index": 437,
-              "end_quote_index": 457,
-              "attribution_index": 458,
-              "attribution_method": "pattern_1"
-            },
-            {
-              "quote": "Reaching a decision to close the investigation with no criminal charges does not mean that the underlying allegation is unsubstantiated.",
-              "context": null,
-              "start_quote_index": 462,
-              "end_quote_index": 484,
-              "attribution_index": 459,
-              "attribution_method": "pattern_3"
-            }
-          ]
-        },
-        {
           "attribution": "Mark Takano",
           "quotes": [
             {
@@ -3639,6 +3615,27 @@
               "start_quote_index": 542,
               "end_quote_index": 579,
               "attribution_index": 536,
+              "attribution_method": "pattern_3"
+            }
+          ]
+        },
+        {
+          "attribution": "Michael J. Missal",
+          "quotes": [
+            {
+              "quote": "Neither I nor my staff told you or anyone else at the department that the allegations were unsubstantiated,",
+              "context": null,
+              "start_quote_index": 437,
+              "end_quote_index": 457,
+              "attribution_index": 458,
+              "attribution_method": "pattern_1"
+            },
+            {
+              "quote": "Reaching a decision to close the investigation with no criminal charges does not mean that the underlying allegation is unsubstantiated.",
+              "context": null,
+              "start_quote_index": 462,
+              "end_quote_index": 484,
+              "attribution_index": 459,
               "attribution_method": "pattern_3"
             }
           ]
@@ -4189,7 +4186,7 @@
       "attributions": [
         "Philippe Lagassé",
         "Bill Morneau",
-        "Meghan"
+        "Meghan Markle"
       ],
       "quotes_by_attribution": [
         {
@@ -4251,7 +4248,7 @@
           ]
         },
         {
-          "attribution": "Meghan",
+          "attribution": "Meghan Markle",
           "quotes": [
             {
               "quote": "You’re among friends, and always welcome here,",
