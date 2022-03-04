@@ -785,7 +785,8 @@
       "location": null,
       "attributions": [
         "Jack Leo Van Impe",
-        "Randall Balmer"
+        "Randall Balmer",
+        "Franklin Graham"
       ],
       "quotes_by_attribution": [
         {
@@ -814,14 +815,6 @@
               "end_quote_index": 335,
               "attribution_index": 316,
               "attribution_method": "proximity"
-            },
-            {
-              "quote": "The Walking Bible,",
-              "context": null,
-              "start_quote_index": 404,
-              "end_quote_index": 409,
-              "attribution_index": 411,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -835,6 +828,19 @@
               "end_quote_index": 193,
               "attribution_index": 195,
               "attribution_method": "proximity"
+            }
+          ]
+        },
+        {
+          "attribution": "Franklin Graham",
+          "quotes": [
+            {
+              "quote": "The Walking Bible,",
+              "context": null,
+              "start_quote_index": 404,
+              "end_quote_index": 409,
+              "attribution_index": 398,
+              "attribution_method": "pattern_3"
             }
           ]
         }
@@ -1946,7 +1952,7 @@
               "context": null,
               "start_quote_index": 713,
               "end_quote_index": 731,
-              "attribution_index": 696,
+              "attribution_index": 701,
               "attribution_method": "pattern_3"
             }
           ]

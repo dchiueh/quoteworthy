@@ -4,7 +4,7 @@ import spacy
 import re
 
 COREF_MODEL_URL = "https://storage.googleapis.com/allennlp-public-models/coref-spanbert-large-2021.03.10.tar.gz"
-ACTION_VERBS = ["added", "said", "asked", "called", "denounced", "told", "objected", "wrote", "described", "quipped", "explained", "tell"]
+ACTION_VERBS = ["added", "said", "asked", "called", "denounced", "told", "objected", "wrote", "described", "quipped", "explained", "remembered", "tell"]
 LOOK_AROUND_SIZE = 30
 
 coref_predictor = Predictor.from_path(COREF_MODEL_URL)
