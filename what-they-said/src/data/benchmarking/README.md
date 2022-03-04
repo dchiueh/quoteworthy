@@ -12,45 +12,44 @@
 
 ### F1 Score:
 - The weighted average of precision and recall
-- Our proxy for accuracy (_if we consider false positives and false negatives to be equally bad_)
 
 ```
 {
   "quote_metrics": {
-    "precision": 0.92,
-    "recall": 0.966,
-    "f1_score": 0.942
+    "precision": 0.923,
+    "recall": 0.975,
+    "f1_score": 0.948
   },
   "entity_metrics": {
-    "precision": 0.833,
-    "recall": 0.87,
-    "f1_score": 0.851
+    "precision": 0.903,
+    "recall": 0.942,
+    "f1_score": 0.922
   },
   "attribution_metrics": {
-    "precision": 0.828,
-    "recall": 0.87,
-    "f1_score": 0.848
+    "precision": 0.894,
+    "recall": 0.944,
+    "f1_score": 0.918
   },
   "heuristic_metrics": {
     "pattern_1": {
-      "precision": 0.95,
-      "percent_share": 17.8
+      "precision": 0.981,
+      "percent_share": 31.9
     },
     "pattern_2": {
-      "precision": 0.956,
-      "percent_share": 13.3
+      "precision": 1.0,
+      "percent_share": 13.0
     },
     "pattern_3": {
-      "precision": 0.908,
-      "percent_share": 38.5
+      "precision": 0.941,
+      "percent_share": 34.8
     },
     "pattern_4": {
       "precision": 1.0,
-      "percent_share": 6.2
+      "percent_share": 5.3
     },
     "proximity": {
-      "precision": 0.5,
-      "percent_share": 24.3
+      "precision": 0.471,
+      "percent_share": 15.0
     }
   }
 }
