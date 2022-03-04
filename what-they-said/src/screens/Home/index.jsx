@@ -59,7 +59,7 @@ class HomeScreen extends React.Component {
          searchButtonPressed: false,
          dateFilter: ["2010/1/1", "2020/12/31"],
          locationFilter: [""],
-         displayedUrl: "https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html",
+         displayedUrl: "" //"https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html",
 		}
 
       this._handleSearch = this._handleSearch.bind(this);
@@ -132,7 +132,7 @@ class HomeScreen extends React.Component {
             return false;
          });
 
-         console.log("filtered articles list", filteredArticles);
+         //console.log("filtered articles list", filteredArticles);
 
          //create a dictionary of mappings 
          let entityArticleGroupings = {};
@@ -174,8 +174,8 @@ class HomeScreen extends React.Component {
             return a.length === b.length ? 0 : (a > b ? -1: 1);
          });
       
-         console.log("unique entities", entityArticleGroupings);
-         console.log("sorted entities", sortedEntityArticleGroupingsArray);
+         //console.log("unique entities", entityArticleGroupings);
+         //console.log("sorted entities", sortedEntityArticleGroupingsArray);
 
          this.setState({
             //filteredArticles: filteredArticles,
