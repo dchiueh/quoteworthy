@@ -305,8 +305,8 @@
               "context": null,
               "start_quote_index": 109,
               "end_quote_index": 117,
-              "attribution_index": 79,
-              "attribution_method": "pattern_3"
+              "attribution_index": 118,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "I’ve heard enough,",
@@ -347,8 +347,8 @@
               "context": null,
               "start_quote_index": 362,
               "end_quote_index": 371,
-              "attribution_index": 340,
-              "attribution_method": "pattern_3"
+              "attribution_index": 372,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "How many there will be on my side of the aisle, I just don’t know.",
@@ -1024,7 +1024,6 @@
       "location": null,
       "attributions": [
         "Petty Officer Second",
-        "Gary Cobban Jr.",
         "Deanna Cobban"
       ],
       "quotes_by_attribution": [
@@ -1042,29 +1041,24 @@
           ]
         },
         {
-          "attribution": "Gary Cobban Jr.",
+          "attribution": "Deanna Cobban",
           "quotes": [
             {
               "quote": "hard-working crab fisher",
               "context": "She described the elder Mr. Cobban as a “hard-working crab fisher” who spent all his time out on the boat.",
               "start_quote_index": 335,
               "end_quote_index": 341,
-              "attribution_index": 332,
-              "attribution_method": "proximity"
+              "attribution_index": 327,
+              "attribution_method": "pattern_3"
             },
             {
               "quote": "He loved fishing,",
               "context": null,
               "start_quote_index": 352,
               "end_quote_index": 357,
-              "attribution_index": 362,
-              "attribution_method": "proximity"
-            }
-          ]
-        },
-        {
-          "attribution": "Deanna Cobban",
-          "quotes": [
+              "attribution_index": 358,
+              "attribution_method": "pattern_1"
+            },
             {
               "quote": "He’s a crabber.",
               "context": null,
@@ -1175,14 +1169,6 @@
               "attribution_method": "pattern_1"
             },
             {
-              "quote": "Just trying to mimic spirits and classic cocktails is a recipe for failure,",
-              "context": null,
-              "start_quote_index": 1141,
-              "end_quote_index": 1156,
-              "attribution_index": 1138,
-              "attribution_method": "pattern_3"
-            },
-            {
               "quote": "There were breweries on the West Side of Manhattan making 200,000 gallons of beer a week,",
               "context": null,
               "start_quote_index": 1310,
@@ -1249,20 +1235,28 @@
           "attribution": "Julia Bainbridge",
           "quotes": [
             {
+              "quote": "Just trying to mimic spirits and classic cocktails is a recipe for failure,",
+              "context": null,
+              "start_quote_index": 1141,
+              "end_quote_index": 1156,
+              "attribution_index": 1158,
+              "attribution_method": "pattern_2"
+            },
+            {
               "quote": "consider what a negroni feels like,",
               "context": "Instead of trying to replicate the specific flavor of a negroni, you should “consider what a negroni feels like,” she added.",
               "start_quote_index": 1190,
               "end_quote_index": 1198,
-              "attribution_index": 1173,
-              "attribution_method": "proximity"
+              "attribution_index": 1199,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "It’s that tension between salty and sour and sweet and bitter that pleases the human palate,",
               "context": null,
               "start_quote_index": 1202,
               "end_quote_index": 1221,
-              "attribution_index": 1199,
-              "attribution_method": "pattern_3"
+              "attribution_index": 1222,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "And that experience can be delivered without alcohol, with the same level of complexity, but you have to put a lot of labor into it. Basically, if you want to get something that’s not just a tiki-derivative sugar bomb, you’re going to have to cook.",
@@ -1323,8 +1317,8 @@
               "context": null,
               "start_quote_index": 1907,
               "end_quote_index": 1934,
-              "attribution_index": 1897,
-              "attribution_method": "proximity"
+              "attribution_index": 1935,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "Teams that are effectively out of the running in the league have a possible large payoff; the race in the Premier League becomes for the top three, not the top four, making it a little tighter.",
@@ -1478,12 +1472,12 @@
               "attribution_method": "proximity"
             },
             {
-              "quote": "I think you called me a liar on national TV,",
+              "quote": "You know, let’s not do it right now,",
               "context": null,
-              "start_quote_index": 341,
-              "end_quote_index": 353,
-              "attribution_index": 334,
-              "attribution_method": "proximity"
+              "start_quote_index": 358,
+              "end_quote_index": 370,
+              "attribution_index": 371,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "If you want to have that discussion, we’ll have that discussion.",
@@ -1531,12 +1525,12 @@
               "attribution_method": "pattern_1"
             },
             {
-              "quote": "You know, let’s not do it right now,",
+              "quote": "I think you called me a liar on national TV,",
               "context": null,
-              "start_quote_index": 358,
-              "end_quote_index": 370,
+              "start_quote_index": 341,
+              "end_quote_index": 353,
               "attribution_index": 354,
-              "attribution_method": "pattern_3"
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "I thought a woman could win; he disagreed,",
@@ -1572,8 +1566,8 @@
               "context": null,
               "start_quote_index": 1453,
               "end_quote_index": 1466,
-              "attribution_index": 1438,
-              "attribution_method": "proximity"
+              "attribution_index": 1467,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "I didn’t hear anything.",
@@ -1757,8 +1751,8 @@
               "context": null,
               "start_quote_index": 834,
               "end_quote_index": 851,
-              "attribution_index": 814,
-              "attribution_method": "pattern_3"
+              "attribution_index": 852,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "This is also about the continuing attacks on progressive prosecutors, not just in St. Louis, but around this country.",
@@ -1944,8 +1938,8 @@
               "context": null,
               "start_quote_index": 686,
               "end_quote_index": 695,
-              "attribution_index": 663,
-              "attribution_method": "pattern_3"
+              "attribution_index": 696,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "Because I ended up doing a lot of other great things in my life, too.",
@@ -2035,16 +2029,16 @@
               "context": null,
               "start_quote_index": 483,
               "end_quote_index": 500,
-              "attribution_index": 504,
-              "attribution_method": "proximity"
+              "attribution_index": 501,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "There has been a lot of blame being thrown around,",
               "context": null,
               "start_quote_index": 518,
               "end_quote_index": 530,
-              "attribution_index": 506,
-              "attribution_method": "pattern_3"
+              "attribution_index": 531,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "Blame: It doesn’t help anybody at this time, and over-analysis of these things is not a productive exercise.",
@@ -2096,8 +2090,8 @@
               "context": null,
               "start_quote_index": 413,
               "end_quote_index": 419,
-              "attribution_index": 401,
-              "attribution_method": "pattern_4"
+              "attribution_index": 420,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "The government claims it has reduced emissions,",
@@ -2154,8 +2148,8 @@
               "context": null,
               "start_quote_index": 1240,
               "end_quote_index": 1261,
-              "attribution_index": 1214,
-              "attribution_method": "pattern_4"
+              "attribution_index": 1262,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "and everyone, including Australia, needs to do an awful lot more than we are doing.",
@@ -2170,6 +2164,14 @@
         {
           "attribution": "Jim McLennan",
           "quotes": [
+            {
+              "quote": "I can’t think of a time,",
+              "context": null,
+              "start_quote_index": 1527,
+              "end_quote_index": 1536,
+              "attribution_index": 1537,
+              "attribution_method": "pattern_1"
+            },
             {
               "quote": "where we have had so many serious fires occurring in so many different parts of the country at roughly the same time. It is a kind of new world.",
               "context": "“I can’t think of a time,” he said, “where we have had so many serious fires occurring in so many different parts of the country at roughly the same time.",
@@ -2209,8 +2211,8 @@
               "context": null,
               "start_quote_index": 1770,
               "end_quote_index": 1780,
-              "attribution_index": 1757,
-              "attribution_method": "pattern_3"
+              "attribution_index": 1781,
+              "attribution_method": "pattern_1"
             }
           ]
         }
@@ -2243,7 +2245,7 @@
         "Nicole Borromeo",
         "James Tucker",
         "Kevin Allis",
-        "Mike Baker"
+        "Robert Pitka"
       ],
       "quotes_by_attribution": [
         {
@@ -2304,8 +2306,8 @@
               "context": null,
               "start_quote_index": 1367,
               "end_quote_index": 1373,
-              "attribution_index": 1341,
-              "attribution_method": "pattern_3"
+              "attribution_index": 1374,
+              "attribution_method": "pattern_1"
             }
           ]
         },
@@ -2317,8 +2319,8 @@
               "context": null,
               "start_quote_index": 1416,
               "end_quote_index": 1442,
-              "attribution_index": 1407,
-              "attribution_method": "pattern_3"
+              "attribution_index": 1443,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "The challenge is estimating the number of people who were missed.",
@@ -2344,15 +2346,15 @@
           ]
         },
         {
-          "attribution": "Mike Baker",
+          "attribution": "Robert Pitka",
           "quotes": [
             {
               "quote": "This is to benefit for the next 10 years for our children, our grandchildren’s future,",
               "context": null,
               "start_quote_index": 1595,
               "end_quote_index": 1614,
-              "attribution_index": 1626,
-              "attribution_method": "proximity"
+              "attribution_index": 1615,
+              "attribution_method": "pattern_1"
             }
           ]
         }
@@ -2381,11 +2383,11 @@
       "location": null,
       "attributions": [
         "Bob Rand",
-        "John Thune",
+        "Dan Radigan",
         "Julián Castro",
         "Susan Almjeld",
         "Michelle Randall",
-        "Bill de Blasio",
+        "Pete Buttigieg",
         "Jane Kleeb",
         "Gladys Harrison"
       ],
@@ -2404,15 +2406,15 @@
           ]
         },
         {
-          "attribution": "John Thune",
+          "attribution": "Dan Radigan",
           "quotes": [
             {
               "quote": "I think Senator Thune was here once,",
               "context": null,
               "start_quote_index": 245,
               "end_quote_index": 254,
-              "attribution_index": 243,
-              "attribution_method": "proximity"
+              "attribution_index": 255,
+              "attribution_method": "pattern_1"
             }
           ]
         },
@@ -2453,8 +2455,8 @@
               "context": null,
               "start_quote_index": 765,
               "end_quote_index": 783,
-              "attribution_index": 791,
-              "attribution_method": "proximity"
+              "attribution_index": 784,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "but then again I’m comfortable on my couch, and I’m not part of the caucuses anyway.",
@@ -2474,8 +2476,8 @@
               "context": null,
               "start_quote_index": 853,
               "end_quote_index": 868,
-              "attribution_index": 849,
-              "attribution_method": "proximity"
+              "attribution_index": 869,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "They say we’re the forgotten ones, and we kind of are.",
@@ -2486,20 +2488,20 @@
               "attribution_method": "pattern_3"
             },
             {
+              "quote": "I drove in a snowstorm to see him in Sioux City,",
+              "context": null,
+              "start_quote_index": 945,
+              "end_quote_index": 958,
+              "attribution_index": 959,
+              "attribution_method": "pattern_1"
+            },
+            {
               "quote": "It was right after he declared. That was in a bar. I was literally standing there having a beer with Bill de Blasio. He was very politician-y, all Mr. Common Man and everything. Didn’t have a whole lot to say, just a little small talk. It was almost a little uncomfortable.",
               "context": null,
               "start_quote_index": 962,
               "end_quote_index": 1025,
               "attribution_index": 959,
               "attribution_method": "pattern_3"
-            },
-            {
-              "quote": "You will be deciding where our country heads next.",
-              "context": null,
-              "start_quote_index": 1099,
-              "end_quote_index": 1110,
-              "attribution_index": 1115,
-              "attribution_method": "proximity"
             },
             {
               "quote": "I wish I could be a part of it,",
@@ -2520,15 +2522,15 @@
           ]
         },
         {
-          "attribution": "Bill de Blasio",
+          "attribution": "Pete Buttigieg",
           "quotes": [
             {
-              "quote": "I drove in a snowstorm to see him in Sioux City,",
+              "quote": "You will be deciding where our country heads next.",
               "context": null,
-              "start_quote_index": 945,
-              "end_quote_index": 958,
-              "attribution_index": 939,
-              "attribution_method": "proximity"
+              "start_quote_index": 1099,
+              "end_quote_index": 1110,
+              "attribution_index": 1091,
+              "attribution_method": "pattern_3"
             }
           ]
         },
@@ -3015,7 +3017,7 @@
       "attributions": [
         "Derek Jeter",
         "Jack Leo Van Impe",
-        "Rivera",
+        "Jane Forbes Clark",
         "Larry Walker"
       ],
       "quotes_by_attribution": [
@@ -3035,8 +3037,8 @@
               "context": null,
               "start_quote_index": 179,
               "end_quote_index": 188,
-              "attribution_index": 171,
-              "attribution_method": "proximity"
+              "attribution_index": 189,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "It takes a lot of people to all agree to get you to this point. So, I’m not thinking about that.",
@@ -3047,12 +3049,12 @@
               "attribution_method": "pattern_3"
             },
             {
-              "quote": "Yes, we are,",
+              "quote": "It’s an honor just to be in the Hall of Fame,",
               "context": null,
-              "start_quote_index": 679,
-              "end_quote_index": 685,
-              "attribution_index": 663,
-              "attribution_method": "pattern_3"
+              "start_quote_index": 800,
+              "end_quote_index": 814,
+              "attribution_index": 815,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "I don’t care where they put me. They can put me in the rest room.",
@@ -3060,15 +3062,15 @@
               "start_quote_index": 818,
               "end_quote_index": 837,
               "attribution_index": 815,
-              "attribution_method": "pattern_4"
+              "attribution_method": "pattern_3"
             },
             {
               "quote": "I’m most proud that I was a Yankee,",
               "context": null,
               "start_quote_index": 1006,
               "end_quote_index": 1017,
-              "attribution_index": 1002,
-              "attribution_method": "proximity"
+              "attribution_index": 1018,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "It was the only thing I ever wanted to do as long as I could remember, to play shortstop for the New York Yankees. When it’s all said and done, that’s what I’m most proud of.",
@@ -3084,6 +3086,15 @@
           "attribution": "Jack Leo Van Impe",
           "quotes": [
             {
+              "quote": "They turned that down and said they preferred that the individual decide whether he or she wishes to make the ballot public,",
+              "context": null,
+              "start_quote_index": 513,
+              "end_quote_index": 537,
+              "attribution_index": 538,
+              "attribution_method": "pattern_1",
+              "original_attribution": "Jack"
+            },
+            {
               "quote": "That’s the option each voter has.",
               "context": null,
               "start_quote_index": 544,
@@ -3095,15 +3106,15 @@
           ]
         },
         {
-          "attribution": "Rivera",
+          "attribution": "Jane Forbes Clark",
           "quotes": [
             {
-              "quote": "It’s an honor just to be in the Hall of Fame,",
+              "quote": "Yes, we are,",
               "context": null,
-              "start_quote_index": 800,
-              "end_quote_index": 814,
-              "attribution_index": 796,
-              "attribution_method": "proximity"
+              "start_quote_index": 679,
+              "end_quote_index": 685,
+              "attribution_index": 686,
+              "attribution_method": "pattern_1"
             }
           ]
         },
@@ -3115,8 +3126,8 @@
               "context": null,
               "start_quote_index": 941,
               "end_quote_index": 949,
-              "attribution_index": 935,
-              "attribution_method": "proximity"
+              "attribution_index": 950,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "where the majority of my damage was done.",
@@ -3156,8 +3167,9 @@
         "Kevin Sheekey",
         "Jeff Weaver",
         "Elizabeth Warren",
-        "Buttigieg",
+        "Pete Buttigieg",
         "Tom Perez",
+        "Xochitl Hinojosa",
         "S.Y. Lee",
         "Tom Steyer"
       ],
@@ -3212,8 +3224,8 @@
               "context": null,
               "start_quote_index": 547,
               "end_quote_index": 580,
-              "attribution_index": 539,
-              "attribution_method": "proximity"
+              "attribution_index": 581,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "Billionaires shouldn’t be allowed to play by different rules — on the debate stage, in our democracy, or in our government.",
@@ -3226,15 +3238,16 @@
           ]
         },
         {
-          "attribution": "Buttigieg",
+          "attribution": "Pete Buttigieg",
           "quotes": [
             {
               "quote": "When the initial rules came out with a focus on grass-roots fund-raising, of course our campaign was focused on the same thing,",
               "context": null,
               "start_quote_index": 713,
               "end_quote_index": 742,
-              "attribution_index": 697,
-              "attribution_method": "pattern_3"
+              "attribution_index": 743,
+              "attribution_method": "pattern_1",
+              "original_attribution": "Buttigieg"
             },
             {
               "quote": "Now it sounds like there is a different focus and I do believe that we will qualify.",
@@ -3242,7 +3255,8 @@
               "start_quote_index": 747,
               "end_quote_index": 766,
               "attribution_index": 743,
-              "attribution_method": "pattern_3"
+              "attribution_method": "pattern_3",
+              "original_attribution": "Buttigieg"
             }
           ]
         },
@@ -3256,6 +3270,19 @@
               "end_quote_index": 861,
               "attribution_index": 802,
               "attribution_method": "pattern_3"
+            }
+          ]
+        },
+        {
+          "attribution": "Xochitl Hinojosa",
+          "quotes": [
+            {
+              "quote": "Now that we will have the results of two elections and grass-roots support is actually captured in voting, that will replace the donor threshold,",
+              "context": null,
+              "start_quote_index": 899,
+              "end_quote_index": 928,
+              "attribution_index": 929,
+              "attribution_method": "pattern_1"
             }
           ]
         },
@@ -3288,8 +3315,8 @@
               "context": null,
               "start_quote_index": 1308,
               "end_quote_index": 1336,
-              "attribution_index": 1301,
-              "attribution_method": "proximity",
+              "attribution_index": 1337,
+              "attribution_method": "pattern_1",
               "original_attribution": "Steyer"
             },
             {
@@ -3572,8 +3599,8 @@
               "context": null,
               "start_quote_index": 169,
               "end_quote_index": 178,
-              "attribution_index": 163,
-              "attribution_method": "pattern_3"
+              "attribution_index": 179,
+              "attribution_method": "pattern_1"
             }
           ]
         },
@@ -3835,8 +3862,8 @@
               "context": null,
               "start_quote_index": 1170,
               "end_quote_index": 1189,
-              "attribution_index": 1145,
-              "attribution_method": "pattern_3"
+              "attribution_index": 1190,
+              "attribution_method": "pattern_1"
             }
           ]
         },
@@ -3969,8 +3996,8 @@
               "context": null,
               "start_quote_index": 749,
               "end_quote_index": 771,
-              "attribution_index": 741,
-              "attribution_method": "proximity"
+              "attribution_index": 772,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "A politics of conscience is still yet possible. And yes … love will prevail.",
@@ -4186,7 +4213,7 @@
       "attributions": [
         "Philippe Lagassé",
         "Bill Morneau",
-        "Meghan Markle"
+        "Justin Trudeau"
       ],
       "quotes_by_attribution": [
         {
@@ -4197,8 +4224,8 @@
               "context": null,
               "start_quote_index": 122,
               "end_quote_index": 139,
-              "attribution_index": 119,
-              "attribution_method": "pattern_3"
+              "attribution_index": 140,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "Now the question will be who is going to pay the tab for the security bill.",
@@ -4207,6 +4234,14 @@
               "end_quote_index": 161,
               "attribution_index": 140,
               "attribution_method": "pattern_3"
+            },
+            {
+              "quote": "If you were to remake Canada now it wouldn’t be a monarchy,",
+              "context": null,
+              "start_quote_index": 454,
+              "end_quote_index": 469,
+              "attribution_index": 470,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "At the moment, the royal family don’t live here or cost us anything. But if they did, then attitudes toward them could change.",
@@ -4248,15 +4283,15 @@
           ]
         },
         {
-          "attribution": "Meghan Markle",
+          "attribution": "Justin Trudeau",
           "quotes": [
             {
               "quote": "You’re among friends, and always welcome here,",
               "context": null,
               "start_quote_index": 537,
               "end_quote_index": 548,
-              "attribution_index": 554,
-              "attribution_method": "proximity"
+              "attribution_index": 549,
+              "attribution_method": "pattern_1"
             }
           ]
         }
@@ -4339,16 +4374,16 @@
               "context": null,
               "start_quote_index": 64,
               "end_quote_index": 92,
-              "attribution_index": 60,
-              "attribution_method": "proximity"
+              "attribution_index": 93,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "I can’t skate over there,",
               "context": null,
               "start_quote_index": 311,
               "end_quote_index": 319,
-              "attribution_index": 306,
-              "attribution_method": "proximity"
+              "attribution_index": 320,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "That would bother people.",
@@ -4363,8 +4398,8 @@
               "context": null,
               "start_quote_index": 1415,
               "end_quote_index": 1433,
-              "attribution_index": 1451,
-              "attribution_method": "proximity"
+              "attribution_index": 1434,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "For the newcomers, who come to skateboarding because of the Olympics, I explain that our culture is cool. We are why they are competing.",
@@ -4379,8 +4414,8 @@
               "context": null,
               "start_quote_index": 1529,
               "end_quote_index": 1538,
-              "attribution_index": 1526,
-              "attribution_method": "proximity"
+              "attribution_index": 1539,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "But most people will not understand that the counterculture side is the real skateboarding.",
@@ -4431,6 +4466,14 @@
               "end_quote_index": 804,
               "attribution_index": 760,
               "attribution_method": "proximity"
+            },
+            {
+              "quote": "You’d think the bigger that skateboarding gets in Japan, the more accepted and less restrictive it would be,",
+              "context": null,
+              "start_quote_index": 1031,
+              "end_quote_index": 1053,
+              "attribution_index": 1054,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "But it’s actually the opposite.",
@@ -4608,8 +4651,8 @@
               "context": null,
               "start_quote_index": 981,
               "end_quote_index": 1012,
-              "attribution_index": 958,
-              "attribution_method": "pattern_3"
+              "attribution_index": 1013,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "It’s very disturbing.",
@@ -4624,8 +4667,8 @@
               "context": null,
               "start_quote_index": 1057,
               "end_quote_index": 1066,
-              "attribution_index": 1038,
-              "attribution_method": "proximity"
+              "attribution_index": 1067,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "If we get a voting system that allows us to really vote for who we want then I can see a scenario where we are back in Europe in five to 10 years. It’s possible.",
@@ -4713,8 +4756,8 @@
               "context": null,
               "start_quote_index": 896,
               "end_quote_index": 904,
-              "attribution_index": 909,
-              "attribution_method": "proximity"
+              "attribution_index": 905,
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "I’m sure Tiger wouldn’t want to get into the Games that way.",
@@ -4735,7 +4778,7 @@
               "start_quote_index": 1114,
               "end_quote_index": 1119,
               "attribution_index": 1088,
-              "attribution_method": "proximity"
+              "attribution_method": "pattern_3"
             }
           ]
         }
