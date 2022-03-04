@@ -1029,23 +1029,9 @@
       ],
       "location": null,
       "attributions": [
-        "Petty Officer Second",
         "Deanna Cobban"
       ],
       "quotes_by_attribution": [
-        {
-          "attribution": "Petty Officer Second",
-          "quotes": [
-            {
-              "quote": "The decision to suspend an active search and rescue case is never easy, and it’s only made after careful consideration of a myriad of factors,",
-              "context": null,
-              "start_quote_index": 109,
-              "end_quote_index": 138,
-              "attribution_index": 240,
-              "attribution_method": "pattern_2"
-            }
-          ]
-        },
         {
           "attribution": "Deanna Cobban",
           "quotes": [
@@ -1126,14 +1112,6 @@
         {
           "attribution": "David Wondrich",
           "quotes": [
-            {
-              "quote": "manufacture, sale or transportation of intoxicating liquors",
-              "context": "On Jan. 16, 1919 — more than a year before women could vote nationwide — the teetotalers achieved their ultimate goal: The Eighteenth Amendment, prohibiting the “manufacture, sale or transportation of intoxicating liquors” anywhere within the United States, was ratified.",
-              "start_quote_index": 274,
-              "end_quote_index": 283,
-              "attribution_index": 309,
-              "attribution_method": "proximity"
-            },
             {
               "quote": "Nobody believed it would happen,",
               "context": null,
@@ -2702,14 +2680,6 @@
           "attribution": "Chad Wolf",
           "quotes": [
             {
-              "quote": "And in doing so,",
-              "context": null,
-              "start_quote_index": 297,
-              "end_quote_index": 303,
-              "attribution_index": 330,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "has allowed vital border wall construction to move forward using military construction funds.",
               "context": "“And in doing so,” the statement said, the court “has allowed vital border wall construction to move forward using military construction funds.”",
               "start_quote_index": 310,
@@ -4118,14 +4088,6 @@
         {
           "attribution": "Raja Rajamannar",
           "quotes": [
-            {
-              "quote": "It’s like McCarthyism — people are too frickin’ scared to say anything,",
-              "context": null,
-              "start_quote_index": 358,
-              "end_quote_index": 374,
-              "attribution_index": 534,
-              "attribution_method": "pattern_2"
-            },
             {
               "quote": "It’s a divided world that we live in,",
               "context": null,
