@@ -4,9 +4,9 @@ import json
 import pandas as pd
 from quote_parser import QuoteParser
 
-DATA_FILEPATH = "./nyt_politics.csv"
-PARSED_FILEPATH = "./nyt_politics_html_parsed.csv"
-JSON_FILEPATH = "../nyt_politics.json"
+DATA_FILEPATH = "./nyt_2020_mini.csv"
+PARSED_FILEPATH = "./nyt_2020_mini_html_parsed.csv"
+JSON_FILEPATH = "../nyt_2020_mini.json"
 
 qp = QuoteParser()
 
@@ -130,11 +130,13 @@ def merge_matching_entities_all_articles(articles):
     return articles
 
 def get_entities_to_merge_all_articles(articles):
-    entities = set()
+    entities = {}
     entities_to_merge = {}
     for article_obj in articles:
         attributions = [attr_obj['attribution'] for attr_obj in article_obj['quotes_by_attribution']]
-        entities.update(attributions)
+        for entity in attributions:
+            entities[entity] = entities.get(entity, 0) + 1
+    entities = [entity for entity, count in sorted(entities.items(), key=lambda x: -x[1])]
     for entity in entities:
         match = find_matching_entity_name(entities, entity)
         if match:
