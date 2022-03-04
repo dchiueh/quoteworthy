@@ -24,6 +24,7 @@ import {
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import NYT_MINI from '../../data/nyt_2020_mini.json';
+import NYT_POLITICS from '../../data/nyt_politics.json';
 // import SearchBox from '../../components/SearchBox/SearchBox';
 import SearchListGroupedByEntity from '../../components/SearchListGroupedByEntity/SearchListGroupedByEntity';
 
@@ -58,6 +59,7 @@ class HomeScreen extends React.Component {
          searchButtonPressed: false,
          dateFilter: ["2010/1/1", "2020/12/31"],
          locationFilter: [""],
+         displayedUrl: "https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html",
 		}
 
       this._handleSearch = this._handleSearch.bind(this);
@@ -66,7 +68,7 @@ class HomeScreen extends React.Component {
 
 	componentDidMount() {
       //TODO: fetch from backend; or just use hard-coded json
-      this.setState({articles: NYT_MINI["articles"]});
+      this.setState({articles: NYT_POLITICS["articles"]});
 	}
 
    componentDidUpdate() {
@@ -108,16 +110,20 @@ class HomeScreen extends React.Component {
 
             const articleLocationMatches = article.locations && article.locations.filter(name => this.state.locationFilter.includes(name.toLowerCase()));
             
+            const articleAuthorMatches = article.author && article.author.toLowerCase().includes(lowerSearch);
+            const articleTitleMatches = article.title && article.title.toLowerCase().includes(lowerSearch);
+            const articleAbstractMatches = article.abstract && article.abstract.toLowerCase().includes(lowerSearch);
+            
             const articlePeopleMatches = article.people && article.people.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
             const articleKeywordsMatches = article.keywords && article.keywords.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
             const articleAttributionseMatches = article.attributions && article.attributions.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
 
-            if((article.author.toLowerCase().includes(lowerSearch)
+            if((articleAuthorMatches
                || articlePeopleMatches
                || articleKeywordsMatches
                || articleAttributionseMatches
-               || article.title.toLowerCase().includes(lowerSearch)
-               || article.abstract.toLowerCase().includes(lowerSearch)
+               || articleTitleMatches
+               || articleAbstractMatches
                )
                //&& articleLocationMatches
                && (dateCheck >= dateFrom && dateCheck <= dateTo)
@@ -212,7 +218,14 @@ class HomeScreen extends React.Component {
                   <SearchListGroupedByEntity entityArticleGroupings={this.state.entityArticleGroupings} sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray} searchPhrase={this.state.searchPhrase} /> 
                </div>
                <div style={{display: "block", flex: "1"}}>
-                  <iframe frameBorder="0" src="https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html" allowFullScreen={true} scrolling="yes" width="100%" height="100%"></iframe>
+                  <iframe 
+                     frameBorder="0" 
+                     src={this.state.displayedUrl}
+                     allowFullScreen={true} 
+                     scrolling="yes" 
+                     width="100%" 
+                     height="100%">
+                  </iframe>
                </div>
             </div>
             {/*ArticleIFrame */} 
