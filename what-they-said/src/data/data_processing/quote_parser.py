@@ -4,8 +4,7 @@ import spacy
 import re
 
 COREF_MODEL_URL = "https://storage.googleapis.com/allennlp-public-models/coref-spanbert-large-2021.03.10.tar.gz"
-ACTION_VERBS = ["added", "said", "asked", "called", "denounced", "told", "objected", "wrote"]
-# TODO: add "joked", "quipped"
+ACTION_VERBS = ["added", "said", "asked", "called", "denounced", "told", "objected", "wrote", "described", "quipped", "explained", "tell"]
 LOOK_AROUND_SIZE = 30
 
 coref_predictor = Predictor.from_path(COREF_MODEL_URL)
@@ -121,7 +120,7 @@ class QuoteParser:
     def assign_attribution(self, tokenized_document, index_to_entity, quote_start_idx, quote_end_idx):
         # pattern 1 - if entity->verb is immediately after the quote (ex: "[...]," he said)
         if tokenized_document[quote_end_idx-1].text in [",", "?"] and quote_end_idx+1 in index_to_entity:
-            scan_idx = quote_end_idx + 2
+            scan_idx = quote_end_idx + 1
             while scan_idx in index_to_entity:
                 scan_idx += 1
                 if tokenized_document[scan_idx].text in ACTION_VERBS:
@@ -135,7 +134,7 @@ class QuoteParser:
                 scan_idx += 1
             return index_to_entity[scan_idx], scan_idx, 'pattern_2'
         # pattern 3 - if entity->verb is before the quote (ex: He said to reporters "[...]")
-        encountered_action_verb = False
+        encountered_action_verb = None
         num_unclosed_quotes = 0
         for idx in reversed(range(quote_start_idx-LOOK_AROUND_SIZE, quote_start_idx)):
             if tokenized_document[idx].text == "”":
@@ -144,7 +143,7 @@ class QuoteParser:
                 num_unclosed_quotes -= 1
             if num_unclosed_quotes == 0:
                 if tokenized_document[idx].text in ACTION_VERBS:
-                    encountered_action_verb = True
+                    encountered_action_verb = tokenized_document[idx].text
                 elif encountered_action_verb and idx in index_to_entity:
                     return index_to_entity[idx], idx, 'pattern_3'
         # pattern 4 - if verb->entity is before the quote (ex: "lorem ipsum," said Newsom to reporters. "[...]")
