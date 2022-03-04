@@ -5,7 +5,9 @@ import re
 
 COREF_MODEL_URL = "https://storage.googleapis.com/allennlp-public-models/coref-spanbert-large-2021.03.10.tar.gz"
 ACTION_VERBS = ["added", "said", "asked", "called", "denounced", "told", "objected", "wrote", "described", "quipped", "explained", "remembered", "tell"]
-LOOK_AROUND_SIZE = 30
+LONG_LOOK_AROUND = 30
+SHORT_LOOK_AROUND = 4
+PROXIMITY_LOOK_AROUND = 20
 
 coref_predictor = Predictor.from_path(COREF_MODEL_URL)
 named_entity_model = spacy.load('en_core_web_sm')
@@ -129,14 +131,14 @@ class QuoteParser:
                     return entity, attr_idx, 'pattern_1'
         # pattern 2 - if verb->entity is immediately after the quote (ex: "[...]," said Newsom)
         if tokenized_document[quote_end_idx-1].text in [",", "?"] and quote_end_idx+1 < len(tokenized_document) and tokenized_document[quote_end_idx+1].text in ACTION_VERBS:
-            scan_idx = quote_end_idx + 2
-            while scan_idx not in index_to_entity:
-                scan_idx += 1
-            return index_to_entity[scan_idx], scan_idx, 'pattern_2'
+            for diff in range(SHORT_LOOK_AROUND):
+                scan_idx = quote_end_idx + diff + 2
+                if scan_idx in index_to_entity:
+                    return index_to_entity[scan_idx], scan_idx, 'pattern_2'
         # pattern 3 - if entity->verb is before the quote (ex: He said to reporters "[...]")
         encountered_action_verb = None
         num_unclosed_quotes = 0
-        for idx in reversed(range(quote_start_idx-LOOK_AROUND_SIZE, quote_start_idx)):
+        for idx in reversed(range(quote_start_idx-LONG_LOOK_AROUND, quote_start_idx)):
             if tokenized_document[idx].text == "”":
                 num_unclosed_quotes += 1
             elif tokenized_document[idx].text == "“":
@@ -149,13 +151,13 @@ class QuoteParser:
         # pattern 4 - if verb->entity is before the quote (ex: "lorem ipsum," said Newsom to reporters. "[...]")
         if tokenized_document[quote_start_idx-1].text == ".":
             entity_idx = None
-            for idx in reversed(range(quote_start_idx-LOOK_AROUND_SIZE, quote_start_idx)):
+            for idx in reversed(range(quote_start_idx-LONG_LOOK_AROUND, quote_start_idx)):
                 if idx in index_to_entity:
                     entity_idx = idx
                 elif entity_idx is not None and tokenized_document[idx].text == "”" and tokenized_document[idx-1].text == ",":
                     return index_to_entity[entity_idx], entity_idx, 'pattern_4'
         # default - proximity assignment
-        for diff in range(LOOK_AROUND_SIZE):
+        for diff in range(PROXIMITY_LOOK_AROUND):
             pre_quote_idx = quote_start_idx - diff - 1
             post_quote_idx = quote_end_idx + diff + 2
             if pre_quote_idx in index_to_entity:
