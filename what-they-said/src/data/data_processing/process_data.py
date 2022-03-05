@@ -4,7 +4,7 @@ import json
 import pandas as pd
 from quote_parser import QuoteParser
 
-DATA_NAME = "nyt_2020_mini"
+DATA_NAME = "nyt_politics"
 DATA_FILEPATH = f"./{DATA_NAME}.csv"
 PARSED_FILEPATH = f"./{DATA_NAME}_html_parsed.csv"
 JSON_FILEPATH = f"../{DATA_NAME}.json"

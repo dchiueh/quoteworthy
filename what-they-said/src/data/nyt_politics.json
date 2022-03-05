@@ -346,14 +346,6 @@
               "attribution_method": "proximity"
             },
             {
-              "quote": "other essential public business",
-              "context": "People employed in the areas of national security, defense and “other essential public business” are not excused, according to a federal memo sent to government agencies and departments.",
-              "start_quote_index": 220,
-              "end_quote_index": 225,
-              "attribution_index": 199,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "We hope our visitors can find a quiet moment to reflect on the life of public service embodied by the 41st President of the United States,",
               "context": null,
               "start_quote_index": 441,
@@ -1573,14 +1565,6 @@
               "end_quote_index": 1544,
               "attribution_index": 1530,
               "attribution_method": "proximity"
-            },
-            {
-              "quote": "Democrats let him into our country,",
-              "context": null,
-              "start_quote_index": 1560,
-              "end_quote_index": 1568,
-              "attribution_index": 1538,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -2044,8 +2028,7 @@
       ],
       "location": "WASHINGTON",
       "attributions": [
-        "Sigal Mandelker",
-        "Donald J. Trump"
+        "Sigal Mandelker"
       ],
       "quotes_by_attribution": [
         {
@@ -2058,20 +2041,6 @@
               "end_quote_index": 114,
               "attribution_index": 116,
               "attribution_method": "pattern_2"
-            }
-          ]
-        },
-        {
-          "attribution": "Donald J. Trump",
-          "quotes": [
-            {
-              "quote": "Financial institutions should also be aware of possible Iranian abuses of virtual currency and precious metals to evade sanctions and gain access to the international financial system and to conceal their nefarious actions,",
-              "context": null,
-              "start_quote_index": 642,
-              "end_quote_index": 677,
-              "attribution_index": 707,
-              "attribution_method": "proximity",
-              "original_attribution": "Trump"
             }
           ]
         }
@@ -2546,7 +2515,7 @@
               "start_quote_index": 805,
               "end_quote_index": 816,
               "attribution_index": 832,
-              "attribution_method": "pattern_2"
+              "attribution_method": "proximity"
             }
           ]
         }
@@ -5580,8 +5549,7 @@
         "Orrin Hatch",
         "Ted Cruz",
         "Kamala Harris",
-        "Tyrone Gayle",
-        "Mark E. Zuckerberg"
+        "Tyrone Gayle"
       ],
       "quotes_by_attribution": [
         {
@@ -5663,19 +5631,6 @@
               "end_quote_index": 1035,
               "attribution_index": 1036,
               "attribution_method": "pattern_1"
-            }
-          ]
-        },
-        {
-          "attribution": "Mark E. Zuckerberg",
-          "quotes": [
-            {
-              "quote": "help increase two-way conversations between government officials and the people they represent.",
-              "context": "Facebook, on a section of its website addressing politicians and government institutions, says its tools “help increase two-way conversations between government officials and the people they represent.”",
-              "start_quote_index": 462,
-              "end_quote_index": 478,
-              "attribution_index": 502,
-              "attribution_method": "proximity"
             }
           ]
         }
@@ -6177,14 +6132,6 @@
           "attribution": "Donald J. Trump",
           "quotes": [
             {
-              "quote": "State of the Uniom.",
-              "context": null,
-              "start_quote_index": 47,
-              "end_quote_index": 53,
-              "attribution_index": 22,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "Secretary of Educatuon.",
               "context": null,
               "start_quote_index": 213,
@@ -6286,47 +6233,10 @@
       ],
       "location": null,
       "attributions": [
-        "Tom Steyer",
-        "Aleigha Cavalier"
+        "Aleigha Cavalier",
+        "Tom Steyer"
       ],
       "quotes_by_attribution": [
-        {
-          "attribution": "Tom Steyer",
-          "quotes": [
-            {
-              "quote": "A high profile political campaign based on the West Coast is seeking highly skilled political professionals to join our national campaign team,",
-              "context": null,
-              "start_quote_index": 70,
-              "end_quote_index": 94,
-              "attribution_index": 118,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "oversee an organization focused on building capacity, engaging local activists, and increasing the candidate’s presences and stature, while preparing for the 2020 State Primary",
-              "context": "The job posting does not explicitly say it is for a presidential campaign but responsibilities will include to “oversee an organization focused on building capacity, engaging local activists, and increasing the candidate’s presences and stature, while preparing for the 2020 State Primary” and to “develop a staffing plan and hiring timeline for a 2020 Presidential Race in Nevada in collaboration with HQ HR and leadership.”",
-              "start_quote_index": 442,
-              "end_quote_index": 471,
-              "attribution_index": 418,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "develop a staffing plan and hiring timeline for a 2020 Presidential Race in Nevada in collaboration with HQ HR and leadership.",
-              "context": "The job posting does not explicitly say it is for a presidential campaign but responsibilities will include to “oversee an organization focused on building capacity, engaging local activists, and increasing the candidate’s presences and stature, while preparing for the 2020 State Primary” and to “develop a staffing plan and hiring timeline for a 2020 Presidential Race in Nevada in collaboration with HQ HR and leadership.”",
-              "start_quote_index": 474,
-              "end_quote_index": 497,
-              "attribution_index": 523,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "Experience working on Presidential campaigns.",
-              "context": null,
-              "start_quote_index": 513,
-              "end_quote_index": 520,
-              "attribution_index": 523,
-              "attribution_method": "proximity"
-            }
-          ]
-        },
         {
           "attribution": "Aleigha Cavalier",
           "quotes": [
@@ -6353,6 +6263,19 @@
               "end_quote_index": 251,
               "attribution_index": 228,
               "attribution_method": "pattern_3"
+            }
+          ]
+        },
+        {
+          "attribution": "Tom Steyer",
+          "quotes": [
+            {
+              "quote": "Experience working on Presidential campaigns.",
+              "context": null,
+              "start_quote_index": 513,
+              "end_quote_index": 520,
+              "attribution_index": 523,
+              "attribution_method": "proximity"
             }
           ]
         }
@@ -6765,14 +6688,6 @@
         {
           "attribution": "Donald J. Trump",
           "quotes": [
-            {
-              "quote": "Consideration must be given to minimize damage to local infrastructure,",
-              "context": null,
-              "start_quote_index": 276,
-              "end_quote_index": 288,
-              "attribution_index": 312,
-              "attribution_method": "proximity"
-            },
             {
               "quote": "wheeled vehicles only.",
               "context": "“Consideration must be given to minimize damage to local infrastructure,” the memo notes, adding that there will be “wheeled vehicles only.”",
@@ -7780,7 +7695,7 @@
               "start_quote_index": 1499,
               "end_quote_index": 1529,
               "attribution_index": 1540,
-              "attribution_method": "pattern_2"
+              "attribution_method": "proximity"
             },
             {
               "quote": "Instead, he is claiming that commercial transactions with private American weapons manufacturers should weigh more heavily than our human rights commitments, because the spending produces jobs.",
@@ -8624,14 +8539,6 @@
               "end_quote_index": 650,
               "attribution_index": 652,
               "attribution_method": "pattern_2"
-            },
-            {
-              "quote": "wear Mr. Trump",
-              "context": "“It is strictly a witch hunt,” said Carol Livingood, 74, of Danville, Ind., who says she owns enough “Make America Great Again” hats and shirts to “wear Mr. Trump” every day of the week.",
-              "start_quote_index": 677,
-              "end_quote_index": 681,
-              "attribution_index": 653,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -10234,7 +10141,6 @@
       "location": "WASHINGTON",
       "attributions": [
         "Meghan O’Sullivan",
-        "Bashar al-Assad",
         "Heather Nauert",
         "Joseph R. Biden Jr.",
         "Ari Fleischer",
@@ -10260,19 +10166,6 @@
               "end_quote_index": 543,
               "attribution_index": 466,
               "attribution_method": "pattern_4"
-            }
-          ]
-        },
-        {
-          "attribution": "Bashar al-Assad",
-          "quotes": [
-            {
-              "quote": "Yet the Trump administration still lacks a coherent strategy to actually bring an end to the conflict and instead has sought to slash humanitarian aid and slam the door on Syrian refugees.",
-              "context": null,
-              "start_quote_index": 653,
-              "end_quote_index": 687,
-              "attribution_index": 712,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -10589,8 +10482,7 @@
         "Eswar Prasad",
         "Steven Mnuchin",
         "Peter Navarro",
-        "Donald J. Trump",
-        "Steven T. Mnuchin"
+        "Donald J. Trump"
       ],
       "quotes_by_attribution": [
         {
@@ -10731,19 +10623,6 @@
               "start_quote_index": 1033,
               "end_quote_index": 1079,
               "attribution_index": 1090,
-              "attribution_method": "proximity"
-            }
-          ]
-        },
-        {
-          "attribution": "Steven T. Mnuchin",
-          "quotes": [
-            {
-              "quote": "a big thing.",
-              "context": "For instance, after leaving Buenos Aires on Saturday night, Mr. Trump told reporters aboard Air Force One that Mr. Xi had agreed to approve a deal China had previously rejected between Qualcomm, a San Diego-based chip maker, and a Dutch firm, NXP, calling it “a big thing.”",
-              "start_quote_index": 923,
-              "end_quote_index": 928,
-              "attribution_index": 899,
               "attribution_method": "proximity"
             }
           ]
@@ -12801,14 +12680,6 @@
               "end_quote_index": 307,
               "attribution_index": 271,
               "attribution_method": "pattern_3"
-            },
-            {
-              "quote": "take legal action within the framework of the World Trade Organization,",
-              "context": "China would also “take legal action within the framework of the World Trade Organization,” the Chinese Commerce Ministry said.",
-              "start_quote_index": 875,
-              "end_quote_index": 888,
-              "attribution_index": 910,
-              "attribution_method": "proximity"
             }
           ]
         }
@@ -12965,8 +12836,6 @@
       "attributions": [
         "Vali R. Nasr",
         "Kirstjen Nielsen",
-        "Dan Coats",
-        "Christopher Wray",
         "Lindsey Graham",
         "R. Nicholas Burns",
         "John R. Bolton",
@@ -12992,38 +12861,12 @@
           "attribution": "Kirstjen Nielsen",
           "quotes": [
             {
-              "quote": "Our democracy itself is in the cross hairs,",
-              "context": null,
-              "start_quote_index": 320,
-              "end_quote_index": 330,
-              "attribution_index": 338,
-              "attribution_method": "pattern_2"
-            }
-          ]
-        },
-        {
-          "attribution": "Dan Coats",
-          "quotes": [
-            {
-              "quote": "It goes beyond the elections,",
-              "context": null,
-              "start_quote_index": 341,
-              "end_quote_index": 348,
-              "attribution_index": 356,
-              "attribution_method": "pattern_2"
-            }
-          ]
-        },
-        {
-          "attribution": "Christopher Wray",
-          "quotes": [
-            {
               "quote": "This is a threat we need to take extremely seriously,",
               "context": null,
               "start_quote_index": 359,
               "end_quote_index": 371,
-              "attribution_index": 377,
-              "attribution_method": "pattern_2"
+              "attribution_index": 339,
+              "attribution_method": "pattern_3"
             }
           ]
         },
@@ -13150,6 +12993,22 @@
               "end_quote_index": 249,
               "attribution_index": 260,
               "attribution_method": "proximity"
+            },
+            {
+              "quote": "Our democracy itself is in the cross hairs,",
+              "context": null,
+              "start_quote_index": 320,
+              "end_quote_index": 330,
+              "attribution_index": 315,
+              "attribution_method": "proximity"
+            },
+            {
+              "quote": "It goes beyond the elections,",
+              "context": null,
+              "start_quote_index": 341,
+              "end_quote_index": 348,
+              "attribution_index": 315,
+              "attribution_method": "pattern_3"
             },
             {
               "quote": "I got along great with Putin,",
@@ -13420,7 +13279,7 @@
               "start_quote_index": 1178,
               "end_quote_index": 1193,
               "attribution_index": 1200,
-              "attribution_method": "pattern_2"
+              "attribution_method": "proximity"
             },
             {
               "quote": "This is a very strong Canadian action in response to a very bad U.S. decision.",
@@ -16704,14 +16563,6 @@
           "attribution": "Emmanuel Macron",
           "quotes": [
             {
-              "quote": "Paris Call for Trust and Security in Cyberspace,",
-              "context": null,
-              "start_quote_index": 99,
-              "end_quote_index": 109,
-              "attribution_index": 75,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "prevent malign interference by foreign actors aimed at undermining electoral processes though malicious cyberactivities.",
               "context": "It also included a call to “prevent malign interference by foreign actors aimed at undermining electoral processes though malicious cyberactivities.”",
               "start_quote_index": 192,
@@ -16773,7 +16624,6 @@
         "López Obrador",
         "Carlos M. Gutiérrez",
         "Jorge Guajardo",
-        "Chrystia Freeland",
         "Manuel Pérez-Rocha",
         "Sander M. Levin",
         "Donald J. Trump"
@@ -16860,19 +16710,6 @@
               "end_quote_index": 1151,
               "attribution_index": 1103,
               "attribution_method": "pattern_4"
-            }
-          ]
-        },
-        {
-          "attribution": "Chrystia Freeland",
-          "quotes": [
-            {
-              "quote": "really be moving into high gear",
-              "context": "Chrystia Freeland, the Canadian foreign minister, was also optimistic about the ongoing negotiations on Nafta on Friday, saying that talks would “really be moving into high gear” now that the Mexican election was concluded.",
-              "start_quote_index": 1232,
-              "end_quote_index": 1239,
-              "attribution_index": 1209,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -17207,14 +17044,6 @@
               "end_quote_index": 543,
               "attribution_index": 512,
               "attribution_method": "pattern_3"
-            },
-            {
-              "quote": "special payments entity",
-              "context": "Earlier this month, a European Union official said that the bloc was setting up a “special payments entity” that would work to shield non-American companies from the United States’ economic actions against Iran.",
-              "start_quote_index": 981,
-              "end_quote_index": 985,
-              "attribution_index": 1011,
-              "attribution_method": "proximity"
             },
             {
               "quote": "We very much intend to enforce our sanctions,",
@@ -18421,14 +18250,6 @@
           "attribution": "Donald J. Trump",
           "quotes": [
             {
-              "quote": "Safe Third Country",
-              "context": "American officials have proposed limiting the flow of migrants into the United States by creating what is known as a “Safe Third Country” agreement with Mexico.",
-              "start_quote_index": 451,
-              "end_quote_index": 455,
-              "attribution_index": 421,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "Mexico, whose laws on immigration are very tough, must stop people from going through Mexico and into the U.S. We may make this a condition of the new NAFTA Agreement.",
               "context": null,
               "start_quote_index": 601,
@@ -18970,6 +18791,7 @@
       "attributions": [
         "Ahmed Muhammed Haza al-Darbi",
         "George W. Bush",
+        "Barack Obama",
         "Jim Mattis",
         "Ramzi Kassem",
         "Donald J. Trump"
@@ -19018,6 +18840,20 @@
           ]
         },
         {
+          "attribution": "Barack Obama",
+          "quotes": [
+            {
+              "quote": "load it up with some bad dudes.",
+              "context": "By contrast, Mr. Trump boasted during the campaign that he would not only keep the prison open, but also “load it up with some bad dudes.”",
+              "start_quote_index": 503,
+              "end_quote_index": 512,
+              "attribution_index": 522,
+              "attribution_method": "proximity",
+              "original_attribution": "Obama"
+            }
+          ]
+        },
+        {
           "attribution": "Jim Mattis",
           "quotes": [
             {
@@ -19047,14 +18883,6 @@
         {
           "attribution": "Donald J. Trump",
           "quotes": [
-            {
-              "quote": "load it up with some bad dudes.",
-              "context": "By contrast, Mr. Trump boasted during the campaign that he would not only keep the prison open, but also “load it up with some bad dudes.”",
-              "start_quote_index": 503,
-              "end_quote_index": 512,
-              "attribution_index": 522,
-              "attribution_method": "proximity"
-            },
             {
               "quote": "in many cases,",
               "context": "Announcing that order in his State of the Union address, Mr. Trump also ad-libbed a line that “in many cases,” future detainees will be sent to the prison.",
@@ -20996,7 +20824,6 @@
       "attributions": [
         "Chris Van Hollen",
         "Hogan Lovells",
-        "Donald J. Trump",
         "Xi Jinping",
         "Lindsey Graham",
         "Marco Rubio",
@@ -21042,20 +20869,6 @@
               "end_quote_index": 672,
               "attribution_index": 682,
               "attribution_method": "proximity"
-            }
-          ]
-        },
-        {
-          "attribution": "Donald J. Trump",
-          "quotes": [
-            {
-              "quote": "the work done under this arrangement may inure to the benefit of the People’s Republic of China.",
-              "context": "Mercury registered its lobbying with the Justice Department, explaining in its filings that “the work done under this arrangement may inure to the benefit of the People’s Republic of China.”",
-              "start_quote_index": 792,
-              "end_quote_index": 812,
-              "attribution_index": 762,
-              "attribution_method": "proximity",
-              "original_attribution": "Trump"
             }
           ]
         },
@@ -21278,8 +21091,7 @@
         "Mark Dubowitz",
         "Barack Obama",
         "Ben Armbruster",
-        "Donald J. Trump",
-        "Benjamin Netanyahu"
+        "Donald J. Trump"
       ],
       "quotes_by_attribution": [
         {
@@ -21404,19 +21216,6 @@
               "attribution_index": 598,
               "attribution_method": "pattern_3",
               "original_attribution": "Trump"
-            }
-          ]
-        },
-        {
-          "attribution": "Benjamin Netanyahu",
-          "quotes": [
-            {
-              "quote": "provide education meant to enhance Israel’s image in North America.",
-              "context": "The Foundation for Defense of Democracies was founded in 2001 as Emet — Hebrew for “truth” — and its goal was to “provide education meant to enhance Israel’s image in North America.”",
-              "start_quote_index": 944,
-              "end_quote_index": 957,
-              "attribution_index": 980,
-              "attribution_method": "proximity"
             }
           ]
         }
@@ -21678,8 +21477,7 @@
       ],
       "location": "WASHINGTON",
       "attributions": [
-        "A.C.L.U.",
-        "Tanya S. Chutkan"
+        "A.C.L.U."
       ],
       "quotes_by_attribution": [
         {
@@ -21691,19 +21489,6 @@
               "start_quote_index": 146,
               "end_quote_index": 155,
               "attribution_index": 143,
-              "attribution_method": "proximity"
-            }
-          ]
-        },
-        {
-          "attribution": "Tanya S. Chutkan",
-          "quotes": [
-            {
-              "quote": "We are reviewing the filing.",
-              "context": null,
-              "start_quote_index": 798,
-              "end_quote_index": 805,
-              "attribution_index": 773,
               "attribution_method": "proximity"
             }
           ]
@@ -21737,7 +21522,6 @@
         "Donald J. Trump",
         "Jim Mattis",
         "Johnny Michael",
-        "Joint Staff",
         "Eric S. Edelman",
         "James N. Mattis"
       ],
@@ -21820,19 +21604,6 @@
               "end_quote_index": 601,
               "attribution_index": 602,
               "attribution_method": "pattern_1"
-            }
-          ]
-        },
-        {
-          "attribution": "Joint Staff",
-          "quotes": [
-            {
-              "quote": "have been relatively muted",
-              "context": "Additionally — and notably — commission members took the unusual step of warning that the voices of senior civilian officials in the Defense Department “have been relatively muted” on pivotal defense and national security policy.",
-              "start_quote_index": 1110,
-              "end_quote_index": 1115,
-              "attribution_index": 1142,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -22335,6 +22106,7 @@
       "location": "WASHINGTON",
       "attributions": [
         "Michael A. McFaul",
+        "Vladimir V. Putin",
         "Andrew J. Tabler",
         "Bashar al-Assad",
         "Xi Jinping",
@@ -22354,14 +22126,6 @@
               "attribution_method": "pattern_2"
             },
             {
-              "quote": "but Trump seems completely disconnected from it, like he seems to be on many foreign policies.",
-              "context": "“His administration may have drafted a Russia policy through the interagency process,” said Michael A. McFaul, a former American ambassador to Russia, “but Trump seems completely disconnected from it, like he seems to be on many foreign policies.”",
-              "start_quote_index": 314,
-              "end_quote_index": 333,
-              "attribution_index": 312,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "is worse now than it has ever been, and that includes the Cold War.",
               "context": "Mr. Putin would bridle at Mr. Trump’s threat to send “nice and new and ‘smart’” missiles to Syria, where they could hit Russian forces, not to mention his assertion that the relationship “is worse now than it has ever been, and that includes the Cold War.”",
               "start_quote_index": 490,
@@ -22376,6 +22140,19 @@
               "end_quote_index": 596,
               "attribution_index": 597,
               "attribution_method": "pattern_1"
+            }
+          ]
+        },
+        {
+          "attribution": "Vladimir V. Putin",
+          "quotes": [
+            {
+              "quote": "but Trump seems completely disconnected from it, like he seems to be on many foreign policies.",
+              "context": "“His administration may have drafted a Russia policy through the interagency process,” said Michael A. McFaul, a former American ambassador to Russia, “but Trump seems completely disconnected from it, like he seems to be on many foreign policies.”",
+              "start_quote_index": 314,
+              "end_quote_index": 333,
+              "attribution_index": 312,
+              "attribution_method": "proximity"
             }
           ]
         },
@@ -22856,14 +22633,6 @@
               "end_quote_index": 190,
               "attribution_index": 162,
               "attribution_method": "proximity"
-            },
-            {
-              "quote": "A new story. A new beginning. One of peace. Two men, two leaders, one destiny.",
-              "context": null,
-              "start_quote_index": 198,
-              "end_quote_index": 220,
-              "attribution_index": 245,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -23328,14 +23097,6 @@
               "start_quote_index": 1333,
               "end_quote_index": 1369,
               "attribution_index": 1376,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "the United States has won 85.7 percent of the cases it has initiated before the W.T.O. since 1995, compared with a global average of 84.4 percent. In contrast, China’s success rate is just 66.7 percent.",
-              "context": "According to the White House report, “the United States has won 85.7 percent of the cases it has initiated before the W.T.O. since 1995, compared with a global average of 84.4 percent.",
-              "start_quote_index": 1409,
-              "end_quote_index": 1450,
-              "attribution_index": 1385,
               "attribution_method": "proximity"
             }
           ]
@@ -24756,15 +24517,6 @@
         {
           "attribution": "Donald J. Trump",
           "quotes": [
-            {
-              "quote": "we have not sufficiently mitigated the overall threat that terrorists pose.",
-              "context": "“While we have succeeded in disrupting large-scale attacks in the homeland since 2001,” the report said, “we have not sufficiently mitigated the overall threat that terrorists pose.”",
-              "start_quote_index": 179,
-              "end_quote_index": 192,
-              "attribution_index": 214,
-              "attribution_method": "proximity",
-              "original_attribution": "Trump"
-            },
             {
               "quote": "radical Islamic terrorism,",
               "context": "An early draft leaked to Reuters in May 2017 did not include the phrase “radical Islamic terrorism,” which Mr. Trump used regularly during the 2016 presidential campaign but which General McMaster urged N.S.C. staff members to avoid.",
@@ -26328,7 +26080,6 @@
       "attributions": [
         "Donald J. Trump",
         "Mark E. Mitchell",
-        "Tanya S. Chutkan",
         "Jonathan Hafetz"
       ],
       "quotes_by_attribution": [
@@ -26350,33 +26101,12 @@
           "attribution": "Mark E. Mitchell",
           "quotes": [
             {
-              "quote": "either in a town or outside an internally displaced person camp",
-              "context": "It had given the man two options — release “either in a town or outside an internally displaced person camp” — but the man had balked at both, so the Pentagon picked the town option for him.",
-              "start_quote_index": 281,
-              "end_quote_index": 293,
-              "attribution_index": 324,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "in its original sealed packaging,",
               "context": "The man, he said, would be given a new cellphone “in its original sealed packaging,” enough food and water to last for several days, his legal papers, and $4,210 in cash — the same amount he had when captured.",
               "start_quote_index": 352,
               "end_quote_index": 359,
               "attribution_index": 343,
               "attribution_method": "pattern_3"
-            }
-          ]
-        },
-        {
-          "attribution": "Tanya S. Chutkan",
-          "quotes": [
-            {
-              "quote": "is not seeking and/or requesting",
-              "context": "Mr. Mitchell further said that the Pentagon would notify the Syrian Democratic Forces, military allies of the Americans, that the man would be released and was likely to be traveling through its checkpoints, and tell them that the United States “is not seeking and/or requesting” that the man be detained again.",
-              "start_quote_index": 431,
-              "end_quote_index": 437,
-              "attribution_index": 465,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -28082,6 +27812,14 @@
               "attribution_method": "pattern_3"
             },
             {
+              "quote": "shame on you!,",
+              "context": "The letter, which began with the words “shame on you!,” said bringing up the rap album was a “thinly-veiled, racist attack for the purpose of insinuating fear in the voters in our district.”",
+              "start_quote_index": 1264,
+              "end_quote_index": 1270,
+              "attribution_index": 1244,
+              "attribution_method": "proximity"
+            },
+            {
               "quote": "thinly-veiled, racist attack for the purpose of insinuating fear in the voters in our district.",
               "context": "The letter, which began with the words “shame on you!,” said bringing up the rap album was a “thinly-veiled, racist attack for the purpose of insinuating fear in the voters in our district.”",
               "start_quote_index": 1279,
@@ -28173,14 +27911,6 @@
         {
           "attribution": "Rabbi Yael Romer",
           "quotes": [
-            {
-              "quote": "shame on you!,",
-              "context": "The letter, which began with the words “shame on you!,” said bringing up the rap album was a “thinly-veiled, racist attack for the purpose of insinuating fear in the voters in our district.”",
-              "start_quote_index": 1264,
-              "end_quote_index": 1270,
-              "attribution_index": 1323,
-              "attribution_method": "pattern_2"
-            },
             {
               "quote": "It’s code when you say things like that ‘this kind of person does not represent our district,’",
               "context": "“It’s code when you say things like that ‘this kind of person does not represent our district,’” Ms. Romer said in an interview.",
@@ -32575,7 +32305,7 @@
         "Nicolás Maduro",
         "Richard Nephew",
         "Francisco Rodríguez",
-        "H.R. McMaster",
+        "Fernando Cutz",
         "Donald J. Trump"
       ],
       "quotes_by_attribution": [
@@ -32627,7 +32357,7 @@
           ]
         },
         {
-          "attribution": "H.R. McMaster",
+          "attribution": "Fernando Cutz",
           "quotes": [
             {
               "quote": "puts Venezuela on a list of really horrendous regimes out there.",
@@ -33224,27 +32954,11 @@
           "attribution": "Donald J. Trump",
           "quotes": [
             {
-              "quote": "In the meantime, the United States, which has never collected 10 cents from China, will in a fairly short period of time be over $100 billion in tariffs.",
-              "context": null,
-              "start_quote_index": 23,
-              "end_quote_index": 57,
-              "attribution_index": 1,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "We’ve picked up $20 trillion in worth. And China has lost $20, $25, $30 trillion in worth. We’re now almost double the size the economy.",
               "context": null,
               "start_quote_index": 218,
               "end_quote_index": 255,
               "attribution_index": 264,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "Look what happened, where they’re bringing plane loads of cash, plane loads, big planes, 757s, Boeing 757s coming in loaded up with cash.",
-              "context": null,
-              "start_quote_index": 1236,
-              "end_quote_index": 1267,
-              "attribution_index": 1206,
               "attribution_method": "proximity"
             }
           ]
@@ -33284,14 +32998,6 @@
         {
           "attribution": "Mike Pompeo",
           "quotes": [
-            {
-              "quote": "nation’s founding principles",
-              "context": "WASHINGTON — Secretary of State Mike Pompeo announced Monday that he was installing a human rights advisory panel in the State Department, and named a conservative law professor as its chairwoman, to review and tighten the agency’s definition of human rights and ensure it is grounded in the “nation’s founding principles” and a 1948 United Nations declaration.",
-              "start_quote_index": 51,
-              "end_quote_index": 56,
-              "attribution_index": 84,
-              "attribution_method": "proximity"
-            },
             {
               "quote": "the role of human rights in American foreign policy,",
               "context": "But the new panel, which Mr. Pompeo said would examine “the role of human rights in American foreign policy,” will not be managed by the bureau and was created without substantial input from its experts and officials.",
@@ -35385,14 +35091,6 @@
               "attribution_method": "proximity"
             },
             {
-              "quote": "are acting as if Barr engaged in some sort of cover-up, when he went further than required under the regulations to release all of the report with minimal redactions,",
-              "context": "Those parties “are acting as if Barr engaged in some sort of cover-up, when he went further than required under the regulations to release all of the report with minimal redactions,” they wrote.",
-              "start_quote_index": 223,
-              "end_quote_index": 257,
-              "attribution_index": 279,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "Barr is right not to appear before outside counsel at a House Judiciary Committee that played fast and loose with the facts, then bait-and-switch with committee promises, and now threatens him with a subpoena and contempt.",
               "context": null,
               "start_quote_index": 361,
@@ -35546,26 +35244,10 @@
               "attribution_method": "proximity"
             },
             {
-              "quote": "an awkward fit",
-              "context": "They also criticized the approach taken to get to the bottom of Russia’s role in the 2016 election, saying the appointment of a special counsel was “an awkward fit” with a limited scope, and a panel similar to the 9/11 Commission would have been better.",
-              "start_quote_index": 784,
-              "end_quote_index": 788,
-              "attribution_index": 816,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "another gross political circus",
               "context": "They added that after two years of investigation, the report had now been reduced to “another gross political circus” — one that they expect will get worse.",
               "start_quote_index": 823,
               "end_quote_index": 828,
-              "attribution_index": 817,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "Expect months of subpoena fights, court battles, tendentious hearings, simmering paranoia, scaremongering, recrimination — the whole partisan maelstrom will continue.",
-              "context": null,
-              "start_quote_index": 838,
-              "end_quote_index": 865,
               "attribution_index": 817,
               "attribution_method": "proximity"
             }
@@ -36600,14 +36282,6 @@
               "end_quote_index": 1263,
               "attribution_index": 1254,
               "attribution_method": "proximity"
-            },
-            {
-              "quote": "The truth is that fetal alcohol syndrome is far more common than people think.",
-              "context": null,
-              "start_quote_index": 1279,
-              "end_quote_index": 1295,
-              "attribution_index": 1254,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -37122,8 +36796,7 @@
         "Charlotte Alter",
         "Miss America",
         "Elizabeth Warren",
-        "Norma Miller",
-        "Natalie Angier"
+        "Norma Miller"
       ],
       "quotes_by_attribution": [
         {
@@ -37181,14 +36854,6 @@
               "end_quote_index": 663,
               "attribution_index": 645,
               "attribution_method": "pattern_3"
-            },
-            {
-              "quote": "I have the type of experience they’re looking for.",
-              "context": null,
-              "start_quote_index": 699,
-              "end_quote_index": 711,
-              "attribution_index": 670,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -37227,19 +36892,6 @@
               "start_quote_index": 853,
               "end_quote_index": 862,
               "attribution_index": 864,
-              "attribution_method": "proximity"
-            }
-          ]
-        },
-        {
-          "attribution": "Natalie Angier",
-          "quotes": [
-            {
-              "quote": "In increasing numbers, blacks marry whites, atheists marry Baptists, men marry men and women women, Democrats marry Republicans,",
-              "context": null,
-              "start_quote_index": 1017,
-              "end_quote_index": 1041,
-              "attribution_index": 993,
               "attribution_method": "proximity"
             }
           ]
@@ -38097,14 +37749,6 @@
               "end_quote_index": 1952,
               "attribution_index": 1902,
               "attribution_method": "pattern_3"
-            },
-            {
-              "quote": "very unfair situation.",
-              "context": "In another congressional hearing this week, Mr. Lighthizer reiterated that the United States was renegotiating the amount of Chinese box office revenue shared with American firms, saying it was a “very unfair situation.”",
-              "start_quote_index": 1985,
-              "end_quote_index": 1990,
-              "attribution_index": 1961,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -39691,14 +39335,6 @@
           "attribution": "Donald J. Trump",
           "quotes": [
             {
-              "quote": "Black Hawk Down",
-              "context": "The growing United States military engagement stands in stark contrast to the near-abandonment not long after the “Black Hawk Down” battle in 1993, which left 18 Americans and hundreds of militia fighters dead.",
-              "start_quote_index": 477,
-              "end_quote_index": 481,
-              "attribution_index": 503,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "area of active hostilities",
               "context": "Shortly after taking office, Mr. Trump declared Somalia to be an “area of active hostilities” subject to war-zone rules.",
               "start_quote_index": 1309,
@@ -40273,14 +39909,6 @@
               "attribution_method": "pattern_3"
             },
             {
-              "quote": "two heads of state expressed satisfaction with the businesslike and constructive nature of the conversation.",
-              "context": "The summary of the call released by the Kremlin said the “two heads of state expressed satisfaction with the businesslike and constructive nature of the conversation.”",
-              "start_quote_index": 854,
-              "end_quote_index": 871,
-              "attribution_index": 831,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "Getting along with Russia and China, getting along with all of them is a very good thing, not a bad thing,",
               "context": null,
               "start_quote_index": 1173,
@@ -40551,14 +40179,6 @@
               "end_quote_index": 1702,
               "attribution_index": 1705,
               "attribution_method": "pattern_2"
-            },
-            {
-              "quote": "I have been invited to give lectures at the Pentagon and it’s two hours of them yelling at me. They understand there is a problem, but they don’t want to take the blame for it.",
-              "context": null,
-              "start_quote_index": 1736,
-              "end_quote_index": 1777,
-              "attribution_index": 1707,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -41401,7 +41021,6 @@
         "Garrett Marquis",
         "Ren Zhengfei",
         "Caroline Nagtegaal",
-        "Mike Pompeo",
         "Richard Grenell",
         "Andrea Kendall-Taylor",
         "Adam B. Schiff",
@@ -41481,19 +41100,6 @@
               "start_quote_index": 1041,
               "end_quote_index": 1054,
               "attribution_index": 1039,
-              "attribution_method": "proximity"
-            }
-          ]
-        },
-        {
-          "attribution": "Mike Pompeo",
-          "quotes": [
-            {
-              "quote": "more difficult for America to be present.",
-              "context": "Mr. Pompeo suggested in Hungary that the presence of Huawei could influence decisions on where to station troops overseas, noting that its adoption in wireless networks would make it “more difficult for America to be present.”",
-              "start_quote_index": 1141,
-              "end_quote_index": 1150,
-              "attribution_index": 1112,
               "attribution_method": "proximity"
             }
           ]
@@ -42156,14 +41762,6 @@
         {
           "attribution": "April F. Doss",
           "quotes": [
-            {
-              "quote": "speak truth to power.",
-              "context": "April F. Doss, a former associate general counsel at the National Security Agency, said it is not surprising for the intelligence community to stake out facts at odds with the administration view, given that the most recent National Intelligence Strategy noted the spy agencies’ responsibility to “speak truth to power.”",
-              "start_quote_index": 1022,
-              "end_quote_index": 1028,
-              "attribution_index": 1054,
-              "attribution_method": "proximity"
-            },
             {
               "quote": "the commitment to analyzing intelligence in a manner tied to objective facts, not domestic partisan agendas,",
               "context": "The intelligence chiefs emphasized “the commitment to analyzing intelligence in a manner tied to objective facts, not domestic partisan agendas,” said Ms. Doss, now a partner at the law firm Saul Ewing Arnstein & Lehr.",
@@ -43963,14 +43561,6 @@
               "attribution_method": "pattern_3"
             },
             {
-              "quote": "at the earliest possible time.",
-              "context": "Mr. Trump has long promised to end American involvement in the war, and said on Monday that the Afghan government “will have to take responsibility” for its own security “at the earliest possible time.”",
-              "start_quote_index": 225,
-              "end_quote_index": 232,
-              "attribution_index": 254,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "As far as I’m concerned, they are dead.",
               "context": null,
               "start_quote_index": 263,
@@ -43985,14 +43575,6 @@
               "end_quote_index": 991,
               "attribution_index": 964,
               "attribution_method": "pattern_3"
-            },
-            {
-              "quote": "would not have been considered politically correct.",
-              "context": "In his comments to reporters on Monday, Mr. Trump also defended the idea of finalizing a peace agreement at Camp David, saying the famous presidential retreat had been used before to host people who “would not have been considered politically correct.”",
-              "start_quote_index": 1118,
-              "end_quote_index": 1127,
-              "attribution_index": 1151,
-              "attribution_method": "proximity"
             }
           ]
         }
@@ -44335,8 +43917,7 @@
         "Sarah Huckabee Sanders",
         "Rex W. Tillerson",
         "Vladimir V. Putin",
-        "David J. Kramer",
-        "Donald J. Trump"
+        "David J. Kramer"
       ],
       "quotes_by_attribution": [
         {
@@ -44461,12 +44042,39 @@
           "attribution": "Vladimir V. Putin",
           "quotes": [
             {
+              "quote": "And yet he chose not to, and that adds fuel to the fire that something here is not right.",
+              "context": null,
+              "start_quote_index": 573,
+              "end_quote_index": 595,
+              "attribution_index": 597,
+              "attribution_method": "proximity",
+              "original_attribution": "Putin"
+            },
+            {
               "quote": "if we did, we wouldn’t have gotten caught because we’re professionals.",
               "context": "But he said Mr. Putin also told him that “if we did, we wouldn’t have gotten caught because we’re professionals.”",
               "start_quote_index": 1416,
               "end_quote_index": 1432,
               "attribution_index": 1411,
               "attribution_method": "pattern_3"
+            },
+            {
+              "quote": "I thought that was a good point because they are some of the best in the world",
+              "context": "Mr. Trump said: “I thought that was a good point because they are some of the best in the world” at hacking.",
+              "start_quote_index": 1437,
+              "end_quote_index": 1455,
+              "attribution_index": 1434,
+              "attribution_method": "pattern_3",
+              "original_attribution": "Putin"
+            },
+            {
+              "quote": "I really believe that when he tells me that, he means it,",
+              "context": null,
+              "start_quote_index": 1743,
+              "end_quote_index": 1758,
+              "attribution_index": 1759,
+              "attribution_method": "pattern_1",
+              "original_attribution": "Putin"
             },
             {
               "quote": "DO NOT CONGRATULATE,",
@@ -44496,35 +44104,6 @@
               "end_quote_index": 2147,
               "attribution_index": 2110,
               "attribution_method": "pattern_4"
-            }
-          ]
-        },
-        {
-          "attribution": "Donald J. Trump",
-          "quotes": [
-            {
-              "quote": "And yet he chose not to, and that adds fuel to the fire that something here is not right.",
-              "context": null,
-              "start_quote_index": 573,
-              "end_quote_index": 595,
-              "attribution_index": 597,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "I thought that was a good point because they are some of the best in the world",
-              "context": "Mr. Trump said: “I thought that was a good point because they are some of the best in the world” at hacking.",
-              "start_quote_index": 1437,
-              "end_quote_index": 1455,
-              "attribution_index": 1434,
-              "attribution_method": "pattern_3"
-            },
-            {
-              "quote": "I really believe that when he tells me that, he means it,",
-              "context": null,
-              "start_quote_index": 1743,
-              "end_quote_index": 1758,
-              "attribution_index": 1759,
-              "attribution_method": "pattern_1"
             }
           ]
         }
@@ -45758,14 +45337,6 @@
         {
           "attribution": "Abdalla Hamdok",
           "quotes": [
-            {
-              "quote": "peace between the government and Sudan’s armed opposition groups,",
-              "context": "Among the topics of discussion were a political road map for South Sudan, which broke away from Sudan in 2011, and efforts to establish “peace between the government and Sudan’s armed opposition groups,” the State Department said in a summary of the meeting.",
-              "start_quote_index": 374,
-              "end_quote_index": 386,
-              "attribution_index": 345,
-              "attribution_method": "proximity"
-            },
             {
               "quote": "raised lingering concerns about the need for financial transparency within the security sector and about remaining elements of the old regime who may still support international terrorism.",
               "context": "The committee said in a statement afterward that in discussing the terrorism designation, lawmakers “raised lingering concerns about the need for financial transparency within the security sector and about remaining elements of the old regime who may still support international terrorism.”",
@@ -47922,21 +47493,22 @@
       ],
       "location": "WASHINGTON",
       "attributions": [
-        "Hassan Rouhani",
+        "Barack Obama",
         "Elizabeth Rosenberg",
         "Donald J. Trump"
       ],
       "quotes_by_attribution": [
         {
-          "attribution": "Hassan Rouhani",
+          "attribution": "Barack Obama",
           "quotes": [
             {
-              "quote": "anomalous naval activity",
-              "context": "On Friday, a Pentagon official said the United States had detected “anomalous naval activity” by Iran’s Islamic Revolutionary Guards Corps and commercial ships suspected of carrying missiles and other military hardware.",
-              "start_quote_index": 599,
-              "end_quote_index": 603,
-              "attribution_index": 629,
-              "attribution_method": "proximity"
+              "quote": "and cause a lot of pain.",
+              "context": "The Trump administration has shown it can use unilateral sanctions to weaponize the international banking system “and cause a lot of pain.”",
+              "start_quote_index": 1163,
+              "end_quote_index": 1171,
+              "attribution_index": 1152,
+              "attribution_method": "proximity",
+              "original_attribution": "Obama"
             }
           ]
         },
@@ -47987,14 +47559,6 @@
               "end_quote_index": 912,
               "attribution_index": 895,
               "attribution_method": "pattern_3"
-            },
-            {
-              "quote": "and cause a lot of pain.",
-              "context": "The Trump administration has shown it can use unilateral sanctions to weaponize the international banking system “and cause a lot of pain.”",
-              "start_quote_index": 1163,
-              "end_quote_index": 1171,
-              "attribution_index": 1152,
-              "attribution_method": "proximity"
             }
           ]
         }
@@ -49256,7 +48820,6 @@
         "Robert Lighthizer",
         "Xi Jinping",
         "John Thune",
-        "Daniel Nation",
         "Hun Quach",
         "Donald J. Trump"
       ],
@@ -49392,19 +48955,6 @@
               "end_quote_index": 1111,
               "attribution_index": 1071,
               "attribution_method": "pattern_4"
-            }
-          ]
-        },
-        {
-          "attribution": "Daniel Nation",
-          "quotes": [
-            {
-              "quote": "help redirect trade in this sector to the Western Hemisphere.",
-              "context": "Daniel Nation, the director of government relations for Parkdale Mills, testified Monday that textile and apparel products should be included on the administration’s tariff lists, to “help redirect trade in this sector to the Western Hemisphere.”",
-              "start_quote_index": 1251,
-              "end_quote_index": 1263,
-              "attribution_index": 1222,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -50471,14 +50021,6 @@
           "attribution": "Donald J. Trump",
           "quotes": [
             {
-              "quote": "They share a similar worldview, they dislike elites,",
-              "context": null,
-              "start_quote_index": 440,
-              "end_quote_index": 451,
-              "attribution_index": 477,
-              "attribution_method": "pattern_2"
-            },
-            {
               "quote": "We have a great friendship as countries,",
               "context": null,
               "start_quote_index": 715,
@@ -51318,8 +50860,7 @@
         "Jane Harman",
         "William J. Burns",
         "Xi Jinping",
-        "Gérard Araud",
-        "Donald J. Trump"
+        "Gérard Araud"
       ],
       "quotes_by_attribution": [
         {
@@ -51397,6 +50938,14 @@
               "attribution_method": "pattern_2"
             },
             {
+              "quote": "The Back Channel,",
+              "context": null,
+              "start_quote_index": 1022,
+              "end_quote_index": 1027,
+              "attribution_index": 1021,
+              "attribution_method": "proximity"
+            },
+            {
               "quote": "uncertain at this stage about the outcome of the 2020 U.S. presidential election,",
               "context": "Mr. Burns, the author of the recent memoir “The Back Channel,” said leaders were not only “uncertain at this stage about the outcome of the 2020 U.S. presidential election,” but they were also “increasingly uncertain about whether the drift in America’s role is personal — and idiosyncratic to Trump — or structural.”",
               "start_quote_index": 1033,
@@ -51437,19 +50986,6 @@
               "end_quote_index": 1765,
               "attribution_index": 1706,
               "attribution_method": "pattern_4"
-            }
-          ]
-        },
-        {
-          "attribution": "Donald J. Trump",
-          "quotes": [
-            {
-              "quote": "The Back Channel,",
-              "context": null,
-              "start_quote_index": 1022,
-              "end_quote_index": 1027,
-              "attribution_index": 1070,
-              "attribution_method": "pattern_2"
             }
           ]
         }
@@ -51931,34 +51467,12 @@
       ],
       "location": "WASHINGTON",
       "attributions": [
-        "Ainissa",
         "Christopher P. Costa",
         "Joshua A. Geltzer",
         "Lindsey Graham",
         "Donald J. Trump"
       ],
       "quotes_by_attribution": [
-        {
-          "attribution": "Ainissa",
-          "quotes": [
-            {
-              "quote": "If Turkey attacks these Kurdish soldiers, there is a grave risk that the ISIS fighters they guard will escape and return to the battlefield,",
-              "context": null,
-              "start_quote_index": 481,
-              "end_quote_index": 508,
-              "attribution_index": 533,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "worst-case scenario",
-              "context": "The “worst-case scenario” is that the Kurds are so frustrated and angered by the United States’ action that “they decide to release wholesale some of the detainees,” said Christopher P. Costa, a former senior director for counterterrorism on Mr. Trump’s National Security Council who now heads the International Spy Museum.",
-              "start_quote_index": 662,
-              "end_quote_index": 667,
-              "attribution_index": 633,
-              "attribution_method": "proximity"
-            }
-          ]
-        },
         {
           "attribution": "Christopher P. Costa",
           "quotes": [
@@ -52056,24 +51570,8 @@
         "Sudan"
       ],
       "location": null,
-      "attributions": [
-        "George W. Bush"
-      ],
-      "quotes_by_attribution": [
-        {
-          "attribution": "George W. Bush",
-          "quotes": [
-            {
-              "quote": "has encouraged lone-wolf attacks against the United States in online propaganda.",
-              "context": "Three years after his repatriation, Mr. al-Qosi began appearing in videos and other publications of Al Qaeda in the Arabian Peninsula and, according to the State Department, “has encouraged lone-wolf attacks against the United States in online propaganda.”",
-              "start_quote_index": 432,
-              "end_quote_index": 447,
-              "attribution_index": 469,
-              "attribution_method": "proximity"
-            }
-          ]
-        }
-      ]
+      "attributions": [],
+      "quotes_by_attribution": []
     },
     {
       "title": "European Court Rules Against 9/11 Victims Seeking $1.6 Billion From Iran",
@@ -52384,9 +51882,9 @@
         "Rusal",
         "Craig Bouchard",
         "Mitch McConnell",
+        "Battle",
         "Lloyd Doggett",
-        "Rand Paul",
-        "Gregory L. G. Barker"
+        "Rand Paul"
       ],
       "quotes_by_attribution": [
         {
@@ -52441,6 +51939,35 @@
               "end_quote_index": 824,
               "attribution_index": 818,
               "attribution_method": "proximity"
+            }
+          ]
+        },
+        {
+          "attribution": "Battle",
+          "quotes": [
+            {
+              "quote": "we see significant opportunities across the whole aluminum industry value chain in North America.",
+              "context": "Shortly after the announcement of the planned investment in Kentucky, Lord Barker of Battle, the former British member of Parliament who is the chairman of EN+, sent letters to governors of eight states saying “we see significant opportunities across the whole aluminum industry value chain in North America.”",
+              "start_quote_index": 968,
+              "end_quote_index": 984,
+              "attribution_index": 959,
+              "attribution_method": "proximity"
+            },
+            {
+              "quote": "This investment is just the beginning of our long-term ambitions,",
+              "context": null,
+              "start_quote_index": 1016,
+              "end_quote_index": 1030,
+              "attribution_index": 1031,
+              "attribution_method": "pattern_1"
+            },
+            {
+              "quote": "If appropriate, I would be delighted to explore these issues in more detail with you and your staff.",
+              "context": null,
+              "start_quote_index": 1035,
+              "end_quote_index": 1056,
+              "attribution_index": 1032,
+              "attribution_method": "pattern_3"
             }
           ]
         },
@@ -52506,35 +52033,6 @@
               "start_quote_index": 876,
               "end_quote_index": 913,
               "attribution_index": 871,
-              "attribution_method": "pattern_3"
-            }
-          ]
-        },
-        {
-          "attribution": "Gregory L. G. Barker",
-          "quotes": [
-            {
-              "quote": "we see significant opportunities across the whole aluminum industry value chain in North America.",
-              "context": "Shortly after the announcement of the planned investment in Kentucky, Lord Barker of Battle, the former British member of Parliament who is the chairman of EN+, sent letters to governors of eight states saying “we see significant opportunities across the whole aluminum industry value chain in North America.”",
-              "start_quote_index": 968,
-              "end_quote_index": 984,
-              "attribution_index": 959,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "This investment is just the beginning of our long-term ambitions,",
-              "context": null,
-              "start_quote_index": 1016,
-              "end_quote_index": 1030,
-              "attribution_index": 1031,
-              "attribution_method": "pattern_1"
-            },
-            {
-              "quote": "If appropriate, I would be delighted to explore these issues in more detail with you and your staff.",
-              "context": null,
-              "start_quote_index": 1035,
-              "end_quote_index": 1056,
-              "attribution_index": 1032,
               "attribution_method": "pattern_3"
             }
           ]
@@ -52762,14 +52260,6 @@
               "attribution_method": "pattern_3"
             },
             {
-              "quote": "not fighting to win",
-              "context": "Speaking to reporters alongside Pakistan’s prime minister last month, Mr. Trump sent clear signals of his desire to end America’s role in the conflict, complaining that the war’s duration was “ridiculous” and that the United States was “not fighting to win” but “building gas stations” and “rebuilding schools.”",
-              "start_quote_index": 1582,
-              "end_quote_index": 1587,
-              "attribution_index": 1613,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "building gas stations",
               "context": "Speaking to reporters alongside Pakistan’s prime minister last month, Mr. Trump sent clear signals of his desire to end America’s role in the conflict, complaining that the war’s duration was “ridiculous” and that the United States was “not fighting to win” but “building gas stations” and “rebuilding schools.”",
               "start_quote_index": 1589,
@@ -52818,7 +52308,7 @@
       "location": null,
       "attributions": [
         "Andrea Thompson",
-        "Eliot L. Engel",
+        "Michael McCaul",
         "Vladimir V. Putin"
       ],
       "quotes_by_attribution": [
@@ -52836,7 +52326,7 @@
           ]
         },
         {
-          "attribution": "Eliot L. Engel",
+          "attribution": "Michael McCaul",
           "quotes": [
             {
               "quote": "part of a larger Russia strategy.",
@@ -53026,14 +52516,6 @@
               "end_quote_index": 524,
               "attribution_index": 489,
               "attribution_method": "pattern_3"
-            },
-            {
-              "quote": "immediately stop interfering in Hong Kong affairs and China’s internal affairs.",
-              "context": "Without naming Mr. Trump, he urged the United States to “stop its wrongdoing before it’s too late, prevent this act from becoming law” and “immediately stop interfering in Hong Kong affairs and China’s internal affairs.”",
-              "start_quote_index": 526,
-              "end_quote_index": 540,
-              "attribution_index": 502,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -55136,14 +54618,6 @@
           "attribution": "Volodymyr Zelensky",
           "quotes": [
             {
-              "quote": "The administration supports Ukraine’s efforts of reform and self-defense,",
-              "context": null,
-              "start_quote_index": 451,
-              "end_quote_index": 465,
-              "attribution_index": 491,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "and these funds will advance Ukrainian efforts toward those ends.",
               "context": "“The administration supports Ukraine’s efforts of reform and self-defense,” the official said, “and these funds will advance Ukrainian efforts toward those ends.”",
               "start_quote_index": 470,
@@ -56136,22 +55610,6 @@
           "attribution": "Carlos Murguia",
           "quotes": [
             {
-              "quote": "Secrecy enables workplace harassment and undermines the integrity of the judiciary,",
-              "context": null,
-              "start_quote_index": 351,
-              "end_quote_index": 364,
-              "attribution_index": 327,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "Partial transparency, however, is never enough. We hope there will be a frank examination of the adequacy of the steps taken to address what the 10th Circuit has documented as Judge Murguia’s misconduct and what further actions are needed to ensure that the judicial branch provides a safe workplace for all of its employees.",
-              "context": null,
-              "start_quote_index": 372,
-              "end_quote_index": 432,
-              "attribution_index": 457,
-              "attribution_method": "proximity"
-            },
-            {
               "quote": "is not the final step in the process.",
               "context": "A judiciary spokesman said on Thursday that the 10th Circuit’s September decision “is not the final step in the process.”",
               "start_quote_index": 480,
@@ -57020,14 +56478,6 @@
               "start_quote_index": 1145,
               "end_quote_index": 1159,
               "attribution_index": 1169,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "It’s just another hurdle, another level of that ceiling that’s cracked.",
-              "context": null,
-              "start_quote_index": 1193,
-              "end_quote_index": 1209,
-              "attribution_index": 1170,
               "attribution_method": "proximity"
             }
           ]
@@ -57914,6 +57364,24 @@
           "attribution": "Vladimir V. Putin",
           "quotes": [
             {
+              "quote": "existing arsenals of nuclear warheads,",
+              "context": "Russia on Tuesday proposed that both countries make a “political obligation” to freeze their “existing arsenals of nuclear warheads,” but only for one year, an echo of some type of “agreement in principle” that the administration said last week that Mr. Trump and Mr. Putin had reached.",
+              "start_quote_index": 267,
+              "end_quote_index": 274,
+              "attribution_index": 266,
+              "attribution_method": "proximity",
+              "original_attribution": "Putin"
+            },
+            {
+              "quote": "agreement in principle",
+              "context": "Russia on Tuesday proposed that both countries make a “political obligation” to freeze their “existing arsenals of nuclear warheads,” but only for one year, an echo of some type of “agreement in principle” that the administration said last week that Mr. Trump and Mr. Putin had reached.",
+              "start_quote_index": 287,
+              "end_quote_index": 291,
+              "attribution_index": 299,
+              "attribution_method": "proximity",
+              "original_attribution": "Putin"
+            },
+            {
               "quote": "We have only seen comments made by U.S. officials in the social media,",
               "context": null,
               "start_quote_index": 639,
@@ -57926,22 +57394,6 @@
         {
           "attribution": "Donald J. Trump",
           "quotes": [
-            {
-              "quote": "existing arsenals of nuclear warheads,",
-              "context": "Russia on Tuesday proposed that both countries make a “political obligation” to freeze their “existing arsenals of nuclear warheads,” but only for one year, an echo of some type of “agreement in principle” that the administration said last week that Mr. Trump and Mr. Putin had reached.",
-              "start_quote_index": 267,
-              "end_quote_index": 274,
-              "attribution_index": 266,
-              "attribution_method": "proximity"
-            },
-            {
-              "quote": "agreement in principle",
-              "context": "Russia on Tuesday proposed that both countries make a “political obligation” to freeze their “existing arsenals of nuclear warheads,” but only for one year, an echo of some type of “agreement in principle” that the administration said last week that Mr. Trump and Mr. Putin had reached.",
-              "start_quote_index": 287,
-              "end_quote_index": 291,
-              "attribution_index": 299,
-              "attribution_method": "proximity"
-            },
             {
               "quote": "can only and exclusively be implemented on the understanding that the United States will not advance any additional conditions with regard to freezing the arsenals.",
               "context": "The Russian Foreign Ministry closed the door on any additional demands by Washington, saying in a statement that its offer of a one-year extension “can only and exclusively be implemented on the understanding that the United States will not advance any additional conditions with regard to freezing the arsenals.”",
@@ -57984,7 +57436,7 @@
         "Scott Baio",
         "Gil Troy",
         "Joe Krupa",
-        "Donald J. Trump"
+        "Ivanka Trump"
       ],
       "quotes_by_attribution": [
         {
@@ -58004,6 +57456,14 @@
               "start_quote_index": 332,
               "end_quote_index": 342,
               "attribution_index": 344,
+              "attribution_method": "proximity"
+            },
+            {
+              "quote": "The first family, including the president, are all going to have different styles,",
+              "context": null,
+              "start_quote_index": 799,
+              "end_quote_index": 816,
+              "attribution_index": 796,
               "attribution_method": "proximity"
             },
             {
@@ -58154,7 +57614,7 @@
           ]
         },
         {
-          "attribution": "Donald J. Trump",
+          "attribution": "Ivanka Trump",
           "quotes": [
             {
               "quote": "Wisconsinites eat 21 million gallons of ice cream a year,",
@@ -58179,14 +57639,6 @@
               "end_quote_index": 289,
               "attribution_index": 275,
               "attribution_method": "pattern_4"
-            },
-            {
-              "quote": "The first family, including the president, are all going to have different styles,",
-              "context": null,
-              "start_quote_index": 799,
-              "end_quote_index": 816,
-              "attribution_index": 833,
-              "attribution_method": "pattern_2"
             },
             {
               "quote": "It’s important to talk about what the president has done for this country in a short period of time,",
@@ -58285,7 +57737,7 @@
       "location": "WASHINGTON",
       "attributions": [
         "Chandra",
-        "Timothy Loehmann"
+        "Officer Loehmann"
       ],
       "quotes_by_attribution": [
         {
@@ -58326,7 +57778,7 @@
           ]
         },
         {
-          "attribution": "Timothy Loehmann",
+          "attribution": "Officer Loehmann",
           "quotes": [
             {
               "quote": "I can’t breathe",
@@ -59329,7 +58781,7 @@
       "attributions": [
         "Bernie Sanders",
         "Pete Buttigieg",
-        "Amy Klobuchar"
+        "Kamala Harris"
       ],
       "quotes_by_attribution": [
         {
@@ -59392,7 +58844,7 @@
           ]
         },
         {
-          "attribution": "Amy Klobuchar",
+          "attribution": "Kamala Harris",
           "quotes": [
             {
               "quote": "Medicare for all who want it.",
@@ -60205,15 +59657,6 @@
               "start_quote_index": 610,
               "end_quote_index": 617,
               "attribution_index": 620,
-              "attribution_method": "proximity",
-              "original_attribution": "Trump"
-            },
-            {
-              "quote": "This is about 2020,",
-              "context": null,
-              "start_quote_index": 686,
-              "end_quote_index": 692,
-              "attribution_index": 660,
               "attribution_method": "proximity",
               "original_attribution": "Trump"
             },
@@ -61042,14 +60485,6 @@
               "end_quote_index": 236,
               "attribution_index": 192,
               "attribution_method": "pattern_4"
-            },
-            {
-              "quote": "Each crisis is different, but they all require steady leadership, team building and preparation,",
-              "context": null,
-              "start_quote_index": 362,
-              "end_quote_index": 380,
-              "attribution_index": 411,
-              "attribution_method": "proximity"
             },
             {
               "quote": "As Americans we have faced many challenges before, and we have overcome them together by looking out for one another — and I am confident that is how we will get through this one as well.",
@@ -62270,14 +61705,6 @@
               "end_quote_index": 745,
               "attribution_index": 725,
               "attribution_method": "proximity"
-            },
-            {
-              "quote": "a young black man in Georgia is shot dead in the street, but police and prosecutors looked the other way.",
-              "context": "He spent $420,000 on an ad where he speaks to the camera for the entire 30 seconds, saying it’s the “worst kind of corruption” when “a young black man in Georgia is shot dead in the street, but police and prosecutors looked the other way.”",
-              "start_quote_index": 747,
-              "end_quote_index": 770,
-              "attribution_index": 725,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -62492,15 +61919,6 @@
         {
           "attribution": "Donald J. Trump",
           "quotes": [
-            {
-              "quote": "the task forces have created a good policy blueprint that will move this country in a much-needed progressive direction and substantially improve the lives of working families throughout our country.",
-              "context": "“Though the end result is not what I or my supporters would have written alone,” Sanders said, “the task forces have created a good policy blueprint that will move this country in a much-needed progressive direction and substantially improve the lives of working families throughout our country.”",
-              "start_quote_index": 301,
-              "end_quote_index": 335,
-              "attribution_index": 359,
-              "attribution_method": "proximity",
-              "original_attribution": "Trump"
-            },
             {
               "quote": "asking schools to do very impractical things.",
               "context": "Trump has turned up his pressure campaign on school districts to plan for in-person classes in the fall, refusing to accept health guidelines from the Centers for Disease Control and Prevention because, he said, it was “asking schools to do very impractical things.”",
@@ -63046,7 +62464,6 @@
         "Joseph R. Biden Jr.",
         "Urquiza",
         "Donald J. Trump",
-        "R.S.V.P.",
         "Michelle Obama",
         "Bernard Sanders"
       ],
@@ -63089,19 +62506,6 @@
               "attribution_index": 1100,
               "attribution_method": "proximity",
               "original_attribution": "Trump"
-            }
-          ]
-        },
-        {
-          "attribution": "R.S.V.P.",
-          "quotes": [
-            {
-              "quote": "Finish the Fight,",
-              "context": null,
-              "start_quote_index": 1274,
-              "end_quote_index": 1279,
-              "attribution_index": 1307,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -63276,14 +62680,6 @@
               "end_quote_index": 222,
               "attribution_index": 199,
               "attribution_method": "pattern_3"
-            },
-            {
-              "quote": "Putting back the pieces is probably not a feasible option, with global affairs straying a great distance from the status quo Mr. Biden might recall. …",
-              "context": "…” Our news analysis on Night 2’s foreign policy theme: “Putting back the pieces is probably not a feasible option, with global affairs straying a great distance from the status quo Mr. Biden might recall.",
-              "start_quote_index": 1195,
-              "end_quote_index": 1224,
-              "attribution_index": 1174,
-              "attribution_method": "proximity"
             }
           ]
         },
@@ -64595,8 +63991,7 @@
       ],
       "location": null,
       "attributions": [
-        "Charles Grassley",
-        "Donald J. Trump"
+        "Charles Grassley"
       ],
       "quotes_by_attribution": [
         {
@@ -64609,19 +64004,6 @@
               "end_quote_index": 355,
               "attribution_index": 356,
               "attribution_method": "pattern_1"
-            }
-          ]
-        },
-        {
-          "attribution": "Donald J. Trump",
-          "quotes": [
-            {
-              "quote": "race and violence in our cities",
-              "context": "Chris Wallace will center the debate around six topics: the Supreme Court, the coronavirus outbreak, the integrity of the election, the economy, “race and violence in our cities” and the two candidates’ political records.",
-              "start_quote_index": 1019,
-              "end_quote_index": 1026,
-              "attribution_index": 997,
-              "attribution_method": "proximity"
             }
           ]
         }
@@ -65497,7 +64879,7 @@
         "East",
         "Forman",
         "Eitan Hersh",
-        "Melissa Michelson",
+        "Michelson",
         "Jan Leighley",
         "Maria Eckert"
       ],
@@ -65582,24 +64964,15 @@
           ]
         },
         {
-          "attribution": "Melissa Michelson",
+          "attribution": "Michelson",
           "quotes": [
-            {
-              "quote": "Mobilizing Inclusion: Transforming the Electorate Through Get-Out-the-Vote Campaigns.",
-              "context": null,
-              "start_quote_index": 820,
-              "end_quote_index": 837,
-              "attribution_index": 799,
-              "attribution_method": "proximity"
-            },
             {
               "quote": "If you’re a low-propensity voter, it doesn’t feel like you’re being invited to vote,",
               "context": null,
               "start_quote_index": 889,
               "end_quote_index": 911,
               "attribution_index": 912,
-              "attribution_method": "pattern_1",
-              "original_attribution": "Michelson"
+              "attribution_method": "pattern_1"
             },
             {
               "quote": "noise going out into the void. In contrast, if you get a handwritten letter, I’m being invited in.",
@@ -65607,8 +64980,7 @@
               "start_quote_index": 934,
               "end_quote_index": 958,
               "attribution_index": 927,
-              "attribution_method": "pattern_3",
-              "original_attribution": "Michelson"
+              "attribution_method": "pattern_3"
             }
           ]
         },
@@ -66607,14 +65979,6 @@
         {
           "attribution": "Joseph R. Biden Jr.",
           "quotes": [
-            {
-              "quote": "The outcome could usher in a ‘buffering period’ for already-tense China-U.S. relations, and offer an opportunity for breakthroughs in resuming high-level communication and rebuilding mutual strategic trust,",
-              "context": null,
-              "start_quote_index": 166,
-              "end_quote_index": 204,
-              "attribution_index": 142,
-              "attribution_method": "proximity"
-            },
             {
               "quote": "more moderate and mature",
               "context": "The article suggested that the two countries could work together on combating climate change, containing the coronavirus and developing vaccines, noting that Mr. Biden would be “more moderate and mature” on foreign affairs.",
@@ -68268,14 +67632,6 @@
               "end_quote_index": 869,
               "attribution_index": 824,
               "attribution_method": "pattern_3"
-            },
-            {
-              "quote": "We will suggest guidelines categorizing counties as high risk, medium risk or low risk.",
-              "context": null,
-              "start_quote_index": 1131,
-              "end_quote_index": 1148,
-              "attribution_index": 1172,
-              "attribution_method": "proximity"
             }
           ]
         }
@@ -70032,29 +69388,11 @@
               "original_attribution": "Trump"
             },
             {
-              "quote": "continuing to examine the financial stability implications",
-              "context": "The closing statement also referred to climate change as one of “the most pressing challenges of our time” and said that the Financial Stability Board was “continuing to examine the financial stability implications” of the issue.",
-              "start_quote_index": 196,
-              "end_quote_index": 204,
-              "attribution_index": 232,
-              "attribution_method": "proximity",
-              "original_attribution": "Trump"
-            },
-            {
               "quote": "not designed to save the environment",
               "context": "In his remarks at the virtual meeting on Sunday morning, Mr. Trump reiterated his opposition to the Paris climate accord, claiming it was “not designed to save the environment” but instead “was designed to kill the American economy.”",
               "start_quote_index": 320,
               "end_quote_index": 327,
               "attribution_index": 309,
-              "attribution_method": "proximity",
-              "original_attribution": "Trump"
-            },
-            {
-              "quote": "multilateral trading system",
-              "context": "And, after four years of Mr. Trump shaking up the global order on international trade, the communiqué underscored a commitment to the future of the World Trade Organization, expressed support for the “multilateral trading system” and called for a “stable” trade environment and open markets.",
-              "start_quote_index": 537,
-              "end_quote_index": 541,
-              "attribution_index": 509,
               "attribution_method": "proximity",
               "original_attribution": "Trump"
             }
