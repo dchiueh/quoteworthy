@@ -1,6 +1,6 @@
 # New York Times Archive Data as JSON
 In order to make the New York Times data archive ready to be consumed by our Javascript frontend, we must parse our original CSV data files into [JSON](https://www.w3schools.com/js/js_json_intro.asp). 
-We accomplish this by converting each row in the CSV into its corresponding a JSON object. We additionally attach the results of our [quote attribution extraction pipeline](https://github.com/alexanderjhurtado/cs206-what-they-said/blob/main/data/data_processing/quote_parser.py) to each JSON object.
+We accomplish this by converting each row in the CSV into its corresponding a JSON object. We additionally attach the results of our [quote attribution extraction pipeline](https://github.com/alexanderjhurtado/cs206-what-they-said/blob/main/what-they-said/src/data/data_processing/quote_parser.py) to each JSON object.
 
 We give an example of our JSON schema below. Note that:
 - some fields (`title`, `author`, `abstract`, `slug`, `section`, and `location`) may be `null` and some lists may be empty
