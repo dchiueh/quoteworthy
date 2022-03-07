@@ -9,6 +9,9 @@ body {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+.header:hover {
+    cursor: pointer;
+}
 
 .info {
     flex-shrink: 0;
@@ -25,6 +28,9 @@ body {
     border-top: solid lightgrey;
     display: flex;
     align-items: flex-end;
+}
+.quoteWrapper:hover {
+    cursor: pointer;
 }
 
 .nameWrapper {

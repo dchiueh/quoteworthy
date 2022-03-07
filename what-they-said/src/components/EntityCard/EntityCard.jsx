@@ -40,7 +40,7 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem, _setIframeUrl) => {
    // <a href={SingleEntityMapElem.url} style={{ textDecoration: "none" }} target="_blank">
       <CardContent>
          <div style={{ border: "solid #a5a58d 3px", borderRadius: "15px", backgroundColor:"white"}}>
-            <div className="header" nClick={() => _setIframeUrl(SingleEntityMapElem.url)}>  
+            <div className="header" onClick={() => _setIframeUrl(SingleEntityMapElem.url)}>  
                <Typography variant="h5" color="black" style={{textAlign: "left", flexGrow: 1, fontWeight: "bold", padding: "0px 9px", fontFamily:"Cheltenham"}}>
                   {SingleEntityMapElem.title}
                </Typography>
@@ -59,27 +59,26 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem, _setIframeUrl) => {
             <Button 
                variant="outline" 
                onClick={() => _setIframeUrl(SingleEntityMapElem.url)}
-               sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}
+               sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", fontWeight: "bold", textTransform: "none"}}
             >
-               <div>
-                  Read full article {'>'}
-               </div>
+               Read full article {'>'}
             </Button>
-            
-            {/* <Button 
-               variant="outline" 
-               onClick={() => _setIframeUrl(SingleEntityMapElem.url)}
-               sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}
-            > */}
+          
                {SingleEntityMapElem.quotes.map((quoteMap, index) => {
                   let textToShow = quoteMap.context || `"${quoteMap.quote}"`;
                   return (
-                     <div className="quoteWrapper">
-                        <Typography  className="quote" style={{color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px"}}>
-                           {textToShow}
-                        </Typography>
-                        <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Find quote {'>'}</Typography>
-                     </div>
+                     <Button>
+                        <div 
+                           className="quoteWrapper"
+                           onClick={() => _setIframeUrl(`${SingleEntityMapElem.url}#:~:text=${encodeURIComponent(quoteMap.quote)}`)}
+                           sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}
+                        >
+                           <Typography  className="quote" style={{color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}>
+                              {textToShow}
+                           </Typography>
+                           <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT', textTransform: "none"}}> Find quote {'>'}</Typography>
+                        </div>
+                     </Button>
                   )
                   // if (!quoteMap.context) {
                   //    return <div className="quoteWrapper">
@@ -100,7 +99,6 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem, _setIframeUrl) => {
                   //    </div>
                   // }
                })}
-            {/* </Button> */}
          </div>
       </CardContent>
    // </a>
