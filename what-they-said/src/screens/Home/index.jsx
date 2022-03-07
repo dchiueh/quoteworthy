@@ -268,8 +268,8 @@ class HomeScreen extends React.Component {
                   <Button style={{ textTransform: "none", fontSize: 14, marginRight: "20px", fontFamily:'Imperial BT', display: "block" }} onClick={() => this.setState({ dateMenuOpen: !this.state.dateMenuOpen })}> Filter By Date {'>'} </Button>
 
                   <div style={{ display: this.state.dateMenuOpen ? "flex" : "none", flexDirection: "row" }}>
-                     From: <DatePicker selected={this.state.dateFrom} onChange={(date) => this._handleDateFrom(date)} />
-                     To: <DatePicker selected={this.state.dateTo} onChange={(date) => this._handleDateTo(date)} />
+                     From:&nbsp;<DatePicker selected={this.state.dateFrom} onChange={(date) => this._handleDateFrom(date)} style={{fontFamily: "Imperial BT" }} />
+                     To:&nbsp;<DatePicker selected={this.state.dateTo} onChange={(date) => this._handleDateTo(date)} style={{fontFamily: "Imperial BT" }} />
                   </div>
                   
                   {/* <Button style={{textTransform: "none", fontSize: 14}}> Location {'>'} </Button> */}
