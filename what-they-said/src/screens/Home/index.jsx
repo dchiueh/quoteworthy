@@ -211,7 +211,7 @@ class HomeScreen extends React.Component {
          });
 
          //console.log("unique entities", entityArticleGroupings);
-         console.log("sorted entities", sortedEntityArticleGroupingsArray);
+         //console.log("sorted entities", sortedEntityArticleGroupingsArray);
 
          this.setState({
             //filteredArticles: filteredArticles,
@@ -228,7 +228,7 @@ class HomeScreen extends React.Component {
       return (
          <React.Fragment>
             <Paper>
-               <TextField id="search-phrase" type="search" placeholder="enter a search phrase"
+               <TextField id="search-phrase" type="search" placeholder="search a keyword"
                   value={this.state.searchWIP}
                   InputProps={{ sx: {backgroundColor: "#f2f2f2", fontSize: "22", fontFamily:'Imperial BT' }}}
                   sx={{ backgroundColor: "white" }}
@@ -245,7 +245,7 @@ class HomeScreen extends React.Component {
                      From: <DatePicker selected={this.state.dateFrom} onChange={(date) => this._handleDateFrom(date)} />
                      To: <DatePicker selected={this.state.dateTo} onChange={(date) => this._handleDateTo(date)} />
                   </div>
-
+                  
                   {/* <Button style={{textTransform: "none", fontSize: 14}}> Location {'>'} </Button> */}
                </div>
             </Paper>
