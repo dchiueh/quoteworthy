@@ -213,7 +213,23 @@ class HomeScreen extends React.Component {
          //Kept the key-value object, and now the sorted array, for future work / stability across last-minute additions
          let sortedEntityArticleGroupingsArray = [];
          for (let entity in entityArticleGroupings) {
-            sortedEntityArticleGroupingsArray.push(entityArticleGroupings[entity]);
+            let entityEntries = entityArticleGroupings[entity];
+
+            entityEntries.sort(function (a, b) {
+               let dateA = new Date(a.publish_date);
+               let dateB = new Date(b.publish_date);
+
+               if (dateA === dateB) {
+                  return 0;
+               }
+               else if (dateA > dateB) {
+                  return -1;
+               } else {
+                  return 1;
+               }
+            });
+            //console.log("sorted entity Entries", entityEntries);
+            sortedEntityArticleGroupingsArray.push(entityEntries);
          }
 
          sortedEntityArticleGroupingsArray.sort(function (a, b) {

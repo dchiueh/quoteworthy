@@ -59,15 +59,17 @@ function App() {
       </header>
             
       <HomeScreen />
-      <div className="footer">
+      <Card style={{border: "0.5px solid #7f7f7f"}}>
         <p>
           Our team presents Quoteworthy, a tool that extract quotes from an archive of 600 articles from the New York Times from 2018-2020. 
+        </p>
+        <p>
           Search by keywords and filter by date and location, and relevant and correctly attributed quotes from our archive will populate. 
         </p>
         <p>
           By: Alex H, Dana C, Jennah H, Misato N, Shana H 
         </p>
-      </div>
+      </Card>
     </Box>
   );
 }
