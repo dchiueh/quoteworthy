@@ -23,6 +23,9 @@ import {
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 import NYT_MINI from '../../data/nyt_2020_mini.json';
 import NYT_POLITICS from '../../data/nyt_politics.json';
 // import SearchBox from '../../components/SearchBox/SearchBox';
@@ -58,14 +61,19 @@ class HomeScreen extends React.Component {
          searchWIP: '',
 			searchPhrase: '',
          searchButtonPressed: false,
-         dateFilter: ["2010/1/1", "2020/12/31"],
          locationFilter: [""],
+         dateFrom: new Date("2018/1/1"),
+         dateTo: new Date("2020/12/31"),
+         anchorEl: null,
+         dateMenuOpen: false,
          iframeUrl: "" //"https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html",
 		}
 
       this._setIframeUrl = this._setIframeUrl.bind(this);
       this._handleSearch = this._handleSearch.bind(this);
       this._handleKeyDown = this._handleKeyDown.bind(this);
+      this._handleDateFrom = this._handleDateFrom.bind(this);
+      this._handleDateTo = this._handleDateTo(this);
 	}
 
 	componentDidMount() {
@@ -77,13 +85,26 @@ class HomeScreen extends React.Component {
       //console.log("JSON article data", this.state.articles);
    }
 
+   _handleMenuClick(event) {
+      this.setState({anchorEl: event.currentTarget});
+   }
+
+   _handleMenuClose(event) {
+      this.setState({anchorEl: null});
+   }
+
    _setIframeUrl(url) {
-      //console.log("passed in value", url);
-      //console.log("event iframe url setting", event.target.value);
       this.setState({
          iframeUrl: url,
-         //iframeUrl: event.target.value,
       })
+   }
+
+   _handleDateFrom(date) {
+      this.setState({dateFrom: date})
+   }
+
+   _handleDateTo(date) {
+      this.setState({dateTo: date})
    }
 
    //use this to trigger article listing change
@@ -115,8 +136,8 @@ class HomeScreen extends React.Component {
          const filteredArticles = this.state.articles.filter((article) => {
             //Broken up into this ugly callback with if/else curly braces 
             //as our categories are still in flux (also need to test with large dataset)
-            const dateFrom = new Date(this.state.dateFilter[0]);
-            const dateTo = new Date(this.state.dateFilter[1]);
+            const dateFrom = this.state.dateFrom;
+            const dateTo = this.state.dateTo;
             const dateCheck = new Date(article.publish_date);
 
             const articleLocationMatches = article.locations && article.locations.filter(name => this.state.locationFilter.includes(name.toLowerCase()));
@@ -213,9 +234,14 @@ class HomeScreen extends React.Component {
                {/* <Button variant="contained" onClick={this._handleSearchButton}>Search</Button> */}
                <div style={{display: "flex", flexDirection: "row", textAlign: "left", alignItems:"center"}}>
                   <div style={{padding:"0px 5px", marginRight:"15px"}}>Filter results by date or location:</div>
-                  <Button style={{textTransform: "none", fontSize: 14, marginRight: "20px"}}> Date Range <ExpandMoreIcon/> </Button>
-                  <Button style={{textTransform: "none", fontSize: 14}}> Location <ExpandMoreIcon/> </Button>
+                  {/* <Button style={{textTransform: "none", fontSize: 14, marginRight: "20px"}}> Date Range <ExpandMoreIcon/> </Button> */}
+                  
+                  <div>
+                     Date From: <DatePicker selected={this.state.dateFrom} onChange={(date) => this._handleDateFrom(date)} />
+                     Date To: <DatePicker selected={this.state.dateTo} onChange={(date) => this._handleDateTo(date)} />                  
+                  </div>
 
+                  <Button style={{textTransform: "none", fontSize: 14}}> Location <ExpandMoreIcon/> </Button>
                </div>
             </Card> 
             {/* <SearchBox searchWIP={this.state.searchWIP} onChange={this._handleSearch} onKeyDown={this._handleKeyDown} timeFilter={this.state.timeFilter} locationFilter={this.state.locationFilter} /> */}
@@ -225,6 +251,7 @@ class HomeScreen extends React.Component {
                </Typography>}
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
+
                <div style={{display: "block", flex: "1"}}>
                   <SearchListGroupedByEntity 
                      entityArticleGroupings={this.state.entityArticleGroupings} 
