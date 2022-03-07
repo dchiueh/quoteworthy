@@ -59,8 +59,15 @@ function App() {
       </header>
             
       <HomeScreen />
-      {/*TODO: fix code so we handle state a hell of a lot better */}
-      <p>Accessibility Caption: We present quoteworthy, a tool that extract quotes from an archive of 600 articles from the New York Times from 2018-2020. There is a search tool at the top that lets a user query based on keyword, and then relevant and correctly attributed quotes from our archive will populate. Filters by date and location are included as well. </p>
+      <div className="footer">
+        <p>
+          Our team presents Quoteworthy, a tool that extract quotes from an archive of 600 articles from the New York Times from 2018-2020. 
+          Search by keywords and filter by date and location, and relevant and correctly attributed quotes from our archive will populate. 
+        </p>
+        <p>
+          By: Alex H, Dana C, Jennah H, Misato N, Shana H 
+        </p>
+      </div>
     </Box>
   );
 }

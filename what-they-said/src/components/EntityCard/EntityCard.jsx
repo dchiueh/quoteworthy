@@ -138,7 +138,7 @@ const EntityCard = ({ SingleEntityMap, _setIframeUrl }) => {
                aria-expanded={expanded}
                aria-label="show more"
             >
-               <Typography style={{ fontSize: 16 }}>See more articles </Typography>
+               <Typography style={{ fontSize: 16, fontFamily:'Imperial BT'}}>See more articles </Typography>
                <ExpandMoreIcon />
             </ExpandMore>}
          </CardActions>
