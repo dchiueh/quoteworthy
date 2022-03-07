@@ -233,15 +233,15 @@ class HomeScreen extends React.Component {
                /> 
                {/* <Button variant="contained" onClick={this._handleSearchButton}>Search</Button> */}
                <div style={{display: "flex", flexDirection: "row", textAlign: "left", alignItems:"center"}}>
-                  <div style={{padding:"0px 5px", marginRight:"15px"}}>Filter results by date or location:</div>
-                  {/* <Button style={{textTransform: "none", fontSize: 14, marginRight: "20px"}}> Date Range <ExpandMoreIcon/> </Button> */}
+                  {/* <div style={{padding:"0px 5px"}}>Filter results by date</div> */}
+                  <Button style={{textTransform: "none", fontSize: 14, marginRight: "20px", display: "block"}} onClick={() => this.setState({dateMenuOpen: !this.state.dateMenuOpen})}> Filter By Date {'>'} </Button>                  
                   
-                  <div>
-                     Date From: <DatePicker selected={this.state.dateFrom} onChange={(date) => this._handleDateFrom(date)} />
-                     Date To: <DatePicker selected={this.state.dateTo} onChange={(date) => this._handleDateTo(date)} />                  
+                  <div style={{display: this.state.dateMenuOpen ? "flex" : "none", flexDirection: "row"}}>
+                     From: <DatePicker selected={this.state.dateFrom} onChange={(date) => this._handleDateFrom(date)} />
+                     To: <DatePicker selected={this.state.dateTo} onChange={(date) => this._handleDateTo(date)} />                  
                   </div>
 
-                  <Button style={{textTransform: "none", fontSize: 14}}> Location <ExpandMoreIcon/> </Button>
+                  {/* <Button style={{textTransform: "none", fontSize: 14}}> Location {'>'} </Button> */}
                </div>
             </Card> 
             {/* <SearchBox searchWIP={this.state.searchWIP} onChange={this._handleSearch} onKeyDown={this._handleKeyDown} timeFilter={this.state.timeFilter} locationFilter={this.state.locationFilter} /> */}
