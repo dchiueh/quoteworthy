@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import _memoize from 'lodash.memoize';
 
 import { styled } from '@mui/material/styles';
+import { css } from "@emotion/react";
 
 import {
    Box,
@@ -27,10 +28,18 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+import GridLoader from "react-spinners/GridLoader";
+
 import NYT_MINI from '../../data/nyt_2020_mini.json';
 import NYT_POLITICS from '../../data/nyt_politics.json';
 // import SearchBox from '../../components/SearchBox/SearchBox';
 import SearchListGroupedByEntity from '../../components/SearchListGroupedByEntity/SearchListGroupedByEntity';
+
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: blue;
+`;
 
 function descendingComparator(a, b, orderBy) {
    if (b[orderBy] < a[orderBy]) {
@@ -68,6 +77,7 @@ class HomeScreen extends React.Component {
          anchorEl: null,
          dateMenuOpen: false,
          userOnboarded: false,
+         isLoading: false,
          //activeCard: false,
          iframeUrl: "" //"https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html",
       }
@@ -211,7 +221,7 @@ class HomeScreen extends React.Component {
          });
 
          //console.log("unique entities", entityArticleGroupings);
-         console.log("sorted entities", sortedEntityArticleGroupingsArray);
+         //console.log("sorted entities", sortedEntityArticleGroupingsArray);
 
          this.setState({
             //filteredArticles: filteredArticles,
@@ -228,7 +238,7 @@ class HomeScreen extends React.Component {
       return (
          <React.Fragment>
             <Paper>
-               <TextField id="search-phrase" type="search" placeholder="search a keyword"
+               <TextField id="search-phrase" type="search" placeholder="search a keyword, such as election"
                   value={this.state.searchWIP}
                   InputProps={{ sx: {backgroundColor: "#f2f2f2", fontSize: "22", fontFamily:'Imperial BT' }}}
                   sx={{ backgroundColor: "white" }}
@@ -250,38 +260,30 @@ class HomeScreen extends React.Component {
                </div>
             </Paper>
             {/* <SearchBox searchWIP={this.state.searchWIP} onChange={this._handleSearch} onKeyDown={this._handleKeyDown} timeFilter={this.state.timeFilter} locationFilter={this.state.locationFilter} /> */}
-            <div style={{ height: "20px", padding: "20px" }}>
-               {this.state.numTotalEntities > 0 && <Typography color="black" sx={{ fontSize: "16px", textDecoration: "none", fontFamily: "Imperial BT" }}>
-                  {`Quoteworthy found ${this.state.numTotalEntities} entities, with ${this.state.numTotalQuotes} quote${this.state.numTotalQuotes > 1 ? "s" : ""}`}
-               </Typography>}
-            </div>
             {this.state.userOnboarded &&
-               <div style={{ display: "flex", flexDirection: "row" }}>
-                  <div style={{ display: "block", flex: "1" }}>
-                     <SearchListGroupedByEntity
-                        entityArticleGroupings={this.state.entityArticleGroupings}
-                        sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray}
-                        searchPhrase={this.state.searchPhrase}
-                        // _setIframeUrl={this._setIframeUrl}
-                     />
+
+               (this.state.isLoading ? 
+                  <GridLoader color={'#7f7f7f'} loading={true} css={override} size={15} />
+                  :
+               <React.Fragment>
+                  <div style={{ height: "20px", padding: "20px" }}>
+                     <Typography color="black" sx={{ fontSize: "16px", textDecoration: "none", fontFamily: "Imperial BT" }}>
+                        {`Quoteworthy found ${this.state.numTotalEntities} entities, with ${this.state.numTotalQuotes} total quote${(this.state.numTotalQuotes > 1 || this.state.numTotalQuotes <= 0) ? "s" : ""}`}
+                     </Typography>
                   </div>
-                  {/* <div style={{ display: "block", flex: "1" }}>
-                     {this.state.activeCard ?
-                        <iframe
-                           frameBorder="0"
-                           src={this.state.iframeUrl}
-                           allowFullScreen={true}
-                           scrolling="yes"
-                           width="100%"
-                           height="100%">
-                        </iframe>
-                        :
-                        <Typography color="black" sx={{ fontSize: "20px", textDecoration: "none", fontFamily: "Imperial BT", paddingTop: "20px" }}>
-                           Click on a speaker's quote to read the full article here.
-                        </Typography>
-                     }
-                  </div> */}
-               </div>}
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                     <div style={{ display: "block", flex: "1" }}>
+                        <SearchListGroupedByEntity
+                           entityArticleGroupings={this.state.entityArticleGroupings}
+                           sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray}
+                           searchPhrase={this.state.searchPhrase}
+                        // _setIframeUrl={this._setIframeUrl}
+                        />
+                     </div>
+                  </div>
+               </React.Fragment>
+               )
+            }
          </React.Fragment>
       )
    };

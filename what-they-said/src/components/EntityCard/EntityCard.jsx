@@ -60,14 +60,6 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
                
                Read full article {'>'}
             </a>
-            {/* <Button 
-               variant="outline" 
-               onClick={() => SingleEntityMapElem.url)}
-               sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", fontWeight: "bold", textTransform: "none"}}
-            >
-               Read full article {'>'}
-            </Button> */}
-          
                {SingleEntityMapElem.quotes.map((quoteMap, index) => {
                   //let textToShow = quoteMap.context || `"${quoteMap.quote}"`;
                   //This hack is very reliant on the cleanliness of the NLP data pipline (to reduce time for data manipulation)
@@ -92,24 +84,6 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
                         </div>                                             
                      </a>
                   )
-                  // if (!quoteMap.context) {
-                  //    return <div className="quoteWrapper">
-                  //       <Typography  className="quote" style={{color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px"}}>
-                  //          "{quoteMap.quote}"
-                  //       </Typography>
-                  //       <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Find quote {'>'}</Typography>
-                  //    </div>
-                  // } else {
-                  //    return 
-                  //    <div className="quoteWrapper"> 
-                  //       <Typography className="quote" style={{color:"#7f7f7f", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px"}}>
-                  //          {quoteMap.context}
-                  //          {/* Context words are a lighter gray; when the quote is found within the context
-                  //          make the quote black. */}
-                  //       </Typography>
-                  //       <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Find quote {'>'}</Typography>
-                  //    </div>
-                  // }
                })}
          </div>
       </CardContent>
@@ -130,7 +104,7 @@ const EntityCard = ({ SingleEntityMap, _setIframeUrl }) => {
    //todo: return a mapping of all the single article card links to the external site
    //guaranteed at least 1 article card if there's an entity
    return (
-      <Card sx={{ border: "solid grey 1px" }}>
+      <Card sx={{ border: "solid grey 1px" }} key={`entity-card-whole-${SingleEntityMap[0].entity}-${SingleEntityMap[0].publish_date}-${SingleEntityMap[0].title}`}>
          <div className="nameWrapper">
          <Avatar src="#" />
          <Typography variant="h5" style={{ fontWeight:"bold", fontFamily: 'Imperial BT', padding:"0px 7px" }}>
