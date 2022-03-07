@@ -69,7 +69,14 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
             </Button> */}
           
                {SingleEntityMapElem.quotes.map((quoteMap, index) => {
-                  let textToShow = quoteMap.context || `"${quoteMap.quote}"`;
+                  //let textToShow = quoteMap.context || `"${quoteMap.quote}"`;
+                  //This hack is very reliant on the cleanliness of the NLP data pipline (to reduce time for data manipulation)
+                  let contextOnlyPart1, contextOnlyPart2 = "";
+                  if(quoteMap.context) {
+                     let indexToSlice = quoteMap.context.indexOf(`${quoteMap.quote}`) - 1; //to adjust for awk quote characters
+                     contextOnlyPart1 = quoteMap.context.slice(0, indexToSlice);
+                     contextOnlyPart2 = quoteMap.context.slice(indexToSlice + quoteMap.quote.length + 2); //add 2 for open/end quote
+                  }                  
                   return (
                      <a href={`${SingleEntityMapElem.url}#:~:text=${encodeURIComponent(quoteMap.quote)}`} style={{textDecoration: "none"}} target="_blank">
                         <div 
@@ -77,7 +84,9 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
                            sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}
                         >
                            <Typography  className="quote" style={{color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}>
-                              {textToShow}
+                           <span style={{color: "#7f7f7f"}}>{contextOnlyPart1}</span>
+                           {`"${quoteMap.quote}"`}
+                           <span style={{color: "#7f7f7f"}}>{contextOnlyPart2}</span>
                            </Typography>
                            <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT', textTransform: "none"}}> Find quote {'>'}</Typography>
                         </div>                                             
