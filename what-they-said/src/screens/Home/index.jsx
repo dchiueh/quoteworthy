@@ -68,11 +68,11 @@ class HomeScreen extends React.Component {
          anchorEl: null,
          dateMenuOpen: false,
          userOnboarded: false,
-         activeCard: false,
+         //activeCard: false,
          iframeUrl: "" //"https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html",
       }
 
-      this._setIframeUrl = this._setIframeUrl.bind(this);
+      // this._setIframeUrl = this._setIframeUrl.bind(this);
       this._handleSearch = this._handleSearch.bind(this);
       this._handleKeyDown = this._handleKeyDown.bind(this);
       this._handleDateFrom = this._handleDateFrom.bind(this);
@@ -96,12 +96,12 @@ class HomeScreen extends React.Component {
       this.setState({ anchorEl: null });
    }
 
-   _setIframeUrl(url) {
-      this.setState({
-         iframeUrl: url,
-         activeCard: true,
-      })
-   }
+   // _setIframeUrl(url) {
+   //    this.setState({
+   //       iframeUrl: url,
+   //       //activeCard: true,
+   //    })
+   // }
 
    _handleDateFrom(date) {
       this.setState({ dateFrom: date })
@@ -262,10 +262,10 @@ class HomeScreen extends React.Component {
                         entityArticleGroupings={this.state.entityArticleGroupings}
                         sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray}
                         searchPhrase={this.state.searchPhrase}
-                        _setIframeUrl={this._setIframeUrl}
+                        // _setIframeUrl={this._setIframeUrl}
                      />
                   </div>
-                  <div style={{ display: "block", flex: "1" }}>
+                  {/* <div style={{ display: "block", flex: "1" }}>
                      {this.state.activeCard ?
                         <iframe
                            frameBorder="0"
@@ -280,9 +280,8 @@ class HomeScreen extends React.Component {
                            Click on a speaker's quote to read the full article here.
                         </Typography>
                      }
-                  </div>
+                  </div> */}
                </div>}
-            {/*ArticleIFrame */}
          </React.Fragment>
       )
    };

@@ -35,50 +35,53 @@ const ExpandMore = styled((props) => {
    }),
 }));
 
-const displayEntitySingleArticleCard = (SingleEntityMapElem, _setIframeUrl) => {
+const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
    return (
    // <a href={SingleEntityMapElem.url} style={{ textDecoration: "none" }} target="_blank">
       <CardContent>
          <div style={{ border: "solid #a5a58d 3px", borderRadius: "15px", backgroundColor:"white"}}>
-            <div className="header" onClick={() => _setIframeUrl(SingleEntityMapElem.url)}>  
-               <Typography variant="h5" color="black" style={{textAlign: "left", flexGrow: 1, fontWeight: "bold", padding: "0px 9px", fontFamily:"Cheltenham"}}>
-                  {SingleEntityMapElem.title}
-               </Typography>
-               <div className="info" style={{ textAlign: "right", marginRight: "10px", fontSize: 13, color: "grey" }}>
-                  <Typography>
-                     {SingleEntityMapElem.publish_date}
+            <a href={SingleEntityMapElem.url} style={{textDecoration: "none"}} target="_blank">
+               <div className="header">  
+                  <Typography variant="h5" color="black" style={{textAlign: "left", flexGrow: 1, fontWeight: "bold", padding: "0px 9px", fontFamily:"Cheltenham"}}>
+                     {SingleEntityMapElem.title}
                   </Typography>
-                  <Typography>
-                     {SingleEntityMapElem.slug}
+                  <div className="info" style={{ textAlign: "right", marginRight: "10px", fontSize: 13, color: "grey" }}>
+                     <Typography>
+                        {SingleEntityMapElem.publish_date}
+                     </Typography>
+                     <Typography>
+                        {SingleEntityMapElem.slug}
+                     </Typography>
+                     <Typography>
+                  {`${SingleEntityMapElem.quotes.length} quote${SingleEntityMapElem.quotes.length > 1 ? "s" : ""}`}
                   </Typography>
-                  <Typography>
-               {`${SingleEntityMapElem.quotes.length} quote${SingleEntityMapElem.quotes.length > 1 ? "s" : ""}`}
-               </Typography>
-               </div> 
-            </div>
-            <Button 
+                  </div> 
+               </div>
+               
+               Read full article {'>'}
+            </a>
+            {/* <Button 
                variant="outline" 
-               onClick={() => _setIframeUrl(SingleEntityMapElem.url)}
+               onClick={() => SingleEntityMapElem.url)}
                sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", fontWeight: "bold", textTransform: "none"}}
             >
                Read full article {'>'}
-            </Button>
+            </Button> */}
           
                {SingleEntityMapElem.quotes.map((quoteMap, index) => {
                   let textToShow = quoteMap.context || `"${quoteMap.quote}"`;
                   return (
-                     <Button>
+                     <a href={`${SingleEntityMapElem.url}#:~:text=${encodeURIComponent(quoteMap.quote)}`} style={{textDecoration: "none"}} target="_blank">
                         <div 
                            className="quoteWrapper"
-                           onClick={() => _setIframeUrl(`${SingleEntityMapElem.url}#:~:text=${encodeURIComponent(quoteMap.quote)}`)}
                            sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}
                         >
                            <Typography  className="quote" style={{color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}>
                               {textToShow}
                            </Typography>
                            <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT', textTransform: "none"}}> Find quote {'>'}</Typography>
-                        </div>
-                     </Button>
+                        </div>                                             
+                     </a>
                   )
                   // if (!quoteMap.context) {
                   //    return <div className="quoteWrapper">

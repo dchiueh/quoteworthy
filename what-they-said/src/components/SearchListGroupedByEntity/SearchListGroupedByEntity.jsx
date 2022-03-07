@@ -20,7 +20,6 @@ import {
 } from '@mui/material';
 
 import EntityCard from '../EntityCard/EntityCard';
-// import demo7JSON from '../../test_data/demo7.json';
 
 class SearchListGroupedByEntity extends React.Component {
    constructor(props) {
@@ -29,7 +28,7 @@ class SearchListGroupedByEntity extends React.Component {
          entityArticleGroupings: props.entityArticleGroupings,
          sortedEntityArticleGroupingsArray: props.sortedEntityArticleGroupingsArray,
          searchPhrase: props.searchPhrase,
-         _setIframeUrl: props._setIframeUrl
+         // _setIframeUrl: props._setIframeUrl
       }
    }
 
@@ -38,7 +37,7 @@ class SearchListGroupedByEntity extends React.Component {
          searchPhrase: this.props.searchPhrase,
          entityArticleGroupings: this.props.entityArticleGroupings,
          sortedEntityArticleGroupingsArray: this.props.sortedEntityArticleGroupingsArray,
-         _setIframeUrl: this.props._setIframeUrl
+         // _setIframeUrl: this.props._setIframeUrl
       });
    }
 
@@ -61,7 +60,7 @@ class SearchListGroupedByEntity extends React.Component {
             return <EntityCard 
                      key={`${entityElem.entity}-${index}-${entityElem.publish_date}`} 
                      SingleEntityMap={entityElem}
-                     _setIframeUrl={this.state._setIframeUrl}
+                     // _setIframeUrl={this.state._setIframeUrl}
                   />
             })
          }
