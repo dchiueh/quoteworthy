@@ -44,6 +44,7 @@ function getComparator(order, orderBy) {
       : (a, b) => -descendingComparator(a, b, orderBy);
 }
 
+
 class HomeScreen extends React.Component {
 	constructor(props) {
 		super(props);
@@ -59,9 +60,10 @@ class HomeScreen extends React.Component {
          searchButtonPressed: false,
          dateFilter: ["2010/1/1", "2020/12/31"],
          locationFilter: [""],
-         displayedUrl: "" //"https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html",
+         iframeUrl: "" //"https://www.nytimes.com/2020/01/20/sports/golf/tiger-woods-Olympics.html",
 		}
 
+      this._setIframeUrl = this._setIframeUrl.bind(this);
       this._handleSearch = this._handleSearch.bind(this);
       this._handleKeyDown = this._handleKeyDown.bind(this);
 	}
@@ -73,6 +75,15 @@ class HomeScreen extends React.Component {
 
    componentDidUpdate() {
       //console.log("JSON article data", this.state.articles);
+   }
+
+   _setIframeUrl(url) {
+      //console.log("passed in value", url);
+      //console.log("event iframe url setting", event.target.value);
+      this.setState({
+         iframeUrl: url,
+         //iframeUrl: event.target.value,
+      })
    }
 
    //use this to trigger article listing change
@@ -175,7 +186,7 @@ class HomeScreen extends React.Component {
          });
       
          //console.log("unique entities", entityArticleGroupings);
-         //console.log("sorted entities", sortedEntityArticleGroupingsArray);
+         console.log("sorted entities", sortedEntityArticleGroupingsArray);
 
          this.setState({
             //filteredArticles: filteredArticles,
@@ -215,12 +226,17 @@ class HomeScreen extends React.Component {
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
                <div style={{display: "block", flex: "1"}}>
-                  <SearchListGroupedByEntity entityArticleGroupings={this.state.entityArticleGroupings} sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray} searchPhrase={this.state.searchPhrase} /> 
+                  <SearchListGroupedByEntity 
+                     entityArticleGroupings={this.state.entityArticleGroupings} 
+                     sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray} 
+                     searchPhrase={this.state.searchPhrase} 
+                     _setIframeUrl={this._setIframeUrl}
+                  /> 
                </div>
                <div style={{display: "block", flex: "1"}}>
                   <iframe 
                      frameBorder="0" 
-                     src={this.state.displayedUrl}
+                     src={this.state.iframeUrl}
                      allowFullScreen={true} 
                      scrolling="yes" 
                      width="100%" 

@@ -29,6 +29,7 @@ class SearchListGroupedByEntity extends React.Component {
          entityArticleGroupings: props.entityArticleGroupings,
          sortedEntityArticleGroupingsArray: props.sortedEntityArticleGroupingsArray,
          searchPhrase: props.searchPhrase,
+         _setIframeUrl: props._setIframeUrl
       }
    }
 
@@ -37,6 +38,7 @@ class SearchListGroupedByEntity extends React.Component {
          searchPhrase: this.props.searchPhrase,
          entityArticleGroupings: this.props.entityArticleGroupings,
          sortedEntityArticleGroupingsArray: this.props.sortedEntityArticleGroupingsArray,
+         _setIframeUrl: this.props._setIframeUrl
       });
    }
 
@@ -47,6 +49,7 @@ class SearchListGroupedByEntity extends React.Component {
             searchPhrase: this.props.searchPhrase,
             entityArticleGroupings: this.props.entityArticleGroupings,
             sortedEntityArticleGroupingsArray: this.props.sortedEntityArticleGroupingsArray,
+            //_setIframeUrl: this.props._setIframeUrl
          });
       }
    }
@@ -55,7 +58,11 @@ class SearchListGroupedByEntity extends React.Component {
       return (
          <div>
          {this.state.sortedEntityArticleGroupingsArray.map((entityElem, index) => {
-            return <EntityCard key={`${entityElem.entity}-${index}`} SingleEntityMap={entityElem}/>
+            return <EntityCard 
+                     key={`${entityElem.entity}-${index}-${entityElem.publish_date}`} 
+                     SingleEntityMap={entityElem}
+                     _setIframeUrl={this.state._setIframeUrl}
+                  />
             })
          }
       </div>

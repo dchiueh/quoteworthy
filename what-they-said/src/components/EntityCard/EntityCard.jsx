@@ -35,9 +35,9 @@ const ExpandMore = styled((props) => {
    }),
 }));
 
-const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
+const displayEntitySingleArticleCard = (SingleEntityMapElem, _setIframeUrl) => {
    return (
-   <a href={SingleEntityMapElem.url} style={{ textDecoration: "none" }} target="_blank">
+   // <a href={SingleEntityMapElem.url} style={{ textDecoration: "none" }} target="_blank">
       <CardContent>
          <div style={{ border: "solid #a5a58d 3px", borderRadius: "15px", backgroundColor:"white"}}>
             <div className="header">
@@ -57,7 +57,7 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
                </Typography>
                </div>
             </div>
-
+            <Button variant="contained" onClick={() => _setIframeUrl(SingleEntityMapElem.url)}>Full article</Button>
             {SingleEntityMapElem.quotes.map((quoteMap, index) => {
                if (!quoteMap.context) {
                   return <div className="quoteWrapper">
@@ -79,12 +79,12 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
             })}
          </div>
       </CardContent>
-   </a>
+   // </a>
    )
 }
 
 
-const EntityCard = ({ SingleEntityMap }) => {
+const EntityCard = ({ SingleEntityMap, _setIframeUrl }) => {
    const [expanded, setExpanded] = React.useState(false);
 
    const handleExpandClick = () => {
@@ -104,7 +104,7 @@ const EntityCard = ({ SingleEntityMap }) => {
          </Typography>
          <Typography style={{ fontSize: 16, fontFamily:'Imperial BT', alignItems:"center" }}>({SingleEntityMap.length} matching article{SingleEntityMap.length > 1 ? "s" : ""})</Typography>
          </div>
-         {displayEntitySingleArticleCard(SingleEntityMap[0])}
+         {displayEntitySingleArticleCard(SingleEntityMap[0], _setIframeUrl)}
 
          <CardActions disableSpacing>
             {/* <Avatar sx={{ backgroundColor: "skyblue" }} aria-label="article-count">
@@ -123,7 +123,7 @@ const EntityCard = ({ SingleEntityMap }) => {
          <Collapse in={expanded} timeout="auto" unmountOnExit>
             {SingleEntityMap[1] &&
                SingleEntityMap.slice(1).map((SingleEntityMapElem => {
-                  return displayEntitySingleArticleCard(SingleEntityMapElem);
+                  return displayEntitySingleArticleCard(SingleEntityMapElem, _setIframeUrl);
                }))
             } 
          </Collapse>
