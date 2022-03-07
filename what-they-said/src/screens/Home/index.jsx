@@ -287,8 +287,8 @@ class HomeScreen extends React.Component {
                         {`Quoteworthy found ${this.state.numTotalEntities} entities, with ${this.state.numTotalQuotes} total quote${(this.state.numTotalQuotes > 1 || this.state.numTotalQuotes <= 0) ? "s" : ""}`}
                      </Typography>
                   </div>
-                  <div style={{ display: "flex", flexDirection: "row" }}>
-                     <div style={{ display: "block", flex: "1" }}>
+                  <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+                     <div style={{ display: "block", width: "65%" }}>
                         <SearchListGroupedByEntity
                            entityArticleGroupings={this.state.entityArticleGroupings}
                            sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray}

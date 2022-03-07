@@ -24,6 +24,7 @@ body {
     padding: 10px 0px;
 }
 .quoteWrapper {
+    width:auto;
     padding: 0px 10px;
     border-top: solid lightgrey;
     display: flex;
@@ -38,8 +39,4 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-}
-
-mark {
-    background-color: #ffffe0;
 }

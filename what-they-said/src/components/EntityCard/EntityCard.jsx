@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { styled } from '@mui/material/styles';
+import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
 
 import './EntityCard.css';
 
@@ -42,23 +43,24 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
          <div style={{ border: "solid #a5a58d 3px", borderRadius: "15px", backgroundColor:"white"}}>
             <a href={SingleEntityMapElem.url} style={{textDecoration: "none"}} target="_blank">
                <div className="header">  
-                  <Typography variant="h5" color="black" style={{textAlign: "left", flexGrow: 1, fontWeight: "bold", padding: "0px 9px", fontFamily:"Cheltenham"}}>
+                  <Typography color="black" style={{fontSize:"28px", textAlign: "left", flexGrow: 1, fontWeight: "bold", padding: "0px 9px", fontFamily:"Cheltenham"}}>
                      {SingleEntityMapElem.title}
                   </Typography>
-                  <div className="info" style={{ textAlign: "right", marginRight: "10px", fontSize: 13, color: "grey" }}>
-                     <Typography>
+                  <div className="info" style={{ padding:"3px 0px", fontFamily:"Imperial BT", textAlign: "right", marginRight: "10px", fontSize: 13, color: "grey" }}>
+                     <Typography style={{fontFamily:"Imperial BT", lineHeight:"18px"}}>
                         {SingleEntityMapElem.publish_date}
                      </Typography>
-                     <Typography>
+                     <Typography style={{fontFamily:"Imperial BT", lineHeight:"18px"}}>
                         {SingleEntityMapElem.slug}
                      </Typography>
-                     <Typography>
+                     <Typography style={{fontFamily:"Imperial BT", lineHeight:"18px"}}>
                   {`${SingleEntityMapElem.quotes.length} quote${SingleEntityMapElem.quotes.length > 1 ? "s" : ""}`}
+                  </Typography>
+                  <Typography style={{color:"blue", fontFamily:"Imperial BT", lineHeight:"18px"}}>
+                  Read full article {'>'}
                   </Typography>
                   </div> 
                </div>
-               
-               Read full article {'>'}
             </a>
                {SingleEntityMapElem.quotes.map((quoteMap, index) => {
                   //let textToShow = quoteMap.context || `"${quoteMap.quote}"`;
@@ -104,9 +106,9 @@ const EntityCard = ({ SingleEntityMap, _setIframeUrl }) => {
    //todo: return a mapping of all the single article card links to the external site
    //guaranteed at least 1 article card if there's an entity
    return (
-      <Card sx={{ border: "solid grey 1px" }} key={`entity-card-whole-${SingleEntityMap[0].entity}-${SingleEntityMap[0].publish_date}-${SingleEntityMap[0].title}`}>
+      <Card key={`entity-card-whole-${SingleEntityMap[0].entity}-${SingleEntityMap[0].publish_date}-${SingleEntityMap[0].title}`}>
          <div className="nameWrapper">
-         <Avatar src="#" />
+         <Avatar src="#"> <RecordVoiceOverIcon/> </Avatar>
          <Typography variant="h5" style={{ fontWeight:"bold", fontFamily: 'Imperial BT', padding:"0px 7px" }}>
             {SingleEntityMap[0].entity}
          </Typography>
