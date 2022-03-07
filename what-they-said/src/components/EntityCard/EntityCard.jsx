@@ -40,8 +40,7 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem, _setIframeUrl) => {
    // <a href={SingleEntityMapElem.url} style={{ textDecoration: "none" }} target="_blank">
       <CardContent>
          <div style={{ border: "solid #a5a58d 3px", borderRadius: "15px", backgroundColor:"white"}}>
-            <div className="header">
-               
+            <div className="header" nClick={() => _setIframeUrl(SingleEntityMapElem.url)}>  
                <Typography variant="h5" color="black" style={{textAlign: "left", flexGrow: 1, fontWeight: "bold", padding: "0px 9px", fontFamily:"Cheltenham"}}>
                   {SingleEntityMapElem.title}
                </Typography>
@@ -55,28 +54,53 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem, _setIframeUrl) => {
                   <Typography>
                {`${SingleEntityMapElem.quotes.length} quote${SingleEntityMapElem.quotes.length > 1 ? "s" : ""}`}
                </Typography>
-               </div>
+               </div> 
             </div>
-            <Button variant="contained" onClick={() => _setIframeUrl(SingleEntityMapElem.url)}>Full article</Button>
-            {SingleEntityMapElem.quotes.map((quoteMap, index) => {
-               if (!quoteMap.context) {
-                  return <div className="quoteWrapper">
-                     <Typography  className="quote" style={{color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px"}}>
-                        "{quoteMap.quote}"
-                     </Typography>
-                     <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Full article {'>'}</Typography>
-                  </div>
-               } else {
-                  return <div className="quoteWrapper"> 
-                     <Typography className="quote" style={{color:"#7f7f7f", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px"}}>
-                        {quoteMap.context}
-                        {/* Context words are a lighter gray; when the quote is found within the context
-                        make the quote black. */}
-                     </Typography>
-                     <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Full article {'>'}</Typography>
-                   </div>
-               }
-            })}
+            <Button 
+               variant="outline" 
+               onClick={() => _setIframeUrl(SingleEntityMapElem.url)}
+               sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}
+            >
+               <div>
+                  Read full article {'>'}
+               </div>
+            </Button>
+            
+            {/* <Button 
+               variant="outline" 
+               onClick={() => _setIframeUrl(SingleEntityMapElem.url)}
+               sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}
+            > */}
+               {SingleEntityMapElem.quotes.map((quoteMap, index) => {
+                  let textToShow = quoteMap.context || `"${quoteMap.quote}"`;
+                  return (
+                     <div className="quoteWrapper">
+                        <Typography  className="quote" style={{color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px"}}>
+                           {textToShow}
+                        </Typography>
+                        <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Find quote {'>'}</Typography>
+                     </div>
+                  )
+                  // if (!quoteMap.context) {
+                  //    return <div className="quoteWrapper">
+                  //       <Typography  className="quote" style={{color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px"}}>
+                  //          "{quoteMap.quote}"
+                  //       </Typography>
+                  //       <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Find quote {'>'}</Typography>
+                  //    </div>
+                  // } else {
+                  //    return 
+                  //    <div className="quoteWrapper"> 
+                  //       <Typography className="quote" style={{color:"#7f7f7f", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px"}}>
+                  //          {quoteMap.context}
+                  //          {/* Context words are a lighter gray; when the quote is found within the context
+                  //          make the quote black. */}
+                  //       </Typography>
+                  //       <Typography style={{paddingLeft:5, flexShrink: 0, fontFamily: 'Imperial BT'}}> Find quote {'>'}</Typography>
+                  //    </div>
+                  // }
+               })}
+            {/* </Button> */}
          </div>
       </CardContent>
    // </a>
