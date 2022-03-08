@@ -14,6 +14,7 @@ import {
    CardActions,
    Checkbox,
    Collapse,
+   FormGroup,
    FormControlLabel,
    IconButton,
    Menu,
@@ -40,6 +41,7 @@ const override = css`
   margin: 0 auto;
   border-color: blue;
 `;
+const locations = ["Washington", "Other"];
 
 function descendingComparator(a, b, orderBy) {
    if (b[orderBy] < a[orderBy]) {
@@ -71,11 +73,12 @@ class HomeScreen extends React.Component {
          searchWIP: '',
          searchPhrase: '',
          searchButtonPressed: false,
-         locationFilter: [""],
+         locationFilter: ["", ""],
          dateFrom: new Date("2018/1/1"),
          dateTo: new Date("2020/12/31"),
          anchorEl: null,
          dateMenuOpen: false,
+         locationMenuOpen: false,
          userOnboarded: false,
          isLoading: false,
          //activeCard: false,
@@ -86,7 +89,9 @@ class HomeScreen extends React.Component {
       this._handleSearch = this._handleSearch.bind(this);
       this._handleKeyDown = this._handleKeyDown.bind(this);
       this._handleDateFrom = this._handleDateFrom.bind(this);
-      this._handleDateTo = this._handleDateTo(this);
+      this._handleDateTo = this._handleDateTo.bind(this);
+
+      this._handleLocationCheckbox = this._handleLocationCheckbox.bind(this);
    }
 
    componentDidMount() {
@@ -121,6 +126,16 @@ class HomeScreen extends React.Component {
       this.setState({ dateTo: date })
    }
 
+   _handleLocationCheckbox(position) {
+      const updatedCheckedState = this.state.locationFilter.map((location, index) =>
+      index === position ? !location : location
+    );
+
+      this.setState({
+         locationFilter: updatedCheckedState,
+      });
+   }
+
    //use this to trigger article listing change
    _handleSearch(event) {
       if (event) {
@@ -145,7 +160,7 @@ class HomeScreen extends React.Component {
    _handleKeyDown(event) {
       if (event.key === 'Enter') {
          const lowerSearch = this.state.searchWIP.toLowerCase();
-         this.setState({ searchPhrase: lowerSearch });
+         this.setState({ searchPhrase: lowerSearch, isLoading: true });
 
          const filteredArticles = this.state.articles.filter((article) => {
             //Broken up into this ugly callback with if/else curly braces 
@@ -154,6 +169,7 @@ class HomeScreen extends React.Component {
             const dateTo = this.state.dateTo;
             const dateCheck = new Date(article.publish_date);
 
+            console.log("location filter", this.state.locationFilter);
             const articleLocationMatches = article.locations && article.locations.filter(name => this.state.locationFilter.includes(name.toLowerCase()));
 
             const articleAuthorMatches = article.author && article.author.toLowerCase().includes(lowerSearch);
@@ -245,6 +261,7 @@ class HomeScreen extends React.Component {
             entityArticleGroupings: entityArticleGroupings,
             numTotalEntities: numTotalEntities,
             numTotalQuotes: numTotalQuotes,
+            isLoading: false,
             userOnboarded: true,
          });
       }
@@ -256,23 +273,40 @@ class HomeScreen extends React.Component {
             <Paper>
                <TextField id="search-phrase" type="search" placeholder="search a keyword, such as election"
                   value={this.state.searchWIP}
-                  InputProps={{ sx: {backgroundColor: "#f2f2f2", fontSize: "22", fontFamily:'Imperial BT' }}}
+                  InputProps={{ sx: {backgroundColor: "#f2f2f2", fontSize: "18px", fontFamily:'Imperial BT' }}}
                   sx={{ backgroundColor: "white" }}
                   fullWidth
                   onChange={this._handleSearch}
                   onKeyDown={this._handleKeyDown}
                />
                {/* <Button variant="contained" onClick={this._handleSearchButton}>Search</Button> */}
-               <div style={{ display: "flex", flexDirection: "row", textAlign: "left", alignItems: "center" }}>
+               <div style={{ display: "flex", flexDirection: "row", textAlign: "left", alignItems: "center", minHeight: "24px" }}>
                   {/* <div style={{padding:"0px 5px"}}>Filter results by date</div> */}
-                  <Button style={{ textTransform: "none", fontSize: 14, marginRight: "20px", fontFamily:'Imperial BT', display: "block" }} onClick={() => this.setState({ dateMenuOpen: !this.state.dateMenuOpen })}> Filter By Date {'>'} </Button>
-
-                  <div style={{ display: this.state.dateMenuOpen ? "flex" : "none", flexDirection: "row" }}>
-                     From:&nbsp;<DatePicker selected={this.state.dateFrom} onChange={(date) => this._handleDateFrom(date)} style={{fontFamily: "Imperial BT" }} />
-                     To:&nbsp;<DatePicker selected={this.state.dateTo} onChange={(date) => this._handleDateTo(date)} style={{fontFamily: "Imperial BT" }} />
-                  </div>
+                  <Button style={{ textTransform: "none", fontSize: 16, marginRight: "20px", fontFamily:'Imperial BT', display: "block" }} onClick={() => this.setState({ dateMenuOpen: !this.state.dateMenuOpen })}> Filter By Date {'>'} </Button>
+                     <div style={{ display: this.state.dateMenuOpen ? "flex" : "none", flexDirection: "row", fontSize: 16, paddingTop: 4 }}>
+                        From:&nbsp;<DatePicker selected={this.state.dateFrom} onChange={(date) => this._handleDateFrom(date)} style={{fontFamily: "Imperial BT" }} />
+                        &nbsp;To:&nbsp;<DatePicker selected={this.state.dateTo} onChange={(date) => this._handleDateTo(date)} style={{fontFamily: "Imperial BT" }} />
+                     </div>
                   
-                  {/* <Button style={{textTransform: "none", fontSize: 14}}> Location {'>'} </Button> */}
+                  <Button style={{ textTransform: "none", fontSize: 16, marginRight: "6px", fontFamily:'Imperial BT', display: "block" }} onClick={() => this.setState({ locationMenuOpen: !this.state.locationMenuOpen })}> Filter By Location {'>'} </Button>
+                     <div style={{ display: this.state.locationMenuOpen ? "flex" : "none", flexDirection: "row" }}>
+                        {locations.map((location, index) => {
+                           return (
+                              <React.Fragment>
+                                 <input
+                                 type="checkbox"
+                                 id={`location-checkbox-${index}`}
+                                 name={location}
+                                 value={location}
+                                 checked={this.state.locationFilter[index]}
+                                 onChange={() => this._handleLocationCheckbox(index)}
+                                 style={{height: "18px", width: "18px"}}
+                                 />
+                                 <Typography style={{fontSize: 16, fontFamily: 'Imperial BT'}}>{location}</Typography>
+                              </React.Fragment>
+                           )
+                        })}
+                     </div>
                </div>
             </Paper>
             {/* <SearchBox searchWIP={this.state.searchWIP} onChange={this._handleSearch} onKeyDown={this._handleKeyDown} timeFilter={this.state.timeFilter} locationFilter={this.state.locationFilter} /> */}
