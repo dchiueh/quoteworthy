@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import _memoize from 'lodash.memoize';
-
+import _ from "lodash";
 import { styled } from '@mui/material/styles';
 import { css } from "@emotion/react";
 
@@ -37,12 +37,13 @@ import NYT_POLITICS from '../../data/nyt_politics.json';
 import SearchListGroupedByEntity from '../../components/SearchListGroupedByEntity/SearchListGroupedByEntity';
 import zIndex from '@mui/material/styles/zIndex';
 
+
 const override = css`
   display: block;
   margin: 0 auto;
   border-color: blue;
 `;
-const locations = ["Washington", "Los Angeles"];
+const locations = ["Washington"];
 
 function descendingComparator(a, b, orderBy) {
    if (b[orderBy] < a[orderBy]) {
@@ -73,10 +74,14 @@ class HomeScreen extends React.Component {
          numTotalEntities: 0,
          searchWIP: '',
          searchPhrase: '',
+         prevSearchPhrase: '',
          searchButtonPressed: false,
-         locationFilter: [false, false],
+         locationFilter: [false],
+         prevLocationFilter: null,
          dateFrom: new Date("2018/1/1"),
          dateTo: new Date("2020/12/31"),
+         prevDateFrom: null,
+         prevDateTo: null,
          anchorEl: null,
          dateMenuOpen: false,
          locationMenuOpen: false,
@@ -92,6 +97,7 @@ class HomeScreen extends React.Component {
       this._handleDateFrom = this._handleDateFrom.bind(this);
       this._handleDateTo = this._handleDateTo.bind(this);
 
+      this._filterArticles = this._filterArticles.bind(this);
       this._handleLocationCheckbox = this._handleLocationCheckbox.bind(this);
    }
 
@@ -101,6 +107,15 @@ class HomeScreen extends React.Component {
    }
 
    componentDidUpdate() {
+      // console.log("did update");
+      // if(this.state.dateFrom !== this.state.prevDateFrom
+      //    || this.state.dateTo !== this.state.prevDateTo
+      //    || this.state.locationFilter !== this.state.prevLocationFilter
+      //    || this.state.searchPhrase !== this.state.prevSearchPhrase
+      //    ) {
+      //    console.log("nested update check");
+      //    this._filterArticles();
+      // }
       //console.log("JSON article data", this.state.articles);
    }
 
@@ -160,115 +175,129 @@ class HomeScreen extends React.Component {
 
    _handleKeyDown(event) {
       if (event.key === 'Enter') {
-         const lowerSearch = this.state.searchWIP.toLowerCase();
-         this.setState({ searchPhrase: lowerSearch, isLoading: true });
-
-         const filteredArticles = this.state.articles.filter((article) => {
-            //Broken up into this ugly callback with if/else curly braces 
-            //as our categories are still in flux (also need to test with large dataset)
-            const dateFrom = this.state.dateFrom;
-            const dateTo = this.state.dateTo;
-            const dateCheck = new Date(article.publish_date);
-
-            const activeLocations = [];
-            this.state.locationFilter.forEach((value, index) => { if(value) { activeLocations.push(locations[index].toLowerCase())} });
-
-            const articleLocationMatches = article.location && activeLocations.includes(article.location.toLowerCase());
-
-            const articleAuthorMatches = article.author && article.author.toLowerCase().includes(lowerSearch);
-            const articleTitleMatches = article.title && article.title.toLowerCase().includes(lowerSearch);
-            const articleAbstractMatches = article.abstract && article.abstract.toLowerCase().includes(lowerSearch);
-
-            const articlePeopleMatches = article.people && article.people.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
-            const articleKeywordsMatches = article.keywords && article.keywords.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
-            const articleAttributionseMatches = article.attributions && article.attributions.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
-
-            //console.log("articleLocationMatches", articleLocationMatches);
-            if ((articleAuthorMatches
-               || articlePeopleMatches
-               || articleKeywordsMatches
-               || articleAttributionseMatches
-               || articleTitleMatches
-               || articleAbstractMatches
-            )
-               && articleLocationMatches
-               && (dateCheck >= dateFrom && dateCheck <= dateTo)
-            ) return true;
-
-            return false;
-         });
-
-         //console.log("filtered articles list", filteredArticles);
-
-         //create a dictionary of mappings 
-         let entityArticleGroupings = {};
-         let entityArticleGroupingsSortedArray = [];
-         let numTotalEntities = 0;
-         let numTotalQuotes = 0;
-
-         filteredArticles.forEach((article) => {
-            article.quotes_by_attribution.forEach((quoteByAttr) => {
-               const quotesByArticleAttr = {
-                  entity: quoteByAttr.attribution,
-                  title: article.title,
-                  url: article.url,
-                  slug: article.slug,
-                  publish_date: article.publish_date,
-                  location: article.location,
-                  keywords: article.keywords,
-                  quotes: quoteByAttr.quotes
-               }
-               numTotalQuotes += quoteByAttr.quotes.length;
-
-               if (entityArticleGroupings[quoteByAttr.attribution]) {
-                  entityArticleGroupings[quoteByAttr.attribution].push(quotesByArticleAttr);
-               } else {
-                  entityArticleGroupings[quoteByAttr.attribution] = [quotesByArticleAttr];
-                  numTotalEntities += 1;
-               }
-            });
-         })
-
-         //Inefficient but stable hack to sort filtered entities without changing too much code
-         //Kept the key-value object, and now the sorted array, for future work / stability across last-minute additions
-         let sortedEntityArticleGroupingsArray = [];
-         for (let entity in entityArticleGroupings) {
-            let entityEntries = entityArticleGroupings[entity];
-
-            entityEntries.sort(function (a, b) {
-               let dateA = new Date(a.publish_date);
-               let dateB = new Date(b.publish_date);
-
-               if (dateA === dateB) {
-                  return 0;
-               }
-               else if (dateA > dateB) {
-                  return -1;
-               } else {
-                  return 1;
-               }
-            });
-            //console.log("sorted entity Entries", entityEntries);
-            sortedEntityArticleGroupingsArray.push(entityEntries);
-         }
-
-         sortedEntityArticleGroupingsArray.sort(function (a, b) {
-            return a.length === b.length ? 0 : (a > b ? -1 : 1);
-         });
-
-         //console.log("unique entities", entityArticleGroupings);
-         //console.log("sorted entities", sortedEntityArticleGroupingsArray);
-
-         this.setState({
-            //filteredArticles: filteredArticles,
-            sortedEntityArticleGroupingsArray: sortedEntityArticleGroupingsArray,
-            entityArticleGroupings: entityArticleGroupings,
-            numTotalEntities: numTotalEntities,
-            numTotalQuotes: numTotalQuotes,
-            isLoading: false,
-            userOnboarded: true,
-         });
+         this._filterArticles();
       }
+   }
+
+   _filterArticles() {
+      const lowerSearch = this.state.searchWIP.toLowerCase();
+
+      const filteredArticles = this.state.articles.filter((article) => {
+         //Broken up into this ugly callback with if/else curly braces 
+            //Broken up into this ugly callback with if/else curly braces 
+         //Broken up into this ugly callback with if/else curly braces 
+         //as our categories are still in flux (also need to test with large dataset)
+         const dateFrom = this.state.dateFrom;
+         const dateTo = this.state.dateTo;
+         const dateCheck = new Date(article.publish_date);
+
+         const activeLocations = [];
+         this.state.locationFilter.forEach((value, index) => { if(value) { activeLocations.push(locations[index].toLowerCase())} });
+
+         let articleLocationMatches = article.location && activeLocations.includes(article.location.toLowerCase());
+         if(!this.state.locationFilter[0]) articleLocationMatches = true; //temp workaround if nothing is selected
+
+         const articleAuthorMatches = article.author && article.author.toLowerCase().includes(lowerSearch);
+         const articleTitleMatches = article.title && article.title.toLowerCase().includes(lowerSearch);
+         const articleAbstractMatches = article.abstract && article.abstract.toLowerCase().includes(lowerSearch);
+
+         const articlePeopleMatches = article.people && article.people.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
+         const articleKeywordsMatches = article.keywords && article.keywords.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
+         const articleAttributionseMatches = article.attributions && article.attributions.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
+
+         //console.log("articleLocationMatches", articleLocationMatches);
+         if ((articleAuthorMatches
+            || articlePeopleMatches
+            || articleKeywordsMatches
+            || articleAttributionseMatches
+            || articleTitleMatches
+            || articleAbstractMatches
+         )
+            && articleLocationMatches
+            && (dateCheck >= dateFrom && dateCheck <= dateTo)
+         ) return true;
+
+         return false;
+      });
+
+      //console.log("filtered articles list", filteredArticles);
+
+      //create a dictionary of mappings 
+         //create a dictionary of mappings 
+      //create a dictionary of mappings 
+      let entityArticleGroupings = {};
+      let numTotalEntities = 0;
+      let numTotalQuotes = 0;
+
+      filteredArticles.forEach((article) => {
+         article.quotes_by_attribution.forEach((quoteByAttr) => {
+            const quotesByArticleAttr = {
+               entity: quoteByAttr.attribution,
+               title: article.title,
+               url: article.url,
+               slug: article.slug,
+               publish_date: article.publish_date,
+               location: article.location,
+               keywords: article.keywords,
+               quotes: quoteByAttr.quotes
+            }
+            numTotalQuotes += quoteByAttr.quotes.length;
+
+            if (entityArticleGroupings[quoteByAttr.attribution]) {
+               entityArticleGroupings[quoteByAttr.attribution].push(quotesByArticleAttr);
+            } else {
+               entityArticleGroupings[quoteByAttr.attribution] = [quotesByArticleAttr];
+               numTotalEntities += 1;
+            }
+         });
+      })
+
+      //Inefficient but stable hack to sort filtered entities without changing too much code
+      //Kept the key-value object, and now the sorted array, for future work / stability across last-minute additions
+      let sortedEntityArticleGroupingsArray = [];
+      for (let entity in entityArticleGroupings) {
+         let entityEntries = entityArticleGroupings[entity];
+
+         entityEntries.sort(function (a, b) {
+            let dateA = new Date(a.publish_date);
+            let dateB = new Date(b.publish_date);
+
+            if (dateA === dateB) {
+               return 0;
+            }
+            else if (dateA > dateB) {
+               return -1;
+            } else {
+               return 1;
+            }
+         });
+         //console.log("sorted entity Entries", entityEntries);
+         sortedEntityArticleGroupingsArray.push(entityEntries);
+      }
+
+      sortedEntityArticleGroupingsArray.sort(function (a, b) {
+         return a.length === b.length ? 0 : (a > b ? -1 : 1);
+      });
+
+      //console.log("unique entities", entityArticleGroupings);
+      //console.log("sorted entities", sortedEntityArticleGroupingsArray);
+
+      let copy = _.cloneDeep(sortedEntityArticleGroupingsArray);
+
+      this.setState((state) => ({
+         //filteredArticles: filteredArticles,
+         searchPhrase: lowerSearch,
+         prevSearchPhrase: lowerSearch,
+         prevLocationFilter: state.locationFilter,
+         prevDateFrom: state.dateFrom,
+         prevDateTo: state.dateTo,
+         sortedEntityArticleGroupingsArray: copy,
+         entityArticleGroupings: entityArticleGroupings,
+         numTotalEntities: numTotalEntities,
+         numTotalQuotes: numTotalQuotes,
+         isLoading: false,
+         userOnboarded: true,
+      }));
    }
 
    render() {
@@ -306,7 +335,7 @@ class HomeScreen extends React.Component {
                                  onChange={() => this._handleLocationCheckbox(index)}
                                  style={{height: "20px", width: "20px"}}
                                  />
-                                 <Typography style={{fontSize: 16, fontFamily: 'Imperial BT'}}>{location}</Typography>
+                                 <Typography style={{fontSize: 16, fontFamily: 'Imperial BT'}}>{`${location} Only`}</Typography>
                               </React.Fragment>
                            )
                         })}
@@ -314,30 +343,24 @@ class HomeScreen extends React.Component {
                </div>
             </Paper>
             {/* <SearchBox searchWIP={this.state.searchWIP} onChange={this._handleSearch} onKeyDown={this._handleKeyDown} timeFilter={this.state.timeFilter} locationFilter={this.state.locationFilter} /> */}
-            {this.state.userOnboarded &&
-
-               (this.state.isLoading ? 
-                  <GridLoader color={'#7f7f7f'} loading={true} css={override} size={15} />
-                  :
-               <React.Fragment>
+            
+               {this.state.userOnboarded && 
                   <div style={{ height: "20px", padding: "20px" }}>
                      <Typography color="black" sx={{ fontSize: "16px", textDecoration: "none", fontFamily: "Imperial BT" }}>
                         {`Quoteworthy found ${this.state.numTotalEntities} entities, with ${this.state.numTotalQuotes} total quote${(this.state.numTotalQuotes > 1 || this.state.numTotalQuotes <= 0) ? "s" : ""}`}
                      </Typography>
                   </div>
-                  <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
-                     <div style={{ display: "block", width: "75%" }}>
-                        <SearchListGroupedByEntity
-                           entityArticleGroupings={this.state.entityArticleGroupings}
-                           sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray}
-                           searchPhrase={this.state.searchPhrase}
-                        // _setIframeUrl={this._setIframeUrl}
-                        />
-                     </div>
+               }
+               <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+                  <div style={{ display: "block", width: "75%" }}>
+                     <SearchListGroupedByEntity
+                        entityArticleGroupings={this.state.entityArticleGroupings}
+                        sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray}
+                        searchPhrase={this.state.searchPhrase}
+                     // _setIframeUrl={this._setIframeUrl}
+                     />
                   </div>
-               </React.Fragment>
-               )
-            }
+               </div>
          </React.Fragment>
       )
    };

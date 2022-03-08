@@ -24,7 +24,7 @@ class SearchListGroupedByEntity extends React.Component {
    constructor(props) {
       super(props);
       this.state = {
-         entityArticleGroupings: props.entityArticleGroupings,
+         //entityArticleGroupings: props.entityArticleGroupings,
          sortedEntityArticleGroupingsArray: props.sortedEntityArticleGroupingsArray,
          searchPhrase: props.searchPhrase,
          // _setIframeUrl: props._setIframeUrl
@@ -34,7 +34,7 @@ class SearchListGroupedByEntity extends React.Component {
    componentDidMount() {
       this.setState({
          searchPhrase: this.props.searchPhrase,
-         entityArticleGroupings: this.props.entityArticleGroupings,
+         //entityArticleGroupings: this.props.entityArticleGroupings,
          sortedEntityArticleGroupingsArray: this.props.sortedEntityArticleGroupingsArray,
          // _setIframeUrl: this.props._setIframeUrl
       });
@@ -45,7 +45,7 @@ class SearchListGroupedByEntity extends React.Component {
          //console.log("Search list component", this.props.entityArticleGroupings);
          this.setState({
             searchPhrase: this.props.searchPhrase,
-            entityArticleGroupings: this.props.entityArticleGroupings,
+            //entityArticleGroupings: this.props.entityArticleGroupings,
             sortedEntityArticleGroupingsArray: this.props.sortedEntityArticleGroupingsArray,
             //_setIframeUrl: this.props._setIframeUrl
          });
