@@ -43,7 +43,7 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
          <div style={{ border: "solid #a5a58d 3px", borderRadius: "15px", backgroundColor:"white"}}>
             <a href={SingleEntityMapElem.url} style={{textDecoration: "none"}} target="_blank">
                <div className="header">  
-                  <Typography color="black" style={{fontSize:"28px", textAlign: "left", flexGrow: 1, fontWeight: "bold", padding: "0px 9px", fontFamily:"Cheltenham"}}>
+                  <Typography color="black" style={{fontSize:"24px", textAlign: "left", flexGrow: 1, fontWeight: "bold", padding: "0px 9px", fontFamily:"Cheltenham"}}>
                      {SingleEntityMapElem.title}
                   </Typography>
                   <div className="info" style={{ padding:"3px 0px", fontFamily:"Imperial BT", textAlign: "right", marginRight: "10px", fontSize: 13, color: "grey" }}>

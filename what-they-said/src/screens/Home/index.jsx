@@ -288,7 +288,7 @@ class HomeScreen extends React.Component {
                      </Typography>
                   </div>
                   <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
-                     <div style={{ display: "block", width: "65%" }}>
+                     <div style={{ display: "block", width: "75%" }}>
                         <SearchListGroupedByEntity
                            entityArticleGroupings={this.state.entityArticleGroupings}
                            sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray}
