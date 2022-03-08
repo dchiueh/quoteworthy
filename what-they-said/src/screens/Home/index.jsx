@@ -116,6 +116,7 @@ class HomeScreen extends React.Component {
       //    console.log("nested update check");
       //    this._filterArticles();
       // }
+      console.log("did update see state", this.state.sortedEntityArticleGroupingsArray);
       //console.log("JSON article data", this.state.articles);
    }
 
@@ -342,8 +343,7 @@ class HomeScreen extends React.Component {
                      </div>
                </div>
             </Paper>
-            {/* <SearchBox searchWIP={this.state.searchWIP} onChange={this._handleSearch} onKeyDown={this._handleKeyDown} timeFilter={this.state.timeFilter} locationFilter={this.state.locationFilter} /> */}
-            
+            <Paper>           
                {this.state.userOnboarded && 
                   <div style={{ height: "20px", padding: "20px" }}>
                      <Typography color="black" sx={{ fontSize: "16px", textDecoration: "none", fontFamily: "Imperial BT" }}>
@@ -354,13 +354,13 @@ class HomeScreen extends React.Component {
                <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
                   <div style={{ display: "block", width: "75%" }}>
                      <SearchListGroupedByEntity
-                        entityArticleGroupings={this.state.entityArticleGroupings}
                         sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray}
                         searchPhrase={this.state.searchPhrase}
                      // _setIframeUrl={this._setIframeUrl}
                      />
                   </div>
                </div>
+            </Paper>
          </React.Fragment>
       )
    };
