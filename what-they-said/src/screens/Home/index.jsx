@@ -182,6 +182,7 @@ class HomeScreen extends React.Component {
 
    _filterArticles() {
       const lowerSearch = this.state.searchWIP.toLowerCase();
+      const allWords = lowerSearch.split(",");
 
       const filteredArticles = this.state.articles.filter((article) => {
          //Broken up into this ugly callback with if/else curly braces 
@@ -200,32 +201,43 @@ class HomeScreen extends React.Component {
 
          const articleAuthorMatches = article.author && article.author.toLowerCase().includes(lowerSearch);
          const articleTitleMatches = article.title && article.title.toLowerCase().includes(lowerSearch);
-         const articleAbstractMatches = article.abstract && article.abstract.toLowerCase().includes(lowerSearch);
+         let articleAbstractMatches = article.abstract && article.abstract.toLowerCase().includes(lowerSearch);
 
          const articlePeopleMatches = article.people && article.people.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
          const articleKeywordsMatches = article.keywords && article.keywords.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
          const articleAttributionseMatches = article.attributions && article.attributions.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
 
          //console.log("articleLocationMatches", articleLocationMatches);
-         if ((articleAuthorMatches
-            || articlePeopleMatches
-            || articleKeywordsMatches
-            || articleAttributionseMatches
-            || articleTitleMatches
-            || articleAbstractMatches
-         )
-            && articleLocationMatches
-            && (dateCheck >= dateFrom && dateCheck <= dateTo)
-         ) return true;
+         
+         if(allWords.length > 1) {
+            articleAbstractMatches = article.abstract && allWords.every(keyword => article.abstract.toLowerCase().includes(keyword));
 
-         return false;
+            if(articleAbstractMatches
+               && articleLocationMatches
+               && (dateCheck >= dateFrom && dateCheck <= dateTo)
+            ) return true;
+            return false; 
+         } else {
+
+            if ((articleAuthorMatches
+               || articlePeopleMatches
+               || articleKeywordsMatches
+               || articleAttributionseMatches
+               || articleTitleMatches
+               || articleAbstractMatches
+            )
+               && articleLocationMatches
+               && (dateCheck >= dateFrom && dateCheck <= dateTo)
+            ) return true;
+   
+            return false;
+
+         }
+         //article.abstract && article.abstract.toLowerCase().includes(lowerSearch);
       });
 
       //console.log("filtered articles list", filteredArticles);
 
-      //create a dictionary of mappings 
-         //create a dictionary of mappings 
-      //create a dictionary of mappings 
       let entityArticleGroupings = {};
       let numTotalEntities = 0;
       let numTotalQuotes = 0;
@@ -281,7 +293,7 @@ class HomeScreen extends React.Component {
       });
 
       //console.log("unique entities", entityArticleGroupings);
-      //console.log("sorted entities", sortedEntityArticleGroupingsArray);
+      console.log("sorted entities", sortedEntityArticleGroupingsArray);
 
       this.setState((state) => ({
          //filteredArticles: filteredArticles,
