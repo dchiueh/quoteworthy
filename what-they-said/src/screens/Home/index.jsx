@@ -116,7 +116,7 @@ class HomeScreen extends React.Component {
       //    console.log("nested update check");
       //    this._filterArticles();
       // }
-      console.log("did update see state", this.state.sortedEntityArticleGroupingsArray);
+      //console.log("did update see state", this.state.sortedEntityArticleGroupingsArray);
       //console.log("JSON article data", this.state.articles);
    }
 
@@ -283,8 +283,6 @@ class HomeScreen extends React.Component {
       //console.log("unique entities", entityArticleGroupings);
       //console.log("sorted entities", sortedEntityArticleGroupingsArray);
 
-      let copy = _.cloneDeep(sortedEntityArticleGroupingsArray);
-
       this.setState((state) => ({
          //filteredArticles: filteredArticles,
          searchPhrase: lowerSearch,
@@ -292,7 +290,7 @@ class HomeScreen extends React.Component {
          prevLocationFilter: state.locationFilter,
          prevDateFrom: state.dateFrom,
          prevDateTo: state.dateTo,
-         sortedEntityArticleGroupingsArray: copy,
+         sortedEntityArticleGroupingsArray: sortedEntityArticleGroupingsArray,
          entityArticleGroupings: entityArticleGroupings,
          numTotalEntities: numTotalEntities,
          numTotalQuotes: numTotalQuotes,
