@@ -247,7 +247,7 @@ class HomeScreen extends React.Component {
       });
 
       //console.log("unique entities", entityArticleGroupings);
-      console.log("sorted entities", sortedEntityArticleGroupingsArray);
+      //console.log("sorted entities", sortedEntityArticleGroupingsArray);
 
       this.setState((state) => ({
          //filteredArticles: filteredArticles,

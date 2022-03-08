@@ -7,23 +7,15 @@ import './EntityCard.css';
 
 import {
    Avatar,
-   Button,
    Card,
-   CardHeader,
-   CardMedia,
    CardContent,
    CardActions,
    Collapse,
    IconButton,
-   Paper,
-   TextField,
    Typography
 } from '@mui/material';
 
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 const ExpandMore = styled((props) => {
    const { expand, ...other } = props;
@@ -38,10 +30,9 @@ const ExpandMore = styled((props) => {
 
 const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
    return (
-   // <a href={SingleEntityMapElem.url} style={{ textDecoration: "none" }} target="_blank">
       <CardContent>
          <div style={{ border: "solid #a5a58d 3px", borderRadius: "15px", backgroundColor:"white"}}>
-            <a href={SingleEntityMapElem.url} style={{textDecoration: "none"}} target="_blank">
+            <a href={SingleEntityMapElem.url} style={{textDecoration: "none"}} target="_blank" rel="noreferrer">
                <div className="header">  
                   <Typography color="black" style={{fontSize:"24px", textAlign: "left", flexGrow: 1, fontWeight: "bold", padding: "0px 9px", fontFamily:"Cheltenham"}}>
                      {SingleEntityMapElem.title}
@@ -72,7 +63,7 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
                      contextOnlyPart2 = quoteMap.context.slice(indexToSlice + quoteMap.quote.length + 2); //add 2 for open/end quote
                   }                  
                   return (
-                     <a href={`${SingleEntityMapElem.url}#:~:text=${encodeURIComponent(quoteMap.quote)}`} style={{textDecoration: "none"}} target="_blank">
+                     <a href={`${SingleEntityMapElem.url}#:~:text=${encodeURIComponent(quoteMap.quote)}`} style={{textDecoration: "none"}} target="_blank" rel="noreferrer">
                         <div 
                            className="quoteWrapper"
                            sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}
@@ -89,7 +80,6 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
                })}
          </div>
       </CardContent>
-   // </a>
    )
 }
 
@@ -102,9 +92,6 @@ const EntityCard = ({ SingleEntityMap, _setIframeUrl }) => {
    };
 
    //console.log("single entity map", SingleEntityMap);
-
-   //todo: return a mapping of all the single article card links to the external site
-   //guaranteed at least 1 article card if there's an entity
    return (
       <Card key={`entity-card-whole-${SingleEntityMap[0].entity}-${SingleEntityMap[0].publish_date}-${SingleEntityMap[0].title}`}>
          <div className="nameWrapper">
@@ -117,9 +104,6 @@ const EntityCard = ({ SingleEntityMap, _setIframeUrl }) => {
          {displayEntitySingleArticleCard(SingleEntityMap[0], _setIframeUrl)}
 
          <CardActions disableSpacing>
-            {/* <Avatar sx={{ backgroundColor: "skyblue" }} aria-label="article-count">
-               {SingleEntityMap.length}
-            </Avatar> */}
             {SingleEntityMap[1] && <ExpandMore
                expand={expanded}
                onClick={handleExpandClick}
