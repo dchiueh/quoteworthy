@@ -288,7 +288,7 @@ class HomeScreen extends React.Component {
                      <div style={{ display: this.state.locationMenuOpen ? "flex" : "none", flexDirection: "row" }}>
                         {locations.map((location, index) => {
                            return (
-                              <React.Fragment>
+                              <React.Fragment key={`location-checkbox-${index}`}>
                                  <input
                                  type="checkbox"
                                  id={`location-checkbox-${index}`}

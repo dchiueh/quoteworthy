@@ -30,7 +30,9 @@ const ExpandMore = styled((props) => {
 
 const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
    return (
-      <CardContent>
+      <CardContent 
+         key={`${SingleEntityMapElem.entity}-${SingleEntityMapElem.title}`}
+      >
          <div style={{ border: "solid #a5a58d 3px", borderRadius: "15px", backgroundColor:"white"}}>
             <a href={SingleEntityMapElem.url} style={{textDecoration: "none"}} target="_blank" rel="noreferrer">
                <div className="header">  
@@ -63,11 +65,12 @@ const displayEntitySingleArticleCard = (SingleEntityMapElem) => {
                      contextOnlyPart2 = quoteMap.context.slice(indexToSlice + quoteMap.quote.length + 2); //add 2 for open/end quote
                   }                  
                   return (
-                     <a href={`${SingleEntityMapElem.url}#:~:text=${encodeURIComponent(quoteMap.quote)}`} style={{textDecoration: "none"}} target="_blank" rel="noreferrer">
+                     <a href={`${SingleEntityMapElem.url}#:~:text=${encodeURIComponent(quoteMap.quote)}`} style={{textDecoration: "none"}} target="_blank" rel="noreferrer"
+                        key={`${SingleEntityMapElem.entity}-${quoteMap.quote}-${index}`}
+                     >
                         <div 
                            className="quoteWrapper"
-                           sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}
-                        >
+                           sx={{width: "100%", color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}                        >
                            <Typography  className="quote" style={{color: "black", fontSize: "17px", fontFamily: 'Imperial BT', lineHeight:"22px", textTransform: "none"}}>
                            <span style={{color: "#7f7f7f"}}>{contextOnlyPart1}</span>
                            {`"${quoteMap.quote}"`}
