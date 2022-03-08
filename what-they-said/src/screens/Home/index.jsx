@@ -35,13 +35,14 @@ import NYT_MINI from '../../data/nyt_2020_mini.json';
 import NYT_POLITICS from '../../data/nyt_politics.json';
 // import SearchBox from '../../components/SearchBox/SearchBox';
 import SearchListGroupedByEntity from '../../components/SearchListGroupedByEntity/SearchListGroupedByEntity';
+import zIndex from '@mui/material/styles/zIndex';
 
 const override = css`
   display: block;
   margin: 0 auto;
   border-color: blue;
 `;
-const locations = ["Washington", "Other"];
+const locations = ["Washington", "Los Angeles"];
 
 function descendingComparator(a, b, orderBy) {
    if (b[orderBy] < a[orderBy]) {
@@ -73,7 +74,7 @@ class HomeScreen extends React.Component {
          searchWIP: '',
          searchPhrase: '',
          searchButtonPressed: false,
-         locationFilter: ["", ""],
+         locationFilter: [false, false],
          dateFrom: new Date("2018/1/1"),
          dateTo: new Date("2020/12/31"),
          anchorEl: null,
@@ -169,8 +170,10 @@ class HomeScreen extends React.Component {
             const dateTo = this.state.dateTo;
             const dateCheck = new Date(article.publish_date);
 
-            console.log("location filter", this.state.locationFilter);
-            const articleLocationMatches = article.locations && article.locations.filter(name => this.state.locationFilter.includes(name.toLowerCase()));
+            const activeLocations = [];
+            this.state.locationFilter.forEach((value, index) => { if(value) { activeLocations.push(locations[index].toLowerCase())} });
+
+            const articleLocationMatches = article.location && activeLocations.includes(article.location.toLowerCase());
 
             const articleAuthorMatches = article.author && article.author.toLowerCase().includes(lowerSearch);
             const articleTitleMatches = article.title && article.title.toLowerCase().includes(lowerSearch);
@@ -180,6 +183,7 @@ class HomeScreen extends React.Component {
             const articleKeywordsMatches = article.keywords && article.keywords.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
             const articleAttributionseMatches = article.attributions && article.attributions.filter(name => name.toLowerCase().includes(lowerSearch)).length > 0;
 
+            //console.log("articleLocationMatches", articleLocationMatches);
             if ((articleAuthorMatches
                || articlePeopleMatches
                || articleKeywordsMatches
@@ -187,7 +191,7 @@ class HomeScreen extends React.Component {
                || articleTitleMatches
                || articleAbstractMatches
             )
-               //&& articleLocationMatches
+               && articleLocationMatches
                && (dateCheck >= dateFrom && dateCheck <= dateTo)
             ) return true;
 
@@ -203,7 +207,7 @@ class HomeScreen extends React.Component {
          let numTotalQuotes = 0;
 
          filteredArticles.forEach((article) => {
-            article.quotes_by_attribution.map((quoteByAttr) => {
+            article.quotes_by_attribution.forEach((quoteByAttr) => {
                const quotesByArticleAttr = {
                   entity: quoteByAttr.attribution,
                   title: article.title,
@@ -300,7 +304,7 @@ class HomeScreen extends React.Component {
                                  value={location}
                                  checked={this.state.locationFilter[index]}
                                  onChange={() => this._handleLocationCheckbox(index)}
-                                 style={{height: "18px", width: "18px"}}
+                                 style={{height: "20px", width: "20px"}}
                                  />
                                  <Typography style={{fontSize: 16, fontFamily: 'Imperial BT'}}>{location}</Typography>
                               </React.Fragment>
