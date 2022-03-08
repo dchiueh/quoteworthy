@@ -1,66 +1,20 @@
-import React, { Fragment } from 'react';
-import _memoize from 'lodash.memoize';
-import _ from "lodash";
-import { styled } from '@mui/material/styles';
-import { css } from "@emotion/react";
+import React from 'react';
 
 import {
-   Box,
    Button,
-   Card,
-   CardHeader,
-   CardMedia,
-   CardContent,
-   CardActions,
-   Checkbox,
-   Collapse,
-   FormGroup,
-   FormControlLabel,
-   IconButton,
-   Menu,
-   MenuItem,
    Paper,
-   PopupState,
    TextField,
    Typography
 } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-import GridLoader from "react-spinners/GridLoader";
-
-import NYT_MINI from '../../data/nyt_2020_mini.json';
+//import NYT_MINI from '../../data/nyt_2020_mini.json';
 import NYT_POLITICS from '../../data/nyt_politics.json';
-// import SearchBox from '../../components/SearchBox/SearchBox';
 import SearchListGroupedByEntity from '../../components/SearchListGroupedByEntity/SearchListGroupedByEntity';
-import zIndex from '@mui/material/styles/zIndex';
 
-
-const override = css`
-  display: block;
-  margin: 0 auto;
-  border-color: blue;
-`;
 const locations = ["Washington"];
-
-function descendingComparator(a, b, orderBy) {
-   if (b[orderBy] < a[orderBy]) {
-      return -1;
-   }
-   if (b[orderBy] > a[orderBy]) {
-      return 1;
-   }
-   return 0;
-}
-
-function getComparator(order, orderBy) {
-   return order === 'desc'
-      ? (a, b) => descendingComparator(a, b, orderBy)
-      : (a, b) => -descendingComparator(a, b, orderBy);
-}
-
 
 class HomeScreen extends React.Component {
    constructor(props) {
@@ -323,9 +277,7 @@ class HomeScreen extends React.Component {
                   onChange={this._handleSearch}
                   onKeyDown={this._handleKeyDown}
                />
-               {/* <Button variant="contained" onClick={this._handleSearchButton}>Search</Button> */}
                <div style={{ display: "flex", flexDirection: "row", textAlign: "left", alignItems: "center", minHeight: "24px" }}>
-                  {/* <div style={{padding:"0px 5px"}}>Filter results by date</div> */}
                   <Button style={{ textTransform: "none", fontSize: 16, marginRight: "20px", fontFamily:'Imperial BT', display: "block" }} onClick={() => this.setState({ dateMenuOpen: !this.state.dateMenuOpen })}> Filter By Date {'>'} </Button>
                      <div style={{ display: this.state.dateMenuOpen ? "flex" : "none", flexDirection: "row", fontSize: 16, paddingTop: 4 }}>
                         From:&nbsp;<DatePicker selected={this.state.dateFrom} onChange={(date) => this._handleDateFrom(date)} style={{fontFamily: "Imperial BT" }} />
@@ -366,7 +318,6 @@ class HomeScreen extends React.Component {
                      <SearchListGroupedByEntity
                         sortedEntityArticleGroupingsArray={this.state.sortedEntityArticleGroupingsArray}
                         searchPhrase={this.state.searchPhrase}
-                     // _setIframeUrl={this._setIframeUrl}
                      />
                   </div>
                </div>

@@ -1,23 +1,5 @@
 import React from 'react';
 
-import { styled } from '@mui/material/styles';
-
-import {
-   Avatar,
-   Box,
-   Button,
-   Card,
-   CardHeader,
-   CardMedia,
-   CardContent,
-   CardActions,
-   Checkbox,
-   Collapse,
-   FormControlLabel,
-   IconButton,
-   TextField,
-   Typography
-} from '@mui/material';
 import EntityCard from '../EntityCard/EntityCard';
 
 class SearchListGroupedByEntity extends React.Component {
@@ -26,7 +8,6 @@ class SearchListGroupedByEntity extends React.Component {
       this.state = {
          sortedEntityArticleGroupingsArray: props.sortedEntityArticleGroupingsArray,
          searchPhrase: props.searchPhrase,
-         // _setIframeUrl: props._setIframeUrl
       }
    }
 
@@ -34,7 +15,6 @@ class SearchListGroupedByEntity extends React.Component {
       this.setState({
          searchPhrase: this.props.searchPhrase,
          sortedEntityArticleGroupingsArray: this.props.sortedEntityArticleGroupingsArray,
-         // _setIframeUrl: this.props._setIframeUrl
       });
    }
 
@@ -44,7 +24,6 @@ class SearchListGroupedByEntity extends React.Component {
          this.setState({
             searchPhrase: this.props.searchPhrase,
             sortedEntityArticleGroupingsArray: this.props.sortedEntityArticleGroupingsArray,
-            //_setIframeUrl: this.props._setIframeUrl
          });
       }
    }
@@ -56,7 +35,6 @@ class SearchListGroupedByEntity extends React.Component {
                return <EntityCard 
                         key={`${entityElem.entity}-${index}-${entityElem.publish_date}-${entityElem.title}`} 
                         SingleEntityMap={entityElem}
-                        // _setIframeUrl={this.state._setIframeUrl}
                      />
                })
             }
