@@ -357,7 +357,7 @@ class HomeScreen extends React.Component {
                {this.state.userOnboarded && 
                   <div style={{ height: "20px", padding: "20px" }}>
                      <Typography color="black" sx={{ fontSize: "16px", textDecoration: "none", fontFamily: "Imperial BT" }}>
-                        {`Quoteworthy found ${this.state.numTotalEntities} entities, with ${this.state.numTotalQuotes} total quote${(this.state.numTotalQuotes > 1 || this.state.numTotalQuotes <= 0) ? "s" : ""}`}
+                        {`Quoteworthy found ${this.state.numTotalEntities} people, with ${this.state.numTotalQuotes} total quote${(this.state.numTotalQuotes > 1 || this.state.numTotalQuotes <= 0) ? "s" : ""}`}
                      </Typography>
                   </div>
                }

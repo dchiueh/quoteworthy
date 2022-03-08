@@ -52,7 +52,7 @@ function App() {
   };
 
   return (
-    <Box className="Quoteworthy Application" sx={{margin: "auto", textAlign: "center"}}>
+    <Box className="Quoteworthy by Team What They Said" sx={{margin: "auto", textAlign: "center"}}>
       <header style={{textAlign: "center"}}>
         <h1 style={{fontFamily: 'Chomsky', fontSize:"60px", fontWeight:"200", marginBottom:"0", paddingBottom:"0", marginTop:"20px", letterSpacing: "-0.5px"}}>Quoteworthy </h1>
         <p style={{marginTop:"10px", fontSize: "16px"}}>Search our archive of <i>New York Times</i> articles by keyword to find relevant quotes sorted by speaker.</p> 
@@ -65,7 +65,9 @@ function App() {
         </p>
         <p>
           Search by keywords and filter by date and location, and relevant and correctly attributed quotes from our archive will populate. 
+          You can also enter keywords separated by comma for a more in-depth search.
         </p>
+
         <p>
           By: Alex H, Dana C, Jennah H, Misato N, Shana H 
         </p>
